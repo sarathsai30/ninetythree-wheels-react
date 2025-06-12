@@ -1,0 +1,185 @@
+
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import CarCard from '../components/CarCard';
+import carsData from '../data/cars.json';
+
+const Home = () => {
+  const [featuredCars, setFeaturedCars] = useState([]);
+  const [brands, setBrands] = useState([]);
+
+  useEffect(() => {
+    // Get featured cars (first 3)
+    setFeaturedCars(carsData.slice(0, 3));
+    
+    // Get unique brands
+    const uniqueBrands = [...new Set(carsData.map(car => car.brand))];
+    setBrands(uniqueBrands);
+  }, []);
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="bg-primary text-white py-5">
+        <div className="container">
+          <div className="row align-items-center min-vh-50">
+            <div className="col-lg-6">
+              <h1 className="display-4 fw-bold mb-4">
+                Find Your Perfect Car with <span className="text-warning">93cars</span>
+              </h1>
+              <p className="lead mb-4">
+                Discover a wide range of quality used cars with transparent pricing, 
+                detailed specifications, and trusted service. Your dream car is just a click away.
+              </p>
+              <div className="d-flex gap-3">
+                <Link to="/cars" className="btn btn-warning btn-lg px-4">
+                  Browse Cars
+                </Link>
+                <Link to="/about" className="btn btn-outline-light btn-lg px-4">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-6 text-center">
+              <img 
+                src="https://images.unsplash.com/photo-1549924231-f129b911e442?w=600&h=400&fit=crop" 
+                alt="Featured Car" 
+                className="img-fluid rounded shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Search */}
+      <section className="py-4 bg-light">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="card border-0 shadow-sm">
+                <div className="card-body">
+                  <div className="row g-3 align-items-end">
+                    <div className="col-md-4">
+                      <label className="form-label fw-semibold">Brand</label>
+                      <select className="form-select">
+                        <option>Select Brand</option>
+                        {brands.map(brand => (
+                          <option key={brand} value={brand}>{brand}</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="col-md-4">
+                      <label className="form-label fw-semibold">Body Type</label>
+                      <select className="form-select">
+                        <option>Select Body Type</option>
+                        <option>SUV</option>
+                        <option>Sedan</option>
+                        <option>Hatchback</option>
+                      </select>
+                    </div>
+                    <div className="col-md-4">
+                      <Link to="/cars" className="btn btn-primary w-100">
+                        <i className="fas fa-search me-2"></i>Search Cars
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Cars */}
+      <section className="py-5">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="fw-bold">Featured Cars</h2>
+            <p className="text-muted">Handpicked cars with the best value for money</p>
+          </div>
+          <div className="row">
+            {featuredCars.map(car => (
+              <CarCard key={car.id} car={car} />
+            ))}
+          </div>
+          <div className="text-center mt-4">
+            <Link to="/cars" className="btn btn-warning btn-lg px-5">
+              View All Cars
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Top Brands */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="fw-bold">Popular Brands</h2>
+            <p className="text-muted">Choose from top automotive brands</p>
+          </div>
+          <div className="row g-4">
+            {brands.slice(0, 6).map(brand => (
+              <div key={brand} className="col-lg-2 col-md-4 col-6">
+                <div className="card border-0 shadow-sm text-center h-100">
+                  <div className="card-body d-flex align-items-center justify-content-center">
+                    <h5 className="fw-bold mb-0">{brand}</h5>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-5">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="fw-bold">Why Choose 93cars?</h2>
+            <p className="text-muted">We make car buying simple, transparent, and trustworthy</p>
+          </div>
+          <div className="row g-4">
+            <div className="col-lg-3 col-md-6">
+              <div className="text-center">
+                <div className="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style={{width: '80px', height: '80px'}}>
+                  <i className="fas fa-certificate text-dark fa-2x"></i>
+                </div>
+                <h5 className="fw-bold">Quality Assured</h5>
+                <p className="text-muted">Every car is thoroughly inspected and verified for quality</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="text-center">
+                <div className="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style={{width: '80px', height: '80px'}}>
+                  <i className="fas fa-rupee-sign text-dark fa-2x"></i>
+                </div>
+                <h5 className="fw-bold">Best Prices</h5>
+                <p className="text-muted">Competitive pricing with transparent cost breakdown</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="text-center">
+                <div className="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style={{width: '80px', height: '80px'}}>
+                  <i className="fas fa-handshake text-dark fa-2x"></i>
+                </div>
+                <h5 className="fw-bold">Trusted Service</h5>
+                <p className="text-muted">Reliable customer service and post-purchase support</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="text-center">
+                <div className="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style={{width: '80px', height: '80px'}}>
+                  <i className="fas fa-clock text-dark fa-2x"></i>
+                </div>
+                <h5 className="fw-bold">Quick Process</h5>
+                <p className="text-muted">Fast and hassle-free car buying experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
