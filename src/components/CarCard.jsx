@@ -22,7 +22,7 @@ const CarCard = ({ car }) => {
             style={{ height: '220px', objectFit: 'cover' }}
           />
           <div className="position-absolute top-0 start-0 p-2">
-            <span className="badge bg-warning text-dark">{car.year}</span>
+            <span className="badge bg-danger text-white">{car.year}</span>
           </div>
           <div className="position-absolute top-0 end-0 p-2">
             <span className="badge bg-primary">{car.fuelType}</span>
@@ -57,11 +57,11 @@ const CarCard = ({ car }) => {
           <div className="mt-auto">
             <div className="d-flex justify-content-between align-items-center mb-3">
               <div>
-                <h5 className="text-primary fw-bold mb-0">{formatPrice(car.price)}</h5>
+                <h5 className="text-danger fw-bold mb-0">{formatPrice(car.price)}</h5>
                 <small className="text-muted">EMI from {car.emi}</small>
               </div>
             </div>
-            <Link to={`/cars/${car.id}`} className="btn btn-warning w-100 fw-semibold">
+            <Link to={`/cars/${car.id}`} className="btn btn-danger w-100 fw-semibold">
               View Details
             </Link>
           </div>

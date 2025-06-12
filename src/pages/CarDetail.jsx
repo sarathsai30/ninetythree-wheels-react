@@ -17,7 +17,7 @@ const CarDetail = () => {
     return (
       <div className="container py-5 text-center">
         <h2>Car not found</h2>
-        <Link to="/cars" className="btn btn-warning">Back to Cars</Link>
+        <Link to="/cars" className="btn btn-danger">Back to Cars</Link>
       </div>
     );
   }
@@ -73,7 +73,7 @@ const CarDetail = () => {
                     key={index}
                     src={image}
                     alt={`Thumbnail ${index + 1}`}
-                    className={`img-thumbnail ${activeImageIndex === index ? 'border-warning' : ''}`}
+                    className={`img-thumbnail ${activeImageIndex === index ? 'border-danger' : ''}`}
                     style={{ width: '80px', height: '60px', objectFit: 'cover', cursor: 'pointer' }}
                     onClick={() => setActiveImageIndex(index)}
                   />
@@ -91,28 +91,28 @@ const CarDetail = () => {
               <div className="row g-4">
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
-                    <i className="fas fa-gas-pump text-warning fa-2x mb-2"></i>
+                    <i className="fas fa-gas-pump text-danger fa-2x mb-2"></i>
                     <h6 className="fw-bold">Fuel Type</h6>
                     <span>{car.fuelType}</span>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
-                    <i className="fas fa-cogs text-warning fa-2x mb-2"></i>
+                    <i className="fas fa-cogs text-danger fa-2x mb-2"></i>
                     <h6 className="fw-bold">Transmission</h6>
                     <span>{car.transmission}</span>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
-                    <i className="fas fa-tachometer-alt text-warning fa-2x mb-2"></i>
+                    <i className="fas fa-tachometer-alt text-danger fa-2x mb-2"></i>
                     <h6 className="fw-bold">Mileage</h6>
                     <span>{car.mileage}</span>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
-                    <i className="fas fa-users text-warning fa-2x mb-2"></i>
+                    <i className="fas fa-users text-danger fa-2x mb-2"></i>
                     <h6 className="fw-bold">Seats</h6>
                     <span>{car.seatingCapacity}</span>
                   </div>
@@ -193,7 +193,7 @@ const CarDetail = () => {
               <div className="row">
                 {car.features.map((feature, index) => (
                   <div key={index} className="col-md-6 col-lg-4 mb-2">
-                    <i className="fas fa-check text-success me-2"></i>
+                    <i className="fas fa-check text-danger me-2"></i>
                     {feature}
                   </div>
                 ))}
@@ -207,42 +207,20 @@ const CarDetail = () => {
           <div className="card border-0 shadow-sm sticky-top" style={{top: '20px'}}>
             <div className="card-body">
               <div className="text-center mb-4">
-                <h3 className="text-primary fw-bold mb-0">{formatPrice(car.price)}</h3>
+                <h3 className="text-danger fw-bold mb-0">{formatPrice(car.price)}</h3>
                 <p className="text-muted">EMI starts from {car.emi}</p>
               </div>
               
-              <div className="d-grid gap-2 mb-4">
-                <button className="btn btn-warning btn-lg">
+              <div className="d-grid gap-2">
+                <button className="btn btn-danger btn-lg">
                   <i className="fas fa-phone me-2"></i>Call Seller
                 </button>
-                <button className="btn btn-outline-primary">
+                <button className="btn btn-outline-danger">
                   <i className="fas fa-envelope me-2"></i>Send Message
                 </button>
                 <button className="btn btn-outline-secondary">
                   <i className="fas fa-heart me-2"></i>Add to Wishlist
                 </button>
-              </div>
-
-              <div className="border-top pt-3">
-                <h6 className="fw-bold mb-3">Calculate EMI</h6>
-                <div className="mb-3">
-                  <label className="form-label">Down Payment</label>
-                  <input type="range" className="form-range" min="10" max="50" defaultValue="20" />
-                  <div className="d-flex justify-content-between small text-muted">
-                    <span>10%</span>
-                    <span>50%</span>
-                  </div>
-                </div>
-                <div className="mb-3">
-                  <label className="form-label">Loan Tenure</label>
-                  <select className="form-select">
-                    <option>3 Years</option>
-                    <option>4 Years</option>
-                    <option selected>5 Years</option>
-                    <option>7 Years</option>
-                  </select>
-                </div>
-                <button className="btn btn-primary w-100">Calculate EMI</button>
               </div>
             </div>
           </div>
