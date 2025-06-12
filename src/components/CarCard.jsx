@@ -25,7 +25,7 @@ const CarCard = ({ car }) => {
             <span className="badge bg-danger text-white">{car.year}</span>
           </div>
           <div className="position-absolute top-0 end-0 p-2">
-            <span className="badge bg-primary">{car.fuelType}</span>
+            <span className="badge bg-info">{car.fuelType}</span>
           </div>
         </div>
         <div className="card-body d-flex flex-column">

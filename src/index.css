@@ -1,21 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Red and white theme for 93cars */
+/* Light red and light blue theme for 93cars */
 :root {
-  --primary-color: #DC2626;
-  --secondary-color: #EF4444;
-  --warning-color: #DC2626;
+  --primary-color: #FF6B6B;
+  --secondary-color: #74C0FC;
+  --warning-color: #FF6B6B;
   --success-color: #16A34A;
-  --danger-color: #DC2626;
+  --danger-color: #FF6B6B;
   --dark-color: #1F2937;
-  --light-gray: #F9FAFB;
+  --light-gray: #F8FAFC;
   --medium-gray: #6B7280;
-  --border-color: #E5E7EB;
+  --border-color: #E2E8F0;
   --card-bg: #FFFFFF;
   --text-primary: #1F2937;
   --text-secondary: #6B7280;
   --surface-bg: #FFFFFF;
+  --accent-blue: #74C0FC;
+  --light-red: #FFE5E5;
+  --light-blue: #E3F2FD;
 }
 
 * {
@@ -60,39 +63,52 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   background: var(--primary-color);
   color: white;
-  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
 }
 
 .btn-primary:hover {
-  background: #B91C1C;
+  background: #FF5252;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
   color: white;
 }
 
 .btn-danger {
   background: var(--danger-color);
   color: white;
-  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
 }
 
 .btn-danger:hover {
-  background: #B91C1C;
+  background: #FF5252;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
   color: white;
 }
 
 .btn-warning {
   background: var(--warning-color);
   color: white;
-  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
 }
 
 .btn-warning:hover {
-  background: #B91C1C;
+  background: #FF5252;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  color: white;
+}
+
+.btn-info {
+  background: var(--accent-blue);
+  color: white;
+  box-shadow: 0 2px 8px rgba(116, 192, 252, 0.2);
+}
+
+.btn-info:hover {
+  background: #339AF0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(116, 192, 252, 0.3);
   color: white;
 }
 
@@ -120,6 +136,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-1px);
 }
 
+.btn-outline-info {
+  border: 1.5px solid var(--accent-blue);
+  color: var(--accent-blue);
+  background: transparent;
+}
+
+.btn-outline-info:hover {
+  background: var(--accent-blue);
+  color: white;
+  transform: translateY(-1px);
+}
+
 /* Cards */
 .card {
   background: var(--card-bg);
@@ -133,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-  border-color: rgba(220, 38, 38, 0.2);
+  border-color: rgba(255, 107, 107, 0.3);
 }
 
 .card-body {
@@ -169,8 +197,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  background: var(--light-gray);
-  color: var(--primary-color) !important;
+  background: var(--light-blue);
+  color: var(--accent-blue) !important;
 }
 
 /* Forms */
@@ -184,8 +212,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control:focus, .form-select:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(116, 192, 252, 0.1);
   background: white;
 }
 
@@ -249,6 +277,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--success-color) !important;
 }
 
+.bg-info {
+  background-color: var(--accent-blue) !important;
+  color: white !important;
+}
+
 /* Text colors */
 .text-warning {
   color: var(--warning-color) !important;
@@ -258,6 +291,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--danger-color) !important;
 }
 
+.text-info {
+  color: var(--accent-blue) !important;
+}
+
 .text-muted {
   color: var(--text-secondary) !important;
 }
@@ -265,6 +302,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Backgrounds */
 .bg-light {
   background-color: var(--light-gray) !important;
+}
+
+.bg-light-red {
+  background-color: var(--light-red) !important;
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue) !important;
 }
 
 .bg-dark {
@@ -280,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-control-next {
   width: 40px;
   height: 40px;
-  background: rgba(220, 38, 38, 0.8);
+  background: rgba(255, 107, 107, 0.8);
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
@@ -296,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero section */
 .hero-section {
-  background: linear-gradient(135deg, var(--surface-bg) 0%, var(--light-gray) 100%);
+  background: linear-gradient(135deg, var(--light-red) 0%, var(--light-blue) 100%);
   border-radius: 0 0 24px 24px;
   margin-bottom: 2rem;
 }
@@ -397,4 +442,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Border colors for thumbnails */
 .border-danger {
   border-color: var(--danger-color) !important;
+}
+
+.border-info {
+  border-color: var(--accent-blue) !important;
 }
