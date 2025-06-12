@@ -3,9 +3,9 @@
 
 /* Light red and light blue theme for 93cars */
 :root {
-  --primary-color: #FF6B6B;
-  --secondary-color: #74C0FC;
-  --warning-color: #FF6B6B;
+  --primary-color: #FF8A8A;
+  --secondary-color: #87CEEB;
+  --warning-color: #FF8A8A;
   --success-color: #16A34A;
   --danger-color: #FF6B6B;
   --dark-color: #1F2937;
@@ -16,7 +16,7 @@
   --text-primary: #1F2937;
   --text-secondary: #6B7280;
   --surface-bg: #FFFFFF;
-  --accent-blue: #74C0FC;
+  --accent-blue: #87CEEB;
   --light-red: #FFE5E5;
   --light-blue: #E3F2FD;
 }
@@ -63,13 +63,13 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   background: var(--primary-color);
   color: white;
-  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
+  box-shadow: 0 2px 8px rgba(255, 138, 138, 0.2);
 }
 
 .btn-primary:hover {
-  background: #FF5252;
+  background: #FF7070;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 138, 138, 0.3);
   color: white;
 }
 
@@ -89,26 +89,26 @@ h1, h2, h3, h4, h5, h6 {
 .btn-warning {
   background: var(--warning-color);
   color: white;
-  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
+  box-shadow: 0 2px 8px rgba(255, 138, 138, 0.2);
 }
 
 .btn-warning:hover {
-  background: #FF5252;
+  background: #FF7070;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 138, 138, 0.3);
   color: white;
 }
 
 .btn-info {
   background: var(--accent-blue);
   color: white;
-  box-shadow: 0 2px 8px rgba(116, 192, 252, 0.2);
+  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.2);
 }
 
 .btn-info:hover {
-  background: #339AF0;
+  background: #6BB6E8;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(116, 192, 252, 0.3);
+  box-shadow: 0 4px 12px rgba(135, 206, 235, 0.3);
   color: white;
 }
 
@@ -148,6 +148,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-1px);
 }
 
+.btn-outline-warning {
+  border: 1.5px solid var(--warning-color);
+  color: var(--warning-color);
+  background: transparent;
+}
+
+.btn-outline-warning:hover {
+  background: var(--warning-color);
+  color: white;
+  transform: translateY(-1px);
+}
+
 /* Cards */
 .card {
   background: var(--card-bg);
@@ -161,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-  border-color: rgba(255, 107, 107, 0.3);
+  border-color: rgba(255, 138, 138, 0.3);
 }
 
 .card-body {
@@ -213,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-control:focus, .form-select:focus {
   border-color: var(--accent-blue);
-  box-shadow: 0 0 0 3px rgba(116, 192, 252, 0.1);
+  box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.1);
   background: white;
 }
 
@@ -299,6 +311,20 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-secondary) !important;
 }
 
+/* Ensure social media icons are visible */
+.text-dark {
+  color: var(--text-primary) !important;
+}
+
+.text-light {
+  color: #FFFFFF !important;
+}
+
+/* Social media icon fixes */
+.fab, .fas {
+  color: inherit !important;
+}
+
 /* Backgrounds */
 .bg-light {
   background-color: var(--light-gray) !important;
@@ -314,6 +340,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-dark {
   background-color: var(--dark-color) !important;
+  color: white !important;
 }
 
 /* Carousel */
@@ -325,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-control-next {
   width: 40px;
   height: 40px;
-  background: rgba(255, 107, 107, 0.8);
+  background: rgba(255, 138, 138, 0.8);
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);

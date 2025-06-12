@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,17 +11,17 @@ const Footer = () => {
               <span className="text-warning">93</span>cars
             </h5>
             <p className="text-muted">
-              Your trusted partner in finding the perfect car. We offer a wide range of 
-              quality used cars with transparent pricing and detailed information.
+              Your trusted partner in finding the perfect new car. We offer a wide range of 
+              quality new cars with transparent pricing and detailed information.
             </p>
             <div className="d-flex gap-3">
-              <a href="#" className="text-warning text-decoration-none">
+              <a href="#" className="text-warning text-decoration-none" style={{ fontSize: '1.2rem' }}>
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="text-warning text-decoration-none">
+              <a href="#" className="text-warning text-decoration-none" style={{ fontSize: '1.2rem' }}>
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" className="text-warning text-decoration-none">
+              <a href="#" className="text-warning text-decoration-none" style={{ fontSize: '1.2rem' }}>
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
