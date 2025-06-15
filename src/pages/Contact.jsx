@@ -26,9 +26,9 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    // TODO: Replace with your EmailJS Template ID and Public Key
+    // TODO: Replace with your EmailJS Public Key
     const serviceID = 'service_c90bj98';
-    const templateID = 'YOUR_TEMPLATE_ID'; // Replace with your Template ID
+    const templateID = 'template_wbs53iq';
     const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your Public Key
 
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
