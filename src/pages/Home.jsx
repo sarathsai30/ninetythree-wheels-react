@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import CarCard from '../components/CarCard';
@@ -174,6 +173,31 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* YouTube Embed Section */}
+      <section className="py-5">
+        <div className="container">
+          <div className="row align-items-center g-5">
+            <div className="col-lg-6">
+              <h2 className="fw-bold mb-4">Discover the 93cars Difference</h2>
+              <p className="text-muted">
+                At 93cars, we're not just selling cars; we're building a community of enthusiasts and providing a seamless car buying experience. Watch our story and see why thousands of customers trust us for their automotive needs. From rigorous inspections to transparent pricing, we are committed to quality and your satisfaction. Our platform is designed to make your journey of finding the perfect car as enjoyable as driving it.
+              </p>
+            </div>
+            <div className="col-lg-6">
+              <div className="ratio ratio-16x9 rounded overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.youtube.com/embed/O4uG2o_2Oa8"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
