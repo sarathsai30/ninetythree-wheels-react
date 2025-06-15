@@ -3,14 +3,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const logoUrl = '/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png';
+
   return (
     <footer className="bg-dark text-white mt-5">
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-4 col-md-6 mb-4">
-            <h5 className="fw-bold mb-3 text-white">
-              <span className="text-warning">93</span>cars
-            </h5>
+            <img 
+              src={logoUrl} 
+              alt="93cars logo" 
+              className="mb-3"
+              style={{ height: '50px', width: '50px', borderRadius: '50%', objectFit: 'cover' }} 
+            />
             <p className="text-white-50">
               Your trusted partner in finding the perfect new car. We offer a wide range of 
               quality new cars with transparent pricing and detailed information.

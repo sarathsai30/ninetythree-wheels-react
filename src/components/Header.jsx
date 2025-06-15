@@ -1,14 +1,20 @@
+
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const location = useLocation();
+  const logoUrl = '/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png';
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light sticky-top">
       <div className="container">
-        <Link className="navbar-brand fw-bold" to="/">
-          <span className="text-primary">93</span>cars
+        <Link className="navbar-brand" to="/">
+          <img 
+            src={logoUrl} 
+            alt="93cars logo" 
+            style={{ height: '40px', width: '40px', borderRadius: '50%', objectFit: 'cover' }} 
+          />
         </Link>
         <button 
           className="navbar-toggler border-0" 
