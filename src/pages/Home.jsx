@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import CarCard from '../components/CarCard';
 import carsData from '../data/cars.json';
+import { BadgeCheck, IndianRupee, Handshake, Clock } from 'lucide-react';
 
 const Home = () => {
   const [featuredCars, setFeaturedCars] = useState([]);
@@ -170,7 +171,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="text-center">
                 <div className="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style={{width: '80px', height: '80px'}}>
-                  <i className="fas fa-certificate text-dark fa-2x"></i>
+                  <BadgeCheck className="text-dark" size={40} />
                 </div>
                 <h5 className="fw-bold">Quality Assured</h5>
                 <p className="text-muted">Every car is thoroughly inspected and verified for quality</p>
@@ -179,7 +180,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="text-center">
                 <div className="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style={{width: '80px', height: '80px'}}>
-                  <i className="fas fa-rupee-sign text-dark fa-2x"></i>
+                  <IndianRupee className="text-dark" size={40} />
                 </div>
                 <h5 className="fw-bold">Best Prices</h5>
                 <p className="text-muted">Competitive pricing with transparent cost breakdown</p>
@@ -188,7 +189,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="text-center">
                 <div className="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style={{width: '80px', height: '80px'}}>
-                  <i className="fas fa-handshake text-dark fa-2x"></i>
+                  <Handshake className="text-dark" size={40} />
                 </div>
                 <h5 className="fw-bold">Trusted Service</h5>
                 <p className="text-muted">Reliable customer service and post-purchase support</p>
@@ -197,7 +198,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="text-center">
                 <div className="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style={{width: '80px', height: '80px'}}>
-                  <i className="fas fa-clock text-dark fa-2x"></i>
+                  <Clock className="text-dark" size={40} />
                 </div>
                 <h5 className="fw-bold">Quick Process</h5>
                 <p className="text-muted">Fast and hassle-free car buying experience</p>
@@ -211,4 +212,3 @@ const Home = () => {
 };
 
 export default Home;
-
