@@ -69,7 +69,7 @@ const Home = () => {
           <CarouselNext className="absolute right-4 text-white bg-black/20 hover:bg-black/40 border-0" />
         </Carousel>
         
-        <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(59, 130, 246, 0.5)' }}></div>
+        <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(59, 130, 246, 0.7)' }}></div>
 
         <div className="container position-relative text-white d-flex align-items-center" style={{ minHeight: '60vh' }}>
           <div className="row">
