@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
@@ -206,29 +205,9 @@ const CarDetail = () => {
           {/* Price Card */}
           <div className="card border-0 shadow-sm sticky-top" style={{top: '20px'}}>
             <div className="card-body">
-              <div className="text-center mb-4">
+              <div className="text-center">
                 <h3 className="text-danger fw-bold mb-0">{formatPrice(car.price)}</h3>
                 <p className="text-muted">On-road Price (Mumbai)</p>
-              </div>
-              
-              <div className="d-grid gap-2">
-                <button className="btn btn-danger btn-lg">
-                  <i className="fas fa-car me-2"></i>Book Test Drive
-                </button>
-                <button className="btn btn-outline-danger">
-                  <i className="fas fa-download me-2"></i>Download Brochure
-                </button>
-                <button className="btn btn-outline-info">
-                  <i className="fas fa-calculator me-2"></i>Get Loan Quote
-                </button>
-              </div>
-
-              <div className="mt-4 pt-3 border-top">
-                <h6 className="fw-bold mb-3">Get Best Price</h6>
-                <p className="text-muted small mb-3">Fill your details to get the best price from dealers</p>
-                <button className="btn btn-warning w-100">
-                  <i className="fas fa-tag me-2"></i>Get Best Offer
-                </button>
               </div>
             </div>
           </div>
