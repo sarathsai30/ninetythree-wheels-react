@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Youtube, Linkedin, X, Facebook } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -191,16 +192,16 @@ const Contact = () => {
               <h5 className="fw-bold mb-3">Follow Us</h5>
               <div className="d-flex justify-content-center gap-3">
                 <a href="#" className="btn btn-outline-warning btn-sm">
-                  <i className="fab fa-facebook-f"></i>
+                  <Youtube size={18} />
                 </a>
                 <a href="#" className="btn btn-outline-warning btn-sm">
-                  <i className="fab fa-twitter"></i>
+                  <Linkedin size={18} />
                 </a>
                 <a href="#" className="btn btn-outline-warning btn-sm">
-                  <i className="fab fa-instagram"></i>
+                  <X size={18} />
                 </a>
                 <a href="#" className="btn btn-outline-warning btn-sm">
-                  <i className="fab fa-linkedin-in"></i>
+                  <Facebook size={18} />
                 </a>
               </div>
             </div>
