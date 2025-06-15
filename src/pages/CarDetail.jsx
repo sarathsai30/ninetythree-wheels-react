@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
@@ -226,12 +225,20 @@ const CarDetail = () => {
                       <th>Transmission</th>
                       <th>Engine</th>
                       <th>Price</th>
-                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     {modelVariants.map((variant) => (
-                      <tr key={variant.id} className={variant.id === car.id ? 'table-active' : ''}>
+                      <tr 
+                        key={variant.id} 
+                        className={`${variant.id === car.id ? 'table-active' : ''} ${variant.id !== car.id ? 'cursor-pointer' : ''}`}
+                        onClick={() => {
+                          if (variant.id !== car.id) {
+                            window.location.href = `/cars/${variant.id}`;
+                          }
+                        }}
+                        style={variant.id !== car.id ? { cursor: 'pointer' } : {}}
+                      >
                         <td className="fw-semibold">{variant.model}</td>
                         <td>
                           <span className="badge bg-info">{variant.fuelType}</span>
@@ -239,18 +246,6 @@ const CarDetail = () => {
                         <td>{variant.transmission}</td>
                         <td>{variant.engine}</td>
                         <td className="fw-bold text-primary">{formatPrice(variant.price)}</td>
-                        <td>
-                          {variant.id === car.id ? (
-                            <span className="badge bg-success">Current</span>
-                          ) : (
-                            <Link 
-                              to={`/cars/${variant.id}`} 
-                              className="btn btn-sm btn-outline-primary"
-                            >
-                              View Details
-                            </Link>
-                          )}
-                        </td>
                       </tr>
                     ))}
                   </tbody>
