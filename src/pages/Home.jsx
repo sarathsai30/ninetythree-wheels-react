@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import CarCard from '../components/CarCard';
@@ -64,12 +65,14 @@ const Home = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
+          <div 
+            className="position-absolute top-0 start-0 w-100 h-100" 
+            style={{ backgroundColor: 'rgba(59, 130, 246, 0.7)', pointerEvents: 'none' }}
+          ></div>
           <CarouselPrevious className="absolute left-4 text-white bg-black/20 hover:bg-black/40 border-0" />
           <CarouselNext className="absolute right-4 text-white bg-black/20 hover:bg-black/40 border-0" />
         </Carousel>
         
-        <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(59, 130, 246, 0.7)' }}></div>
-
         <div className="container position-relative text-white d-flex align-items-center" style={{ minHeight: '60vh' }}>
           <div className="row">
             <div className="col-lg-8">
