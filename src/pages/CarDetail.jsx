@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
@@ -6,10 +7,20 @@ const CarDetail = () => {
   const { id } = useParams();
   const [car, setCar] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [modelVariants, setModelVariants] = useState([]);
 
   useEffect(() => {
     const foundCar = carsData.find(c => c.id === id);
     setCar(foundCar);
+    
+    // Get all variants of the same brand and model series
+    if (foundCar) {
+      const variants = carsData.filter(c => 
+        c.brand === foundCar.brand && 
+        c.name.split(' ').slice(0, 2).join(' ') === foundCar.name.split(' ').slice(0, 2).join(' ')
+      );
+      setModelVariants(variants);
+    }
   }, [id]);
 
   if (!car) {
@@ -184,7 +195,7 @@ const CarDetail = () => {
           </div>
 
           {/* Features */}
-          <div className="card border-0 shadow-sm">
+          <div className="card border-0 shadow-sm mb-4">
             <div className="card-header bg-white">
               <h4 className="fw-bold mb-0">Key Features</h4>
             </div>
@@ -196,6 +207,54 @@ const CarDetail = () => {
                     {feature}
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Model Variants Table */}
+          <div className="card border-0 shadow-sm">
+            <div className="card-header bg-white">
+              <h4 className="fw-bold mb-0">Available Variants</h4>
+            </div>
+            <div className="card-body">
+              <div className="table-responsive">
+                <table className="table table-hover">
+                  <thead className="table-light">
+                    <tr>
+                      <th>Model</th>
+                      <th>Fuel Type</th>
+                      <th>Transmission</th>
+                      <th>Engine</th>
+                      <th>Price</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {modelVariants.map((variant) => (
+                      <tr key={variant.id} className={variant.id === car.id ? 'table-active' : ''}>
+                        <td className="fw-semibold">{variant.model}</td>
+                        <td>
+                          <span className="badge bg-info">{variant.fuelType}</span>
+                        </td>
+                        <td>{variant.transmission}</td>
+                        <td>{variant.engine}</td>
+                        <td className="fw-bold text-primary">{formatPrice(variant.price)}</td>
+                        <td>
+                          {variant.id === car.id ? (
+                            <span className="badge bg-success">Current</span>
+                          ) : (
+                            <Link 
+                              to={`/cars/${variant.id}`} 
+                              className="btn btn-sm btn-outline-primary"
+                            >
+                              View Details
+                            </Link>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

@@ -1,10 +1,13 @@
+
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import CarCard from '../components/CarCard';
 import SearchFilter from '../components/SearchFilter';
 import carsData from '../data/cars.json';
 import filtersData from '../data/filters.json';
 
 const CarList = () => {
+  const [searchParams] = useSearchParams();
   const [cars, setCars] = useState(carsData);
   const [filteredCars, setFilteredCars] = useState(carsData);
   const [searchTerm, setSearchTerm] = useState('');
@@ -13,6 +16,14 @@ const CarList = () => {
   const [selectedBodyType, setSelectedBodyType] = useState('');
   const [priceRange, setPriceRange] = useState([filtersData.priceRange.min, filtersData.priceRange.max]);
   const [sortBy, setSortBy] = useState('name');
+
+  // Handle URL parameters for brand filtering
+  useEffect(() => {
+    const brandFromUrl = searchParams.get('brand');
+    if (brandFromUrl) {
+      setSelectedBrand(brandFromUrl);
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     let filtered = cars;
@@ -72,6 +83,8 @@ const CarList = () => {
     setSelectedBodyType('');
     setPriceRange([filtersData.priceRange.min, filtersData.priceRange.max]);
     setSortBy('name');
+    // Clear URL parameters
+    window.history.replaceState({}, '', '/cars');
   };
 
   return (

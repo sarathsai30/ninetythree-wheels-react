@@ -1,12 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import CarCard from '../components/CarCard';
 import carsData from '../data/cars.json';
 
 const Home = () => {
   const [featuredCars, setFeaturedCars] = useState([]);
   const [brands, setBrands] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Get featured cars (first 3)
@@ -16,6 +17,11 @@ const Home = () => {
     const uniqueBrands = [...new Set(carsData.map(car => car.brand))];
     setBrands(uniqueBrands);
   }, []);
+
+  const handleBrandClick = (brand) => {
+    // Navigate to cars page with brand filter
+    navigate(`/cars?brand=${encodeURIComponent(brand)}`);
+  };
 
   return (
     <div>
@@ -120,7 +126,11 @@ const Home = () => {
           <div className="row g-4">
             {brands.slice(0, 6).map(brand => (
               <div key={brand} className="col-lg-2 col-md-4 col-6">
-                <div className="card border-0 shadow-sm text-center h-100">
+                <div 
+                  className="card border-0 shadow-sm text-center h-100 brand-card" 
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => handleBrandClick(brand)}
+                >
                   <div className="card-body d-flex align-items-center justify-content-center">
                     <h5 className="fw-bold mb-0">{brand}</h5>
                   </div>
