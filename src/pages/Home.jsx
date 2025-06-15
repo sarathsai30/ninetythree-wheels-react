@@ -1,16 +1,7 @@
-
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import CarCard from '../components/CarCard';
 import carsData from '../data/cars.json';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 const Home = () => {
   const [featuredCars, setFeaturedCars] = useState([]);
@@ -31,49 +22,11 @@ const Home = () => {
     navigate(`/cars?brand=${encodeURIComponent(brand)}`);
   };
 
-  const carouselImages = [
-    "https://images.unsplash.com/photo-1549924231-f129b911e442?w=1200&h=800&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&h=800&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&h=800&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=1200&h=800&fit=crop&q=80"
-  ];
-
-  const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true, stopOnMouseEnter: true })
-  );
-
   return (
     <div>
       {/* Hero Section */}
-      <section className="position-relative" style={{ minHeight: '60vh' }}>
-        <Carousel
-          plugins={[plugin.current]}
-          className="w-100 h-100 position-absolute top-0 start-0"
-          opts={{ loop: true }}
-        >
-          <CarouselContent className="h-100">
-            {carouselImages.map((src, index) => (
-              <CarouselItem key={index} className="h-100 p-0">
-                <div 
-                  className="w-100 h-100"
-                  style={{ 
-                    backgroundImage: `url(${src})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div 
-            className="position-absolute top-0 start-0 w-100 h-100" 
-            style={{ backgroundColor: 'rgba(59, 130, 246, 0.7)', pointerEvents: 'none' }}
-          ></div>
-          <CarouselPrevious className="absolute left-4 text-white bg-black/20 hover:bg-black/40 border-0" />
-          <CarouselNext className="absolute right-4 text-white bg-black/20 hover:bg-black/40 border-0" />
-        </Carousel>
-        
-        <div className="container position-relative text-white d-flex align-items-center" style={{ minHeight: '60vh' }}>
+      <section className="position-relative overflow-hidden" style={{ minHeight: '60vh', backgroundColor: '#3b82f6' }}>
+        <div className="container position-relative text-white d-flex align-items-center" style={{ minHeight: '60vh', zIndex: 2 }}>
           <div className="row">
             <div className="col-lg-8">
               <h1 className="display-4 fw-bold mb-4">
@@ -94,6 +47,20 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <img 
+          src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png" 
+          alt="Car" 
+          className="position-absolute d-none d-lg-block"
+          style={{
+            width: '50%',
+            right: '0',
+            bottom: '0',
+            opacity: '0.6',
+            objectFit: 'contain',
+            transform: 'translateX(15%)',
+            zIndex: 1
+          }}
+        />
       </section>
 
       {/* Quick Search */}
