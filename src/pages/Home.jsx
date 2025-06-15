@@ -1,5 +1,4 @@
 
-```javascript
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import CarCard from '../components/CarCard';
@@ -231,4 +230,3 @@ const Home = () => {
 };
 
 export default Home;
-```
