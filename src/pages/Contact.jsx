@@ -1,6 +1,8 @@
+
 import React, { useState, useRef } from 'react';
 import { Youtube, Linkedin, X, Facebook, MapPin, Phone, Mail, Clock, Send, Loader } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import { Toaster, toast } from "@/components/ui/sonner";
 
 const Contact = () => {
   const form = useRef();
@@ -26,15 +28,16 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    // TODO: Replace with your EmailJS Public Key
     const serviceID = 'service_c90bj98';
     const templateID = 'template_wbs53iq';
-    const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your Public Key
+    const publicKey = 'Hselr5qg0TYx_ho7X';
 
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
       .then((result) => {
         console.log('EmailJS Success:', result.text);
-        alert('Thank you for your message! We will get back to you soon.');
+        toast.success('Message Sent!', {
+          description: 'Thank you for your message! We will get back to you soon.',
+        });
         setFormData({
           name: '',
           email: '',
@@ -44,7 +47,9 @@ const Contact = () => {
         });
       }, (error) => {
         console.error('EmailJS Error:', error.text);
-        alert('Sorry, something went wrong. Please try again later.');
+        toast.error('Failed to send message', {
+          description: 'Sorry, something went wrong. Please try again later.',
+        });
       })
       .finally(() => {
         setIsLoading(false);
@@ -53,6 +58,7 @@ const Contact = () => {
 
   return (
     <div className="container py-5">
+      <Toaster richColors />
       <div className="text-center mb-5">
         <h1 className="fw-bold">Contact <span className="text-warning">93</span>cars</h1>
         <p className="lead text-muted">Get in touch with us for any queries or assistance</p>
