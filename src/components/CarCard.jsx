@@ -20,9 +20,6 @@ const CarCard = ({ car }) => {
             alt={car.name}
             style={{ height: '220px', objectFit: 'cover' }}
           />
-          <div className="position-absolute top-0 start-0 p-2">
-            <span className="badge bg-primary text-white">{car.year}</span>
-          </div>
           <div className="position-absolute top-0 end-0 p-2">
             <span className="badge bg-info">{car.fuelType}</span>
           </div>
