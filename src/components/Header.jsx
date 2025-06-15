@@ -13,7 +13,7 @@ const Header = () => {
           <img 
             src={logoUrl} 
             alt="93cars logo" 
-            style={{ height: '50px', width: '50px', borderRadius: '50%', objectFit: 'cover' }} 
+            style={{ height: '60px', width: '60px', borderRadius: '50%', objectFit: 'cover' }} 
           />
         </Link>
         <button 
