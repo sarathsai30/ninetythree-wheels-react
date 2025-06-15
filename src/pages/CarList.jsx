@@ -87,12 +87,24 @@ const CarList = () => {
     window.history.replaceState({}, '', '/cars');
   };
 
+  const getUniqueCarsByName = (carList) => {
+    const unique = carList.reduce((acc, car) => {
+      if (!acc[car.name]) {
+        acc[car.name] = car;
+      }
+      return acc;
+    }, {});
+    return Object.values(unique);
+  };
+  
+  const uniqueFilteredCars = getUniqueCarsByName(filteredCars);
+
   return (
     <div className="container py-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <div>
           <h1 className="fw-bold">New Cars for Sale</h1>
-          <p className="text-muted">Found {filteredCars.length} cars matching your criteria</p>
+          <p className="text-muted">Found {uniqueFilteredCars.length} models matching your criteria</p>
         </div>
         <div className="d-flex gap-2">
           <select 
@@ -130,7 +142,7 @@ const CarList = () => {
         filters={filtersData}
       />
 
-      {filteredCars.length === 0 ? (
+      {uniqueFilteredCars.length === 0 ? (
         <div className="text-center py-5">
           <div className="mb-4">
             <i className="fas fa-car fa-3x text-muted"></i>
@@ -143,7 +155,7 @@ const CarList = () => {
         </div>
       ) : (
         <div className="row">
-          {filteredCars.map(car => (
+          {uniqueFilteredCars.map(car => (
             <CarCard key={car.id} car={car} />
           ))}
         </div>
