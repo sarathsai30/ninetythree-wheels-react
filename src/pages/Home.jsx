@@ -190,7 +190,7 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="ratio ratio-16x9 rounded overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.youtube.com/embed/O4uG2o_2Oa8"
+                  src="https://www.youtube.com/embed/aVLYr_E1tJQ"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
