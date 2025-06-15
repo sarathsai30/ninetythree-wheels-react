@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import { Youtube, Linkedin, X, Facebook, MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { Youtube, Linkedin, X, Facebook, MapPin, Phone, Mail, Clock, Send, Loader } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -9,6 +11,8 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -20,15 +24,31 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
+    setIsLoading(true);
+
+    // TODO: Replace with your EmailJS Template ID and Public Key
+    const serviceID = 'service_c90bj98';
+    const templateID = 'YOUR_TEMPLATE_ID'; // Replace with your Template ID
+    const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your Public Key
+
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+      .then((result) => {
+        console.log('EmailJS Success:', result.text);
+        alert('Thank you for your message! We will get back to you soon.');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+      }, (error) => {
+        console.error('EmailJS Error:', error.text);
+        alert('Sorry, something went wrong. Please try again later.');
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -43,7 +63,7 @@ const Contact = () => {
           <div className="card border-0 shadow-sm">
             <div className="card-body p-5">
               <h3 className="fw-bold mb-4">Send us a Message</h3>
-              <form onSubmit={handleSubmit}>
+              <form ref={form} onSubmit={handleSubmit}>
                 <div className="row g-3">
                   <div className="col-md-6">
                     <label className="form-label fw-semibold">Full Name *</label>
@@ -108,8 +128,18 @@ const Contact = () => {
                     ></textarea>
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="btn btn-warning btn-lg px-5 d-inline-flex align-items-center">
-                      <Send size={18} className="me-2" />Send Message
+                    <button type="submit" className="btn btn-warning btn-lg px-5 d-inline-flex align-items-center" disabled={isLoading}>
+                      {isLoading ? (
+                        <>
+                          <Loader size={18} className="me-2 animate-spin" />
+                          Sending...
+                        </>
+                      ) : (
+                        <>
+                          <Send size={18} className="me-2" />
+                          Send Message
+                        </>
+                      )}
                     </button>
                   </div>
                 </div>
