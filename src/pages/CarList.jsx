@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import CarCard from '../components/CarCard';
 import SearchFilter from '../components/SearchFilter';
@@ -79,7 +78,7 @@ const CarList = () => {
     <div className="container py-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <div>
-          <h1 className="fw-bold">Used Cars for Sale</h1>
+          <h1 className="fw-bold">New Cars for Sale</h1>
           <p className="text-muted">Found {filteredCars.length} cars matching your criteria</p>
         </div>
         <div className="d-flex gap-2">

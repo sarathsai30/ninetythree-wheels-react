@@ -16,7 +16,7 @@ const CarDetail = () => {
     return (
       <div className="container py-5 text-center">
         <h2>Car not found</h2>
-        <Link to="/cars" className="btn btn-danger">Back to Cars</Link>
+        <Link to="/cars" className="btn btn-primary">Back to Cars</Link>
       </div>
     );
   }
@@ -72,7 +72,7 @@ const CarDetail = () => {
                     key={index}
                     src={image}
                     alt={`Thumbnail ${index + 1}`}
-                    className={`img-thumbnail ${activeImageIndex === index ? 'border-danger' : ''}`}
+                    className={`img-thumbnail ${activeImageIndex === index ? 'border-primary' : ''}`}
                     style={{ width: '80px', height: '60px', objectFit: 'cover', cursor: 'pointer' }}
                     onClick={() => setActiveImageIndex(index)}
                   />
@@ -90,28 +90,28 @@ const CarDetail = () => {
               <div className="row g-4">
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
-                    <i className="fas fa-gas-pump text-danger fa-2x mb-2"></i>
+                    <i className="fas fa-gas-pump text-primary fa-2x mb-2"></i>
                     <h6 className="fw-bold">Fuel Type</h6>
                     <span>{car.fuelType}</span>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
-                    <i className="fas fa-cogs text-danger fa-2x mb-2"></i>
+                    <i className="fas fa-cogs text-primary fa-2x mb-2"></i>
                     <h6 className="fw-bold">Transmission</h6>
                     <span>{car.transmission}</span>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
-                    <i className="fas fa-tachometer-alt text-danger fa-2x mb-2"></i>
+                    <i className="fas fa-tachometer-alt text-primary fa-2x mb-2"></i>
                     <h6 className="fw-bold">Mileage</h6>
                     <span>{car.mileage}</span>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
-                    <i className="fas fa-users text-danger fa-2x mb-2"></i>
+                    <i className="fas fa-users text-primary fa-2x mb-2"></i>
                     <h6 className="fw-bold">Seats</h6>
                     <span>{car.seatingCapacity}</span>
                   </div>
@@ -192,7 +192,7 @@ const CarDetail = () => {
               <div className="row">
                 {car.features.map((feature, index) => (
                   <div key={index} className="col-md-6 col-lg-4 mb-2">
-                    <i className="fas fa-check text-danger me-2"></i>
+                    <i className="fas fa-check text-primary me-2"></i>
                     {feature}
                   </div>
                 ))}
@@ -206,7 +206,7 @@ const CarDetail = () => {
           <div className="card border-0 shadow-sm sticky-top" style={{top: '20px'}}>
             <div className="card-body">
               <div className="text-center">
-                <h3 className="text-danger fw-bold mb-0">{formatPrice(car.price)}</h3>
+                <h3 className="text-primary fw-bold mb-0">{formatPrice(car.price)}</h3>
                 <p className="text-muted">On-road Price (Mumbai)</p>
               </div>
             </div>
