@@ -1,8 +1,14 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import CarCard from '../components/CarCard';
 import carsData from '../data/cars.json';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Home = () => {
   const [featuredCars, setFeaturedCars] = useState([]);
@@ -23,13 +29,47 @@ const Home = () => {
     navigate(`/cars?brand=${encodeURIComponent(brand)}`);
   };
 
+  const carouselImages = [
+    "https://images.unsplash.com/photo-1549924231-f129b911e442?w=1200&h=800&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&h=800&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&h=800&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=1200&h=800&fit=crop&q=80"
+  ];
+
+  const plugin = useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: false })
+  );
+
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-primary text-white py-5">
-        <div className="container">
-          <div className="row align-items-center min-vh-50">
-            <div className="col-lg-6">
+      <section className="position-relative" style={{ minHeight: '60vh' }}>
+        <Carousel
+          plugins={[plugin.current]}
+          className="w-100 h-100 position-absolute top-0 start-0"
+          opts={{ loop: true }}
+        >
+          <CarouselContent className="h-100">
+            {carouselImages.map((src, index) => (
+              <CarouselItem key={index} className="h-100 p-0">
+                <div 
+                  className="w-100 h-100"
+                  style={{ 
+                    backgroundImage: `url(${src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+        
+        <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}></div>
+
+        <div className="container position-relative text-white d-flex align-items-center" style={{ minHeight: '60vh' }}>
+          <div className="row">
+            <div className="col-lg-8">
               <h1 className="display-4 fw-bold mb-4">
                 Find Your Perfect Car with <span className="text-warning">93cars</span>
               </h1>
@@ -45,13 +85,6 @@ const Home = () => {
                   Learn More
                 </Link>
               </div>
-            </div>
-            <div className="col-lg-6 text-center">
-              <img 
-                src="https://images.unsplash.com/photo-1549924231-f129b911e442?w=600&h=400&fit=crop" 
-                alt="Featured Car" 
-                className="img-fluid rounded shadow-lg"
-              />
             </div>
           </div>
         </div>
