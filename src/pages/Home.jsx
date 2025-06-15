@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import CarCard from '../components/CarCard';
@@ -140,7 +141,7 @@ const Home = () => {
             <div className="col-lg-6">
               <h2 className="fw-bold mb-4">Discover the 93cars Difference</h2>
               <p className="text-muted">
-                At 93cars, we're not just selling cars; we're building a community of enthusiasts and providing a seamless car buying experience. Watch our story and see why thousands of customers trust us for their automotive needs. From rigorous inspections to transparent pricing, we are committed to quality and your satisfaction. Our platform is designed to make your journey of finding the perfect car as enjoyable as driving it.
+                At 93cars, we're dedicated to simplifying your car search. As a premier car listing company, we don't sell cars directly. Instead, we provide a comprehensive platform where you can explore a wide variety of vehicles. We offer detailed information, features, and specifications for every car listed, empowering you to make an informed decision. Our goal is to connect you with your ideal car by providing all the necessary details in one place.
               </p>
             </div>
             <div className="col-lg-6">
@@ -210,3 +211,4 @@ const Home = () => {
 };
 
 export default Home;
+
