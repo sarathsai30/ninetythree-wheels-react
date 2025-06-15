@@ -47,20 +47,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img 
-          src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png" 
-          alt="Car" 
-          className="position-absolute d-none d-lg-block"
-          style={{
-            width: '50%',
-            right: '0',
-            bottom: '0',
-            opacity: '0.6',
-            objectFit: 'contain',
-            transform: 'translateX(15%)',
-            zIndex: 1
-          }}
-        />
       </section>
 
       {/* Quick Search */}
