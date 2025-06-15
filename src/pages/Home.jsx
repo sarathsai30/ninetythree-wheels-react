@@ -35,7 +35,7 @@ const Home = () => {
                 Find Your Perfect Car with <span className="text-warning">93cars</span>
               </h1>
               <p className="lead mb-4">
-                Discover a wide range of quality used cars with transparent pricing, 
+                Discover a wide range of quality new cars with transparent pricing, 
                 detailed specifications, and trusted service. Your dream car is just a click away.
               </p>
               <div className="d-flex gap-3">
