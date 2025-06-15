@@ -1,4 +1,5 @@
 
+```javascript
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import CarCard from '../components/CarCard';
@@ -7,6 +8,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -37,7 +40,7 @@ const Home = () => {
   ];
 
   const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false })
+    Autoplay({ delay: 2000, stopOnInteraction: true, stopOnMouseEnter: true })
   );
 
   return (
@@ -63,6 +66,8 @@ const Home = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
+          <CarouselPrevious className="absolute left-4 text-white bg-black/20 hover:bg-black/40 border-0" />
+          <CarouselNext className="absolute right-4 text-white bg-black/20 hover:bg-black/40 border-0" />
         </Carousel>
         
         <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}></div>
@@ -226,3 +231,4 @@ const Home = () => {
 };
 
 export default Home;
+```
