@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Youtube, Linkedin, X, Facebook } from 'lucide-react';
+import { Youtube, Linkedin, X, Facebook, MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +39,7 @@ const Contact = () => {
       </div>
 
       <div className="row g-5">
-        <div className="col-lg-8">
+        <div className="col-12">
           <div className="card border-0 shadow-sm">
             <div className="card-body p-5">
               <h3 className="fw-bold mb-4">Send us a Message</h3>
@@ -109,8 +108,8 @@ const Contact = () => {
                     ></textarea>
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="btn btn-warning btn-lg px-5">
-                      <i className="fas fa-paper-plane me-2"></i>Send Message
+                    <button type="submit" className="btn btn-warning btn-lg px-5 d-inline-flex align-items-center">
+                      <Send size={18} className="me-2" />Send Message
                     </button>
                   </div>
                 </div>
@@ -118,16 +117,18 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="col-lg-4">
-          <div className="card border-0 shadow-sm mb-4">
+      <div className="row g-5 mt-5">
+        <div className="col-lg-8">
+          <div className="card border-0 shadow-sm h-100">
             <div className="card-body p-4">
               <h4 className="fw-bold mb-4">Contact Information</h4>
               
               <div className="d-flex mb-4">
                 <div className="flex-shrink-0">
                   <div className="bg-warning rounded-circle d-flex align-items-center justify-content-center" style={{width: '50px', height: '50px'}}>
-                    <i className="fas fa-map-marker-alt text-dark"></i>
+                    <MapPin className="text-dark" size={24} />
                   </div>
                 </div>
                 <div className="flex-grow-1 ms-3">
@@ -143,7 +144,7 @@ const Contact = () => {
               <div className="d-flex mb-4">
                 <div className="flex-shrink-0">
                   <div className="bg-warning rounded-circle d-flex align-items-center justify-content-center" style={{width: '50px', height: '50px'}}>
-                    <i className="fas fa-phone text-dark"></i>
+                    <Phone className="text-dark" size={24} />
                   </div>
                 </div>
                 <div className="flex-grow-1 ms-3">
@@ -158,7 +159,7 @@ const Contact = () => {
               <div className="d-flex mb-4">
                 <div className="flex-shrink-0">
                   <div className="bg-warning rounded-circle d-flex align-items-center justify-content-center" style={{width: '50px', height: '50px'}}>
-                    <i className="fas fa-envelope text-dark"></i>
+                    <Mail className="text-dark" size={24} />
                   </div>
                 </div>
                 <div className="flex-grow-1 ms-3">
@@ -173,7 +174,7 @@ const Contact = () => {
               <div className="d-flex">
                 <div className="flex-shrink-0">
                   <div className="bg-warning rounded-circle d-flex align-items-center justify-content-center" style={{width: '50px', height: '50px'}}>
-                    <i className="fas fa-clock text-dark"></i>
+                    <Clock className="text-dark" size={24} />
                   </div>
                 </div>
                 <div className="flex-grow-1 ms-3">
@@ -186,9 +187,11 @@ const Contact = () => {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="card border-0 shadow-sm">
-            <div className="card-body p-4 text-center">
+        <div className="col-lg-4">
+          <div className="card border-0 shadow-sm h-100">
+            <div className="card-body p-4 text-center d-flex flex-column justify-content-center">
               <h5 className="fw-bold mb-3">Follow Us</h5>
               <div className="d-flex justify-content-center gap-3">
                 <a href="#" className="btn btn-outline-warning btn-sm">
@@ -204,22 +207,6 @@ const Contact = () => {
                   <Facebook size={18} />
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-5">
-        <div className="card border-0 shadow-sm">
-          <div className="card-body p-0">
-            <div className="ratio ratio-21x9">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571842485!2d72.74109995625!3d19.08218205000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647845234567!5m2!1sen!2sin"
-                style={{border: 0}}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
             </div>
           </div>
         </div>
