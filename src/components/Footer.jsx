@@ -52,11 +52,15 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-lg-3 col-md-6 mb-4">
-            <h6 className="fw-bold mb-3 text-white">Contact Info</h6>
-            <div className="text-white-50">
-              <p><i className="fas fa-map-marker-alt me-2"></i>Mumbai, India</p>
-              <p><i className="fas fa-phone me-2"></i>+91 93000 93000</p>
-              <p><i className="fas fa-envelope me-2"></i>info@93cars.com</p>
+            <h6 className="fw-bold mb-3 text-white">Contact Us</h6>
+            <div className="text-white-50 small">
+              <p><i className="mb-2"></i>
+                 CARS93 INFOTECH PRIVATE LIMITED
+                 Benguluru, Karnataka, India</p>
+              <p><i className="fas fa-phone mb-2"></i>
+                 +91 7995134988</p>
+              <p><i className="fas fa-envelope mb-2"></i>
+                 contact@93cars.com</p>
             </div>
           </div>
         </div>

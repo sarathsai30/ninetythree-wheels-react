@@ -2,15 +2,15 @@
 [
   {
     "id": "car001",
-    "name": "Hyundai Creta",
-    "brand": "Hyundai",
-    "model": "Creta SX",
+    "name": "Maruti Swift Dzire",
+    "brand": "Maruti Suzuki",
+    "model": "Dzire LXi",
     "fuelType": "Petrol",
     "transmission": "Automatic",
-    "bodyType": "SUV",
-    "price": 1750000,
-    "mileage": "17.4 kmpl",
-    "engine": "1497 cc",
+    "bodyType": "Sedan",
+    "price": 684000,
+    "mileage": "24.79 kmpl",
+    "engine": "1197 cc",
     "seatingCapacity": 5,
     "image": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=400&h=300&fit=crop",
     "gallery": [
@@ -27,7 +27,7 @@
     "location": "Mumbai"
   },
   {
-    "id": "car001d",
+    "id": "car002",
     "name": "Hyundai Creta",
     "brand": "Hyundai",
     "model": "Creta SX(O)",
@@ -53,7 +53,7 @@
     "location": "Delhi"
   },
   {
-    "id": "car002",
+    "id": "car003",
     "name": "Tata Nexon",
     "brand": "Tata",
     "model": "Nexon Fearless+",
@@ -79,7 +79,7 @@
     "location": "Pune"
   },
   {
-    "id": "car002e",
+    "id": "car004",
     "name": "Tata Nexon",
     "brand": "Tata",
     "model": "Nexon EV Empowered",

@@ -1,6 +1,6 @@
 
 import React, { useState, useRef } from 'react';
-import { Youtube, Linkedin, X, Facebook, MapPin, Phone, Mail, Clock, Send, Loader } from 'lucide-react';
+import { Youtube, Linkedin, X, Instagram, MapPin, Phone, Mail, Clock, Send, Loader } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from "@/components/ui/sonner";
 
@@ -170,9 +170,11 @@ const Contact = () => {
                 <div className="flex-grow-1 ms-3">
                   <h6 className="fw-bold">Address</h6>
                   <p className="text-muted mb-0">
-                    123 Car Street, Auto Nagar<br />
-                    Mumbai, Maharashtra 400001<br />
-                    India
+                    CARS93 INFOTECH PRIVATE LIMITED<br />
+                    WorkFlo, Ranka Junction, Property No.224<br />
+                    3rd Floor, #80/3, Vijinpur Village, Old<br />
+                    Madras Road, KR Puram, Hobli,<br />
+                    Benguluru, KA, 560016, India.
                   </p>
                 </div>
               </div>
@@ -186,7 +188,7 @@ const Contact = () => {
                 <div className="flex-grow-1 ms-3">
                   <h6 className="fw-bold">Phone</h6>
                   <p className="text-muted mb-0">
-                    +91 93000 93000<br />
+                    +91 7995134988<br />
                     +91 93001 93001
                   </p>
                 </div>
@@ -207,6 +209,7 @@ const Contact = () => {
                 </div>
               </div>
 
+             {/*
               <div className="d-flex">
                 <div className="flex-shrink-0">
                   <div className="bg-warning rounded-circle d-flex align-items-center justify-content-center" style={{width: '50px', height: '50px'}}>
@@ -221,26 +224,43 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
+              */}
             </div>
           </div>
         </div>
+        
 
         <div className="col-lg-4">
           <div className="card border-0 shadow-sm h-100">
             <div className="card-body p-4 text-center d-flex flex-column justify-content-center">
               <h5 className="fw-bold mb-3">Follow Us</h5>
               <div className="d-flex justify-content-center gap-3">
-                <a href="#" className="btn btn-outline-warning btn-sm">
+                <a
+                 href="https://youtube.com/@93carsofficial?si=s3gG9SkUnhrmTgev"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="btn btn-outline-warning btn-sm"
+                 >
                   <Youtube size={18} />
                 </a>
                 <a href="#" className="btn btn-outline-warning btn-sm">
                   <Linkedin size={18} />
                 </a>
-                <a href="#" className="btn btn-outline-warning btn-sm">
+                <a 
+                 href="https://x.com/93CarsOfficial?t=YsvlX-gYA-V57xUvSWqLfw&s=09"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="btn btn-outline-warning btn-sm"
+                 >
                   <X size={18} />
                 </a>
-                <a href="#" className="btn btn-outline-warning btn-sm">
-                  <Facebook size={18} />
+                <a 
+                 href="https://www.instagram.com/93carsofficial?igsh=MW45ZnM4aHh3MGY1cg=="
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="btn btn-outline-warning btn-sm"
+                 >
+                  <Instagram size={18} />
                 </a>
               </div>
             </div>
