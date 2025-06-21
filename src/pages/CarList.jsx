@@ -83,9 +83,9 @@ const CarList = () => {
       }
     });
 
-    // Remove duplicates by name (keep first occurrence after sorting)
+    // Remove duplicates by ID (keep first occurrence after sorting)
     const uniqueFiltered = filtered.reduce((acc, car) => {
-      if (!acc.find(existingCar => existingCar.name === car.name)) {
+      if (!acc.find(existingCar => existingCar.id === car.id)) {
         acc.push(car);
       }
       return acc;
