@@ -11,8 +11,11 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Get featured cars (first 3)
-    setFeaturedCars(carsData.slice(0, 3));
+   // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
+   const mainVariantCars = carsData.filter(car => /^car\d{3}$/.test(car.id));
+    
+   // Get featured cars (first 3 main variants)
+   setFeaturedCars(mainVariantCars.slice(0, 3));
     
     // Get unique brands
     const uniqueBrands = [...new Set(carsData.map(car => car.brand))];

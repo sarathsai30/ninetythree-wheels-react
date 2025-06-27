@@ -188,8 +188,8 @@ const Contact = () => {
                 <div className="flex-grow-1 ms-3">
                   <h6 className="fw-bold">Phone</h6>
                   <p className="text-muted mb-0">
-                    +91 7995134988<br />
-                    +91 93001 93001
+                    +91 7026433985<br />
+                  
                   </p>
                 </div>
               </div>
