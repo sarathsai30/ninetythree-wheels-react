@@ -4,7 +4,26 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="position-relative overflow-hidden" style={{ minHeight: '60vh', backgroundColor: '#3b82f6' }}>
+    <section 
+      className="position-relative overflow-hidden" 
+      style={{ 
+        minHeight: '60vh', 
+        backgroundColor: '#3b82f6',
+        backgroundImage: 'url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Overlay for better text readability */}
+      <div 
+        className="position-absolute top-0 start-0 w-100 h-100" 
+        style={{ 
+          backgroundColor: 'rgba(59, 130, 246, 0.8)',
+          zIndex: 1 
+        }}
+      ></div>
+      
       <div className="container position-relative text-white d-flex align-items-center" style={{ minHeight: '60vh', zIndex: 2 }}>
         <div className="row">
           <div className="col-lg-8">

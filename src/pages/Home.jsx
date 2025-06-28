@@ -7,7 +7,7 @@ import QuickSearch from '../components/QuickSearch';
 import FeaturedCars from '../components/FeaturedCars';
 import PopularBrands from '../components/PopularBrands';
 import VideoSection from '../components/VideoSection';
-// import BlogSection from '../components/BlogSection';
+import BlogSection from '../components/BlogSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 
 const Home = () => {
@@ -17,10 +17,9 @@ const Home = () => {
 
   useEffect(() => {
     // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
-    const mainVariantCars = carsData.filter(car => /^car\d{3}$/.test(car.id));
-    
+    const mainVariantCars = carsData.filter(car => /^\D+\d+$/.test(car.id));
     // Get featured cars (first 3 main variants)
-    setFeaturedCars(mainVariantCars.slice(0, 3));
+    setFeaturedCars(mainVariantCars.slice(0, 8));
     
     // Get unique brands
     const uniqueBrands = [...new Set(carsData.map(car => car.brand))];
@@ -39,6 +38,7 @@ const Home = () => {
       <FeaturedCars featuredCars={featuredCars} />
       <PopularBrands brands={brands} onBrandClick={handleBrandClick} />
       <VideoSection />
+      {/* <BlogSection /> */}
       <WhyChooseUs />
     </div>
   );

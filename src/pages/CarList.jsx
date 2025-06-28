@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import CarCard from '../components/CarCard';
@@ -8,8 +7,7 @@ import filtersData from '../data/filters.json';
 
 const CarList = () => {
   const [searchParams] = useSearchParams();
-  const [cars, setCars] = useState(carsData);
-  const [filteredCars, setFilteredCars] = useState(carsData);
+  const [filteredCars, setFilteredCars] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedBrand, setSelectedBrand] = useState('');
   const [selectedFuelType, setSelectedFuelType] = useState('');
@@ -25,30 +23,41 @@ const CarList = () => {
     }
   }, [searchParams]);
 
+  // Apply all filters whenever any filter changes
   useEffect(() => {
-    let filtered = cars;
+    console.log('Applying filters:', {
+      searchTerm,
+      selectedBrand,
+      selectedFuelType,
+      selectedBodyType,
+      priceRange
+    });
 
-    // Search filter
-    if (searchTerm) {
+    // let filtered = [...carsData];
+    let filtered = carsData.filter(car => /^\D+\d+$/.test(car.id));
+
+    // Search filter - check name, brand, and model
+    if (searchTerm.trim()) {
+      const searchLower = searchTerm.toLowerCase().trim();
       filtered = filtered.filter(car => 
-        car.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.model.toLowerCase().includes(searchTerm.toLowerCase())
+        car.name.toLowerCase().includes(searchLower) ||
+        car.brand.toLowerCase().includes(searchLower) ||
+        car.model.toLowerCase().includes(searchLower)
       );
     }
 
     // Brand filter
-    if (selectedBrand) {
+    if (selectedBrand && selectedBrand !== '') {
       filtered = filtered.filter(car => car.brand === selectedBrand);
     }
 
     // Fuel type filter
-    if (selectedFuelType) {
+    if (selectedFuelType && selectedFuelType !== '') {
       filtered = filtered.filter(car => car.fuelType === selectedFuelType);
     }
 
     // Body type filter
-    if (selectedBodyType) {
+    if (selectedBodyType && selectedBodyType !== '') {
       filtered = filtered.filter(car => car.bodyType === selectedBodyType);
     }
 
@@ -56,6 +65,8 @@ const CarList = () => {
     filtered = filtered.filter(car => 
       car.price >= priceRange[0] && car.price <= priceRange[1]
     );
+
+    console.log('Filtered cars before sorting:', filtered.length);
 
     // Sort cars
     filtered.sort((a, b) => {
@@ -73,8 +84,17 @@ const CarList = () => {
       }
     });
 
-    setFilteredCars(filtered);
-  }, [searchTerm, selectedBrand, selectedFuelType, selectedBodyType, priceRange, sortBy, cars]);
+    // Remove duplicates by ID (keep first occurrence after sorting)
+    const uniqueFiltered = filtered.reduce((acc, car) => {
+      if (!acc.find(existingCar => existingCar.id === car.id)) {
+        acc.push(car);
+      }
+      return acc;
+    }, []);
+
+    console.log('Final filtered cars:', uniqueFiltered.length);
+    setFilteredCars(uniqueFiltered);
+  }, [searchTerm, selectedBrand, selectedFuelType, selectedBodyType, priceRange, sortBy]);
 
   const clearFilters = () => {
     setSearchTerm('');
@@ -87,24 +107,11 @@ const CarList = () => {
     window.history.replaceState({}, '', '/cars');
   };
 
-  const getUniqueCarsByName = (carList) => {
-    const unique = carList.reduce((acc, car) => {
-      if (!acc[car.name]) {
-        acc[car.name] = car;
-      }
-      return acc;
-    }, {});
-    return Object.values(unique);
-  };
-  
-  const uniqueFilteredCars = getUniqueCarsByName(filteredCars);
-
   return (
     <div className="container py-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <div>
-          <h1 className="fw-bold">New Cars for Sale</h1>
-          <p className="text-muted">Found {uniqueFilteredCars.length} models matching your criteria</p>
+          <p className="text-muted">Found {filteredCars.length} models matching your criteria</p>
         </div>
         <div className="d-flex gap-2">
           <select 
@@ -142,7 +149,7 @@ const CarList = () => {
         filters={filtersData}
       />
 
-      {uniqueFilteredCars.length === 0 ? (
+      {filteredCars.length === 0 ? (
         <div className="text-center py-5">
           <div className="mb-4">
             <i className="fas fa-car fa-3x text-muted"></i>
@@ -155,7 +162,7 @@ const CarList = () => {
         </div>
       ) : (
         <div className="row">
-          {uniqueFilteredCars.map(car => (
+          {filteredCars.map(car => (
             <CarCard key={car.id} car={car} />
           ))}
         </div>
