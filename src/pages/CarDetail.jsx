@@ -148,10 +148,10 @@ const CarDetail = () => {
                         <td className="fw-semibold">Model</td>
                         <td>{car.model}</td>
                       </tr>
-                      <tr>
+                      {/* <tr>
                         <td className="fw-semibold">Year</td>
                         <td>{car.year}</td>
-                      </tr>
+                      </tr> */}
                       <tr>
                         <td className="fw-semibold">Body Type</td>
                         <td>{car.bodyType}</td>
@@ -166,7 +166,7 @@ const CarDetail = () => {
                 <div className="col-md-6">
                   <table className="table table-borderless">
                     <tbody>
-                      <tr>
+                      {/* <tr>
                         <td className="fw-semibold">KM Driven</td>
                         <td>{car.kmDriven.toLocaleString()} km</td>
                       </tr>
@@ -177,7 +177,7 @@ const CarDetail = () => {
                       <tr>
                         <td className="fw-semibold">Location</td>
                         <td>{car.location}</td>
-                      </tr>
+                      </tr> */}
                       <tr>
                         <td className="fw-semibold">Seating</td>
                         <td>{car.seatingCapacity} Seater</td>
