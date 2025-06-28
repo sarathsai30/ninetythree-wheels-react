@@ -1967,32 +1967,6 @@
   },
   
   {
-    "id": "car004",
-    "name": "Tata Nexon",
-    "brand": "Tata",
-    "model": "Nexon EV Empowered",
-    "fuelType": "Electric",
-    "transmission": "Automatic",
-    "bodyType": "SUV",
-    "price": 1789000,
-    "mileage": "465 km/charge",
-    "engine": "Electric Motor",
-    "seatingCapacity": 5,
-    "image": "https://images.unsplash.com/photo-1626012354119-c6036c64b584?w=400&h=300&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1626012354119-c6036c64b584?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1537984822441-cff330075342?w=800&h=600&fit=crop"
-    ],
-    "emi": "₹32,420/month",
-    "description": "The Tata Nexon EV Empowered is a long-range electric SUV, packed with features for a modern driving experience.",
-    "features": ["Fast Charging", "V2L and V2V charging", "12.3-inch Touchscreen", "JBL Audio System", "Arcade.ev App Suite"],
-    "year": 2024,
-    "kmDriven": 0,
-    "owner": "First",
-    "location": "Bangalore"
-  },
-  {
     "id": "car003K",
     "name": "Tata Nexon",
     "brand": "Tata",
@@ -3135,6 +3109,32 @@
     "kmDriven": 0,
     "owner": "First",
     "location": "Delhi"
+  },
+  {
+    "id": "car003Aa3",
+    "name": "Tata Nexon",
+    "brand": "Tata",
+    "model": "Nexon EV Empowered",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "bodyType": "SUV",
+    "price": 1789000,
+    "mileage": "465 km/charge",
+    "engine": "Electric Motor",
+    "seatingCapacity": 5,
+    "image": "https://images.unsplash.com/photo-1626012354119-c6036c64b584?w=400&h=300&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1626012354119-c6036c64b584?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1537984822441-cff330075342?w=800&h=600&fit=crop"
+    ],
+    "emi": "₹32,420/month",
+    "description": "The Tata Nexon EV Empowered is a long-range electric SUV, packed with features for a modern driving experience.",
+    "features": ["Fast Charging", "V2L and V2V charging", "12.3-inch Touchscreen", "JBL Audio System", "Arcade.ev App Suite"],
+    "year": 2024,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Bangalore"
   },
   
   {
