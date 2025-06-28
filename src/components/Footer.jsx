@@ -58,7 +58,7 @@ const Footer = () => {
                  CARS93 INFOTECH PRIVATE LIMITED
                  Benguluru, Karnataka, India</p>
               <p><i className="fas fa-phone mb-2"></i>
-                 +91 7995134988</p>
+                 +91 7026433985</p>
               <p><i className="fas fa-envelope mb-2"></i>
                  contact@93cars.com</p>
             </div>

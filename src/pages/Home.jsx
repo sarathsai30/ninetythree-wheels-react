@@ -7,6 +7,7 @@ import QuickSearch from '../components/QuickSearch';
 import FeaturedCars from '../components/FeaturedCars';
 import PopularBrands from '../components/PopularBrands';
 import VideoSection from '../components/VideoSection';
+import BlogSection from '../components/BlogSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 
 const Home = () => {
@@ -38,6 +39,7 @@ const Home = () => {
       <FeaturedCars featuredCars={featuredCars} />
       <PopularBrands brands={brands} onBrandClick={handleBrandClick} />
       <VideoSection />
+      <BlogSection />
       <WhyChooseUs />
     </div>
   );
