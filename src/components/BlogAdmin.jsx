@@ -1,10 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
-import { Trash2, Plus, Edit3, Download } from 'lucide-react';
-import blogsData from '../data/blogs.json';
+import { Trash2, Plus, Edit3, RefreshCw } from 'lucide-react';
+import { blogService } from '../services/blogService';
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [isAddingBlog, setIsAddingBlog] = useState(false);
   const [editingBlogId, setEditingBlogId] = useState(null);
   const [newBlog, setNewBlog] = useState({
@@ -13,23 +14,41 @@ const BlogAdmin = () => {
     videoUrl: '',
     platform: 'youtube'
   });
+  const [operationLoading, setOperationLoading] = useState(false);
 
-  // Load blogs from JSON file on component mount
+  // Load blogs from Firebase on component mount
   useEffect(() => {
-    setBlogs(blogsData);
+    fetchBlogs();
   }, []);
 
-  const handleAddBlog = () => {
+  const fetchBlogs = async () => {
+    try {
+      setLoading(true);
+      const fetchedBlogs = await blogService.getAllBlogs();
+      setBlogs(fetchedBlogs);
+    } catch (error) {
+      console.error('Failed to fetch blogs:', error);
+      alert('Failed to load blogs. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleAddBlog = async () => {
     if (newBlog.title.trim() && newBlog.content.trim()) {
-      const blog = {
-        id: Date.now(),
-        ...newBlog,
-        createdAt: new Date().toISOString()
-      };
-      const updatedBlogs = [blog, ...blogs];
-      setBlogs(updatedBlogs);
-      setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
-      setIsAddingBlog(false);
+      try {
+        setOperationLoading(true);
+        await blogService.addBlog(newBlog);
+        setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
+        setIsAddingBlog(false);
+        await fetchBlogs(); // Refresh the list
+        alert('Blog added successfully!');
+      } catch (error) {
+        console.error('Failed to add blog:', error);
+        alert('Failed to add blog. Please try again.');
+      } finally {
+        setOperationLoading(false);
+      }
     }
   };
 
@@ -43,35 +62,36 @@ const BlogAdmin = () => {
     });
   };
 
-  const handleUpdateBlog = () => {
-    const updatedBlogs = blogs.map(blog => 
-      blog.id === editingBlogId 
-        ? { ...blog, ...newBlog, updatedAt: new Date().toISOString() }
-        : blog
-    );
-    setBlogs(updatedBlogs);
-    setEditingBlogId(null);
-    setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
-  };
-
-  const handleDeleteBlog = (blogId) => {
-    if (window.confirm('Are you sure you want to delete this blog post?')) {
-      const updatedBlogs = blogs.filter(blog => blog.id !== blogId);
-      setBlogs(updatedBlogs);
+  const handleUpdateBlog = async () => {
+    try {
+      setOperationLoading(true);
+      await blogService.updateBlog(editingBlogId, newBlog);
+      setEditingBlogId(null);
+      setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
+      await fetchBlogs(); // Refresh the list
+      alert('Blog updated successfully!');
+    } catch (error) {
+      console.error('Failed to update blog:', error);
+      alert('Failed to update blog. Please try again.');
+    } finally {
+      setOperationLoading(false);
     }
   };
 
-  const handleDownloadBlogs = () => {
-    const dataStr = JSON.stringify(blogs, null, 2);
-    const blob = new Blob([dataStr], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'blogs.json';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
+  const handleDeleteBlog = async (blogId) => {
+    if (window.confirm('Are you sure you want to delete this blog post?')) {
+      try {
+        setOperationLoading(true);
+        await blogService.deleteBlog(blogId);
+        await fetchBlogs(); // Refresh the list
+        alert('Blog deleted successfully!');
+      } catch (error) {
+        console.error('Failed to delete blog:', error);
+        alert('Failed to delete blog. Please try again.');
+      } finally {
+        setOperationLoading(false);
+      }
+    }
   };
 
   const cancelEdit = () => {
@@ -80,21 +100,36 @@ const BlogAdmin = () => {
     setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
   };
 
+  if (loading) {
+    return (
+      <div className="container py-4">
+        <div className="text-center">
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <p className="mt-2">Loading blogs...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="container py-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold">Blog Management</h2>
         <div className="d-flex gap-2">
           <button 
-            className="btn btn-success d-flex align-items-center gap-2"
-            onClick={handleDownloadBlogs}
+            className="btn btn-outline-secondary d-flex align-items-center gap-2"
+            onClick={fetchBlogs}
+            disabled={operationLoading}
           >
-            <Download size={18} />
-            Download blogs.json
+            <RefreshCw size={18} />
+            Refresh
           </button>
           <button 
             className="btn btn-primary d-flex align-items-center gap-2"
             onClick={() => setIsAddingBlog(true)}
+            disabled={operationLoading}
           >
             <Plus size={18} />
             Add New Blog
@@ -102,16 +137,11 @@ const BlogAdmin = () => {
         </div>
       </div>
 
-      <div className="alert alert-warning mb-4">
-        <h5 className="alert-heading">Important: Making Changes Live</h5>
+      <div className="alert alert-success mb-4">
+        <h5 className="alert-heading">Firebase Integration Active</h5>
         <p>
-          After making changes to blogs, click <strong>"Download blogs.json"</strong> to save your changes. 
-          To make these changes visible to all website visitors, you must manually replace the 
-          <code>src/data/blogs.json</code> file with your downloaded file.
-        </p>
-        <hr />
-        <p className="mb-0">
-          <strong>Note:</strong> Changes made here are temporary until you update the actual blogs.json file in the project.
+          Your blogs are now stored in Firebase Firestore and will be instantly visible to all website visitors. 
+          Any changes you make here will appear immediately on the website.
         </p>
       </div>
 
@@ -130,6 +160,7 @@ const BlogAdmin = () => {
                 value={newBlog.title}
                 onChange={(e) => setNewBlog({...newBlog, title: e.target.value})}
                 placeholder="Enter blog title"
+                disabled={operationLoading}
               />
             </div>
             <div className="mb-3">
@@ -140,6 +171,7 @@ const BlogAdmin = () => {
                 value={newBlog.content}
                 onChange={(e) => setNewBlog({...newBlog, content: e.target.value})}
                 placeholder="Write your blog content here..."
+                disabled={operationLoading}
               />
             </div>
             <div className="row">
@@ -151,6 +183,7 @@ const BlogAdmin = () => {
                   value={newBlog.videoUrl}
                   onChange={(e) => setNewBlog({...newBlog, videoUrl: e.target.value})}
                   placeholder="https://youtube.com/watch?v=..."
+                  disabled={operationLoading}
                 />
               </div>
               <div className="col-md-4">
@@ -159,6 +192,7 @@ const BlogAdmin = () => {
                   className="form-select"
                   value={newBlog.platform}
                   onChange={(e) => setNewBlog({...newBlog, platform: e.target.value})}
+                  disabled={operationLoading}
                 >
                   <option value="youtube">YouTube</option>
                   <option value="linkedin">LinkedIn</option>
@@ -170,12 +204,21 @@ const BlogAdmin = () => {
               <button 
                 className="btn btn-success me-2"
                 onClick={editingBlogId ? handleUpdateBlog : handleAddBlog}
+                disabled={operationLoading}
               >
-                {editingBlogId ? 'Update Blog' : 'Add Blog'}
+                {operationLoading ? (
+                  <>
+                    <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                    {editingBlogId ? 'Updating...' : 'Adding...'}
+                  </>
+                ) : (
+                  editingBlogId ? 'Update Blog' : 'Add Blog'
+                )}
               </button>
               <button 
                 className="btn btn-secondary"
                 onClick={cancelEdit}
+                disabled={operationLoading}
               >
                 Cancel
               </button>
@@ -202,12 +245,14 @@ const BlogAdmin = () => {
                       <button
                         className="btn btn-sm btn-outline-primary"
                         onClick={() => handleEditBlog(blog)}
+                        disabled={operationLoading}
                       >
                         <Edit3 size={14} />
                       </button>
                       <button
                         className="btn btn-sm btn-outline-danger"
                         onClick={() => handleDeleteBlog(blog.id)}
+                        disabled={operationLoading}
                       >
                         <Trash2 size={14} />
                       </button>

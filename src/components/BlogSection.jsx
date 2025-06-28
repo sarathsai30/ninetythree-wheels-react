@@ -1,14 +1,29 @@
 
 import React, { useState, useEffect } from 'react';
 import { Youtube, Linkedin, Twitter } from 'lucide-react';
-import blogsData from '../data/blogs.json';
+import { blogService } from '../services/blogService';
 
 const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Load blogs from JSON file
-    setBlogs(blogsData);
+    const fetchBlogs = async () => {
+      try {
+        setLoading(true);
+        const fetchedBlogs = await blogService.getAllBlogs();
+        setBlogs(fetchedBlogs);
+        setError(null);
+      } catch (err) {
+        console.error('Failed to fetch blogs:', err);
+        setError('Failed to load blogs');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
   }, []);
 
   const getPlatformIcon = (platform) => {
@@ -23,6 +38,33 @@ const BlogSection = () => {
         return <Youtube size={16} className="text-danger" />;
     }
   };
+
+  if (loading) {
+    return (
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="text-center">
+            <div className="spinner-border text-warning" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <p className="mt-2 text-muted">Loading blogs...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="text-center">
+            <p className="text-danger">{error}</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   if (blogs.length === 0) {
     return null; // Don't render section if no blogs
