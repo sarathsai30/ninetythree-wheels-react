@@ -1,15 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { Youtube, Linkedin, Twitter } from 'lucide-react';
+import blogsData from '../data/blogs.json';
 
 const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    const savedBlogs = localStorage.getItem('93cars-blogs');
-    if (savedBlogs) {
-      setBlogs(JSON.parse(savedBlogs));
-    }
+    // Load blogs from JSON file
+    setBlogs(blogsData);
   }, []);
 
   const getPlatformIcon = (platform) => {

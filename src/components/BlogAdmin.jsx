@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import { Trash2, Plus, Edit3, Eye, EyeOff } from 'lucide-react';
+import { Trash2, Plus, Edit3, Download } from 'lucide-react';
+import blogsData from '../data/blogs.json';
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState([]);
@@ -13,18 +14,10 @@ const BlogAdmin = () => {
     platform: 'youtube'
   });
 
-  // Load blogs from localStorage on component mount
+  // Load blogs from JSON file on component mount
   useEffect(() => {
-    const savedBlogs = localStorage.getItem('93cars-blogs');
-    if (savedBlogs) {
-      setBlogs(JSON.parse(savedBlogs));
-    }
+    setBlogs(blogsData);
   }, []);
-
-  // Save blogs to localStorage whenever blogs change
-  useEffect(() => {
-    localStorage.setItem('93cars-blogs', JSON.stringify(blogs));
-  }, [blogs]);
 
   const handleAddBlog = () => {
     if (newBlog.title.trim() && newBlog.content.trim()) {
@@ -33,7 +26,8 @@ const BlogAdmin = () => {
         ...newBlog,
         createdAt: new Date().toISOString()
       };
-      setBlogs([blog, ...blogs]);
+      const updatedBlogs = [blog, ...blogs];
+      setBlogs(updatedBlogs);
       setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
       setIsAddingBlog(false);
     }
@@ -50,19 +44,34 @@ const BlogAdmin = () => {
   };
 
   const handleUpdateBlog = () => {
-    setBlogs(blogs.map(blog => 
+    const updatedBlogs = blogs.map(blog => 
       blog.id === editingBlogId 
         ? { ...blog, ...newBlog, updatedAt: new Date().toISOString() }
         : blog
-    ));
+    );
+    setBlogs(updatedBlogs);
     setEditingBlogId(null);
     setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
   };
 
   const handleDeleteBlog = (blogId) => {
     if (window.confirm('Are you sure you want to delete this blog post?')) {
-      setBlogs(blogs.filter(blog => blog.id !== blogId));
+      const updatedBlogs = blogs.filter(blog => blog.id !== blogId);
+      setBlogs(updatedBlogs);
     }
+  };
+
+  const handleDownloadBlogs = () => {
+    const dataStr = JSON.stringify(blogs, null, 2);
+    const blob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'blogs.json';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
   };
 
   const cancelEdit = () => {
@@ -75,13 +84,35 @@ const BlogAdmin = () => {
     <div className="container py-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold">Blog Management</h2>
-        <button 
-          className="btn btn-primary d-flex align-items-center gap-2"
-          onClick={() => setIsAddingBlog(true)}
-        >
-          <Plus size={18} />
-          Add New Blog
-        </button>
+        <div className="d-flex gap-2">
+          <button 
+            className="btn btn-success d-flex align-items-center gap-2"
+            onClick={handleDownloadBlogs}
+          >
+            <Download size={18} />
+            Download blogs.json
+          </button>
+          <button 
+            className="btn btn-primary d-flex align-items-center gap-2"
+            onClick={() => setIsAddingBlog(true)}
+          >
+            <Plus size={18} />
+            Add New Blog
+          </button>
+        </div>
+      </div>
+
+      <div className="alert alert-warning mb-4">
+        <h5 className="alert-heading">Important: Making Changes Live</h5>
+        <p>
+          After making changes to blogs, click <strong>"Download blogs.json"</strong> to save your changes. 
+          To make these changes visible to all website visitors, you must manually replace the 
+          <code>src/data/blogs.json</code> file with your downloaded file.
+        </p>
+        <hr />
+        <p className="mb-0">
+          <strong>Note:</strong> Changes made here are temporary until you update the actual blogs.json file in the project.
+        </p>
       </div>
 
       {/* Add/Edit Blog Form */}

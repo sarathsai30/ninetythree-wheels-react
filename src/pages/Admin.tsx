@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import carsData from '../data/cars.json';
 import filtersData from '../data/filters.json';
+import blogsData from '../data/blogs.json';
 import { Textarea } from '@/components/ui/textarea';
 import { Download } from 'lucide-react';
 import BlogAdmin from '../components/BlogAdmin';
@@ -10,6 +11,7 @@ import { useAdmin } from '../hooks/useAdmin';
 const datasets = {
     cars: carsData,
     filters: filtersData,
+    blogs: blogsData,
 };
 
 type DatasetKey = keyof typeof datasets;
@@ -123,6 +125,7 @@ const Admin = () => {
                             >
                                 <option value="cars">Car Data (cars.json)</option>
                                 <option value="filters">Filter Data (filters.json)</option>
+                                <option value="blogs">Blog Data (blogs.json)</option>
                             </select>
                             <button className="btn btn-primary d-flex align-items-center gap-2" onClick={handleDownload}>
                                 <Download size={18} />
