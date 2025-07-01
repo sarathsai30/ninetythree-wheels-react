@@ -6445,12 +6445,12 @@
     "mileage": "20.8 kmpl",
     "engine": "999 cc",
     "seatingCapacity": 5,
-    "image": "Volkswagen/virtus1.jpg",
+    "image": "Volkswagen/virtus1.webp",
     "gallery": [
       "/Volkswagen/virtusfullview.jpg",
       "/Volkswagen/virtusside.jpg",
       "/Volkswagen/virtusfront.jpg",
-      "/Volkswagen/virtus2.jpg"
+      "/Volkswagen/virtus2.webp"
     
     ],
     "emi": "₹35,200/month",
@@ -9245,9 +9245,7 @@
     "seatingCapacity": 4,
     "image": "Mahindra/thar123.webp",
     "gallery": [
-      "Mahindra/thar123.webp",
-      "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
+      "Mahindra/thar123.webp"
     ],
     "emi": "₹25,875/month",
     "description": "The Mahindra Thar is a rugged off-roader with a bold presence, powerful performance, and modern tech features for adventures.",
