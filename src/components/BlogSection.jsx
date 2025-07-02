@@ -39,6 +39,13 @@ const BlogSection = () => {
     }
   };
 
+  // Strip HTML tags and get plain text for preview
+  const stripHtml = (html) => {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || '';
+  };
+
   if (loading) {
     return (
       <section className="py-5 bg-light">
@@ -83,12 +90,14 @@ const BlogSection = () => {
               <div className="card h-100 shadow-sm">
                 <div className="card-body">
                   <h5 className="card-title fw-bold">{blog.title}</h5>
-                  <p className="card-text text-muted">
-                    {blog.content.length > 1000
-                      ? `${blog.content.substring(0, 1000)}...` 
-                      : blog.content
-                    }
-                  </p>
+                  <div 
+                    className="card-text text-muted"
+                    dangerouslySetInnerHTML={{ 
+                      __html: blog.content.length > 1000 
+                        ? `${blog.content.substring(0, 1000)}...` 
+                        : blog.content 
+                    }}
+                  />
                   {blog.videoUrl && (
                     <div className="mb-3">
                       <a 

@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw } from 'lucide-react';
 import { blogService } from '../services/blogService';
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState([]);
@@ -15,6 +17,25 @@ const BlogAdmin = () => {
     platform: 'youtube'
   });
   const [operationLoading, setOperationLoading] = useState(false);
+
+  // Rich text editor configuration
+  const quillModules = {
+    toolbar: [
+      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+      ['bold', 'italic', 'underline', 'strike'],
+      [{ 'color': [] }, { 'background': [] }],
+      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+      [{ 'indent': '-1'}, { 'indent': '+1' }],
+      ['link', 'image'],
+      ['clean']
+    ],
+  };
+
+  const quillFormats = [
+    'header', 'bold', 'italic', 'underline', 'strike',
+    'color', 'background', 'list', 'bullet', 'indent',
+    'link', 'image'
+  ];
 
   // Load blogs from Firebase on component mount
   useEffect(() => {
@@ -100,6 +121,13 @@ const BlogAdmin = () => {
     setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
   };
 
+  // Strip HTML tags for preview
+  const stripHtml = (html) => {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || '';
+  };
+
   if (loading) {
     return (
       <div className="container py-4">
@@ -165,14 +193,18 @@ const BlogAdmin = () => {
             </div>
             <div className="mb-3">
               <label className="form-label">Content *</label>
-              <textarea
-                className="form-control"
-                rows="5"
-                value={newBlog.content}
-                onChange={(e) => setNewBlog({...newBlog, content: e.target.value})}
-                placeholder="Write your blog content here..."
-                disabled={operationLoading}
-              />
+              <div style={{ height: '300px' }}>
+                <ReactQuill
+                  theme="snow"
+                  value={newBlog.content}
+                  onChange={(content) => setNewBlog({...newBlog, content})}
+                  modules={quillModules}
+                  formats={quillFormats}
+                  placeholder="Write your blog content here..."
+                  style={{ height: '240px' }}
+                  readOnly={operationLoading}
+                />
+              </div>
             </div>
             <div className="row">
               <div className="col-md-8">
@@ -258,7 +290,9 @@ const BlogAdmin = () => {
                       </button>
                     </div>
                   </div>
-                  <p className="card-text">{blog.content.substring(0, 150)}...</p>
+                  <p className="card-text">
+                    {stripHtml(blog.content).substring(0, 150)}...
+                  </p>
                   {blog.videoUrl && (
                     <div className="mb-2">
                       <span className="badge bg-secondary me-2">{blog.platform}</span>
