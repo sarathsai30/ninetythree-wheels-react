@@ -16,7 +16,7 @@ const CarCard = ({ car }) => {
         <div className="position-relative overflow-hidden">
           <img 
             src={car.image} 
-            className="card-img-top" 
+            className="card-img-top border border-2 border-secondary" 
             alt={car.name}
             style={{ height: '220px', objectFit: 'cover' }}
           />
