@@ -1,7 +1,44 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { videoService } from '../services/videoService';
 
 const VideoSection = () => {
+  const [videos, setVideos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetchVideos();
+  }, []);
+
+  const fetchVideos = async () => {
+    try {
+      const fetchedVideos = await videoService.getVideos();
+      setVideos(fetchedVideos);
+    } catch (error) {
+      console.error('Error fetching videos:', error);
+      // Fallback to default video if fetch fails
+      setVideos([{
+        id: 'default',
+        title: 'Discover the 93cars Difference',
+        embedUrl: 'https://www.youtube.com/embed/aVLYr_E1tJQ',
+        description: 'Learn about our services'
+      }]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  if (isLoading) {
+    return (
+      <section className="py-5">
+        <div className="container">
+          <div className="text-center">Loading videos...</div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-5">
       <div className="container">
@@ -13,15 +50,49 @@ const VideoSection = () => {
             </p>
           </div>
           <div className="col-lg-6">
-            <div className="ratio ratio-16x9 rounded overflow-hidden shadow-lg">
-              <iframe
-                src="https://www.youtube.com/embed/aVLYr_E1tJQ"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            {videos.length > 0 ? (
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {videos.map((video) => (
+                    <CarouselItem key={video.id}>
+                      <div className="ratio ratio-16x9 rounded overflow-hidden shadow-lg">
+                        <iframe
+                          src={video.embedUrl}
+                          title={video.title}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                      {video.title && (
+                        <div className="mt-3 text-center">
+                          <h6 className="fw-semibold">{video.title}</h6>
+                          {video.description && (
+                            <p className="text-muted small">{video.description}</p>
+                          )}
+                        </div>
+                      )}
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                {videos.length > 1 && (
+                  <>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </>
+                )}
+              </Carousel>
+            ) : (
+              <div className="ratio ratio-16x9 rounded overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.youtube.com/embed/aVLYr_E1tJQ"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            )}
           </div>
         </div>
       </div>

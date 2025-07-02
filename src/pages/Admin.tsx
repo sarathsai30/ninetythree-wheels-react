@@ -6,6 +6,7 @@ import blogsData from '../data/blogs.json';
 import { Textarea } from '@/components/ui/textarea';
 import { Download } from 'lucide-react';
 import BlogAdmin from '../components/BlogAdmin';
+import VideoAdmin from '../components/VideoAdmin';
 import { useAdmin } from '../hooks/useAdmin';
 
 const datasets = {
@@ -110,6 +111,14 @@ const Admin = () => {
                         Blog Management
                     </button>
                 </li>
+                <li className="nav-item">
+                    <button 
+                        className={`nav-link ${activeTab === 'video' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('video')}
+                    >
+                        Video Management
+                    </button>
+                </li>
             </ul>
 
             {/* Tab Content */}
@@ -154,6 +163,8 @@ const Admin = () => {
             )}
 
             {activeTab === 'blog' && <BlogAdmin />}
+
+            {activeTab === 'video' && <VideoAdmin />}
         </div>
     );
 };
