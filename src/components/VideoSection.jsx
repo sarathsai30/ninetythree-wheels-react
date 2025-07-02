@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { videoService } from '../services/videoService';
+import Autoplay from "embla-carousel-autoplay";
 
 const VideoSection = () => {
   const [videos, setVideos] = useState([]);
@@ -51,7 +52,14 @@ const VideoSection = () => {
           </div>
           <div className="col-lg-6">
             {videos.length > 0 ? (
-              <Carousel className="w-full">
+              <Carousel 
+                className="w-full"
+                plugins={[
+                  Autoplay({
+                    delay: 30000,
+                  }),
+                ]}
+              >
                 <CarouselContent>
                   {videos.map((video) => (
                     <CarouselItem key={video.id}>
