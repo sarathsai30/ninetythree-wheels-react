@@ -56,7 +56,7 @@ const VideoSection = () => {
                 className="w-full"
                 plugins={[
                   Autoplay({
-                    delay: 30000,
+                    delay: 10000,
                   }),
                 ]}
               >
