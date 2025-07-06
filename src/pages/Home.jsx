@@ -38,7 +38,7 @@ const Home = () => {
       <FeaturedCars featuredCars={featuredCars} />
       <PopularBrands brands={brands} onBrandClick={handleBrandClick} />
       <VideoSection />
-      <BlogSection />
+      {/*<BlogSection />*/}
       <WhyChooseUs />
     </div>
   );

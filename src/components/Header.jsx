@@ -1,4 +1,4 @@
-
+/*
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -71,4 +71,53 @@ const Header = () => {
   );
 };
 
+export default Header;*/
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
+const Header = () => {
+  const location = useLocation();
+  const isActive = (path) =>
+    location.pathname === path ? 'text-blue-600 font-semibold' : 'text-gray-700';
+
+  return (
+    <header className="bg-white shadow-sm sticky top-0 z-50 h-[105px]">
+      <div className="max-w-[1300px] mx-auto px-6 h-full flex items-center justify-between">
+        
+        {/* Left: Logo + Menu */}
+        <div className="flex items-center space-x-8">
+          {/* Logo */}
+          <Link to="/">
+            <img
+              src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
+              alt="93Cars logo"
+              className="h-20 w-20 object-cover"
+            />
+          </Link>
+
+          {/* Menu Items */}
+          <nav className="flex items-center space-x-5 text-[17px] font-medium">
+            <Link to="/" className={isActive('/')}>Home</Link>
+            <Link to="/cars" className={isActive('/cars')}>Cars</Link>
+            <Link to="/about" className={isActive('/about')}>About</Link>
+            <Link to="/contact" className={isActive('/contact')}>Contact</Link>
+            <Link to="/blog" className={isActive('/blog')}>Blog</Link>
+
+
+          </nav>
+        </div>
+
+        {/* Right: Button */}
+        <Link
+          to="/cars"
+          className="bg-blue-500 hover:bg-blue-600 text-white text-sm px-3 py-[10px] rounded"
+        >
+          Browse Cars
+        </Link>
+      </div>
+    </header>
+  );
+};
+
 export default Header;
+
