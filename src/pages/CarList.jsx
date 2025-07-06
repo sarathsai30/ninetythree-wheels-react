@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import CarCard from '../components/CarCard';
@@ -15,11 +16,28 @@ const CarList = () => {
   const [priceRange, setPriceRange] = useState([filtersData.priceRange.min, filtersData.priceRange.max]);
   const [sortBy, setSortBy] = useState('name');
 
-  // Handle URL parameters for brand filtering
+  // Handle URL parameters for filtering
   useEffect(() => {
+    console.log('URL params changed:', Object.fromEntries(searchParams.entries()));
+    
     const brandFromUrl = searchParams.get('brand');
+    const bodyTypeFromUrl = searchParams.get('bodyType');
+    const minPriceFromUrl = searchParams.get('minPrice');
+    const maxPriceFromUrl = searchParams.get('maxPrice');
+    
     if (brandFromUrl) {
+      console.log('Setting brand from URL:', brandFromUrl);
       setSelectedBrand(brandFromUrl);
+    }
+    
+    if (bodyTypeFromUrl) {
+      console.log('Setting body type from URL:', bodyTypeFromUrl);
+      setSelectedBodyType(bodyTypeFromUrl);
+    }
+    
+    if (minPriceFromUrl && maxPriceFromUrl) {
+      console.log('Setting price range from URL:', minPriceFromUrl, maxPriceFromUrl);
+      setPriceRange([parseInt(minPriceFromUrl), parseInt(maxPriceFromUrl)]);
     }
   }, [searchParams]);
 

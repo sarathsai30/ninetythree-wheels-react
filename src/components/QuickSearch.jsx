@@ -58,22 +58,29 @@ const QuickSearch = () => {
   const handleSearch = () => {
     let queryParams = new URLSearchParams();
     
+    console.log('Search triggered:', { searchType, selectedBudget, selectedVehicleType, selectedBrand });
+    
     if (searchType === 'budget') {
       if (selectedBudget) {
         const [min, max] = selectedBudget.split('-');
         queryParams.append('minPrice', min);
         queryParams.append('maxPrice', max);
+        console.log('Adding price range:', min, max);
       }
       if (selectedVehicleType) {
         queryParams.append('bodyType', selectedVehicleType);
+        console.log('Adding body type:', selectedVehicleType);
       }
     } else if (searchType === 'model') {
       if (selectedBrand) {
         queryParams.append('brand', selectedBrand);
+        console.log('Adding brand:', selectedBrand);
       }
     }
 
-    navigate(`/cars?${queryParams.toString()}`);
+    const searchUrl = `/cars?${queryParams.toString()}`;
+    console.log('Navigating to:', searchUrl);
+    navigate(searchUrl);
   };
 
   const currentBackgroundImage = backgroundImages.length > 0 
