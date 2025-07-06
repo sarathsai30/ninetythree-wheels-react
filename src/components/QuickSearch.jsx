@@ -9,7 +9,6 @@ const QuickSearch = () => {
   const [selectedBudget, setSelectedBudget] = useState('');
   const [selectedVehicleType, setSelectedVehicleType] = useState('');
   const [selectedBrand, setSelectedBrand] = useState('');
-  const [selectedModel, setSelectedModel] = useState('');
   const [backgroundImages, setBackgroundImages] = useState([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const navigate = useNavigate();
@@ -68,12 +67,9 @@ const QuickSearch = () => {
       if (selectedVehicleType) {
         queryParams.append('bodyType', selectedVehicleType);
       }
-    } else {
+    } else if (searchType === 'model') {
       if (selectedBrand) {
         queryParams.append('brand', selectedBrand);
-      }
-      if (selectedModel) {
-        queryParams.append('model', selectedModel);
       }
     }
 
@@ -174,32 +170,19 @@ const QuickSearch = () => {
               </div>
             </>
           ) : (
-            <>
-              <div className="mb-3">
-                <select 
-                  className="form-select"
-                  value={selectedBrand}
-                  onChange={(e) => setSelectedBrand(e.target.value)}
-                  style={{ borderColor: '#ddd' }}
-                >
-                  <option value="">Select Brand</option>
-                  {brands.map(brand => (
-                    <option key={brand} value={brand}>{brand}</option>
-                  ))}
-                </select>
-              </div>
-              <div className="mb-3">
-                <select 
-                  className="form-select"
-                  value={selectedModel}
-                  onChange={(e) => setSelectedModel(e.target.value)}
-                  style={{ borderColor: '#ddd' }}
-                >
-                  <option value="">Select Model</option>
-                  {/* You can populate this based on selected brand */}
-                </select>
-              </div>
-            </>
+            <div className="mb-3">
+              <select 
+                className="form-select"
+                value={selectedBrand}
+                onChange={(e) => setSelectedBrand(e.target.value)}
+                style={{ borderColor: '#ddd' }}
+              >
+                <option value="">Select Brand</option>
+                {brands.map(brand => (
+                  <option key={brand} value={brand}>{brand}</option>
+                ))}
+              </select>
+            </div>
           )}
 
           {/* Search Button */}
