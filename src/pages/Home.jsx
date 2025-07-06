@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import carsData from '../data/cars.json';
 import HeroSection from '../components/HeroSection';
-import QuickSearch from '../components/QuickSearch';
 import FeaturedCars from '../components/FeaturedCars';
 import PopularBrands from '../components/PopularBrands';
 import VideoSection from '../components/VideoSection';
@@ -34,7 +33,6 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
-      <QuickSearch brands={brands} />
       <FeaturedCars featuredCars={featuredCars} />
       <PopularBrands brands={brands} onBrandClick={handleBrandClick} />
       <VideoSection />
