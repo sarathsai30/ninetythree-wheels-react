@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import QuickSearch from './QuickSearch';
 
 const HeroSection = () => {
   return (
@@ -24,23 +25,31 @@ const HeroSection = () => {
         }}
       ></div>
       
-      <div className="container position-relative text-white d-flex align-items-center" style={{ minHeight: '60vh', zIndex: 2 }}>
-        <div className="row">
-          <div className="col-lg-7">
-            <h1 className="display-4 fw-bold mb-4">
-              Find Your Perfect Car with <span className="text-warning">93cars</span>
-            </h1>
-            <p className="lead mb-4">
-              Discover a wide range of quality new cars with transparent pricing, 
-              detailed specifications, and trusted service. Your dream car is just a click away.
-            </p>
-            <div className="d-flex gap-3">
-              <Link to="/cars" className="btn btn-warning btn-lg px-4">
-                Browse Cars
-              </Link>
-              <Link to="/about" className="btn btn-outline-light btn-lg px-4">
-                Learn More
-              </Link>
+      <div className="container position-relative" style={{ minHeight: '60vh', zIndex: 2 }}>
+        <div className="row h-100 align-items-center">
+          {/* Filter Section - Left Side */}
+          <div className="col-lg-4 col-md-5">
+            <QuickSearch />
+          </div>
+          
+          {/* Text Content - Right Side */}
+          <div className="col-lg-8 col-md-7">
+            <div className="text-white text-end">
+              <h1 className="display-4 fw-bold mb-4">
+                Find Your Perfect Car with <span className="text-warning">93cars</span>
+              </h1>
+              <p className="lead mb-4">
+                Discover a wide range of quality new cars with transparent pricing, 
+                detailed specifications, and trusted service. Your dream car is just a click away.
+              </p>
+              <div className="d-flex gap-3 justify-content-end">
+                <Link to="/cars" className="btn btn-warning btn-lg px-4">
+                  Browse Cars
+                </Link>
+                <Link to="/about" className="btn btn-outline-light btn-lg px-4">
+                  Learn More
+                </Link>
+              </div>
             </div>
           </div>
         </div>
