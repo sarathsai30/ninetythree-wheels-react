@@ -26,7 +26,7 @@ const HeroSection = () => {
       
       <div className="container position-relative text-white d-flex align-items-center" style={{ minHeight: '60vh', zIndex: 2 }}>
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-lg-7">
             <h1 className="display-4 fw-bold mb-4">
               Find Your Perfect Car with <span className="text-warning">93cars</span>
             </h1>
