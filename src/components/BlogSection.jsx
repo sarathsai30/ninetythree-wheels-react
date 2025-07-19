@@ -116,13 +116,13 @@ const BlogSection = () => {
                   <div className="d-flex justify-content-between align-items-center mt-3">
                     <div>
                       {blog.content.length > 1000 && (
-                        <button 
+                        <a 
                           onClick={() => toggleReadMore(blog.id)}
                           className="btn btn-link p-0 text-warning fw-bold"
                           style={{ textDecoration: 'none' }}
                         >
                           {expandedBlogs.has(blog.id) ? 'Read Less' : 'Read More'}
-                        </button>
+                        </a>
                       )}
                     </div>
                     <small className="text-muted">
