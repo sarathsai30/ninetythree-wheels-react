@@ -113,15 +113,22 @@ const BlogSection = () => {
                           : blog.content 
                     }}
                   />
-                  {blog.content.length > 1000 && (
-                    <button 
-                      onClick={() => toggleReadMore(blog.id)}
-                      className="btn btn-link p-0 text-warning fw-bold"
-                      style={{ textDecoration: 'none' }}
-                    >
-                      {expandedBlogs.has(blog.id) ? 'Read Less' : 'Read More'}
-                    </button>
-                  )}
+                  <div className="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                      {blog.content.length > 1000 && (
+                        <button 
+                          onClick={() => toggleReadMore(blog.id)}
+                          className="btn btn-link p-0 text-warning fw-bold"
+                          style={{ textDecoration: 'none' }}
+                        >
+                          {expandedBlogs.has(blog.id) ? 'Read Less' : 'Read More'}
+                        </button>
+                      )}
+                    </div>
+                    <small className="text-muted">
+                      {new Date(blog.createdAt).toLocaleDateString()}
+                    </small>
+                  </div>
                   {blog.videoUrl && (
                     <div className="mb-3">
                       <a 
@@ -135,9 +142,6 @@ const BlogSection = () => {
                       </a>
                     </div>
                   )}
-                  <small className="text-muted">
-                    {new Date(blog.createdAt).toLocaleDateString()}
-                  </small>
                 </div>
               </div>
             </div>
