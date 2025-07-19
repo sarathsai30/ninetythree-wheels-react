@@ -1,77 +1,3 @@
-/*
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-
-const Header = () => {
-  const location = useLocation();
-  const logoUrl = '/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png';
-
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light sticky-top">
-      <div className="container">
-        <Link className="navbar-brand" to="/">
-          <img 
-            src={logoUrl} 
-            alt="93cars logo" 
-            style={{ height: '80px', width: '80px', borderRadius: '50%', objectFit: 'cover' }} 
-          />
-        </Link>
-        <button 
-          className="navbar-toggler border-0" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav"
-          style={{ boxShadow: 'none' }}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav me-auto">
-            <li className="nav-item">
-              <Link 
-                className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} 
-                to="/"
-              >
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link 
-                className={`nav-link ${location.pathname === '/cars' ? 'active' : ''}`} 
-                to="/cars"
-              >
-                Cars
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link 
-                className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} 
-                to="/about"
-              >
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link 
-                className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} 
-                to="/contact"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-          <div className="d-flex">
-            <Link to="/cars" className="btn btn-primary me-2">
-              Browse Cars
-            </Link>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-};
-
-export default Header;*/
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -79,22 +5,34 @@ const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
-  const isActive = (path) =>
-    location.pathname === path ? 'text-primary fw-bold' : 'text-dark';
+  const isActive = (path) => location.pathname === path;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-      <div className="container-fluid px-3 px-md-4">
+    <header style={{ 
+      backgroundColor: 'white', 
+      boxShadow: '0 2px 4px rgba(0,0,0,0.1)', 
+      position: 'sticky', 
+      top: 0, 
+      zIndex: 1000,
+      padding: '1rem 0'
+    }}>
+      <div style={{ 
+        maxWidth: '1200px', 
+        margin: '0 auto', 
+        padding: '0 1rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+      }}>
         {/* Logo */}
-        <Link className="navbar-brand" to="/">
+        <Link to="/" style={{ textDecoration: 'none' }}>
           <img
             src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
             alt="93Cars logo"
-            className="d-inline-block"
             style={{ 
               height: '60px', 
               width: '60px', 
@@ -104,84 +42,208 @@ const Header = () => {
           />
         </Link>
 
-        {/* Mobile menu toggle button */}
+        {/* Desktop Navigation */}
+        <nav style={{ 
+          display: 'flex', 
+          alignItems: 'center', 
+          gap: '2rem',
+          '@media (max-width: 768px)': {
+            display: isMenuOpen ? 'flex' : 'none'
+          }
+        }}>
+          <Link 
+            to="/" 
+            style={{ 
+              textDecoration: 'none', 
+              color: isActive('/') ? '#3b82f6' : '#1e293b',
+              fontWeight: isActive('/') ? '600' : '500',
+              fontSize: '16px'
+            }}
+          >
+            Home
+          </Link>
+          <Link 
+            to="/cars" 
+            style={{ 
+              textDecoration: 'none', 
+              color: isActive('/cars') ? '#3b82f6' : '#1e293b',
+              fontWeight: isActive('/cars') ? '600' : '500',
+              fontSize: '16px'
+            }}
+          >
+            Cars
+          </Link>
+          <Link 
+            to="/about" 
+            style={{ 
+              textDecoration: 'none', 
+              color: isActive('/about') ? '#3b82f6' : '#1e293b',
+              fontWeight: isActive('/about') ? '600' : '500',
+              fontSize: '16px'
+            }}
+          >
+            About
+          </Link>
+          <Link 
+            to="/contact" 
+            style={{ 
+              textDecoration: 'none', 
+              color: isActive('/contact') ? '#3b82f6' : '#1e293b',
+              fontWeight: isActive('/contact') ? '600' : '500',
+              fontSize: '16px'
+            }}
+          >
+            Contact
+          </Link>
+          <Link 
+            to="/blog" 
+            style={{ 
+              textDecoration: 'none', 
+              color: isActive('/blog') ? '#3b82f6' : '#1e293b',
+              fontWeight: isActive('/blog') ? '600' : '500',
+              fontSize: '16px'
+            }}
+          >
+            Blog
+          </Link>
+        </nav>
+
+        {/* Mobile Menu Button */}
         <button 
-          className="navbar-toggler border-0 p-1" 
-          type="button" 
           onClick={toggleMenu}
-          aria-controls="navbarNav" 
-          aria-expanded={isMenuOpen}
-          aria-label="Toggle navigation"
-          style={{ boxShadow: 'none', fontSize: '1.2rem' }}
+          style={{
+            display: 'none',
+            '@media (max-width: 768px)': {
+              display: 'block'
+            },
+            background: 'none',
+            border: 'none',
+            fontSize: '1.5rem',
+            cursor: 'pointer',
+            padding: '0.5rem'
+          }}
         >
-          <span className="navbar-toggler-icon"></span>
+          ☰
         </button>
 
-        {/* Navigation menu */}
-        <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link 
-                className={`nav-link px-3 ${isActive('/')}`} 
-                to="/"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link 
-                className={`nav-link px-3 ${isActive('/cars')}`} 
-                to="/cars"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Cars
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link 
-                className={`nav-link px-3 ${isActive('/about')}`} 
-                to="/about"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link 
-                className={`nav-link px-3 ${isActive('/contact')}`} 
-                to="/contact"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link 
-                className={`nav-link px-3 ${isActive('/blog')}`} 
-                to="/blog"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Blog
-              </Link>
-            </li>
-          </ul>
-          
-          {/* Browse Cars button */}
-          <div className="d-flex">
+        {/* Browse Cars Button */}
+        <Link 
+          to="/cars"
+          style={{
+            backgroundColor: '#3b82f6',
+            color: 'white',
+            padding: '0.75rem 1.5rem',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            fontSize: '14px',
+            fontWeight: '500',
+            transition: 'background-color 0.3s ease'
+          }}
+          onMouseOver={(e) => e.target.style.backgroundColor = '#2563eb'}
+          onMouseOut={(e) => e.target.style.backgroundColor = '#3b82f6'}
+        >
+          Browse Cars
+        </Link>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div style={{
+          display: 'block',
+          backgroundColor: 'white',
+          padding: '1rem',
+          borderTop: '1px solid #e5e7eb',
+          '@media (min-width: 769px)': {
+            display: 'none'
+          }
+        }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <Link 
+              to="/" 
+              onClick={() => setIsMenuOpen(false)}
+              style={{ 
+                textDecoration: 'none', 
+                color: isActive('/') ? '#3b82f6' : '#1e293b',
+                fontWeight: isActive('/') ? '600' : '500',
+                fontSize: '16px',
+                padding: '0.5rem 0'
+              }}
+            >
+              Home
+            </Link>
             <Link 
               to="/cars" 
-              className="btn btn-primary px-3 py-2 me-2"
               onClick={() => setIsMenuOpen(false)}
+              style={{ 
+                textDecoration: 'none', 
+                color: isActive('/cars') ? '#3b82f6' : '#1e293b',
+                fontWeight: isActive('/cars') ? '600' : '500',
+                fontSize: '16px',
+                padding: '0.5rem 0'
+              }}
             >
-              Browse Cars
+              Cars
+            </Link>
+            <Link 
+              to="/about" 
+              onClick={() => setIsMenuOpen(false)}
+              style={{ 
+                textDecoration: 'none', 
+                color: isActive('/about') ? '#3b82f6' : '#1e293b',
+                fontWeight: isActive('/about') ? '600' : '500',
+                fontSize: '16px',
+                padding: '0.5rem 0'
+              }}
+            >
+              About
+            </Link>
+            <Link 
+              to="/contact" 
+              onClick={() => setIsMenuOpen(false)}
+              style={{ 
+                textDecoration: 'none', 
+                color: isActive('/contact') ? '#3b82f6' : '#1e293b',
+                fontWeight: isActive('/contact') ? '600' : '500',
+                fontSize: '16px',
+                padding: '0.5rem 0'
+              }}
+            >
+              Contact
+            </Link>
+            <Link 
+              to="/blog" 
+              onClick={() => setIsMenuOpen(false)}
+              style={{ 
+                textDecoration: 'none', 
+                color: isActive('/blog') ? '#3b82f6' : '#1e293b',
+                fontWeight: isActive('/blog') ? '600' : '500',
+                fontSize: '16px',
+                padding: '0.5rem 0'
+              }}
+            >
+              Blog
             </Link>
           </div>
         </div>
-      </div>
-    </nav>
+      )}
+
+      <style jsx>{`
+        @media (max-width: 768px) {
+          nav {
+            display: none !important;
+          }
+          button {
+            display: block !important;
+          }
+        }
+        @media (min-width: 769px) {
+          button {
+            display: none !important;
+          }
+        }
+      `}</style>
+    </header>
   );
 };
 
 export default Header;
-
