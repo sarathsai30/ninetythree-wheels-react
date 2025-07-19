@@ -11,6 +11,28 @@
   --light-blue: #f0f9ff;
   --text-dark: #1e293b;
   --text-muted: #64748b;
+  
+  /* Tailwind CSS variables */
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+  --radius: 0.5rem;
 }
 
 * {
@@ -30,6 +52,22 @@ body {
   background-color: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+/* Fix navbar link visibility */
+.navbar-nav .nav-link {
+  color: #1e293b !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link.text-primary {
+  color: var(--primary-color) !important;
+  font-weight: 600;
 }
 
 .btn-primary {
