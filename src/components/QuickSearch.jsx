@@ -104,7 +104,7 @@ const QuickSearch = () => {
         />
       )}
       
-      <div className="bg-white rounded shadow-lg" style={{ maxWidth: '320px' }}>
+      <div className="bg-white rounded shadow-lg mx-auto" style={{ maxWidth: '100%', width: '100%', maxWidth: '320px' }}>
         {/* Header */}
         <div className="text-center py-3 text-white fw-bold" style={{ backgroundColor: '#f1c40f', fontSize: '16px' }}>
           SEARCH THE RIGHT CAR

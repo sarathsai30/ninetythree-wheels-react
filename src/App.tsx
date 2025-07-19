@@ -16,7 +16,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {
   return (
     <Router>
-      <div className="d-flex flex-column min-vh-100">
+      <div className="d-flex flex-column min-vh-100 w-100">
         <Header />
         <main className="flex-grow-1">
           <Routes>

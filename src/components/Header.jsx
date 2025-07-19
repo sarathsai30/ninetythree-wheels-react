@@ -72,50 +72,114 @@ const Header = () => {
 };
 
 export default Header;*/
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   const isActive = (path) =>
-    location.pathname === path ? 'text-blue-600 font-semibold' : 'text-gray-700';
+    location.pathname === path ? 'text-primary fw-bold' : 'text-dark';
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50 h-[105px]">
-      <div className="max-w-[1300px] mx-auto px-6 h-full flex items-center justify-between">
-        
-        {/* Left: Logo + Menu */}
-        <div className="flex items-center space-x-8">
-          {/* Logo */}
-          <Link to="/">
-            <img
-              src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
-              alt="93Cars logo"
-              className="h-20 w-20 object-cover"
-            />
-          </Link>
-
-          {/* Menu Items */}
-          <nav className="flex items-center space-x-5 text-[17px] font-medium">
-            <Link to="/" className={isActive('/')}>Home</Link>
-            <Link to="/cars" className={isActive('/cars')}>Cars</Link>
-            <Link to="/about" className={isActive('/about')}>About</Link>
-            <Link to="/contact" className={isActive('/contact')}>Contact</Link>
-            <Link to="/blog" className={isActive('/blog')}>Blog</Link>
-
-
-          </nav>
-        </div>
-
-        {/* Right: Button */}
-        <Link
-          to="/cars"
-          className="bg-blue-500 hover:bg-blue-600 text-white text-sm px-3 py-[10px] rounded"
-        >
-          Browse Cars
+    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div className="container-fluid px-3 px-md-4">
+        {/* Logo */}
+        <Link className="navbar-brand" to="/">
+          <img
+            src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
+            alt="93Cars logo"
+            className="d-inline-block"
+            style={{ 
+              height: '60px', 
+              width: '60px', 
+              objectFit: 'cover',
+              borderRadius: '8px'
+            }}
+          />
         </Link>
+
+        {/* Mobile menu toggle button */}
+        <button 
+          className="navbar-toggler border-0 p-1" 
+          type="button" 
+          onClick={toggleMenu}
+          aria-controls="navbarNav" 
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle navigation"
+          style={{ boxShadow: 'none', fontSize: '1.2rem' }}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Navigation menu */}
+        <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link 
+                className={`nav-link px-3 ${isActive('/')}`} 
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link 
+                className={`nav-link px-3 ${isActive('/cars')}`} 
+                to="/cars"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Cars
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link 
+                className={`nav-link px-3 ${isActive('/about')}`} 
+                to="/about"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link 
+                className={`nav-link px-3 ${isActive('/contact')}`} 
+                to="/contact"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link 
+                className={`nav-link px-3 ${isActive('/blog')}`} 
+                to="/blog"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
+              </Link>
+            </li>
+          </ul>
+          
+          {/* Browse Cars button */}
+          <div className="d-flex">
+            <Link 
+              to="/cars" 
+              className="btn btn-primary px-3 py-2 me-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Browse Cars
+            </Link>
+          </div>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 };
 
