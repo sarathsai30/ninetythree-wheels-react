@@ -146,22 +146,22 @@ const BlogAdmin = () => {
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold">Blog Management</h2>
         <div className="d-flex gap-2">
-          <button 
+          <a 
             className="btn btn-outline-secondary d-flex align-items-center gap-2"
             onClick={fetchBlogs}
             disabled={operationLoading}
           >
             <RefreshCw size={18} />
             Refresh
-          </button>
-          <button 
+          </a>
+          <a 
             className="btn btn-primary d-flex align-items-center gap-2"
             onClick={() => setIsAddingBlog(true)}
             disabled={operationLoading}
           >
             <Plus size={18} />
             Add New Blog
-          </button>
+          </a>
         </div>
       </div>
 
@@ -233,7 +233,7 @@ const BlogAdmin = () => {
               </div>
             </div>
             <div className="mt-3">
-              <button 
+              <a 
                 className="btn btn-success me-2"
                 onClick={editingBlogId ? handleUpdateBlog : handleAddBlog}
                 disabled={operationLoading}
@@ -246,14 +246,14 @@ const BlogAdmin = () => {
                 ) : (
                   editingBlogId ? 'Update Blog' : 'Add Blog'
                 )}
-              </button>
-              <button 
+              </a>
+              <a 
                 className="btn btn-secondary"
                 onClick={cancelEdit}
                 disabled={operationLoading}
               >
                 Cancel
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -274,20 +274,20 @@ const BlogAdmin = () => {
                   <div className="d-flex justify-content-between align-items-start mb-2">
                     <h5 className="card-title">{blog.title}</h5>
                     <div className="d-flex gap-1">
-                      <button
+                      <a
                         className="btn btn-sm btn-outline-primary"
                         onClick={() => handleEditBlog(blog)}
                         disabled={operationLoading}
                       >
                         <Edit3 size={14} />
-                      </button>
-                      <button
+                      </a>
+                      <a
                         className="btn btn-sm btn-outline-danger"
                         onClick={() => handleDeleteBlog(blog.id)}
                         disabled={operationLoading}
                       >
                         <Trash2 size={14} />
-                      </button>
+                      </a>
                     </div>
                   </div>
                   <p className="card-text">
