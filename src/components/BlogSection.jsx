@@ -7,6 +7,7 @@ const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [expandedBlogs, setExpandedBlogs] = useState(new Set());
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -44,6 +45,18 @@ const BlogSection = () => {
     const tmp = document.createElement('div');
     tmp.innerHTML = html;
     return tmp.textContent || tmp.innerText || '';
+  };
+
+  const toggleReadMore = (blogId) => {
+    setExpandedBlogs(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(blogId)) {
+        newSet.delete(blogId);
+      } else {
+        newSet.add(blogId);
+      }
+      return newSet;
+    });
   };
 
   if (loading) {
@@ -93,11 +106,22 @@ const BlogSection = () => {
                   <div 
                     className="card-text text-muted"
                     dangerouslySetInnerHTML={{ 
-                      __html: blog.content.length > 1000 
-                        ? `${blog.content.substring(0, 1000)}...` 
-                        : blog.content 
+                      __html: expandedBlogs.has(blog.id) 
+                        ? blog.content 
+                        : blog.content.length > 1000 
+                          ? `${blog.content.substring(0, 1000)}...` 
+                          : blog.content 
                     }}
                   />
+                  {blog.content.length > 1000 && (
+                    <button 
+                      onClick={() => toggleReadMore(blog.id)}
+                      className="btn btn-link p-0 text-warning fw-bold"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      {expandedBlogs.has(blog.id) ? 'Read Less' : 'Read More'}
+                    </button>
+                  )}
                   {blog.videoUrl && (
                     <div className="mb-3">
                       <a 
