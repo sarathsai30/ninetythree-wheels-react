@@ -10,6 +10,8 @@ import CarDetail from './pages/CarDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
+import News from './pages/News';
+import BlogDetail from './pages/BlogDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -27,7 +29,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/blog" element={<BlogSection />} />
-
+          <Route path="/news" element={<News />} />
+          <Route path="/news/:id" element={<BlogDetail />} />
           </Routes>
         </main>
         <Footer />
