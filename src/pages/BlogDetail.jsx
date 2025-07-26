@@ -99,7 +99,16 @@ const BlogDetail = () => {
           <div className="lg:col-span-3">
             <article className="bg-white rounded-lg shadow-md overflow-hidden">
               {/* Article Header */}
-              <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 relative">
+              <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 relative overflow-hidden">
+                {blog.imageUrl ? (
+                  <img 
+                    src={blog.imageUrl} 
+                    alt={blog.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300"></div>
+                )}
                 <div className="absolute bottom-4 left-4 bg-yellow-500 text-white px-4 py-2 text-sm font-semibold rounded">
                   93cars
                 </div>
@@ -160,8 +169,16 @@ const BlogDetail = () => {
                   <div key={recentBlog.id} className="border-b border-gray-200 pb-4 last:border-b-0">
                     <div className="flex gap-3">
                       {/* Thumbnail */}
-                      <div className="w-16 h-12 bg-gradient-to-br from-gray-200 to-gray-300 rounded flex-shrink-0">
-                        <div className="w-full h-full bg-yellow-500 opacity-20 rounded"></div>
+                      <div className="w-16 h-12 bg-gradient-to-br from-gray-200 to-gray-300 rounded flex-shrink-0 overflow-hidden">
+                        {recentBlog.imageUrl ? (
+                          <img 
+                            src={recentBlog.imageUrl} 
+                            alt={recentBlog.title}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-yellow-500 opacity-20 rounded"></div>
+                        )}
                       </div>
                       
                       {/* Content */}

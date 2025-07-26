@@ -94,7 +94,16 @@ const News = () => {
               {featuredNews.map((blog) => (
                 <div key={blog.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                   {/* Article Image Placeholder */}
-                  <div className="h-48 bg-gradient-to-br from-gray-200 to-gray-300 relative">
+                  <div className="h-48 bg-gradient-to-br from-gray-200 to-gray-300 relative overflow-hidden">
+                    {blog.imageUrl ? (
+                      <img 
+                        src={blog.imageUrl} 
+                        alt={blog.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300"></div>
+                    )}
                     <div className="absolute bottom-3 left-3 bg-yellow-500 text-white px-3 py-1 text-sm font-semibold rounded">
                       93cars
                     </div>
@@ -159,8 +168,16 @@ const News = () => {
                   <div key={blog.id} className="border-b border-gray-200 pb-4 last:border-b-0">
                     <div className="flex gap-3">
                       {/* Thumbnail */}
-                      <div className="w-16 h-12 bg-gradient-to-br from-gray-200 to-gray-300 rounded flex-shrink-0">
-                        <div className="w-full h-full bg-yellow-500 opacity-20 rounded"></div>
+                      <div className="w-16 h-12 bg-gradient-to-br from-gray-200 to-gray-300 rounded flex-shrink-0 overflow-hidden">
+                        {blog.imageUrl ? (
+                          <img 
+                            src={blog.imageUrl} 
+                            alt={blog.title}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-yellow-500 opacity-20 rounded"></div>
+                        )}
                       </div>
                       
                       {/* Content */}
