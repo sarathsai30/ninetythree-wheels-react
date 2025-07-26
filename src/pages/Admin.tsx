@@ -73,9 +73,9 @@ const Admin = () => {
                                         Login
                                     </button>
                                 </form>
-                                <small className="text-muted d-block text-center mt-2">
+                                {/* <small className="text-muted d-block text-center mt-2">
                                     Default password: admin123
-                                </small>
+                                </small> */}
                             </div>
                         </div>
                     </div>
