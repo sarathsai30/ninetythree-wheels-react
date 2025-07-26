@@ -63,7 +63,7 @@ const News = () => {
   }
 
   const featuredNews = blogs.slice(0, 3);
-  const recentNews = blogs.slice(3, 8);
+  const recentNews = blogs.slice(0, 5);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -72,7 +72,14 @@ const News = () => {
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900">LATEST CAR NEWS</h1>
+              <a 
+                href="/news" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-3xl font-bold text-gray-900 hover:text-yellow-600 transition-colors"
+              >
+                LATEST CAR NEWS
+              </a>
               <div className="w-20 h-1 bg-yellow-500 mt-2"></div>
             </div>
             <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded font-semibold flex items-center gap-2">
@@ -92,15 +99,20 @@ const News = () => {
                   {/* Article Image Placeholder */}
                   <div className="h-48 bg-gradient-to-br from-gray-200 to-gray-300 relative">
                     <div className="absolute bottom-3 left-3 bg-yellow-500 text-white px-3 py-1 text-sm font-semibold rounded">
-                      {blog.platform === 'youtube' ? 'Scoop On' : 'Latest News'}
+                      93cars
                     </div>
                   </div>
                   
                   {/* Article Content */}
                   <div className="p-4">
-                    <h3 className="font-bold text-lg mb-3 text-gray-900 leading-tight">
+                    <a 
+                      href={`/news/${blog.id}`} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="font-bold text-lg mb-3 text-gray-900 leading-tight hover:text-yellow-600 transition-colors block"
+                    >
                       {blog.title}
-                    </h3>
+                    </a>
                     
                     <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
                       <div className="flex items-center gap-1">
@@ -122,9 +134,14 @@ const News = () => {
                     </p>
                     
                     <div className="flex justify-between items-center">
-                      <button className="text-yellow-600 font-semibold text-sm hover:text-yellow-700">
+                      <a 
+                        href={`/news/${blog.id}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-yellow-600 font-semibold text-sm hover:text-yellow-700 transition-colors"
+                      >
                         READ MORE »
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -151,9 +168,14 @@ const News = () => {
                       
                       {/* Content */}
                       <div className="flex-1 min-w-0">
-                        <h4 className="font-semibold text-sm text-gray-900 leading-tight mb-1">
+                        <a 
+                          href={`/news/${blog.id}`} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="font-semibold text-sm text-gray-900 leading-tight mb-1 hover:text-yellow-600 transition-colors block"
+                        >
                           {truncateText(blog.title, 60)}
-                        </h4>
+                        </a>
                         <div className="text-xs text-gray-600 flex items-center gap-2">
                           <span>{new Date(blog.createdAt).toLocaleDateString('en-GB', { 
                             day: '2-digit', 
