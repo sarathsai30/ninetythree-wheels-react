@@ -82,9 +82,6 @@ const News = () => {
               </a>
               <div className="w-20 h-1 bg-yellow-500 mt-2"></div>
             </div>
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded font-semibold flex items-center gap-2">
-              VIEW MORE LATEST CAR NEWS →
-            </button>
           </div>
         </div>
       </div>
