@@ -37,6 +37,10 @@ const BlogAdmin = () => {
     clipboard: {
       // Allow pasting of HTML content including Instagram embeds
       matchVisual: false,
+      allowed: {
+        tags: ['blockquote', 'script', 'div', 'p', 'a', 'svg', 'g', 'path'],
+        attributes: ['class', 'style', 'data-instgrm-permalink', 'data-instgrm-version', 'href', 'target', 'rel', 'src', 'async']
+      }
     }
   };
 
@@ -332,8 +336,9 @@ const BlogAdmin = () => {
               <label className="form-label">Content *</label>
               <div className="alert alert-info">
                 <small>
-                  <strong>Tip:</strong> You can paste Instagram embed codes directly into the editor. 
-                  Use the code block format for Instagram embeds or switch to HTML mode if needed.
+                  <strong>Instagram Embeds:</strong> To add Instagram posts, paste the embed code directly into the editor. 
+                  If it shows as text, click the "Code Block" button in the toolbar first, then paste the embed code.
+                  The Instagram post will render properly when the blog is published.
                 </small>
               </div>
               <div style={{ height: '300px' }}>
