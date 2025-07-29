@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
-import { storage } from '../firebase/config';
-import { ref, uploadBytes, getDownloadURL, deleteObject } from 'firebase/storage';
+import { supabase } from '../firebase/config';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
@@ -61,7 +60,7 @@ const BlogAdmin = () => {
     }
   };
 
-  // Handle image upload
+  // Handle image upload using Supabase Storage
   const handleImageUpload = async (file) => {
     if (!file) return null;
     
@@ -69,12 +68,22 @@ const BlogAdmin = () => {
       setUploadingImage(true);
       const timestamp = Date.now();
       const fileName = `blog-images/${timestamp}-${file.name}`;
-      const storageRef = ref(storage, fileName);
       
-      const snapshot = await uploadBytes(storageRef, file);
-      const downloadURL = await getDownloadURL(snapshot.ref);
+      const { data, error } = await supabase.storage
+        .from('blog-images')
+        .upload(fileName, file);
+
+      if (error) {
+        console.error('Upload error:', error);
+        alert('Failed to upload image. Please try again.');
+        return null;
+      }
+
+      const { data: { publicUrl } } = supabase.storage
+        .from('blog-images')
+        .getPublicUrl(fileName);
       
-      return downloadURL;
+      return publicUrl;
     } catch (error) {
       console.error('Error uploading image:', error);
       alert('Failed to upload image. Please try again.');
