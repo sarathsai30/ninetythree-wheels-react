@@ -31,15 +31,19 @@ const BlogAdmin = () => {
       [{ 'color': [] }, { 'background': [] }],
       [{ 'list': 'ordered'}, { 'list': 'bullet' }],
       [{ 'indent': '-1'}, { 'indent': '+1' }],
-      ['link', 'image'],
+      ['link', 'image', 'code-block'],
       ['clean']
     ],
+    clipboard: {
+      // Allow pasting of HTML content including Instagram embeds
+      matchVisual: false,
+    }
   };
 
   const quillFormats = [
     'header', 'bold', 'italic', 'underline', 'strike',
     'color', 'background', 'list', 'bullet', 'indent',
-    'link', 'image'
+    'link', 'image', 'code-block'
   ];
 
   // Load blogs from Firebase on component mount
@@ -326,6 +330,12 @@ const BlogAdmin = () => {
 
             <div className="mb-3">
               <label className="form-label">Content *</label>
+              <div className="alert alert-info">
+                <small>
+                  <strong>Tip:</strong> You can paste Instagram embed codes directly into the editor. 
+                  Use the code block format for Instagram embeds or switch to HTML mode if needed.
+                </small>
+              </div>
               <div style={{ height: '300px' }}>
                 <ReactQuill
                   theme="snow"
@@ -333,7 +343,7 @@ const BlogAdmin = () => {
                   onChange={(content) => setNewBlog({...newBlog, content})}
                   modules={quillModules}
                   formats={quillFormats}
-                  placeholder="Write your blog content here..."
+                  placeholder="Write your blog content here... You can paste Instagram embed codes directly."
                   style={{ height: '240px' }}
                   readOnly={operationLoading}
                 />

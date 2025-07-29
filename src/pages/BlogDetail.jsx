@@ -36,6 +36,24 @@ const BlogDetail = () => {
     }
   }, [id]);
 
+  // Load Instagram embed script when blog is loaded
+  useEffect(() => {
+    if (blog && blog.content && blog.content.includes('instagram.com/embed.js')) {
+      // Load Instagram embed script if not already loaded
+      if (!document.querySelector('script[src*="instagram.com/embed.js"]')) {
+        const script = document.createElement('script');
+        script.src = '//www.instagram.com/embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+      } else {
+        // If script already exists, process embeds
+        if (window.instgrm && window.instgrm.Embeds) {
+          window.instgrm.Embeds.process();
+        }
+      }
+    }
+  }, [blog]);
+
   const truncateText = (text, maxLength) => {
     if (text.length <= maxLength) return text;
     return text.substring(0, maxLength) + '...';

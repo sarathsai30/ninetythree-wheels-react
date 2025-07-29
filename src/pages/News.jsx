@@ -26,6 +26,31 @@ const News = () => {
     fetchBlogs();
   }, []);
 
+  // Load Instagram embed script when blogs are loaded
+  useEffect(() => {
+    if (blogs.length > 0) {
+      // Check if any blog contains Instagram embeds
+      const hasInstagramEmbeds = blogs.some(blog => 
+        blog.content && blog.content.includes('instagram.com/embed.js')
+      );
+      
+      if (hasInstagramEmbeds) {
+        // Load Instagram embed script if not already loaded
+        if (!document.querySelector('script[src*="instagram.com/embed.js"]')) {
+          const script = document.createElement('script');
+          script.src = '//www.instagram.com/embed.js';
+          script.async = true;
+          document.body.appendChild(script);
+        } else {
+          // If script already exists, process embeds
+          if (window.instgrm && window.instgrm.Embeds) {
+            window.instgrm.Embeds.process();
+          }
+        }
+      }
+    }
+  }, [blogs]);
+
   const stripHtml = (html) => {
     const tmp = document.createElement('div');
     tmp.innerHTML = html;
