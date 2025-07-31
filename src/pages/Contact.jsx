@@ -203,8 +203,8 @@ const Contact = () => {
                 <div className="flex-grow-1 ms-3">
                   <h6 className="fw-bold">Email</h6>
                   <p className="text-muted mb-0">
-                    info@93cars.com<br />
-                    support@93cars.com
+                    contact@93cars.com
+
                   </p>
                 </div>
               </div>
@@ -243,7 +243,12 @@ const Contact = () => {
                  >
                   <Youtube size={18} />
                 </a>
-                <a href="#" className="btn btn-outline-warning btn-sm">
+                <a
+                 href="https://www.linkedin.com/company/93cars/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="btn btn-outline-warning btn-sm"
+                 >
                   <Linkedin size={18} />
                 </a>
                 <a 

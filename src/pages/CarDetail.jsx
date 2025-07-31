@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
+import EMICalculator from '../components/EMICalculator';
 
 const CarDetail = () => {
   const { id } = useParams();
@@ -262,7 +263,11 @@ const CarDetail = () => {
               <div className="text-center">
                 <h3 className="text-primary fw-bold mb-0">{formatPrice(car.price)}</h3>
                 <p className="text-muted">On-road Price (Mumbai)</p>
+                <div className="mt-4">
+                  <EMICalculator price={car.price} />
+                </div>
               </div>
+            
             </div>
           </div>
         </div>

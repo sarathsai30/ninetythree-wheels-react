@@ -8,6 +8,7 @@ import PopularBrands from '../components/PopularBrands';
 import VideoSection from '../components/VideoSection';
 import BlogSection from '../components/BlogSection';
 import WhyChooseUs from '../components/WhyChooseUs';
+import EVsection from '../components/EVsection.jsx';
 
 const Home = () => {
   const [featuredCars, setFeaturedCars] = useState([]);
@@ -16,9 +17,9 @@ const Home = () => {
 
   useEffect(() => {
     // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
-    const mainVariantCars = carsData.filter(car => /^\D+\d+$/.test(car.id));
+    const mainVariantCars = carsData.filter(car => /^\D+\d+$/.test(car.id) && car.fuelType !== 'Electric');
     // Get featured cars (first 3 main variants)
-    setFeaturedCars(mainVariantCars.slice(0, 8));
+    setFeaturedCars(mainVariantCars.slice(0, 3));
     
     // Get unique brands
     const uniqueBrands = [...new Set(carsData.map(car => car.brand))];
@@ -34,10 +35,12 @@ const Home = () => {
     <div>
       <HeroSection />
       <FeaturedCars featuredCars={featuredCars} />
+      <EVsection />
       <PopularBrands brands={brands} onBrandClick={handleBrandClick} />
       <VideoSection />
       {/*<BlogSection />*/}
       <WhyChooseUs />
+  
     </div>
   );
 };

@@ -99,10 +99,10 @@ const Header = () => {
           <nav className="flex items-center space-x-5 text-[17px] font-medium">
             <Link to="/" className={isActive('/')}>Home</Link>
             <Link to="/cars" className={isActive('/cars')}>Cars</Link>
+            <Link to="/evs" className={isActive('/evs')}>EVs</Link>
             <Link to="/about" className={isActive('/about')}>About</Link>
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
             <Link to="/blog" className={isActive('/blog')}>Blog</Link>
-
 
           </nav>
         </div>

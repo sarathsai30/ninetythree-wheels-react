@@ -181,7 +181,18 @@ const CarList = () => {
       ) : (
         <div className="row">
           {filteredCars.map(car => (
-            <CarCard key={car.id} car={car} />
+            <div className="col-md-4 mb-3" key={car.id}>
+            <div className="card h-100 shadow-sm">
+              <img src={car.image} className="card-img-top" alt={car.name} />
+              <div className="card-body">
+                <h5 className="card-title">{car.name}</h5>
+                <p className="mb-1">{car.model}</p>
+                <p className="mb-1">₹{car.price?.toLocaleString('en-IN')}</p>
+                <a href={`/cars/${car.id}`} className="btn btn-primary btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+      
           ))}
         </div>
       )}
