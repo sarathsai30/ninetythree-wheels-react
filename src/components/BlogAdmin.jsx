@@ -130,6 +130,27 @@ const BlogAdmin = () => {
       .trim('-'); // Remove leading/trailing hyphens
   };
 
+  // Update existing blogs to add slugs
+  const updateExistingBlogsWithSlugs = async () => {
+    try {
+      setOperationLoading(true);
+      const blogsToUpdate = blogs.filter(blog => !blog.slug);
+      
+      for (const blog of blogsToUpdate) {
+        const slug = generateSlug(blog.title);
+        await blogService.updateBlog(blog.id, { slug });
+      }
+      
+      await fetchBlogs(); // Refresh the list
+      alert(`Updated ${blogsToUpdate.length} blogs with slugs!`);
+    } catch (error) {
+      console.error('Error updating blogs with slugs:', error);
+      alert('Failed to update blogs with slugs');
+    } finally {
+      setOperationLoading(false);
+    }
+  };
+
   const handleAddBlog = async () => {
     if (newBlog.title.trim() && newBlog.content.trim()) {
       try {
@@ -259,6 +280,15 @@ const BlogAdmin = () => {
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold">Blog Management</h2>
         <div className="d-flex gap-2">
+          <button 
+            className="btn btn-outline-warning d-flex align-items-center gap-2"
+            onClick={updateExistingBlogsWithSlugs}
+            disabled={operationLoading || blogs.filter(blog => !blog.slug).length === 0}
+            title="Update existing blogs to use user-friendly URLs"
+          >
+            <RefreshCw size={18} />
+            Generate Slugs ({blogs.filter(blog => !blog.slug).length})
+          </button>
           <button 
             className="btn btn-outline-secondary d-flex align-items-center gap-2"
             onClick={fetchBlogs}
