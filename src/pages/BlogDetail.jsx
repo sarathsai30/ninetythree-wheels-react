@@ -4,7 +4,7 @@ import { blogService } from '../services/blogService';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
 
 const BlogDetail = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -15,11 +15,12 @@ const BlogDetail = () => {
       try {
         setLoading(true);
         const allBlogs = await blogService.getAllBlogs();
-        const currentBlog = allBlogs.find(b => b.id === id);
+        // Try to find by slug first, fallback to ID for backward compatibility
+        const currentBlog = allBlogs.find(b => b.slug === slug || b.id === slug);
         
         if (currentBlog) {
           setBlog(currentBlog);
-          setRecentBlogs(allBlogs.filter(b => b.id !== id).slice(0, 5));
+          setRecentBlogs(allBlogs.filter(b => b.id !== currentBlog.id).slice(0, 5));
         } else {
           setError('Blog not found');
         }
@@ -31,10 +32,28 @@ const BlogDetail = () => {
       }
     };
 
-    if (id) {
+    if (slug) {
       fetchBlogAndRecent();
     }
-  }, [id]);
+  }, [slug]);
+
+  // Load Instagram embed script when blog is loaded
+  useEffect(() => {
+    if (blog && blog.content && blog.content.includes('instagram.com/embed.js')) {
+      // Load Instagram embed script if not already loaded
+      if (!document.querySelector('script[src*="instagram.com/embed.js"]')) {
+        const script = document.createElement('script');
+        script.src = '//www.instagram.com/embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+      } else {
+        // If script already exists, process embeds
+        if (window.instgrm && window.instgrm.Embeds) {
+          window.instgrm.Embeds.process();
+        }
+      }
+    }
+  }, [blog]);
 
   const truncateText = (text, maxLength) => {
     if (text.length <= maxLength) return text;
@@ -184,7 +203,7 @@ const BlogDetail = () => {
                       {/* Content */}
                       <div className="flex-1 min-w-0">
                         <a 
-                          href={`/news/${recentBlog.id}`} 
+                          href={`/news/${recentBlog.slug || recentBlog.id}`} 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="font-semibold text-sm text-gray-900 leading-tight mb-1 hover:text-yellow-600 transition-colors block"

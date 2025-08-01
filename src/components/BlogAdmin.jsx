@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
-import { storage } from '../firebase/config';
-import { ref, uploadBytes, getDownloadURL, deleteObject } from 'firebase/storage';
+import { supabase } from '../integrations/supabase/client';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
@@ -17,7 +16,8 @@ const BlogAdmin = () => {
     content: '',
     videoUrl: '',
     platform: 'youtube',
-    imageUrl: ''
+    imageUrl: '',
+    slug: ''
   });
   const [operationLoading, setOperationLoading] = useState(false);
   const [imageFile, setImageFile] = useState(null);
@@ -32,15 +32,23 @@ const BlogAdmin = () => {
       [{ 'color': [] }, { 'background': [] }],
       [{ 'list': 'ordered'}, { 'list': 'bullet' }],
       [{ 'indent': '-1'}, { 'indent': '+1' }],
-      ['link', 'image'],
+      ['link', 'image', 'code-block'],
       ['clean']
     ],
+    clipboard: {
+      // Allow pasting of HTML content including Instagram embeds
+      matchVisual: false,
+      allowed: {
+        tags: ['blockquote', 'script', 'div', 'p', 'a', 'svg', 'g', 'path'],
+        attributes: ['class', 'style', 'data-instgrm-permalink', 'data-instgrm-version', 'href', 'target', 'rel', 'src', 'async']
+      }
+    }
   };
 
   const quillFormats = [
     'header', 'bold', 'italic', 'underline', 'strike',
     'color', 'background', 'list', 'bullet', 'indent',
-    'link', 'image'
+    'link', 'image', 'code-block'
   ];
 
   // Load blogs from Firebase on component mount
@@ -61,7 +69,7 @@ const BlogAdmin = () => {
     }
   };
 
-  // Handle image upload
+  // Handle image upload using Supabase Storage
   const handleImageUpload = async (file) => {
     if (!file) return null;
     
@@ -69,12 +77,22 @@ const BlogAdmin = () => {
       setUploadingImage(true);
       const timestamp = Date.now();
       const fileName = `blog-images/${timestamp}-${file.name}`;
-      const storageRef = ref(storage, fileName);
       
-      const snapshot = await uploadBytes(storageRef, file);
-      const downloadURL = await getDownloadURL(snapshot.ref);
+      const { data, error } = await supabase.storage
+        .from('blog-images')
+        .upload(fileName, file);
+
+      if (error) {
+        console.error('Upload error:', error);
+        alert('Failed to upload image. Please try again.');
+        return null;
+      }
+
+      const { data: { publicUrl } } = supabase.storage
+        .from('blog-images')
+        .getPublicUrl(fileName);
       
-      return downloadURL;
+      return publicUrl;
     } catch (error) {
       console.error('Error uploading image:', error);
       alert('Failed to upload image. Please try again.');
@@ -102,6 +120,37 @@ const BlogAdmin = () => {
     setNewBlog({...newBlog, imageUrl: ''});
   };
 
+  // Generate slug from title
+  const generateSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/-+/g, '-') // Replace multiple hyphens with single
+      .trim('-'); // Remove leading/trailing hyphens
+  };
+
+  // Update existing blogs to add slugs
+  const updateExistingBlogsWithSlugs = async () => {
+    try {
+      setOperationLoading(true);
+      const blogsToUpdate = blogs.filter(blog => !blog.slug);
+      
+      for (const blog of blogsToUpdate) {
+        const slug = generateSlug(blog.title);
+        await blogService.updateBlog(blog.id, { slug });
+      }
+      
+      await fetchBlogs(); // Refresh the list
+      alert(`Updated ${blogsToUpdate.length} blogs with slugs!`);
+    } catch (error) {
+      console.error('Error updating blogs with slugs:', error);
+      alert('Failed to update blogs with slugs');
+    } finally {
+      setOperationLoading(false);
+    }
+  };
+
   const handleAddBlog = async () => {
     if (newBlog.title.trim() && newBlog.content.trim()) {
       try {
@@ -116,11 +165,12 @@ const BlogAdmin = () => {
         
         const blogData = {
           ...newBlog,
-          imageUrl
+          imageUrl,
+          slug: generateSlug(newBlog.title)
         };
         
         await blogService.addBlog(blogData);
-        setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '' });
+        setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '', slug: '' });
         setImageFile(null);
         setImagePreview(null);
         setIsAddingBlog(false);
@@ -142,7 +192,8 @@ const BlogAdmin = () => {
       content: blog.content,
       videoUrl: blog.videoUrl || '',
       platform: blog.platform || 'youtube',
-      imageUrl: blog.imageUrl || ''
+      imageUrl: blog.imageUrl || '',
+      slug: blog.slug || generateSlug(blog.title)
     });
     setImagePreview(blog.imageUrl || null);
     setImageFile(null);
@@ -161,12 +212,13 @@ const BlogAdmin = () => {
       
       const blogData = {
         ...newBlog,
-        imageUrl
+        imageUrl,
+        slug: generateSlug(newBlog.title)
       };
       
       await blogService.updateBlog(editingBlogId, blogData);
       setEditingBlogId(null);
-      setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '' });
+      setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '', slug: '' });
       setImageFile(null);
       setImagePreview(null);
       await fetchBlogs(); // Refresh the list
@@ -198,7 +250,7 @@ const BlogAdmin = () => {
   const cancelEdit = () => {
     setIsAddingBlog(false);
     setEditingBlogId(null);
-    setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '' });
+    setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '', slug: '' });
     setImageFile(null);
     setImagePreview(null);
   };
@@ -228,6 +280,15 @@ const BlogAdmin = () => {
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold">Blog Management</h2>
         <div className="d-flex gap-2">
+          <button 
+            className="btn btn-outline-warning d-flex align-items-center gap-2"
+            onClick={updateExistingBlogsWithSlugs}
+            disabled={operationLoading || blogs.filter(blog => !blog.slug).length === 0}
+            title="Update existing blogs to use user-friendly URLs"
+          >
+            <RefreshCw size={18} />
+            Generate Slugs ({blogs.filter(blog => !blog.slug).length})
+          </button>
           <button 
             className="btn btn-outline-secondary d-flex align-items-center gap-2"
             onClick={fetchBlogs}
@@ -317,6 +378,13 @@ const BlogAdmin = () => {
 
             <div className="mb-3">
               <label className="form-label">Content *</label>
+              <div className="alert alert-info">
+                <small>
+                  <strong>Instagram Embeds:</strong> To add Instagram posts, paste the embed code directly into the editor. 
+                  If it shows as text, click the "Code Block" button in the toolbar first, then paste the embed code.
+                  The Instagram post will render properly when the blog is published.
+                </small>
+              </div>
               <div style={{ height: '300px' }}>
                 <ReactQuill
                   theme="snow"
@@ -324,7 +392,7 @@ const BlogAdmin = () => {
                   onChange={(content) => setNewBlog({...newBlog, content})}
                   modules={quillModules}
                   formats={quillFormats}
-                  placeholder="Write your blog content here..."
+                  placeholder="Write your blog content here... You can paste Instagram embed codes directly."
                   style={{ height: '240px' }}
                   readOnly={operationLoading}
                 />
