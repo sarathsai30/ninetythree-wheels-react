@@ -16,7 +16,8 @@ const BlogAdmin = () => {
     content: '',
     videoUrl: '',
     platform: 'youtube',
-    imageUrl: ''
+    imageUrl: '',
+    slug: ''
   });
   const [operationLoading, setOperationLoading] = useState(false);
   const [imageFile, setImageFile] = useState(null);
@@ -119,6 +120,16 @@ const BlogAdmin = () => {
     setNewBlog({...newBlog, imageUrl: ''});
   };
 
+  // Generate slug from title
+  const generateSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/-+/g, '-') // Replace multiple hyphens with single
+      .trim('-'); // Remove leading/trailing hyphens
+  };
+
   const handleAddBlog = async () => {
     if (newBlog.title.trim() && newBlog.content.trim()) {
       try {
@@ -133,11 +144,12 @@ const BlogAdmin = () => {
         
         const blogData = {
           ...newBlog,
-          imageUrl
+          imageUrl,
+          slug: generateSlug(newBlog.title)
         };
         
         await blogService.addBlog(blogData);
-        setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '' });
+        setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '', slug: '' });
         setImageFile(null);
         setImagePreview(null);
         setIsAddingBlog(false);
@@ -159,7 +171,8 @@ const BlogAdmin = () => {
       content: blog.content,
       videoUrl: blog.videoUrl || '',
       platform: blog.platform || 'youtube',
-      imageUrl: blog.imageUrl || ''
+      imageUrl: blog.imageUrl || '',
+      slug: blog.slug || generateSlug(blog.title)
     });
     setImagePreview(blog.imageUrl || null);
     setImageFile(null);
@@ -178,12 +191,13 @@ const BlogAdmin = () => {
       
       const blogData = {
         ...newBlog,
-        imageUrl
+        imageUrl,
+        slug: generateSlug(newBlog.title)
       };
       
       await blogService.updateBlog(editingBlogId, blogData);
       setEditingBlogId(null);
-      setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '' });
+      setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '', slug: '' });
       setImageFile(null);
       setImagePreview(null);
       await fetchBlogs(); // Refresh the list
@@ -215,7 +229,7 @@ const BlogAdmin = () => {
   const cancelEdit = () => {
     setIsAddingBlog(false);
     setEditingBlogId(null);
-    setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '' });
+    setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '', slug: '' });
     setImageFile(null);
     setImagePreview(null);
   };

@@ -30,7 +30,7 @@ function App() {
             <Route path="/admin" element={<Admin />} />
             <Route path="/blog" element={<BlogSection />} />
           <Route path="/news" element={<News />} />
-          <Route path="/news/:id" element={<BlogDetail />} />
+          <Route path="/news/:slug" element={<BlogDetail />} />
           </Routes>
         </main>
         <Footer />

@@ -137,7 +137,7 @@ const News = () => {
                   {/* Article Content */}
                   <div className="p-4">
                     <a 
-                      href={`/news/${blog.id}`} 
+                      href={`/news/${blog.slug || blog.id}`} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="font-bold text-lg mb-3 text-gray-900 leading-tight hover:text-yellow-600 transition-colors block"
@@ -166,7 +166,7 @@ const News = () => {
                     
                     <div className="flex justify-between items-center">
                       <a 
-                        href={`/news/${blog.id}`} 
+                        href={`/news/${blog.slug || blog.id}`} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-yellow-600 font-semibold text-sm hover:text-yellow-700 transition-colors"
@@ -208,7 +208,7 @@ const News = () => {
                       {/* Content */}
                       <div className="flex-1 min-w-0">
                         <a 
-                          href={`/news/${blog.id}`} 
+                          href={`/news/${blog.slug || blog.id}`} 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="font-semibold text-sm text-gray-900 leading-tight mb-1 hover:text-yellow-600 transition-colors block"
