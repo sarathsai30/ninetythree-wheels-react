@@ -26,6 +26,31 @@ const News = () => {
     fetchBlogs();
   }, []);
 
+  // Load Instagram embed script when blogs are loaded
+  useEffect(() => {
+    if (blogs.length > 0) {
+      // Check if any blog contains Instagram embeds
+      const hasInstagramEmbeds = blogs.some(blog => 
+        blog.content && blog.content.includes('instagram.com/embed.js')
+      );
+      
+      if (hasInstagramEmbeds) {
+        // Load Instagram embed script if not already loaded
+        if (!document.querySelector('script[src*="instagram.com/embed.js"]')) {
+          const script = document.createElement('script');
+          script.src = '//www.instagram.com/embed.js';
+          script.async = true;
+          document.body.appendChild(script);
+        } else {
+          // If script already exists, process embeds
+          if (window.instgrm && window.instgrm.Embeds) {
+            window.instgrm.Embeds.process();
+          }
+        }
+      }
+    }
+  }, [blogs]);
+
   const stripHtml = (html) => {
     const tmp = document.createElement('div');
     tmp.innerHTML = html;
@@ -112,7 +137,7 @@ const News = () => {
                   {/* Article Content */}
                   <div className="p-4">
                     <a 
-                      href={`/news/${blog.id}`} 
+                      href={`/news/${blog.slug || blog.id}`} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="font-bold text-lg mb-3 text-gray-900 leading-tight hover:text-yellow-600 transition-colors block"
@@ -141,7 +166,7 @@ const News = () => {
                     
                     <div className="flex justify-between items-center">
                       <a 
-                        href={`/news/${blog.id}`} 
+                        href={`/news/${blog.slug || blog.id}`} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-yellow-600 font-semibold text-sm hover:text-yellow-700 transition-colors"
@@ -183,7 +208,7 @@ const News = () => {
                       {/* Content */}
                       <div className="flex-1 min-w-0">
                         <a 
-                          href={`/news/${blog.id}`} 
+                          href={`/news/${blog.slug || blog.id}`} 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="font-semibold text-sm text-gray-900 leading-tight mb-1 hover:text-yellow-600 transition-colors block"
