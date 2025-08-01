@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
-import { supabase } from '../firebase/config';
+import { supabase } from '../integrations/supabase/client';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
