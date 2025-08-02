@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { blogService } from '../services/blogService';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
+import { sanitizeAndProcessHTML, convertYouTubeToEmbed, getYouTubeVideoId } from '../utils/contentProcessor';
 
 const BlogDetail = () => {
   const { slug } = useParams();
@@ -155,20 +156,73 @@ const BlogDetail = () => {
                 </div>
                 
                 <div className="prose max-w-none text-gray-700 leading-relaxed">
-                  <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+                  <div 
+                    dangerouslySetInnerHTML={{ 
+                      __html: sanitizeAndProcessHTML(blog.content) 
+                    }} 
+                    style={{
+                      lineHeight: '1.6',
+                      fontSize: '16px'
+                    }}
+                    className="blog-content"
+                  />
+                  <style jsx>{`
+                    .blog-content table {
+                      width: 100%;
+                      border-collapse: collapse;
+                      margin: 20px 0;
+                      border: 1px solid #dee2e6;
+                    }
+                    .blog-content table th,
+                    .blog-content table td {
+                      padding: 12px;
+                      text-align: left;
+                      border: 1px solid #dee2e6;
+                    }
+                    .blog-content table th {
+                      background-color: #f8f9fa;
+                      font-weight: 600;
+                    }
+                    .blog-content table tbody tr:nth-child(odd) {
+                      background-color: #f8f9fa;
+                    }
+                    .blog-content .youtube-embed-wrapper {
+                      margin: 25px 0;
+                    }
+                    .blog-content blockquote {
+                      border-left: 4px solid #fbbf24;
+                      padding-left: 16px;
+                      margin-left: 16px;
+                      font-style: italic;
+                      color: #6b7280;
+                    }
+                  `}</style>
                 </div>
                 
                 {blog.videoUrl && (
                   <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-                    <h3 className="font-semibold text-lg mb-3">Related Video</h3>
-                    <a 
-                      href={blog.videoUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-yellow-600 hover:text-yellow-700 font-medium"
-                    >
-                      Watch Video →
-                    </a>
+                    <h3 className="font-semibold text-lg mb-3">Featured Video</h3>
+                    {getYouTubeVideoId(blog.videoUrl) ? (
+                      <div className="youtube-embed-wrapper" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                        <iframe 
+                          src={convertYouTubeToEmbed(blog.videoUrl)} 
+                          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }} 
+                          allowFullScreen
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                        </iframe>
+                      </div>
+                    ) : (
+                      <a 
+                        href={blog.videoUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-yellow-600 hover:text-yellow-700 font-medium"
+                      >
+                        Watch Video →
+                      </a>
+                    )}
                   </div>
                 )}
               </div>

@@ -32,23 +32,27 @@ const BlogAdmin = () => {
       [{ 'color': [] }, { 'background': [] }],
       [{ 'list': 'ordered'}, { 'list': 'bullet' }],
       [{ 'indent': '-1'}, { 'indent': '+1' }],
-      ['link', 'image', 'code-block'],
-      ['clean']
+      [{ 'align': [] }],
+      ['link', 'image', 'video', 'code-block'],
+      ['blockquote'],
+      ['clean'],
+      // Custom button for YouTube embed
+      ['youtube-embed']
     ],
     clipboard: {
-      // Allow pasting of HTML content including Instagram embeds
+      // Allow pasting of HTML content including Instagram embeds and tables
       matchVisual: false,
       allowed: {
-        tags: ['blockquote', 'script', 'div', 'p', 'a', 'svg', 'g', 'path'],
-        attributes: ['class', 'style', 'data-instgrm-permalink', 'data-instgrm-version', 'href', 'target', 'rel', 'src', 'async']
+        tags: ['blockquote', 'script', 'div', 'p', 'a', 'svg', 'g', 'path', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'iframe'],
+        attributes: ['class', 'style', 'data-instgrm-permalink', 'data-instgrm-version', 'href', 'target', 'rel', 'src', 'async', 'colspan', 'rowspan', 'width', 'height', 'frameborder', 'allowfullscreen', 'allow']
       }
     }
   };
 
   const quillFormats = [
     'header', 'bold', 'italic', 'underline', 'strike',
-    'color', 'background', 'list', 'bullet', 'indent',
-    'link', 'image', 'code-block'
+    'color', 'background', 'list', 'bullet', 'indent', 'align',
+    'link', 'image', 'video', 'code-block', 'blockquote'
   ];
 
   // Load blogs from Firebase on component mount
@@ -380,9 +384,13 @@ const BlogAdmin = () => {
               <label className="form-label">Content *</label>
               <div className="alert alert-info">
                 <small>
-                  <strong>Instagram Embeds:</strong> To add Instagram posts, paste the embed code directly into the editor. 
-                  If it shows as text, click the "Code Block" button in the toolbar first, then paste the embed code.
-                  The Instagram post will render properly when the blog is published.
+                  <strong>Rich Content Support:</strong>
+                  <ul className="mb-0 mt-2">
+                    <li><strong>Tables:</strong> Use the table button in the toolbar or paste HTML tables directly</li>
+                    <li><strong>YouTube Videos:</strong> Paste YouTube URLs directly in content - they'll auto-embed</li>
+                    <li><strong>Instagram Embeds:</strong> Paste embed codes using the code block button</li>
+                    <li><strong>Formatting:</strong> Use the toolbar for headers, lists, quotes, and more</li>
+                  </ul>
                 </small>
               </div>
               <div style={{ height: '300px' }}>
