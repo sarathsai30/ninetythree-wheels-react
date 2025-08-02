@@ -12,10 +12,12 @@ const BlogPopup = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
+        console.log('BlogPopup: Fetching blogs...');
         const fetchedBlogs = await blogService.getAllBlogs();
+        console.log('BlogPopup: Fetched blogs:', fetchedBlogs);
         setBlogs(fetchedBlogs.slice(0, 2)); // Show only 2 latest blogs
       } catch (err) {
-        console.error('Failed to fetch blogs:', err);
+        console.error('BlogPopup: Failed to fetch blogs:', err);
       } finally {
         setLoading(false);
       }
@@ -35,8 +37,33 @@ const BlogPopup = () => {
     setIsVisible(false);
   };
 
-  if (!isVisible || loading || blogs.length === 0) {
+  if (!isVisible) {
     return null;
+  }
+
+  if (loading) {
+    return (
+      <div className="position-fixed" style={{ 
+        top: '120px', 
+        right: '20px', 
+        zIndex: 1000,
+        maxWidth: '320px',
+        minWidth: '280px'
+      }}>
+        <div className="card shadow-lg border-0" style={{ 
+          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+          backdropFilter: 'blur(10px)',
+          borderRadius: '12px'
+        }}>
+          <div className="card-body p-3 text-center">
+            <div className="spinner-border spinner-border-sm text-warning" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <p className="mb-0 mt-2 small text-muted">Loading news...</p>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -67,49 +94,66 @@ const BlogPopup = () => {
         </div>
         
         <div className="card-body p-3 pt-0">
-          {blogs.map((blog, index) => (
-            <div 
-              key={blog.id}
-              className={`cursor-pointer p-2 rounded mb-2 ${index === blogs.length - 1 ? 'mb-0' : ''}`}
-              style={{ 
-                transition: 'all 0.2s ease',
-                backgroundColor: 'transparent',
-                cursor: 'pointer'
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#f8f9fa';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = 'transparent';
-              }}
-              onClick={() => handleBlogClick(blog)}
-            >
-              <h6 className="mb-1 fw-semibold text-dark" style={{ 
-                fontSize: '0.85rem',
-                lineHeight: '1.3',
-                overflow: 'hidden',
-                display: '-webkit-box',
-                WebkitLineClamp: 2,
-                WebkitBoxOrient: 'vertical'
-              }}>
-                {blog.title}
-              </h6>
-              <small className="text-muted">
-                {new Date(blog.createdAt).toLocaleDateString()}
-              </small>
+          {blogs.length === 0 ? (
+            <div className="text-center py-3">
+              <p className="mb-2 text-muted small">No news available yet</p>
+              <button 
+                onClick={handleViewAllBlogs}
+                className="btn btn-warning btn-sm"
+                style={{ fontSize: '0.8rem' }}
+              >
+                Visit News Page
+              </button>
             </div>
-          ))}
+          ) : (
+            <>
+              {blogs.map((blog, index) => (
+                <div 
+                  key={blog.id}
+                  className={`cursor-pointer p-2 rounded mb-2 ${index === blogs.length - 1 ? 'mb-0' : ''}`}
+                  style={{ 
+                    transition: 'all 0.2s ease',
+                    backgroundColor: 'transparent',
+                    cursor: 'pointer'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.backgroundColor = '#f8f9fa';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.backgroundColor = 'transparent';
+                  }}
+                  onClick={() => handleBlogClick(blog)}
+                >
+                  <h6 className="mb-1 fw-semibold text-dark" style={{ 
+                    fontSize: '0.85rem',
+                    lineHeight: '1.3',
+                    overflow: 'hidden',
+                    display: '-webkit-box',
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: 'vertical'
+                  }}>
+                    {blog.title}
+                  </h6>
+                  <small className="text-muted">
+                    {new Date(blog.createdAt).toLocaleDateString()}
+                  </small>
+                </div>
+              ))}
+            </>
+          )}
           
-          <div className="mt-3 pt-2 border-top">
-            <button 
-              onClick={handleViewAllBlogs}
-              className="btn btn-warning btn-sm w-100 d-flex align-items-center justify-content-center gap-2"
-              style={{ fontSize: '0.8rem' }}
-            >
-              View All News
-              <ArrowRight size={14} />
-            </button>
-          </div>
+          {blogs.length > 0 && (
+            <div className="mt-3 pt-2 border-top">
+              <button 
+                onClick={handleViewAllBlogs}
+                className="btn btn-warning btn-sm w-100 d-flex align-items-center justify-content-center gap-2"
+                style={{ fontSize: '0.8rem' }}
+              >
+                View All News
+                <ArrowRight size={14} />
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
