@@ -3,8 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
 import { supabase } from '../integrations/supabase/client';
-import ReactQuill from 'react-quill';
+import ReactQuill, { Quill } from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import QuillBetterTable from 'quill-better-table';
+import 'quill-better-table/dist/quill-better-table.css';
+
+// Register the table module
+Quill.register('modules/better-table', QuillBetterTable);
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState([]);
@@ -35,24 +40,31 @@ const BlogAdmin = () => {
       [{ 'align': [] }],
       ['link', 'image', 'video', 'code-block'],
       ['blockquote'],
-      ['clean'],
-      // Custom button for YouTube embed
-      ['youtube-embed']
+      ['clean']
     ],
-    clipboard: {
-      // Allow pasting of HTML content including Instagram embeds and tables
-      matchVisual: false,
-      allowed: {
-        tags: ['blockquote', 'script', 'div', 'p', 'a', 'svg', 'g', 'path', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'iframe'],
-        attributes: ['class', 'style', 'data-instgrm-permalink', 'data-instgrm-version', 'href', 'target', 'rel', 'src', 'async', 'colspan', 'rowspan', 'width', 'height', 'frameborder', 'allowfullscreen', 'allow']
+    'better-table': {
+      operationMenu: {
+        items: {
+          unmergeCells: {
+            text: 'Another unmerge cells name'
+          }
+        },
+        color: {
+          colors: ['green', 'red', 'yellow', 'blue', 'white'],
+          text: 'Background Colors:'
+        }
       }
+    },
+    keyboard: {
+      bindings: QuillBetterTable.keyboardBindings
     }
   };
 
   const quillFormats = [
     'header', 'bold', 'italic', 'underline', 'strike',
     'color', 'background', 'list', 'bullet', 'indent', 'align',
-    'link', 'image', 'video', 'code-block', 'blockquote'
+    'link', 'image', 'video', 'code-block', 'blockquote',
+    'better-table', 'table-col', 'table-row', 'table-cell'
   ];
 
   // Load blogs from Firebase on component mount
@@ -386,12 +398,49 @@ const BlogAdmin = () => {
                 <small>
                   <strong>Rich Content Support:</strong>
                   <ul className="mb-0 mt-2">
-                    <li><strong>Tables:</strong> Use the table button in the toolbar or paste HTML tables directly</li>
+                    <li><strong>Tables:</strong> Right-click in editor to insert tables or paste HTML tables</li>
                     <li><strong>YouTube Videos:</strong> Paste YouTube URLs directly in content - they'll auto-embed</li>
                     <li><strong>Instagram Embeds:</strong> Paste embed codes using the code block button</li>
+                    <li><strong>HTML Code:</strong> Use code block button ({"</>"}) to paste raw HTML</li>
                     <li><strong>Formatting:</strong> Use the toolbar for headers, lists, quotes, and more</li>
                   </ul>
                 </small>
+              </div>
+              <div className="mb-2">
+                <button 
+                  type="button"
+                  className="btn btn-sm btn-outline-primary me-2"
+                  onClick={() => {
+                    // Insert a sample HTML table
+                    const tableHTML = `
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                            <th>Header 3</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                          </tr>
+                          <tr>
+                            <td>Cell 4</td>
+                            <td>Cell 5</td>
+                            <td>Cell 6</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    `;
+                    setNewBlog({...newBlog, content: newBlog.content + tableHTML});
+                  }}
+                >
+                  Insert Sample Table
+                </button>
+                <small className="text-muted">Creates a 3x3 table template</small>
               </div>
               <div style={{ height: '300px' }}>
                 <ReactQuill
