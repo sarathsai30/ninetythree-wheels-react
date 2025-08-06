@@ -3,13 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
 import { supabase } from '../integrations/supabase/client';
-import ReactQuill, { Quill } from 'react-quill';
+import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-import QuillBetterTable from 'quill-better-table';
-import 'quill-better-table/dist/quill-better-table.css';
-
-// Register the table module
-Quill.register('modules/better-table', QuillBetterTable);
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState([]);
@@ -42,29 +37,16 @@ const BlogAdmin = () => {
       ['blockquote'],
       ['clean']
     ],
-    'better-table': {
-      operationMenu: {
-        items: {
-          unmergeCells: {
-            text: 'Another unmerge cells name'
-          }
-        },
-        color: {
-          colors: ['green', 'red', 'yellow', 'blue', 'white'],
-          text: 'Background Colors:'
-        }
-      }
-    },
-    keyboard: {
-      bindings: QuillBetterTable.keyboardBindings
+    clipboard: {
+      // Allow pasting of HTML content including tables
+      matchVisual: false
     }
   };
 
   const quillFormats = [
     'header', 'bold', 'italic', 'underline', 'strike',
     'color', 'background', 'list', 'bullet', 'indent', 'align',
-    'link', 'image', 'video', 'code-block', 'blockquote',
-    'better-table', 'table-col', 'table-row', 'table-cell'
+    'link', 'image', 'video', 'code-block', 'blockquote'
   ];
 
   // Load blogs from Firebase on component mount
