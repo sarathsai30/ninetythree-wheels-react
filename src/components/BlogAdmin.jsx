@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
 import { supabase } from '../integrations/supabase/client';
-import { Editor } from '@tinymce/tinymce-react';
+import JoditEditor from 'jodit-react';
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState([]);
@@ -23,31 +23,31 @@ const BlogAdmin = () => {
   const [imagePreview, setImagePreview] = useState(null);
   const [uploadingImage, setUploadingImage] = useState(false);
 
-  // TinyMCE editor configuration
-  const editorInit = {
+  // Jodit editor configuration
+  const editorConfig = {
+    readonly: false,
     height: 400,
-    menubar: false,
-    plugins: [
-      'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-      'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-      'insertdatetime', 'media', 'table', 'help', 'wordcount', 'codesample'
-    ],
-    toolbar: 'undo redo | blocks | ' +
-      'bold italic backcolor | alignleft aligncenter ' +
-      'alignright alignjustify | bullist numlist outdent indent | ' +
-      'removeformat | table | link image media | code codesample | help',
-    content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
-    table_toolbar: 'tableprops tabledelete | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol',
-    paste_as_text: false,
-    paste_data_images: true,
-    paste_preprocess: function(plugin, args) {
-      // Allow HTML content including tables and embeds
-      return;
+    uploader: {
+      insertImageAsBase64URI: true
     },
-    extended_valid_elements: 'iframe[src|width|height|name|align|frameborder|scrolling|marginheight|marginwidth],script[src|type],blockquote[class],div[class|style],span[class|style]',
-    custom_elements: '~blockquote',
-    allow_script_urls: true,
-    convert_urls: false
+    removeButtons: [],
+    showCharsCounter: false,
+    showWordsCounter: false,
+    toolbarAdaptive: false,
+    buttons: [
+      'source', '|',
+      'bold', 'italic', 'underline', 'strikethrough', '|',
+      'ul', 'ol', '|', 
+      'outdent', 'indent', '|',
+      'font', 'fontsize', 'brush', 'paragraph', '|',
+      'image', 'file', 'video', 'table', 'link', '|',
+      'align', 'undo', 'redo', '|',
+      'hr', 'eraser', 'copyformat', '|',
+      'symbol', 'fullsize'
+    ],
+    askBeforePasteHTML: false,
+    askBeforePasteFromWord: false,
+    defaultActionOnPaste: 'insert_clear_html'
   };
 
   // Load blogs from Firebase on component mount
@@ -381,20 +381,18 @@ const BlogAdmin = () => {
                 <small>
                   <strong>Full HTML Editor with Rich Content Support:</strong>
                   <ul className="mb-0 mt-2">
-                    <li><strong>Tables:</strong> Use Table menu in toolbar to insert/edit tables</li>
-                    <li><strong>HTML Code:</strong> Use Source Code button (&lt;/&gt;) to edit raw HTML</li>
-                    <li><strong>Instagram/Social Embeds:</strong> Paste embed codes in Source Code mode</li>
-                    <li><strong>Media:</strong> Use Media button to embed videos, iframes, etc.</li>
-                    <li><strong>Images:</strong> Drag & drop or use Image button</li>
+                    <li><strong>Tables:</strong> Use Table button in toolbar to insert/edit tables</li>
+                    <li><strong>HTML Code:</strong> Use Source button (&lt;/&gt;) to edit raw HTML</li>
+                    <li><strong>Instagram/Social Embeds:</strong> Paste embed codes in Source mode</li>
+                    <li><strong>Media:</strong> Use Video/Image buttons to embed content</li>
+                    <li><strong>Paste:</strong> HTML content is preserved when pasting</li>
                   </ul>
                 </small>
               </div>
-              <Editor
-                apiKey="no-api-key"
+              <JoditEditor
                 value={newBlog.content}
-                onEditorChange={(content) => setNewBlog({...newBlog, content})}
-                init={editorInit}
-                disabled={operationLoading}
+                config={editorConfig}
+                onChange={(content) => setNewBlog({...newBlog, content})}
               />
             </div>
             <div className="row">
