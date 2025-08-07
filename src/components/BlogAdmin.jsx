@@ -3,8 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
 import { supabase } from '../integrations/supabase/client';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import { Editor } from '@tinymce/tinymce-react';
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState([]);
@@ -24,30 +23,32 @@ const BlogAdmin = () => {
   const [imagePreview, setImagePreview] = useState(null);
   const [uploadingImage, setUploadingImage] = useState(false);
 
-  // Rich text editor configuration
-  const quillModules = {
-    toolbar: [
-      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-      ['bold', 'italic', 'underline', 'strike'],
-      [{ 'color': [] }, { 'background': [] }],
-      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-      [{ 'indent': '-1'}, { 'indent': '+1' }],
-      [{ 'align': [] }],
-      ['link', 'image', 'video', 'code-block'],
-      ['blockquote'],
-      ['clean']
+  // TinyMCE editor configuration
+  const editorInit = {
+    height: 400,
+    menubar: false,
+    plugins: [
+      'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+      'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+      'insertdatetime', 'media', 'table', 'help', 'wordcount', 'codesample'
     ],
-    clipboard: {
-      // Allow pasting of HTML content including tables
-      matchVisual: false
-    }
+    toolbar: 'undo redo | blocks | ' +
+      'bold italic backcolor | alignleft aligncenter ' +
+      'alignright alignjustify | bullist numlist outdent indent | ' +
+      'removeformat | table | link image media | code codesample | help',
+    content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+    table_toolbar: 'tableprops tabledelete | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol',
+    paste_as_text: false,
+    paste_data_images: true,
+    paste_preprocess: function(plugin, args) {
+      // Allow HTML content including tables and embeds
+      return;
+    },
+    extended_valid_elements: 'iframe[src|width|height|name|align|frameborder|scrolling|marginheight|marginwidth],script[src|type],blockquote[class],div[class|style],span[class|style]',
+    custom_elements: '~blockquote',
+    allow_script_urls: true,
+    convert_urls: false
   };
-
-  const quillFormats = [
-    'header', 'bold', 'italic', 'underline', 'strike',
-    'color', 'background', 'list', 'bullet', 'indent', 'align',
-    'link', 'image', 'video', 'code-block', 'blockquote'
-  ];
 
   // Load blogs from Firebase on component mount
   useEffect(() => {
@@ -378,64 +379,23 @@ const BlogAdmin = () => {
               <label className="form-label">Content *</label>
               <div className="alert alert-info">
                 <small>
-                  <strong>Rich Content Support:</strong>
+                  <strong>Full HTML Editor with Rich Content Support:</strong>
                   <ul className="mb-0 mt-2">
-                    <li><strong>Tables:</strong> Right-click in editor to insert tables or paste HTML tables</li>
-                    <li><strong>YouTube Videos:</strong> Paste YouTube URLs directly in content - they'll auto-embed</li>
-                    <li><strong>Instagram Embeds:</strong> Paste embed codes using the code block button</li>
-                    <li><strong>HTML Code:</strong> Use code block button ({"</>"}) to paste raw HTML</li>
-                    <li><strong>Formatting:</strong> Use the toolbar for headers, lists, quotes, and more</li>
+                    <li><strong>Tables:</strong> Use Table menu in toolbar to insert/edit tables</li>
+                    <li><strong>HTML Code:</strong> Use Source Code button (&lt;/&gt;) to edit raw HTML</li>
+                    <li><strong>Instagram/Social Embeds:</strong> Paste embed codes in Source Code mode</li>
+                    <li><strong>Media:</strong> Use Media button to embed videos, iframes, etc.</li>
+                    <li><strong>Images:</strong> Drag & drop or use Image button</li>
                   </ul>
                 </small>
               </div>
-              <div className="mb-2">
-                <button 
-                  type="button"
-                  className="btn btn-sm btn-outline-primary me-2"
-                  onClick={() => {
-                    // Insert a sample HTML table
-                    const tableHTML = `
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>Header 1</th>
-                            <th>Header 2</th>
-                            <th>Header 3</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                          </tr>
-                          <tr>
-                            <td>Cell 4</td>
-                            <td>Cell 5</td>
-                            <td>Cell 6</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    `;
-                    setNewBlog({...newBlog, content: newBlog.content + tableHTML});
-                  }}
-                >
-                  Insert Sample Table
-                </button>
-                <small className="text-muted">Creates a 3x3 table template</small>
-              </div>
-              <div style={{ height: '300px' }}>
-                <ReactQuill
-                  theme="snow"
-                  value={newBlog.content}
-                  onChange={(content) => setNewBlog({...newBlog, content})}
-                  modules={quillModules}
-                  formats={quillFormats}
-                  placeholder="Write your blog content here... You can paste Instagram embed codes directly."
-                  style={{ height: '240px' }}
-                  readOnly={operationLoading}
-                />
-              </div>
+              <Editor
+                apiKey="no-api-key"
+                value={newBlog.content}
+                onEditorChange={(content) => setNewBlog({...newBlog, content})}
+                init={editorInit}
+                disabled={operationLoading}
+              />
             </div>
             <div className="row">
               <div className="col-md-8">
