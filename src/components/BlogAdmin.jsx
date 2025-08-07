@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
 import { supabase } from '../integrations/supabase/client';
@@ -22,9 +22,10 @@ const BlogAdmin = () => {
   const [imageFile, setImageFile] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
   const [uploadingImage, setUploadingImage] = useState(false);
+  const editorRef = useRef(null);
 
-  // Jodit editor configuration
-  const editorConfig = {
+  // Jodit editor configuration - memoized to prevent re-creation
+  const editorConfig = React.useMemo(() => ({
     readonly: false,
     height: 400,
     uploader: {
@@ -34,6 +35,7 @@ const BlogAdmin = () => {
     showCharsCounter: false,
     showWordsCounter: false,
     toolbarAdaptive: false,
+    spellcheck: false,
     buttons: [
       'source', '|',
       'bold', 'italic', 'underline', 'strikethrough', '|',
@@ -48,7 +50,12 @@ const BlogAdmin = () => {
     askBeforePasteHTML: false,
     askBeforePasteFromWord: false,
     defaultActionOnPaste: 'insert_clear_html'
-  };
+  }), []);
+
+  // Debounced content change handler to prevent focus loss
+  const handleContentChange = useCallback((content) => {
+    setNewBlog(prev => ({ ...prev, content }));
+  }, []);
 
   // Load blogs from Firebase on component mount
   useEffect(() => {
@@ -390,9 +397,11 @@ const BlogAdmin = () => {
                 </small>
               </div>
               <JoditEditor
+                ref={editorRef}
                 value={newBlog.content}
                 config={editorConfig}
-                onChange={(content) => setNewBlog({...newBlog, content})}
+                onChange={handleContentChange}
+                onBlur={() => {}} // Prevent blur from causing issues
               />
             </div>
             <div className="row">
