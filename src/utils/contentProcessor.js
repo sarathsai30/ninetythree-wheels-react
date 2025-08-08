@@ -43,10 +43,10 @@ export const getYouTubeVideoId = (url) => {
 export const processContentWithEmbeds = (content) => {
   if (!content) return '';
   
-  // Replace YouTube URLs with embedded iframes (smaller size)
-  const youtubeUrlPattern = /(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+))/g;
+  // Replace YouTube URLs with embedded iframes (smaller size) - improved pattern to capture query parameters
+  const youtubeUrlPattern = /(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)(?:[^\s<]*)?/g;
   
-  let processedContent = content.replace(youtubeUrlPattern, (match, fullUrl, videoId) => {
+  let processedContent = content.replace(youtubeUrlPattern, (match, baseUrl, videoId) => {
     return `
       <div class="youtube-embed-wrapper" style="position: relative; padding-bottom: 42%; height: 0; margin: 20px 0; max-width: 600px;">
         <iframe 

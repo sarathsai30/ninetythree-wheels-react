@@ -49,7 +49,22 @@ const BlogAdmin = () => {
     ],
     askBeforePasteHTML: false,
     askBeforePasteFromWord: false,
-    defaultActionOnPaste: 'insert_clear_html'
+    defaultActionOnPaste: 'insert_clear_html',
+    // Table configuration to prevent focus loss
+    table: {
+      selectionCellStyle: 'border: 1px solid #1e88e5 !important;',
+      useExtraClassesOptions: false
+    },
+    // Prevent focus loss during table editing
+    events: {
+      afterInit: function(editor) {
+        editor.events.on('keydown', function(event) {
+          if (event.target.closest('table')) {
+            event.stopPropagation();
+          }
+        });
+      }
+    }
   }), []);
 
   // Debounced content change handler to prevent focus loss
