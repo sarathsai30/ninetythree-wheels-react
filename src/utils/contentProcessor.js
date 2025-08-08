@@ -64,6 +64,19 @@ export const processContentWithEmbeds = (content) => {
   return processedContent;
 };
 
+// Load Instagram embed script if needed
+export const loadInstagramScript = () => {
+  if (!window.instgrm && !document.querySelector('script[src*="instagram.com/embed.js"]')) {
+    const script = document.createElement('script');
+    script.src = '//www.instagram.com/embed.js';
+    script.async = true;
+    document.head.appendChild(script);
+  } else if (window.instgrm) {
+    // Reload Instagram embeds if script already exists
+    window.instgrm.Embeds.process();
+  }
+};
+
 // Sanitize and process HTML content for safe rendering
 export const sanitizeAndProcessHTML = (html) => {
   if (!html) return '';
@@ -74,8 +87,13 @@ export const sanitizeAndProcessHTML = (html) => {
   // Ensure proper table styling for Bootstrap
   processedHtml = processedHtml.replace(/<table/g, '<table class="table table-bordered table-striped"');
   
-  // Ensure proper styling for other HTML elements
-  processedHtml = processedHtml.replace(/<blockquote/g, '<blockquote class="blockquote border-start border-warning border-4 ps-3 ms-3"');
+  // Ensure proper styling for other HTML elements but preserve Instagram blockquotes
+  processedHtml = processedHtml.replace(/<blockquote(?![^>]*instagram-media)/g, '<blockquote class="blockquote border-start border-warning border-4 ps-3 ms-3"');
+  
+  // Load Instagram script if Instagram embeds are present
+  if (processedHtml.includes('instagram-media')) {
+    setTimeout(loadInstagramScript, 100);
+  }
   
   return processedHtml;
 };
