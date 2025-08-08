@@ -43,12 +43,12 @@ export const getYouTubeVideoId = (url) => {
 export const processContentWithEmbeds = (content) => {
   if (!content) return '';
   
-  // Replace YouTube URLs with embedded iframes
+  // Replace YouTube URLs with embedded iframes (smaller size)
   const youtubeUrlPattern = /(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+))/g;
   
   let processedContent = content.replace(youtubeUrlPattern, (match, fullUrl, videoId) => {
     return `
-      <div class="youtube-embed-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0;">
+      <div class="youtube-embed-wrapper" style="position: relative; padding-bottom: 42%; height: 0; margin: 20px 0; max-width: 600px;">
         <iframe 
           src="https://www.youtube.com/embed/${videoId}" 
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
@@ -68,10 +68,15 @@ export const processContentWithEmbeds = (content) => {
 export const loadInstagramScript = () => {
   if (!window.instgrm && !document.querySelector('script[src*="instagram.com/embed.js"]')) {
     const script = document.createElement('script');
-    script.src = '//www.instagram.com/embed.js';
+    script.src = 'https://www.instagram.com/embed.js';
     script.async = true;
+    script.onload = () => {
+      if (window.instgrm && window.instgrm.Embeds) {
+        window.instgrm.Embeds.process();
+      }
+    };
     document.head.appendChild(script);
-  } else if (window.instgrm) {
+  } else if (window.instgrm && window.instgrm.Embeds) {
     // Reload Instagram embeds if script already exists
     window.instgrm.Embeds.process();
   }
@@ -90,9 +95,18 @@ export const sanitizeAndProcessHTML = (html) => {
   // Ensure proper styling for other HTML elements but preserve Instagram blockquotes
   processedHtml = processedHtml.replace(/<blockquote(?![^>]*instagram-media)/g, '<blockquote class="blockquote border-start border-warning border-4 ps-3 ms-3"');
   
-  // Load Instagram script if Instagram embeds are present
+  // Reduce Instagram embed size and load script
   if (processedHtml.includes('instagram-media')) {
-    setTimeout(loadInstagramScript, 100);
+    // Add styling to reduce Instagram embed size
+    processedHtml = processedHtml.replace(
+      /<blockquote class="instagram-media"/g, 
+      '<blockquote class="instagram-media" style="max-width: 540px; min-width: 280px; width: 100% !important;"'
+    );
+    
+    // Load Instagram script with a delay to ensure DOM is ready
+    setTimeout(() => {
+      loadInstagramScript();
+    }, 500);
   }
   
   return processedHtml;
