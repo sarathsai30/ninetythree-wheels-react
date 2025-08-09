@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { blogService } from '../services/blogService';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
 import { sanitizeAndProcessHTML, convertYouTubeToEmbed, getYouTubeVideoId } from '../utils/contentProcessor';
+import ShareBlog from '../components/ShareBlog';
 
 const BlogDetail = () => {
   const { slug } = useParams();
@@ -143,19 +144,22 @@ const BlogDetail = () => {
                   {blog.title}
                 </h1>
                 
-                <div className="flex items-center gap-6 text-sm text-gray-600 mb-6 pb-6 border-b">
-                  <div className="flex items-center gap-2">
-                    <Calendar size={16} />
-                    <span>{new Date(blog.createdAt).toLocaleDateString('en-GB', { 
-                      day: '2-digit', 
-                      month: 'long', 
-                      year: 'numeric' 
-                    })}</span>
+                <div className="flex items-center justify-between mb-6 pb-6 border-b">
+                  <div className="flex items-center gap-6 text-sm text-gray-600">
+                    <div className="flex items-center gap-2">
+                      <Calendar size={16} />
+                      <span>{new Date(blog.createdAt).toLocaleDateString('en-GB', { 
+                        day: '2-digit', 
+                        month: 'long', 
+                        year: 'numeric' 
+                      })}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <User size={16} />
+                      <span>93cars Team</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <User size={16} />
-                    <span>93cars Team</span>
-                  </div>
+                  <ShareBlog blog={blog} />
                 </div>
                 
                 <div className="prose max-w-none text-gray-700 leading-relaxed">
