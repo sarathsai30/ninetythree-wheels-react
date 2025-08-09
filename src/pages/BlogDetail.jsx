@@ -15,12 +15,15 @@ const BlogDetail = () => {
     const fetchBlogAndRecent = async () => {
       try {
         setLoading(true);
-        const allBlogs = await blogService.getAllBlogs();
-        // Try to find by slug first, fallback to ID for backward compatibility
-        const currentBlog = allBlogs.find(b => b.slug === slug || b.id === slug);
+        
+        // Fetch the specific blog with full content
+        const currentBlog = await blogService.getBlogById(slug);
         
         if (currentBlog) {
           setBlog(currentBlog);
+          
+          // Fetch recent blogs separately without full content for better performance
+          const allBlogs = await blogService.getAllBlogs(false);
           setRecentBlogs(allBlogs.filter(b => b.id !== currentBlog.id).slice(0, 5));
         } else {
           setError('Blog not found');

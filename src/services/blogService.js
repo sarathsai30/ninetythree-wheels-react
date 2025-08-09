@@ -65,8 +65,8 @@ const reconstructContent = async (blogId, totalChunks) => {
 };
 
 export const blogService = {
-  // Get all blogs
-  async getAllBlogs() {
+  // Get all blogs (lightweight - no full content reconstruction)
+  async getAllBlogs(includeFullContent = false) {
     try {
       const q = query(collection(db, COLLECTION_NAME), orderBy('createdAt', 'desc'));
       const querySnapshot = await getDocs(q);
@@ -76,8 +76,8 @@ export const blogService = {
         const blogData = docSnapshot.data();
         let content = blogData.content;
         
-        // If content is chunked, reconstruct it
-        if (blogData.isChunked && blogData.totalChunks > 1) {
+        // Only reconstruct content if explicitly requested
+        if (includeFullContent && blogData.isChunked && blogData.totalChunks > 1) {
           content = await reconstructContent(docSnapshot.id, blogData.totalChunks);
         }
         
@@ -93,6 +93,41 @@ export const blogService = {
       return blogs;
     } catch (error) {
       console.error('Error fetching blogs:', error);
+      throw error;
+    }
+  },
+
+  // Get a single blog by ID or slug with full content
+  async getBlogById(id) {
+    try {
+      const q = query(collection(db, COLLECTION_NAME), orderBy('createdAt', 'desc'));
+      const querySnapshot = await getDocs(q);
+      
+      for (const docSnapshot of querySnapshot.docs) {
+        const blogData = docSnapshot.data();
+        
+        // Check if this is the blog we're looking for (by ID or slug)
+        if (docSnapshot.id === id || blogData.slug === id) {
+          let content = blogData.content;
+          
+          // Reconstruct content if chunked
+          if (blogData.isChunked && blogData.totalChunks > 1) {
+            content = await reconstructContent(docSnapshot.id, blogData.totalChunks);
+          }
+          
+          return {
+            id: docSnapshot.id,
+            ...blogData,
+            content,
+            createdAt: blogData.createdAt?.toDate?.()?.toISOString() || new Date().toISOString(),
+            updatedAt: blogData.updatedAt?.toDate?.()?.toISOString()
+          };
+        }
+      }
+      
+      return null; // Blog not found
+    } catch (error) {
+      console.error('Error fetching blog:', error);
       throw error;
     }
   },

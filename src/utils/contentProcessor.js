@@ -44,7 +44,7 @@ export const processContentWithEmbeds = (content) => {
   if (!content) return '';
   
   // Replace YouTube URLs with embedded iframes (smaller size) - improved pattern to capture query parameters
-  const youtubeUrlPattern = /(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)(?:[^\s<]*)?/g;
+  const youtubeUrlPattern = /(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)(?:[^\s\<]*)?/g;
   
   let processedContent = content.replace(youtubeUrlPattern, (match, baseUrl, videoId) => {
     return `
