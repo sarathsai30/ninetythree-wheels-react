@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import QuickSearch from './QuickSearch';
+import NewsPopup from './NewsPopup';
 
 const HeroSection = () => {
   return (
@@ -54,6 +55,9 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      
+      {/* Latest News Popup */}
+      <NewsPopup />
     </section>
   );
 };
