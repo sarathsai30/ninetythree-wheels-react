@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { blogService } from '../services/blogService';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
+import { sanitizeAndProcessHTML, convertYouTubeToEmbed, getYouTubeVideoId } from '../utils/contentProcessor';
+import ShareBlog from '../components/ShareBlog';
 
 const BlogDetail = () => {
   const { slug } = useParams();
@@ -14,12 +16,15 @@ const BlogDetail = () => {
     const fetchBlogAndRecent = async () => {
       try {
         setLoading(true);
-        const allBlogs = await blogService.getAllBlogs();
-        // Try to find by slug first, fallback to ID for backward compatibility
-        const currentBlog = allBlogs.find(b => b.slug === slug || b.id === slug);
+        
+        // Fetch the specific blog with full content
+        const currentBlog = await blogService.getBlogById(slug);
         
         if (currentBlog) {
           setBlog(currentBlog);
+          
+          // Fetch recent blogs separately without full content for better performance
+          const allBlogs = await blogService.getAllBlogs(false);
           setRecentBlogs(allBlogs.filter(b => b.id !== currentBlog.id).slice(0, 5));
         } else {
           setError('Blog not found');
@@ -139,36 +144,92 @@ const BlogDetail = () => {
                   {blog.title}
                 </h1>
                 
-                <div className="flex items-center gap-6 text-sm text-gray-600 mb-6 pb-6 border-b">
-                  <div className="flex items-center gap-2">
-                    <Calendar size={16} />
-                    <span>{new Date(blog.createdAt).toLocaleDateString('en-GB', { 
-                      day: '2-digit', 
-                      month: 'long', 
-                      year: 'numeric' 
-                    })}</span>
+                <div className="flex items-center justify-between mb-6 pb-6 border-b">
+                  <div className="flex items-center gap-6 text-sm text-gray-600">
+                    <div className="flex items-center gap-2">
+                      <Calendar size={16} />
+                      <span>{new Date(blog.createdAt).toLocaleDateString('en-GB', { 
+                        day: '2-digit', 
+                        month: 'long', 
+                        year: 'numeric' 
+                      })}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <User size={16} />
+                      <span>93cars Team</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <User size={16} />
-                    <span>93cars Team</span>
-                  </div>
+                  <ShareBlog blog={blog} />
                 </div>
                 
                 <div className="prose max-w-none text-gray-700 leading-relaxed">
-                  <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+                  <div 
+                    dangerouslySetInnerHTML={{ 
+                      __html: sanitizeAndProcessHTML(blog.content) 
+                    }} 
+                    style={{
+                      lineHeight: '1.6',
+                      fontSize: '16px'
+                    }}
+                    className="blog-content"
+                  />
+                  <style jsx>{`
+                    .blog-content table {
+                      width: 100%;
+                      border-collapse: collapse;
+                      margin: 20px 0;
+                      border: 1px solid #dee2e6;
+                    }
+                    .blog-content table th,
+                    .blog-content table td {
+                      padding: 12px;
+                      text-align: left;
+                      border: 1px solid #dee2e6;
+                    }
+                    .blog-content table th {
+                      background-color: #f8f9fa;
+                      font-weight: 600;
+                    }
+                    .blog-content table tbody tr:nth-child(odd) {
+                      background-color: #f8f9fa;
+                    }
+                    .blog-content .youtube-embed-wrapper {
+                      margin: 25px 0;
+                    }
+                    .blog-content blockquote {
+                      border-left: 4px solid #fbbf24;
+                      padding-left: 16px;
+                      margin-left: 16px;
+                      font-style: italic;
+                      color: #6b7280;
+                    }
+                  `}</style>
                 </div>
                 
                 {blog.videoUrl && (
                   <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-                    <h3 className="font-semibold text-lg mb-3">Related Video</h3>
-                    <a 
-                      href={blog.videoUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-yellow-600 hover:text-yellow-700 font-medium"
-                    >
-                      Watch Video →
-                    </a>
+                    <h3 className="font-semibold text-lg mb-3">Featured Video</h3>
+                    {getYouTubeVideoId(blog.videoUrl) ? (
+                      <div className="youtube-embed-wrapper" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                        <iframe 
+                          src={convertYouTubeToEmbed(blog.videoUrl)} 
+                          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }} 
+                          allowFullScreen
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                        </iframe>
+                      </div>
+                    ) : (
+                      <a 
+                        href={blog.videoUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-yellow-600 hover:text-yellow-700 font-medium"
+                      >
+                        Watch Video →
+                      </a>
+                    )}
                   </div>
                 )}
               </div>
