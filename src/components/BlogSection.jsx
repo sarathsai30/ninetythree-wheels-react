@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { Youtube, Linkedin, Twitter } from 'lucide-react';
 import { blogService } from '../services/blogService';
-import { sanitizeAndProcessHTML } from '../utils/contentProcessor';
 
 const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);
@@ -132,13 +131,11 @@ const BlogSection = () => {
                   <div 
                     className="card-text text-muted"
                     dangerouslySetInnerHTML={{ 
-                      __html: sanitizeAndProcessHTML(
-                        expandedBlogs.has(blog.id) 
-                          ? blog.content 
-                          : blog.content.length > 1000 
-                            ? `${blog.content.substring(0, 1000)}...` 
-                            : blog.content 
-                      )
+                      __html: expandedBlogs.has(blog.id) 
+                        ? blog.content 
+                        : blog.content.length > 1000 
+                          ? `${blog.content.substring(0, 1000)}...` 
+                          : blog.content 
                     }}
                   />
                   <div className="d-flex justify-content-between align-items-center mt-3">

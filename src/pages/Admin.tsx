@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import carsData from '../data/cars.json';
 import filtersData from '../data/filters.json';
@@ -72,6 +73,9 @@ const Admin = () => {
                                         Login
                                     </button>
                                 </form>
+                                <small className="text-muted d-block text-center mt-2">
+                                    Default password: admin123
+                                </small>
                             </div>
                         </div>
                     </div>

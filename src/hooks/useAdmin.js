@@ -21,7 +21,7 @@ export const useAdmin = () => {
 
   const login = (password) => {
     // Simple password check (in production, this should be more secure)
-    if (password === 'cars93@Biz!2025') {
+    if (password === 'admin123') {
       const session = {
         timestamp: Date.now(),
         isAdmin: true
