@@ -3,12 +3,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CarCard from './CarCard';
 
-const FeaturedCars = ({ featuredCars }) => {
+const FeaturedCars = ({ featuredCars, title = "Featured Cars" }) => {
   return (
     <section className="py-5">
       <div className="container">
         <div className="text-center mb-5">
-          <h2 className="fw-bold">Featured Cars</h2>
+          <h2 className="fw-bold">{title}</h2>
           <p className="text-muted">Handpicked cars with the best value for money</p>
         </div>
         <div className="row">
