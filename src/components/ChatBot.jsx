@@ -48,7 +48,7 @@ const ChatBot = ({ onCarSearch }) => {
 
         // Add bot response
         setTimeout(() => {
-            addMessage(`I found cars matching "${inputValue}". Check the results above!`, true);
+            addMessage(`I found cars matching "${inputValue}". Check the results in home page!`, true);
             setShowGuideOptions(true);
         }, 500);
 
