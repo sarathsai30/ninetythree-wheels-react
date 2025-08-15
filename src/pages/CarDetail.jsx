@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
+import CarVariantsTable from './CarVariantsTable';
 
 const CarDetail = () => {
   const { id } = useParams();
@@ -211,7 +212,7 @@ const CarDetail = () => {
           </div>
 
           {/* Model Variants Table */}
-          <div className="card border-0 shadow-sm">
+          {/* <div className="card border-0 shadow-sm">
             <div className="card-header bg-white">
               <h4 className="fw-bold mb-0">Available Variants</h4>
             </div>
@@ -252,7 +253,7 @@ const CarDetail = () => {
                 </table>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="col-lg-4">
@@ -267,6 +268,7 @@ const CarDetail = () => {
           </div>
         </div>
       </div>
+      <CarVariantsTable variants={modelVariants} currentId={car.id}/>
     </div>
   );
 };

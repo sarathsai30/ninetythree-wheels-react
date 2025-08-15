@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Youtube, Linkedin, Twitter } from 'lucide-react';
 import { blogService } from '../services/blogService';
+import { sanitizeAndProcessHTML } from '../utils/contentProcessor';
 
 const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);
@@ -26,6 +27,31 @@ const BlogSection = () => {
 
     fetchBlogs();
   }, []);
+
+  // Load Instagram embed script when blogs are loaded
+  useEffect(() => {
+    if (blogs.length > 0) {
+      // Check if any blog contains Instagram embeds
+      const hasInstagramEmbeds = blogs.some(blog => 
+        blog.content && blog.content.includes('instagram.com/embed.js')
+      );
+      
+      if (hasInstagramEmbeds) {
+        // Load Instagram embed script if not already loaded
+        if (!document.querySelector('script[src*="instagram.com/embed.js"]')) {
+          const script = document.createElement('script');
+          script.src = '//www.instagram.com/embed.js';
+          script.async = true;
+          document.body.appendChild(script);
+        } else {
+          // If script already exists, process embeds
+          if (window.instgrm && window.instgrm.Embeds) {
+            window.instgrm.Embeds.process();
+          }
+        }
+      }
+    }
+  }, [blogs]);
 
   const getPlatformIcon = (platform) => {
     switch (platform) {
@@ -106,11 +132,13 @@ const BlogSection = () => {
                   <div 
                     className="card-text text-muted"
                     dangerouslySetInnerHTML={{ 
-                      __html: expandedBlogs.has(blog.id) 
-                        ? blog.content 
-                        : blog.content.length > 1000 
-                          ? `${blog.content.substring(0, 1000)}...` 
-                          : blog.content 
+                      __html: sanitizeAndProcessHTML(
+                        expandedBlogs.has(blog.id) 
+                          ? blog.content 
+                          : blog.content.length > 1000 
+                            ? `${blog.content.substring(0, 1000)}...` 
+                            : blog.content 
+                      )
                     }}
                   />
                   <div className="d-flex justify-content-between align-items-center mt-3">

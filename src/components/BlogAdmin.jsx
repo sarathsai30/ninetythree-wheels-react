@@ -1,9 +1,9 @@
 
-import React, { useState, useEffect } from 'react';
-import { Trash2, Plus, Edit3, RefreshCw } from 'lucide-react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import { supabase } from '../integrations/supabase/client';
+import JoditEditor from 'jodit-react';
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState([]);
@@ -14,28 +14,63 @@ const BlogAdmin = () => {
     title: '',
     content: '',
     videoUrl: '',
-    platform: 'youtube'
+    platform: 'youtube',
+    imageUrl: '',
+    slug: ''
   });
   const [operationLoading, setOperationLoading] = useState(false);
+  const [imageFile, setImageFile] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null);
+  const [uploadingImage, setUploadingImage] = useState(false);
+  const editorRef = useRef(null);
 
-  // Rich text editor configuration
-  const quillModules = {
-    toolbar: [
-      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-      ['bold', 'italic', 'underline', 'strike'],
-      [{ 'color': [] }, { 'background': [] }],
-      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-      [{ 'indent': '-1'}, { 'indent': '+1' }],
-      ['link', 'image'],
-      ['clean']
+  // Jodit editor configuration - memoized to prevent re-creation
+  const editorConfig = React.useMemo(() => ({
+    readonly: false,
+    height: 400,
+    uploader: {
+      insertImageAsBase64URI: true
+    },
+    removeButtons: [],
+    showCharsCounter: false,
+    showWordsCounter: false,
+    toolbarAdaptive: false,
+    spellcheck: false,
+    buttons: [
+      'source', '|',
+      'bold', 'italic', 'underline', 'strikethrough', '|',
+      'ul', 'ol', '|', 
+      'outdent', 'indent', '|',
+      'font', 'fontsize', 'brush', 'paragraph', '|',
+      'image', 'file', 'video', 'table', 'link', '|',
+      'align', 'undo', 'redo', '|',
+      'hr', 'eraser', 'copyformat', '|',
+      'symbol', 'fullsize'
     ],
-  };
+    askBeforePasteHTML: false,
+    askBeforePasteFromWord: false,
+    defaultActionOnPaste: 'insert_clear_html',
+    // Table configuration to prevent focus loss
+    table: {
+      selectionCellStyle: 'border: 1px solid #1e88e5 !important;',
+      useExtraClassesOptions: false
+    },
+    // Prevent focus loss during table editing
+    events: {
+      afterInit: function(editor) {
+        editor.events.on('keydown', function(event) {
+          if (event.target.closest('table')) {
+            event.stopPropagation();
+          }
+        });
+      }
+    }
+  }), []);
 
-  const quillFormats = [
-    'header', 'bold', 'italic', 'underline', 'strike',
-    'color', 'background', 'list', 'bullet', 'indent',
-    'link', 'image'
-  ];
+  // Debounced content change handler to prevent focus loss
+  const handleContentChange = useCallback((content) => {
+    setNewBlog(prev => ({ ...prev, content }));
+  }, []);
 
   // Load blogs from Firebase on component mount
   useEffect(() => {
@@ -55,12 +90,110 @@ const BlogAdmin = () => {
     }
   };
 
+  // Handle image upload using Supabase Storage
+  const handleImageUpload = async (file) => {
+    if (!file) return null;
+    
+    try {
+      setUploadingImage(true);
+      const timestamp = Date.now();
+      const fileName = `blog-images/${timestamp}-${file.name}`;
+      
+      const { data, error } = await supabase.storage
+        .from('blog-images')
+        .upload(fileName, file);
+
+      if (error) {
+        console.error('Upload error:', error);
+        alert('Failed to upload image. Please try again.');
+        return null;
+      }
+
+      const { data: { publicUrl } } = supabase.storage
+        .from('blog-images')
+        .getPublicUrl(fileName);
+      
+      return publicUrl;
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      alert('Failed to upload image. Please try again.');
+      return null;
+    } finally {
+      setUploadingImage(false);
+    }
+  };
+
+  // Handle image file selection
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setImageFile(file);
+      const reader = new FileReader();
+      reader.onload = (e) => setImagePreview(e.target.result);
+      reader.readAsDataURL(file);
+    }
+  };
+
+  // Remove selected image
+  const removeImage = () => {
+    setImageFile(null);
+    setImagePreview(null);
+    setNewBlog({...newBlog, imageUrl: ''});
+  };
+
+  // Generate slug from title
+  const generateSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/-+/g, '-') // Replace multiple hyphens with single
+      .trim('-'); // Remove leading/trailing hyphens
+  };
+
+  // Update existing blogs to add slugs
+  const updateExistingBlogsWithSlugs = async () => {
+    try {
+      setOperationLoading(true);
+      const blogsToUpdate = blogs.filter(blog => !blog.slug);
+      
+      for (const blog of blogsToUpdate) {
+        const slug = generateSlug(blog.title);
+        await blogService.updateBlog(blog.id, { slug });
+      }
+      
+      await fetchBlogs(); // Refresh the list
+      alert(`Updated ${blogsToUpdate.length} blogs with slugs!`);
+    } catch (error) {
+      console.error('Error updating blogs with slugs:', error);
+      alert('Failed to update blogs with slugs');
+    } finally {
+      setOperationLoading(false);
+    }
+  };
+
   const handleAddBlog = async () => {
     if (newBlog.title.trim() && newBlog.content.trim()) {
       try {
         setOperationLoading(true);
-        await blogService.addBlog(newBlog);
-        setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
+        
+        // Upload image if selected
+        let imageUrl = '';
+        if (imageFile) {
+          imageUrl = await handleImageUpload(imageFile);
+          if (!imageUrl) return; // Stop if image upload failed
+        }
+        
+        const blogData = {
+          ...newBlog,
+          imageUrl,
+          slug: generateSlug(newBlog.title)
+        };
+        
+        await blogService.addBlog(blogData);
+        setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '', slug: '' });
+        setImageFile(null);
+        setImagePreview(null);
         setIsAddingBlog(false);
         await fetchBlogs(); // Refresh the list
         alert('Blog added successfully!');
@@ -79,16 +212,36 @@ const BlogAdmin = () => {
       title: blog.title,
       content: blog.content,
       videoUrl: blog.videoUrl || '',
-      platform: blog.platform || 'youtube'
+      platform: blog.platform || 'youtube',
+      imageUrl: blog.imageUrl || '',
+      slug: blog.slug || generateSlug(blog.title)
     });
+    setImagePreview(blog.imageUrl || null);
+    setImageFile(null);
   };
 
   const handleUpdateBlog = async () => {
     try {
       setOperationLoading(true);
-      await blogService.updateBlog(editingBlogId, newBlog);
+      
+      // Upload new image if selected
+      let imageUrl = newBlog.imageUrl;
+      if (imageFile) {
+        imageUrl = await handleImageUpload(imageFile);
+        if (!imageUrl) return; // Stop if image upload failed
+      }
+      
+      const blogData = {
+        ...newBlog,
+        imageUrl,
+        slug: generateSlug(newBlog.title)
+      };
+      
+      await blogService.updateBlog(editingBlogId, blogData);
       setEditingBlogId(null);
-      setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
+      setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '', slug: '' });
+      setImageFile(null);
+      setImagePreview(null);
       await fetchBlogs(); // Refresh the list
       alert('Blog updated successfully!');
     } catch (error) {
@@ -118,7 +271,9 @@ const BlogAdmin = () => {
   const cancelEdit = () => {
     setIsAddingBlog(false);
     setEditingBlogId(null);
-    setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube' });
+    setNewBlog({ title: '', content: '', videoUrl: '', platform: 'youtube', imageUrl: '', slug: '' });
+    setImageFile(null);
+    setImagePreview(null);
   };
 
   // Strip HTML tags for preview
@@ -146,6 +301,15 @@ const BlogAdmin = () => {
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold">Blog Management</h2>
         <div className="d-flex gap-2">
+          <button 
+            className="btn btn-outline-warning d-flex align-items-center gap-2"
+            onClick={updateExistingBlogsWithSlugs}
+            disabled={operationLoading || blogs.filter(blog => !blog.slug).length === 0}
+            title="Update existing blogs to use user-friendly URLs"
+          >
+            <RefreshCw size={18} />
+            Generate Slugs ({blogs.filter(blog => !blog.slug).length})
+          </button>
           <button 
             className="btn btn-outline-secondary d-flex align-items-center gap-2"
             onClick={fetchBlogs}
@@ -191,20 +355,69 @@ const BlogAdmin = () => {
                 disabled={operationLoading}
               />
             </div>
+
+            {/* Image Upload Section */}
+            <div className="mb-3">
+              <label className="form-label">Blog Header Image</label>
+              <div className="border border-2 border-dashed rounded p-3">
+                {imagePreview ? (
+                  <div className="text-center">
+                    <img 
+                      src={imagePreview} 
+                      alt="Preview" 
+                      className="img-fluid mb-2 rounded"
+                      style={{ maxHeight: '200px', objectFit: 'cover' }}
+                    />
+                    <div>
+                      <button 
+                        type="button"
+                        className="btn btn-outline-danger btn-sm"
+                        onClick={removeImage}
+                        disabled={operationLoading}
+                      >
+                        <X size={16} className="me-1" />
+                        Remove Image
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="text-center">
+                    <Upload size={48} className="text-muted mb-2" />
+                    <p className="mb-2">Click to upload blog header image</p>
+                    <input
+                      type="file"
+                      className="form-control"
+                      accept="image/*"
+                      onChange={handleImageChange}
+                      disabled={operationLoading}
+                    />
+                    <small className="text-muted">Recommended: 800x400px, JPG or PNG</small>
+                  </div>
+                )}
+              </div>
+            </div>
+
             <div className="mb-3">
               <label className="form-label">Content *</label>
-              <div style={{ height: '300px' }}>
-                <ReactQuill
-                  theme="snow"
-                  value={newBlog.content}
-                  onChange={(content) => setNewBlog({...newBlog, content})}
-                  modules={quillModules}
-                  formats={quillFormats}
-                  placeholder="Write your blog content here..."
-                  style={{ height: '240px' }}
-                  readOnly={operationLoading}
-                />
+              <div className="alert alert-info">
+                <small>
+                  <strong>Full HTML Editor with Rich Content Support:</strong>
+                  <ul className="mb-0 mt-2">
+                    <li><strong>Tables:</strong> Use Table button in toolbar to insert/edit tables</li>
+                    <li><strong>HTML Code:</strong> Use Source button (&lt;/&gt;) to edit raw HTML</li>
+                    <li><strong>Instagram/Social Embeds:</strong> Paste embed codes in Source mode</li>
+                    <li><strong>Media:</strong> Use Video/Image buttons to embed content</li>
+                    <li><strong>Paste:</strong> HTML content is preserved when pasting</li>
+                  </ul>
+                </small>
               </div>
+              <JoditEditor
+                ref={editorRef}
+                value={newBlog.content}
+                config={editorConfig}
+                onChange={handleContentChange}
+                onBlur={() => {}} // Prevent blur from causing issues
+              />
             </div>
             <div className="row">
               <div className="col-md-8">
@@ -236,12 +449,12 @@ const BlogAdmin = () => {
               <button 
                 className="btn btn-success me-2"
                 onClick={editingBlogId ? handleUpdateBlog : handleAddBlog}
-                disabled={operationLoading}
+                disabled={operationLoading || uploadingImage}
               >
-                {operationLoading ? (
+                {operationLoading || uploadingImage ? (
                   <>
                     <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-                    {editingBlogId ? 'Updating...' : 'Adding...'}
+                    {uploadingImage ? 'Uploading Image...' : editingBlogId ? 'Updating...' : 'Adding...'}
                   </>
                 ) : (
                   editingBlogId ? 'Update Blog' : 'Add Blog'
@@ -270,6 +483,14 @@ const BlogAdmin = () => {
           blogs.map(blog => (
             <div key={blog.id} className="col-lg-6 col-md-12 mb-4">
               <div className="card h-100">
+                {blog.imageUrl && (
+                  <img 
+                    src={blog.imageUrl} 
+                    alt={blog.title}
+                    className="card-img-top"
+                    style={{ height: '200px', objectFit: 'cover' }}
+                  />
+                )}
                 <div className="card-body">
                   <div className="d-flex justify-content-between align-items-start mb-2">
                     <h5 className="card-title">{blog.title}</h5>
