@@ -258,7 +258,7 @@ const CarDetail = () => {
 
         <div className="col-lg-4">
           {/* Price Card */}
-          <div className="card border-0 shadow-sm sticky-top" style={{top: '20px'}}>
+          <div className="card border-0 shadow-sm sticky-top" style={{top: '20px', zIndex: '9'}}>
             <div className="card-body">
               <div className="text-center">
                 <h3 className="text-primary fw-bold mb-0">{formatPrice(car.price)}</h3>
