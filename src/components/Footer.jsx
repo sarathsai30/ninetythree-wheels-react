@@ -80,7 +80,7 @@ const Footer = () => {
               onMouseLeave={() => setHovered('')}
             >
               <div className="d-flex align-items-center justify-content-center px-3" style={{ backgroundColor: hovered === 'youtube' ? '#ff6b6bff' : '#293034' }}>
-                <FaYoutube size={30} color={hovered === '#fff'} />
+                <FaYoutube size={30} color={'#fff'} />
               </div>
               <div className="d-flex align-items-center px-3 py-3" style={{ fontWeight: '500' }}>
                 Subscribe On Youtube
@@ -101,7 +101,7 @@ const Footer = () => {
               onMouseLeave={() => setHovered('')}
             >
               <div className="d-flex align-items-center justify-content-center px-3" style={{ backgroundColor: hovered === 'facebook' ? '#64a4f8ff' : '#293034' }}>
-                <FaFacebookF size={20} color={hovered === '#fff'} />
+                <FaFacebookF size={20} color={'#fff'} />
               </div>
               <div className="d-flex align-items-center px-3 py-3" style={{ fontWeight: '500' }}>
                 Follow On Facebook

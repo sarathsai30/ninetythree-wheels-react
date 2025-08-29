@@ -1,0 +1,120 @@
+[
+  {
+    "id": "PR004",
+    "stateId": "AP",
+    "stateName": "Andhra Pradesh",
+    "insurancePercentage": 3.0,
+    "otherCharges": 12000,
+    "rtoRules": [
+      {
+        "minPrice": 0,
+        "maxPrice": 1000000,
+        "fuelRates": {
+          "petrol": 12,
+          "diesel": 12,
+          "ev": 0
+        }
+      },
+      {
+        "minPrice": 1000001,
+        "maxPrice": 2000000,
+        "fuelRates": {
+          "petrol": 14,
+          "diesel": 14,
+          "ev": 0
+        }
+      },
+      {
+        "minPrice": 2000001,
+        "maxPrice": 999999999,
+        "fuelRates": {
+          "petrol": 18,
+          "diesel": 18,
+          "ev": 0
+        }
+      }
+    ],
+    "calculation": {
+      "exShowroomPrice": null,
+      "fuelType": null,
+      "rtoCharges": null,
+      "insurance": null,
+      "otherCharges": null,
+      "onRoadPrice": null
+    }
+  },
+  {
+    "id": "PR003",
+    "stateId": "KA",
+    "stateName": "Karnataka",
+    "insurancePercentage": 3.0,
+    "otherCharges": 14000,
+    "rtoRules": [
+      {
+        "minPrice": 0,
+        "maxPrice": 500000,
+        "fuelRates": { "petrol": 13, "diesel": 13, "ev": 4 }
+      },
+      {
+        "minPrice": 500001,
+        "maxPrice": 1000000,
+        "fuelRates": { "petrol": 14, "diesel": 14, "ev": 4 }
+      },
+      {
+        "minPrice": 1000001,
+        "maxPrice": 2000000,
+        "fuelRates": { "petrol": 17, "diesel": 17, "ev": 4 }
+      },
+      {
+        "minPrice": 2000001,
+        "maxPrice": 999999999,
+        "fuelRates": { "petrol": 18, "diesel": 18, "ev": 4 }
+      }
+    ],
+    "calculation": {
+      "exShowroomPrice": null,
+      "fuelType": null,
+      "rtoCharges": null,
+      "insurance": null,
+      "otherCharges": null,
+      "onRoadPrice": null
+    }
+  },
+  {
+    "id": "PR005",
+    "stateId": "TS",
+    "stateName": "Telangana",
+    "insurancePercentage": 3.0,
+    "otherCharges": 13000,
+    "rtoRules": [
+      {
+        "minPrice": 0,
+        "maxPrice": 600000,
+        "fuelRates": { "petrol": 3, "diesel": 3, "ev": 0 }
+      },
+      {
+        "minPrice": 600001,
+        "maxPrice": 1000000,
+        "fuelRates": { "petrol": 6, "diesel": 6, "ev": 0 }
+      },
+      {
+        "minPrice": 1000001,
+        "maxPrice": 2000000,
+        "fuelRates": { "petrol": 8, "diesel": 8, "ev": 0 }
+      },
+      {
+        "minPrice": 2000001,
+        "maxPrice": 999999999,
+        "fuelRates": { "petrol": 9, "diesel": 9, "ev": 0 }
+      }
+    ],
+    "calculation": {
+      "exShowroomPrice": null,
+      "fuelType": null,
+      "rtoCharges": null,
+      "insurance": null,
+      "otherCharges": null,
+      "onRoadPrice": null
+    }
+  }
+]
