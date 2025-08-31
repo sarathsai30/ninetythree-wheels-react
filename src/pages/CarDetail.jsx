@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
-import CarVariantsTable from './CarVariantsTable';
+import CarVariantsTable from './CarVariantsTable/CarVariantsTable';
+import OnRoadPrice from './CarVariantsTable/OnRoadPrice';
 
 const CarDetail = () => {
   const { id } = useParams();
   const [car, setCar] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [modelVariants, setModelVariants] = useState([]);
+  const [selectedCity, setSelectedCity] = useState(null);
+  const [selectedModel, setSelectedModel] = useState(null);
 
   useEffect(() => {
     const foundCar = carsData.find(c => c.id === id);
@@ -258,7 +261,7 @@ const CarDetail = () => {
 
         <div className="col-lg-4">
           {/* Price Card */}
-          <div className="card border-0 shadow-sm sticky-top" style={{top: '20px'}}>
+          <div className="card border-0 shadow-sm sticky-top" style={{top: '20px', zIndex: '9'}}>
             <div className="card-body">
               <div className="text-center">
                 <h3 className="text-primary fw-bold mb-0">{formatPrice(car.price)}</h3>
@@ -268,7 +271,15 @@ const CarDetail = () => {
           </div>
         </div>
       </div>
-      <CarVariantsTable variants={modelVariants} currentId={car.id}/>
+      <CarVariantsTable variants={modelVariants} currentId={car.id} onCitySelect={setSelectedCity} onModelVariant={setSelectedModel} />
+    {/* <div>
+      {selectedCity ? (
+        <h2>Selected City: {selectedCity}</h2>
+      ) : (
+        <p>No city selected yet</p>
+      )}
+    </div> */}
+    {/* <OnRoadPrice stateName = {selectedCity} variantName={car.model} exShowroom={car.price} fuelType={car.fuelType} onVariant={selectedModel}/> */}
     </div>
   );
 };
