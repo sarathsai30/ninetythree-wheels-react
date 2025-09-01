@@ -8,6 +8,7 @@ import PopularBrands from '../components/PopularBrands';
 import VideoSection from '../components/VideoSection';
 import BlogSection from '../components/BlogSection';
 import WhyChooseUs from '../components/WhyChooseUs';
+import ParkingChecker from '../components/ParkingChecker';
 
 const Home = () => {
   const [featuredCars, setFeaturedCars] = useState([]);
@@ -36,6 +37,7 @@ const Home = () => {
       <FeaturedCars featuredCars={featuredCars} />
       <PopularBrands brands={brands} onBrandClick={handleBrandClick} />
       <VideoSection />
+      <ParkingChecker />
       {/*<BlogSection />*/}
       <WhyChooseUs />
     </div>
