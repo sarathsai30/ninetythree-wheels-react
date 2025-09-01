@@ -68,13 +68,20 @@ const ParkingChecker = () => {
                 <div className="space-y-4">
                   <Label htmlFor="car-select">Select Your Car</Label>
                   <Select value={selectedCar} onValueChange={setSelectedCar}>
-                    <SelectTrigger>
+                    <SelectTrigger className="w-full bg-background border-2 border-border hover:border-primary/50 focus:border-primary transition-colors">
                       <SelectValue placeholder="Choose a car..." />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="bg-background border-2 border-border shadow-lg z-50 max-h-[300px] overflow-y-auto">
                       {mainVariantCars.map((car) => (
-                        <SelectItem key={car.id} value={car.id}>
-                          {car.brand} {car.name}
+                        <SelectItem 
+                          key={car.id} 
+                          value={car.id}
+                          className="bg-background hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer py-2"
+                        >
+                          <div className="flex flex-col">
+                            <span className="font-medium">{car.brand} {car.name}</span>
+                            <span className="text-xs text-muted-foreground">{car.bodyType} • ₹{car.price.toLocaleString()}</span>
+                          </div>
                         </SelectItem>
                       ))}
                     </SelectContent>
