@@ -1,13 +1,416 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
 import rtoData from "../../data/RTO.json";
 import cars from "../../data/cars.json";
+import postOffices from "../../data/pincode.json";
 
-const OnRoadPrice = ({ onOffersClick, onEditRegistration }) => {
+const CityIcons = {
+  Mumbai: (
+    <img
+      src="/Landmarks/mumbai.png"
+      alt="Gateway of India, Mumbai"
+      title="Gateway of India"
+      className="w-10 h-10"
+    />
+  ),
+  Bengaluru: (
+    <img
+      src="/Landmarks/bangalore.png"
+      alt="Vidhana Soudha, Bangalore"
+      title="Vidhana Soudha"
+      className="w-10 h-10"
+    />
+  ),
+  Delhi: (
+    <img
+      src="/Landmarks/delhi.png"
+      alt="India Gate, Delhi"
+      title="India Gate"
+      className="w-10 h-10"
+    />
+  ),
+  Pune: (
+    <img
+      src="/Landmarks/pune.png"
+      alt="Shaniwar Wada, Pune"
+      title="Shaniwar Wada"
+      className="w-10 h-10"
+    />
+  ),
+  "Navi Mumbai": (
+     <img
+       src="/Landmarks/navi-mumbai.png"
+       alt="Navi Mumbai"
+       title="Navi Mumbai"
+       className="w-10 h-10"
+     />
+  ),
+  Hyderabad: (
+    <img
+      src="/Landmarks/hyderabad.png"
+      alt="Charminar, Hyderabad"
+      title="Charminar"
+      className="w-10 h-10"
+    />
+  ),
+  Chennai: (
+    <img
+      src="/Landmarks/chennai.png"
+      alt="Fort St. George, Chennai"
+      title="Fort St. George"
+      className="w-10 h-10"
+    />
+  ),
+  Kolkata: (
+    <img
+      src="/Landmarks/kolkata.png"
+      alt="Victoria Memorial, Kolkata"
+      title="Victoria Memorial"
+      className="w-10 h-10"
+    />
+  ),
+  Chandigarh: (
+    <img src="/Landmarks/chandigarh.png" 
+    alt="Chandigarh" 
+    title="Chandigarh"
+    className="w-10 h-10" 
+    />
+  ),
+  Ahmedabad: (
+    <img src="/Landmarks/ahmedabad.png" 
+    alt="Ahmedabad" 
+    title="Ahmedabad"
+    className="w-10 h-10" 
+    />
+  ),
+};
+
+
+const PriceBreakupModal = ({ carId, variant, onClose, onConfirmCity }) => {
+  const [query, setQuery] = useState('');
+  const [selectedCity, setSelectedCity] = useState({ name: "Bengaluru" });
+  const [selectedStateName, setSelectedStateName] = useState(null);
+  const [suggestions, setSuggestions] = useState([]);
+  const navigate = useNavigate();
+
+
+  const popularCities = [
+    { name: 'Mumbai', pincode: '400001' },
+    { name: 'Bengaluru', pincode: '560001' },
+    { name: 'Delhi', pincode: '110001' },
+    { name: 'Pune', pincode: '411001' },
+    { name: "Navi Mumbai", pincode: "400706" },
+    { name: 'Hyderabad', pincode: '500001' },
+    { name: "Ahmedabad", pincode: "380001" },
+    { name: 'Chennai', pincode: '600001' },
+    { name: 'Kolkata', pincode: '700001' },
+    { name: "Chandigarh", pincode: "160017" },
+  ];
+
+  if (!variant) return null;
+
+// triggers query after 3rd letter then matches with json data
+
+  useEffect(() => {
+    // console.log("Query changed:", query);
+    if (query.length >= 3) {
+      const lower = query.toLowerCase();
+      // case-insensitive search for pincode OR officename/district
+      const matches = postOffices.filter(
+        (o) =>
+          o.pincode.startsWith(query) || // match numbers
+          o.district.toLowerCase().startsWith(lower) || // match city/district
+          o.officename.toLowerCase().startsWith(lower) // match office name
+      );
+      setSuggestions(matches); // limit to 6
+    } else {
+      setSuggestions([]);
+    }
+  }, [query]);
+
+// giving seuggestons to select based on matching
+  const handleSuggestionClick = (office) => {
+    const city = { name: office.officename, pincode: office.pincode };
+    const state = { name: office.statename };
+    setSelectedCity(city);
+    setSelectedStateName(state);
+    setQuery(`${office.pincode} - ${office.district} - ${office.statename}`);
+    // console.log("office name in set query : ", office.statename);
+    setSuggestions([]);
+  };
+
+// clearing the S.O, P.O, in offices name
+  const cleanOfficeName = (name) => {
+    if (!name) return "cleaning office name is empty"; // fallback so it never crashes
+      return name.replace(/(S\.O|B\.O|P\.O)/gi, "").trim();
+  };
+
+// when user clicks on the detect location
+  const handleDetect = () => {
+    if (!navigator.geolocation) {
+      toast.error("Geolocation not supported");
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      async ({ coords }) => {
+        try {
+          const res = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?lat=${coords.latitude}&lon=${coords.longitude}&format=json`
+          );
+          const data = await res.json();
+
+          const city =
+            data.address.city ||
+            data.address.town ||
+            data.address.village ||
+            data.address.district;
+          const pincode = data.address.postcode || "";
+
+          // Try to match with your JSON data
+          let matched = postOffices.find(
+            (entry) =>
+              entry.pincode === pincode ||
+              entry.district?.toLowerCase() === city?.toLowerCase()
+          );
+
+          if (matched) {
+            setQuery(matched.officename || matched.district || matched.pincode);
+            setSelectedCity(matched);
+            // console.log("office name:" + matched.officename);
+            // console.log("state name:" + matched.statename);
+
+            toast.success(
+              `Detected: ${cleanOfficeName(matched.officename)}, ${matched.district}`
+            );
+          } else {
+            // fallback to just using the API data
+            const detected = { name: city || "Unknown", pincode };
+            setQuery(detected.name);
+            setSelectedCity(detected);
+
+            toast.info(`Detected (not matched): ${detected.name}`);
+          }
+        } catch (err) {
+          // console.error(err);
+          toast.error("Unable to detect city");
+        }
+      },
+      () => toast.error("Unable to retrieve location")
+    );
+  };
+
+// when user wants to select the city
+  const handleSelect = (city) => {
+    setSelectedCity(city);
+    setQuery(city.name);
+  };
+
+// when user wants to deselect the city
+  const handleDeselect = () => {
+    setSelectedCity(null);
+    setQuery("");
+  };
+
+// when user clicks on the confirm button
+  const handleConfirm = () => {
+  if (selectedCity) {
+    const city = selectedCity.name || selectedCity.statename;
+    // console.log("Selected City:", selectedCity);
+
+    // Normalize city name (remove S.O / B.O / P.O)
+    const cityName = city
+      ?.replace(/(S\.O|B\.O|P\.O)/gi, "")
+      .trim()
+      .toLowerCase();
+
+    // Find exact match in JSON
+    let matchedOffice = postOffices.find(
+      (office) =>
+        office.officename
+          ?.replace(/(S\.O|B\.O|P\.O)/gi, "")
+          .trim()
+          .toLowerCase() === cityName
+    );
+
+    // Fallback: partial match if exact not found
+    if (!matchedOffice) {
+      matchedOffice = postOffices.find((office) =>
+        office.regionname
+          ?.replace(/region/gi, "")
+          .trim()
+          .toLowerCase()
+          .includes(cityName)
+      );
+    }
+
+    if (matchedOffice) {
+      // console.log("Matched statename:", matchedOffice.statename);
+      onConfirmCity(matchedOffice.statename);
+      let state_lower = matchedOffice.statename
+        .toLowerCase();
+      navigate(`/on-road-price/${state_lower}`, {
+        state: { carId, city: matchedOffice.statename, variant },
+      });
+    } else {
+      // console.log("Else Part because this is object printing statname:", selectedCity.statename);
+      onConfirmCity(selectedCity.statename);
+      let state_lower = matchedOffice.statename
+        .toLowerCase();
+      navigate(`/on-road-price/${state_lower}`, {
+        state: { carId, city: selectedCity.statename, variant },
+      });
+    }
+
+    onClose();
+  }
+  else{
+    // console.log("else part selected City Statename: ", selectedCity.stateName);
+    onConfirmCity(selectedCity.stateName);
+    let state_lower = matchedOffice.statename
+        .toLowerCase();
+    navigate(`/on-road-price/${state_lower}`, {
+      state: { carId, city: selectedCity.statename, variant },
+    });
+  }
+};
+
+
+
+
+return (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+        <div className="bg-white rounded-lg shadow-lg w-full max-w-lg mx-4 overflow-hidden">
+          {/* Header */}
+          <div className="flex items-center justify-between p-4 border-b">
+            <h2 className="text-lg font-semibold">Select your City</h2>
+            <button
+              className="text-gray-500 hover:text-gray-800"
+              onClick={onClose}
+            >
+              ✕
+            </button>
+          </div>
+
+          {/* Search Input */}
+          <div className="relative w-full px-6 pt-4 pb-2">
+            <div className="flex items-center bg-gray-50 border border-gray-200 rounded-lg px-4 py-2">
+              <svg
+                className="w-5 h-5 text-gray-400 mr-3"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+
+              {selectedCity ? (
+                <span className="flex items-center bg-gray-200 text-gray-700 px-2 py-1 rounded text-sm">
+                  {cleanOfficeName(selectedCity.officename || selectedCity.name)}
+                  <button
+                    onClick={handleDeselect}
+                    className="ml-1 text-gray-600 hover:text-red-500"
+                  >
+                    ✕
+                  </button>
+                </span>
+              ) : (
+                <input
+                  type="text"
+                  placeholder="Type your Pincode or City"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  className="flex-1 bg-transparent outline-none text-gray-700 text-sm"
+                />
+              )}
+            </div>
+
+            <div className="mt-3 flex items-center justify-between">
+              <button
+                onClick={handleDetect}
+                className="flex items-center text-blue-600 text-sm hover:underline"
+              >
+                <svg
+                  className="w-5 h-5 text-blue-600 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+                </svg>
+                Detect my location
+              </button>
+
+              {/* Confirm button aligned right */}
+              {selectedCity && (
+                <button
+                  onClick={handleConfirm}
+                  className="px-4 py-2 bg-blue-600 text-white text-sm rounded-md shadow hover:bg-blue-700"
+                >
+                  Confirm
+                </button>
+              )}
+            </div>
+          </div>
+          <hr className="border-gray-200" />
+
+          {/* Popular Cities Grid */}
+          <div className="px-6 py-10">
+            {/* Show Suggestions if available, otherwise show Popular Cities */}
+            {!selectedCity && suggestions.length > 0 ? (
+              <div className="max-h-60 overflow-y-auto">
+                {suggestions.map((s, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => handleSuggestionClick(s)}
+                    className="px-3 py-2 cursor-pointer hover:bg-gray-100 text-sm border-b last:border-b-0"
+                  >
+                    <div className="font-medium">{s.pincode}</div>
+                    <div className="text-gray-600">
+                      {cleanOfficeName(s.officename)}, {s.district}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+            ) : (
+              <>
+                <h3 className="text-gray-700 font-medium mb-4">Popular Cities</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                  {popularCities.map((city) => (
+                    <div
+                      key={city.pincode}
+                      onClick={() => handleSelect(city)}
+                      className="flex flex-col items-center text-center cursor-pointer"
+                    >
+                      <div className="w-14 h-14 flex items-center justify-center border rounded-full bg-gray-50 mb-2">
+                        {CityIcons[city.name]}
+                      </div>
+                      <span className="text-sm font-medium text-gray-800">
+                        {city.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>        
+        </div>
+        <Toaster position="top-right" />
+      </div>
+  );
+};
+
+const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
   const { statename } = useParams();
   const location = useLocation();
   const { carId, city, variant } = location.state || {};
-
+  const [modalVariant, setModalVariant] = useState(null);
   const [expanded, setExpanded] = useState(false);
   const [car, setCar] = useState(null);
   const [modelVariants, setModelVariants] = useState([]);
@@ -211,6 +614,15 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration }) => {
     </div>
   );
 
+
+  const handleModalConfirm = (city) => {
+    if (onCitySelect) {
+      onCitySelect(city); // send city to parent
+      onModelVariant(modalVariant);
+    }
+  };
+
+
   return (
     <div className="mx-4 sm:mx-6 md:mx-10 mt-5">
       {/* Top Section: Car details + Price card */}
@@ -264,8 +676,38 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration }) => {
             <h2 className="text-lg sm:text-xl font-semibold text-center mb-4">
               {variant.model} On Road Price in {stateData.stateName}
             </h2>
-
             <div className="space-y-3 sm:space-y-4 px-1 sm:px-2">
+              {/* Location Edit Button */}
+              <div className="flex items-center text-gray-600">
+                <span>Location: {stateData.stateName}</span>
+                <button
+                  onClick={() => setModalVariant(variant)} // your handler function
+                  className="ml-2 text-gray-400 hover:text-gray-600"
+                  aria-label="Edit Location"
+                >
+                  {/* Pencil Icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="#000"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M16.862 3.487a2.25 2.25 0 013.182 3.182l-10.5 10.5a2.25 2.25 0 01-1.061.59l-4.125.917a.75.75 0 01-.917-.917l.917-4.125a2.25 2.25 0 01.59-1.061l10.5-10.5z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 7.5l-3-3"
+                    />
+                  </svg>
+                </button>
+              </div>
+
               {/* Ex-Showroom */}
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="text-gray-600">Ex-Showroom Price</div>
@@ -501,6 +943,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration }) => {
             </button>
           </div>
         )}
+        {modalVariant && ( <PriceBreakupModal variant={modalVariant} onClose={() => setModalVariant(null)} onConfirmCity={handleModalConfirm}  /> )}
       </div>
     </div>
 
@@ -531,5 +974,6 @@ export default OnRoadPrice;
 // };
 
 // export default OnRoadPrice;
+
 
 
