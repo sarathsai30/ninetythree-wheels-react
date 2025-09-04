@@ -4,6 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import rtoData from "../../data/RTO.json";
 import cars from "../../data/cars.json";
 import postOffices from "../../data/pincode.json";
+import GetBrouchers from "./GetBrouchers";
 
 const CityIcons = {
   Mumbai: (
@@ -622,6 +623,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
     }
   };
 
+  console.log("car name: ", variant.name);
 
   return (
     <div className="mx-4 sm:mx-6 md:mx-10 mt-5">
@@ -945,6 +947,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
         )}
         {modalVariant && ( <PriceBreakupModal variant={modalVariant} onClose={() => setModalVariant(null)} onConfirmCity={handleModalConfirm}  /> )}
       </div>
+      <GetBrouchers carname = {variant.name}/>
     </div>
 
   );
