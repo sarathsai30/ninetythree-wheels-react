@@ -39,6 +39,7 @@ const Header = () => {
             <Link to="/" className={isActive('/')}>Home</Link>
             <Link to="/cars" className={isActive('/cars')}>Cars</Link>
             <Link to="/parking" className={isActive('/parking')}>Parking</Link>
+            <Link to="/videos" className={isActive('/videos')}>Videos</Link>
             <Link to="/about" className={isActive('/about')}>About</Link>
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
             
@@ -93,6 +94,7 @@ const Header = () => {
             <Link to="/" className={isActive('/')} onClick={() => setIsMenuOpen(false)}>Home</Link>
             <Link to="/cars" className={isActive('/cars')} onClick={() => setIsMenuOpen(false)}>Cars</Link>
             <Link to="/parking" className={isActive('/parking')} onClick={() => setIsMenuOpen(false)}>Parking</Link>
+            <Link to="/videos" className={isActive('/videos')} onClick={() => setIsMenuOpen(false)}>Videos</Link>
             <Link to="/about" className={isActive('/about')} onClick={() => setIsMenuOpen(false)}>About</Link>
             <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <Link to="/news" className={isActive('/news')} onClick={() => setIsMenuOpen(false)}>Latest News</Link>

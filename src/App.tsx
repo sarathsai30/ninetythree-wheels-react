@@ -13,6 +13,7 @@ import Admin from './pages/Admin';
 import News from './pages/News';
 import ParkingPage from './pages/ParkingPage';
 import BlogDetail from './pages/BlogDetail';
+import Videos from './pages/Videos';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/cars" element={<CarList />} />
             <Route path="/cars/:id" element={<CarDetail />} />
             <Route path="/parking" element={<ParkingPage />} />
+            <Route path="/videos" element={<Videos />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/management-dashboard-93cars" element={<Admin />} />
