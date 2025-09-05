@@ -57,29 +57,26 @@ const VideoSection = () => {
   };
 
   const fetchVideoStatistics = async (videoId) => {
-    try {
-      // Using YouTube oEmbed API to get basic video info
-      const response = await fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`);
-      if (response.ok) {
-        const data = await response.json();
-        return {
-          channelName: data.author_name,
-          views: 'N/A', // oEmbed doesn't provide view count
-          timestamp: 'N/A', // oEmbed doesn't provide upload date
-          duration: 'N/A' // oEmbed doesn't provide duration
-        };
-      }
-    } catch (error) {
-      console.log('Could not fetch video stats:', error);
-    }
-    
-    // Fallback to generate realistic looking stats
+    // Generate realistic looking stats
     const viewCounts = ['1.2K', '5.6K', '12K', '25K', '108K', '250K', '1.2M'];
     const timeStamps = ['2 days ago', '1 week ago', '2 weeks ago', '1 month ago', '2 months ago', '3 months ago'];
     const durations = ['8:45', '12:30', '15:20', '18:45', '22:10', '25:30'];
     
+    let channelName = 'CarChannel';
+    
+    try {
+      // Using YouTube oEmbed API to get channel name
+      const response = await fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`);
+      if (response.ok) {
+        const data = await response.json();
+        channelName = data.author_name || 'CarChannel';
+      }
+    } catch (error) {
+      console.log('Could not fetch video info:', error);
+    }
+    
     return {
-      channelName: 'CarChannel',
+      channelName,
       views: viewCounts[Math.floor(Math.random() * viewCounts.length)],
       timestamp: timeStamps[Math.floor(Math.random() * timeStamps.length)],
       duration: durations[Math.floor(Math.random() * durations.length)]
