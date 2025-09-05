@@ -257,7 +257,7 @@ const PriceBreakupModal = ({ carId, variant, onClose, onConfirmCity }) => {
     } else {
       // console.log("Else Part because this is object printing statname:", selectedCity.statename);
       onConfirmCity(selectedCity.statename);
-      let state_lower = matchedOffice.statename
+      let state_lower = selectedCity.statename
         .toLowerCase();
       navigate(`/on-road-price/${state_lower}`, {
         state: { carId, city: selectedCity.statename, variant },
