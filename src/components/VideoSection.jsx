@@ -331,18 +331,6 @@ const VideoSection = () => {
           </div>
         )}
 
-        {/* API Configuration Notice */}
-        {YOUTUBE_API_KEY === 'YOUR_YOUTUBE_API_KEY_HERE' && (
-          <div className="alert alert-info mt-4">
-            <h6 className="alert-heading">YouTube API Configuration Required</h6>
-            <p className="mb-0">
-              To display videos from your YouTube channel, please:
-              <br />1. Get a YouTube Data API key from Google Cloud Console
-              <br />2. Replace <code>YOUR_YOUTUBE_API_KEY_HERE</code> with your API key
-              <br />3. Replace <code>YOUR_CHANNEL_ID_HERE</code> with your YouTube channel ID
-            </p>
-          </div>
-        )}
       </div>
 
       <style jsx>{`
