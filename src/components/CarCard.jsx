@@ -15,12 +15,14 @@ const CarCard = ({ car }) => {
     <div className="col-lg-4 col-md-6 mb-4">
       <div className="card h-100 border-0 shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
         <div className="position-relative overflow-hidden rounded-top">
-          <img 
-            src={car.image} 
-            className="card-img-top border border-1 border-secondary hover:scale-110 transition-transform duration-500 ease-in-out" 
-            alt={car.name}
-            style={{ height: '220px', objectFit: 'cover' }}
-          />
+          <div className="d-flex align-items-center justify-content-center bg-light" style={{ height: '220px', overflow: 'hidden' }} >
+            <img 
+              src={car.image} 
+              alt={car.name}
+              style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'contain' }}
+            />
+          </div>
+
           <div className="position-absolute top-0 end-0 p-2">
             <span className="badge bg-info">{car.fuelType}</span>
           </div>
