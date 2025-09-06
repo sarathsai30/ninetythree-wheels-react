@@ -39,7 +39,18 @@ const Header = () => {
             <Link to="/" className={isActive('/')}>Home</Link>
             <Link to="/cars" className={isActive('/cars')}>Cars</Link>
             <Link to="/parking" className={isActive('/parking')}>Parking</Link>
-            <Link to="/videos" className={isActive('/videos')}>Videos</Link>
+            <button 
+              onClick={() => {
+                if (location.pathname === '/') {
+                  document.getElementById('videos-section')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#videos-section';
+                }
+              }}
+              className="text-gray-700 hover:text-blue-600"
+            >
+              Videos
+            </button>
             <Link to="/about" className={isActive('/about')}>About</Link>
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
             
@@ -94,7 +105,19 @@ const Header = () => {
             <Link to="/" className={isActive('/')} onClick={() => setIsMenuOpen(false)}>Home</Link>
             <Link to="/cars" className={isActive('/cars')} onClick={() => setIsMenuOpen(false)}>Cars</Link>
             <Link to="/parking" className={isActive('/parking')} onClick={() => setIsMenuOpen(false)}>Parking</Link>
-            <Link to="/videos" className={isActive('/videos')} onClick={() => setIsMenuOpen(false)}>Videos</Link>
+            <button 
+              onClick={() => {
+                setIsMenuOpen(false);
+                if (location.pathname === '/') {
+                  document.getElementById('videos-section')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#videos-section';
+                }
+              }}
+              className="text-gray-700 hover:text-blue-600 text-left"
+            >
+              Videos
+            </button>
             <Link to="/about" className={isActive('/about')} onClick={() => setIsMenuOpen(false)}>About</Link>
             <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <Link to="/news" className={isActive('/news')} onClick={() => setIsMenuOpen(false)}>Latest News</Link>

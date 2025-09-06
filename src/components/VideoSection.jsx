@@ -169,7 +169,7 @@ const VideoSection = () => {
   const otherVideos = videos.slice(1);
 
   return (
-    <section className="py-5 bg-light">
+    <section id="videos-section" className="py-5 bg-light">
       <div className="container">
         {/* Header Section */}
         <div className="row mb-4">
