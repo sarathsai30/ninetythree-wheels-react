@@ -243,17 +243,25 @@ const VideoSection = () => {
                     {featuredVideo.title}
                   </h3>
                   
-                  <div className="d-flex align-items-center mb-3">
-                    <img 
-                      src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
-                      alt="93Cars logo"
-                      className="rounded-circle me-3"
-                      style={{ width: '32px', height: '32px', objectFit: 'cover' }}
-                    />
-                    <div>
-                      <div className="fw-semibold">{featuredVideo.channelName}</div>
-                      <div className="text-muted small">{featuredVideo.publishedAt}</div>
+                  <div className="d-flex align-items-center justify-content-between mb-3">
+                    <div className="d-flex align-items-center">
+                      <img 
+                        src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
+                        alt="93Cars logo"
+                        className="rounded-circle me-3"
+                        style={{ width: '32px', height: '32px', objectFit: 'cover' }}
+                      />
+                      <div>
+                        <div className="fw-semibold">{featuredVideo.channelName}</div>
+                        <div className="text-muted small">{featuredVideo.publishedAt}</div>
+                      </div>
                     </div>
+                    <button 
+                      className="btn btn-danger btn-sm"
+                      onClick={() => window.open('https://www.youtube.com/@93CarsOfficial?sub_confirmation=1', '_blank')}
+                    >
+                      Subscribe
+                    </button>
                   </div>
                   
                   <div className="d-flex align-items-center text-muted">
