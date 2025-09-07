@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Play, Eye, Clock, ThumbsUp, MessageCircle, Share2 } from 'lucide-react';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const VideoSection = () => {
   const [videos, setVideos] = useState([]);
@@ -276,11 +277,13 @@ const VideoSection = () => {
               </div>
             </div>
 
-            {/* Other Videos - Two Column Grid */}
+            {/* Other Videos - Scrollable List */}
             <div className="col-lg-4">
               <div className="d-flex flex-column gap-3">
                 <h5 className="fw-bold mb-0">Up Next</h5>
-                {otherVideos.slice(0, 6).map((video, idx) => {
+                <ScrollArea className="h-96 pr-2">
+                  <div className="d-flex flex-column gap-3">
+                    {otherVideos.map((video, idx) => {
                   const originalIndex = videos.findIndex(v => v.id === video.id);
                   return (
                   <div key={video.id} className="card border-0 shadow-sm video-card-small">
@@ -339,8 +342,10 @@ const VideoSection = () => {
                       </div>
                     </div>
                   </div>
-                  );
-                })}
+                    );
+                    })}
+                  </div>
+                </ScrollArea>
               </div>
             </div>
           </div>
