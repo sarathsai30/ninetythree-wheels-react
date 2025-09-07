@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Play, Eye, Clock, ThumbsUp, MessageCircle, Share2 } from 'lucide-react';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const VideoSection = () => {
   const [videos, setVideos] = useState([]);
@@ -8,7 +9,7 @@ const VideoSection = () => {
   const [featuredVideoIndex, setFeaturedVideoIndex] = useState(0);
 
   // YouTube API Configuration - Replace with your actual values
-  const YOUTUBE_API_KEY = 'AIzaSyAQ34xD5mF6-WxcvRMHVAG-_hsmETAjDBQ'; // Replace with your API key
+   const YOUTUBE_API_KEY = 'AIzaSyAQ34xD5mF6-WxcvRMHVAG-_hsmETAjDBQ'; // Replace with your API key
   const YOUTUBE_CHANNEL_ID = 'UCr9--Ai4SYN00hQ_Sj0wn2w'; // Replace with your channel ID
 
   useEffect(() => {
@@ -276,11 +277,25 @@ const VideoSection = () => {
               </div>
             </div>
 
-            {/* Other Videos - Two Column Grid */}
+            {/* Other Videos - Scrollable List */}
             <div className="col-lg-4">
               <div className="d-flex flex-column gap-3">
                 <h5 className="fw-bold mb-0">Up Next</h5>
-                {otherVideos.slice(0, 6).map((video, idx) => {
+                <ScrollArea className="h-96 pr-2" style={{ scrollbarWidth: 'thin' }}>
+                  <style jsx>{`
+                    .scrollbar-visible [data-radix-scroll-area-scrollbar] {
+                      opacity: 1 !important;
+                      background: rgba(0, 0, 0, 0.1);
+                      border-radius: 4px;
+                      width: 8px;
+                    }
+                    .scrollbar-visible [data-radix-scroll-area-thumb] {
+                      background: rgba(0, 0, 0, 0.3) !important;
+                    }
+                  `}</style>
+                  <div className="scrollbar-visible">
+                  <div className="d-flex flex-column gap-3">
+                    {otherVideos.map((video, idx) => {
                   const originalIndex = videos.findIndex(v => v.id === video.id);
                   return (
                   <div key={video.id} className="card border-0 shadow-sm video-card-small">
@@ -339,8 +354,11 @@ const VideoSection = () => {
                       </div>
                     </div>
                   </div>
-                  );
-                })}
+                    );
+                    })}
+                    </div>
+                  </div>
+                </ScrollArea>
               </div>
             </div>
           </div>
