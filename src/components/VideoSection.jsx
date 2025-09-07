@@ -5,6 +5,7 @@ import { Play, Eye, Clock, ThumbsUp, MessageCircle, Share2 } from 'lucide-react'
 const VideoSection = () => {
   const [videos, setVideos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [featuredVideoIndex, setFeaturedVideoIndex] = useState(0);
 
   // YouTube API Configuration - Replace with your actual values
   const YOUTUBE_API_KEY = 'YOUR_YOUTUBE_API_KEY_HERE'; // Replace with your API key
@@ -189,8 +190,12 @@ const VideoSection = () => {
     );
   }
 
-  const featuredVideo = videos[0];
-  const otherVideos = videos.slice(1);
+  const featuredVideo = videos[featuredVideoIndex];
+  const otherVideos = videos.filter((_, index) => index !== featuredVideoIndex);
+
+  const handleVideoSelect = (videoIndex) => {
+    setFeaturedVideoIndex(videoIndex);
+  };
 
   return (
     <section id="videos-section" className="py-5 bg-light">
@@ -220,7 +225,11 @@ const VideoSection = () => {
                       e.target.src = 'https://via.placeholder.com/800x400/f8f9fa/6c757d?text=Featured+Video';
                     }}
                   />
-                  <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center video-overlay">
+                  <div 
+                    className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center video-overlay"
+                    onClick={() => window.open(featuredVideo.videoUrl, '_blank')}
+                    style={{ cursor: 'pointer' }}
+                  >
                     <div className="bg-dark bg-opacity-75 rounded-circle p-4">
                       <Play className="text-white" size={48} fill="white" />
                     </div>
@@ -279,7 +288,9 @@ const VideoSection = () => {
             <div className="col-lg-4">
               <div className="d-flex flex-column gap-3">
                 <h5 className="fw-bold mb-0">Up Next</h5>
-                {otherVideos.slice(0, 6).map((video) => (
+                {otherVideos.slice(0, 6).map((video, idx) => {
+                  const originalIndex = videos.findIndex(v => v.id === video.id);
+                  return (
                   <div key={video.id} className="card border-0 shadow-sm video-card-small">
                     <div className="row g-0">
                       <div className="col-5">
@@ -329,15 +340,16 @@ const VideoSection = () => {
                           <button 
                             className="btn btn-outline-danger btn-sm mt-1 w-100"
                             style={{ fontSize: '0.7rem', padding: '2px 8px' }}
-                            onClick={() => window.open(video.videoUrl, '_blank')}
+                            onClick={() => handleVideoSelect(originalIndex)}
                           >
-                            Watch
+                            Play Main
                           </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
