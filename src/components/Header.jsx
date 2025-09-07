@@ -38,6 +38,18 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-5 text-[17px] font-medium">
             <Link to="/" className={isActive('/')}>Home</Link>
             <Link to="/cars" className={isActive('/cars')}>Cars</Link>
+            <button 
+              onClick={() => {
+                if (location.pathname === '/') {
+                  document.getElementById('videos-section')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#videos-section';
+                }
+              }}
+              className="text-gray-700 hover:text-blue-600"
+            >
+              Videos
+            </button>
             <Link to="/about" className={isActive('/about')}>About</Link>
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
             
@@ -91,6 +103,19 @@ const Header = () => {
           <nav className="flex flex-col space-y-4 text-[17px] font-medium">
             <Link to="/" className={isActive('/')} onClick={() => setIsMenuOpen(false)}>Home</Link>
             <Link to="/cars" className={isActive('/cars')} onClick={() => setIsMenuOpen(false)}>Cars</Link>
+            <button 
+              onClick={() => {
+                setIsMenuOpen(false);
+                if (location.pathname === '/') {
+                  document.getElementById('videos-section')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#videos-section';
+                }
+              }}
+              className="text-gray-700 hover:text-blue-600 text-left"
+            >
+              Videos
+            </button>
             <Link to="/about" className={isActive('/about')} onClick={() => setIsMenuOpen(false)}>About</Link>
             <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <Link to="/news" className={isActive('/news')} onClick={() => setIsMenuOpen(false)}>Latest News</Link>
