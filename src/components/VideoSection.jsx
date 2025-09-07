@@ -190,6 +190,11 @@ const VideoSection = () => {
     );
   }
 
+  const getEmbedUrl = (videoUrl) => {
+    const videoId = videoUrl.split('v=')[1]?.split('&')[0];
+    return `https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0`;
+  };
+
   const featuredVideo = videos[featuredVideoIndex];
   const otherVideos = videos.filter((_, index) => index !== featuredVideoIndex);
 
@@ -216,24 +221,15 @@ const VideoSection = () => {
             <div className="col-lg-8 mb-4">
               <div className="card border-0 shadow-lg featured-video">
                 <div className="position-relative overflow-hidden rounded">
-                  <img
-                    src={featuredVideo.thumbnail}
-                    alt={featuredVideo.title}
-                    className="card-img featured-thumbnail"
-                    style={{ height: '400px', objectFit: 'cover', width: '100%' }}
-                    onError={(e) => {
-                      e.target.src = 'https://via.placeholder.com/800x400/f8f9fa/6c757d?text=Featured+Video';
-                    }}
-                  />
-                  <div 
-                    className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center video-overlay"
-                    onClick={() => window.open(featuredVideo.videoUrl, '_blank')}
-                    style={{ cursor: 'pointer' }}
-                  >
-                    <div className="bg-dark bg-opacity-75 rounded-circle p-4">
-                      <Play className="text-white" size={48} fill="white" />
-                    </div>
-                  </div>
+                  <iframe
+                    src={getEmbedUrl(featuredVideo.videoUrl)}
+                    title={featuredVideo.title}
+                    className="w-100"
+                    style={{ height: '400px' }}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                   <div className="position-absolute bottom-0 end-0 bg-dark bg-opacity-75 text-white px-3 py-2 m-3 rounded">
                     <span className="fw-bold">{featuredVideo.duration}</span>
                   </div>
@@ -272,14 +268,6 @@ const VideoSection = () => {
                       Share
                     </button>
                   </div>
-                  
-                  <button 
-                    className="btn btn-danger btn-lg w-100 mt-3"
-                    onClick={() => window.open(featuredVideo.videoUrl, '_blank')}
-                  >
-                    <Play size={20} className="me-2" fill="white" />
-                    Watch Now
-                  </button>
                 </div>
               </div>
             </div>
@@ -294,7 +282,7 @@ const VideoSection = () => {
                   <div key={video.id} className="card border-0 shadow-sm video-card-small">
                     <div className="row g-0">
                       <div className="col-5">
-                        <div className="position-relative overflow-hidden rounded-start">
+                        <div className="position-relative overflow-hidden rounded-start" style={{ cursor: 'pointer' }} onClick={() => handleVideoSelect(originalIndex)}>
                           <img
                             src={video.thumbnail}
                             alt={video.title}
@@ -304,6 +292,11 @@ const VideoSection = () => {
                               e.target.src = 'https://via.placeholder.com/160x90/f8f9fa/6c757d?text=Video';
                             }}
                           />
+                          <div className="position-absolute top-50 start-50 translate-middle">
+                            <div className="bg-dark bg-opacity-75 rounded-circle p-1">
+                              <Play className="text-white" size={16} fill="white" />
+                            </div>
+                          </div>
                           <div className="position-absolute bottom-0 end-0 bg-dark bg-opacity-75 text-white px-1 rounded" style={{ fontSize: '10px' }}>
                             {video.duration}
                           </div>
@@ -336,14 +329,6 @@ const VideoSection = () => {
                             <Clock size={10} className="me-1" />
                             <span>{video.publishedAt}</span>
                           </div>
-                          
-                          <button 
-                            className="btn btn-outline-danger btn-sm mt-1 w-100"
-                            style={{ fontSize: '0.7rem', padding: '2px 8px' }}
-                            onClick={() => handleVideoSelect(originalIndex)}
-                          >
-                            Play Main
-                          </button>
                         </div>
                       </div>
                     </div>
