@@ -281,7 +281,19 @@ const VideoSection = () => {
             <div className="col-lg-4">
               <div className="d-flex flex-column gap-3">
                 <h5 className="fw-bold mb-0">Up Next</h5>
-                <ScrollArea className="h-96 pr-2">
+                <ScrollArea className="h-96 pr-2" style={{ scrollbarWidth: 'thin' }}>
+                  <style jsx>{`
+                    .scrollbar-visible [data-radix-scroll-area-scrollbar] {
+                      opacity: 1 !important;
+                      background: rgba(0, 0, 0, 0.1);
+                      border-radius: 4px;
+                      width: 8px;
+                    }
+                    .scrollbar-visible [data-radix-scroll-area-thumb] {
+                      background: rgba(0, 0, 0, 0.3) !important;
+                    }
+                  `}</style>
+                  <div className="scrollbar-visible">
                   <div className="d-flex flex-column gap-3">
                     {otherVideos.map((video, idx) => {
                   const originalIndex = videos.findIndex(v => v.id === video.id);
@@ -344,6 +356,7 @@ const VideoSection = () => {
                   </div>
                     );
                     })}
+                    </div>
                   </div>
                 </ScrollArea>
               </div>
