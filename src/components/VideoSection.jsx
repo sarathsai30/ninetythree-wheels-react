@@ -244,29 +244,25 @@ const VideoSection = () => {
                   </h3>
                   
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-danger rounded-circle text-white d-flex align-items-center justify-content-center me-3" 
-                         style={{ width: '32px', height: '32px', fontSize: '14px' }}>
-                      {featuredVideo.channelName.charAt(0).toUpperCase()}
-                    </div>
+                    <img 
+                      src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
+                      alt="93Cars logo"
+                      className="rounded-circle me-3"
+                      style={{ width: '32px', height: '32px', objectFit: 'cover' }}
+                    />
                     <div>
                       <div className="fw-semibold">{featuredVideo.channelName}</div>
                       <div className="text-muted small">{featuredVideo.publishedAt}</div>
                     </div>
                   </div>
                   
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="d-flex align-items-center text-muted">
-                      <Eye size={16} className="me-2" />
-                      <span className="me-4">{featuredVideo.views} Views</span>
-                      <ThumbsUp size={16} className="me-2" />
-                      <span className="me-4">{featuredVideo.likes} Likes</span>
-                      <MessageCircle size={16} className="me-2" />
-                      <span>{featuredVideo.comments} Comments</span>
-                    </div>
-                    <button className="btn btn-outline-secondary btn-sm">
-                      <Share2 size={16} className="me-1" />
-                      Share
-                    </button>
+                  <div className="d-flex align-items-center text-muted">
+                    <Eye size={16} className="me-2" />
+                    <span className="me-4">{featuredVideo.views} Views</span>
+                    <ThumbsUp size={16} className="me-2" />
+                    <span className="me-4">{featuredVideo.likes} Likes</span>
+                    <MessageCircle size={16} className="me-2" />
+                    <span>{featuredVideo.comments} Comments</span>
                   </div>
                 </div>
               </div>
@@ -316,10 +312,12 @@ const VideoSection = () => {
                           </h6>
                           
                           <div className="d-flex align-items-center mb-1">
-                            <div className="bg-danger rounded-circle text-white d-flex align-items-center justify-content-center me-1" 
-                                 style={{ width: '12px', height: '12px', fontSize: '7px' }}>
-                              {video.channelName.charAt(0).toUpperCase()}
-                            </div>
+                            <img 
+                              src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
+                              alt="93Cars logo"
+                              className="rounded-circle me-1"
+                              style={{ width: '12px', height: '12px', objectFit: 'cover' }}
+                            />
                             <span className="text-muted" style={{ fontSize: '0.7rem' }}>{video.channelName}</span>
                           </div>
                           
