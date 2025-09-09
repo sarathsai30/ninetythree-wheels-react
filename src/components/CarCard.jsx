@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { createCarSlug } from '../utils/carUtils';
 
 const CarCard = ({ car }) => {
   const formatPrice = (price) => {
@@ -35,7 +36,7 @@ const CarCard = ({ car }) => {
                 <h5 className="text-primary fw-bold mb-0">{formatPrice(car.price)}</h5>
               </div>
             </div>
-            <Link to={`/cars/${car.id}`} className="btn btn-primary w-100 fw-semibold">
+            <Link to={`/cars/${createCarSlug(car.name)}`} className="btn btn-primary w-100 fw-semibold">
               View Details
             </Link>
           </div>

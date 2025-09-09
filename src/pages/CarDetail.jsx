@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
+import { findCarBySlug, createCarSlug } from '../utils/carUtils';
 
 const CarDetail = () => {
-  const { id } = useParams();
+  const { id: slug } = useParams();
   const [car, setCar] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [modelVariants, setModelVariants] = useState([]);
 
   useEffect(() => {
-    const foundCar = carsData.find(c => c.id === id);
+    const foundCar = findCarBySlug(carsData, slug);
     setCar(foundCar);
     
     // Get all variants of the same brand and model series
@@ -20,7 +21,7 @@ const CarDetail = () => {
       );
       setModelVariants(variants);
     }
-  }, [id]);
+  }, [slug]);
 
   if (!car) {
     return (
@@ -234,7 +235,7 @@ const CarDetail = () => {
                         className={`${variant.id === car.id ? 'table-active' : ''} ${variant.id !== car.id ? 'cursor-pointer' : ''}`}
                         onClick={() => {
                           if (variant.id !== car.id) {
-                            window.location.href = `/cars/${variant.id}`;
+                            window.location.href = `/cars/${createCarSlug(variant.name)}`;
                           }
                         }}
                         style={variant.id !== car.id ? { cursor: 'pointer' } : {}}
