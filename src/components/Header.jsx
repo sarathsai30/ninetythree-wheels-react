@@ -51,6 +51,7 @@ const Header = () => {
             >
               Videos
             </button>
+            <Link to="/youtube" className={isActive('/youtube')}>YouTube</Link>
             <Link to="/about" className={isActive('/about')}>About</Link>
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
             
@@ -118,6 +119,7 @@ const Header = () => {
             >
               Videos
             </button>
+            <Link to="/youtube" className={isActive('/youtube')} onClick={() => setIsMenuOpen(false)}>YouTube</Link>
             <Link to="/about" className={isActive('/about')} onClick={() => setIsMenuOpen(false)}>About</Link>
             <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <Link to="/news" className={isActive('/news')} onClick={() => setIsMenuOpen(false)}>Latest News</Link>
