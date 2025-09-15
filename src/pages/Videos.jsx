@@ -1,15 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Play, Eye, Clock, ThumbsUp, MessageCircle, Share2 } from 'lucide-react';
-import { ScrollArea } from '@/components/ui/scroll-area';
 
 const VideoSection = () => {
   const [videos, setVideos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [featuredVideoIndex, setFeaturedVideoIndex] = useState(0);
 
   // YouTube API Configuration - Replace with your actual values
-   const YOUTUBE_API_KEY = 'AIzaSyAQ34xD5mF6-WxcvRMHVAG-_hsmETAjDBQ'; // Replace with your API key
+  const YOUTUBE_API_KEY = 'AIzaSyAQ34xD5mF6-WxcvRMHVAG-_hsmETAjDBQ'; // Replace with your API key
   const YOUTUBE_CHANNEL_ID = 'UCr9--Ai4SYN00hQ_Sj0wn2w'; // Replace with your channel ID
 
   useEffect(() => {
@@ -64,86 +62,62 @@ const VideoSection = () => {
       setVideos(videosWithStats);
     } catch (error) {
       console.error('Error fetching YouTube videos:', error);
-      // setVideos(getFallbackVideos());
+    //   setVideos(getFallbackVideos());
     } finally {
       setIsLoading(false);
     }
   };
 
-  // const getFallbackVideos = () => [
-  //   {
-  //     id: 'fallback-1',
-  //     title: 'Maruti Suzuki Baleno 2024 Comprehensive Review | Performance, Features & Value',
-  //     thumbnail: 'https://img.youtube.com/vi/YQHsXMglC9A/maxresdefault.jpg',
-  //     channelName: '93CarsOfficial',
-  //     publishedAt: '2 days ago',
-  //     views: '15.2K',
-  //     likes: '245',
-  //     comments: '18',
-  //     duration: '12:45',
-  //     videoUrl: 'https://www.youtube.com/watch?v=YQHsXMglC9A'
-  //   },
-  //   {
-  //     id: 'fallback-2',
-  //     title: 'Hyundai Creta vs Kia Seltos 2024 | Ultimate SUV Comparison Test',
-  //     thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-  //     channelName: '93CarsOfficial',
-  //     publishedAt: '5 days ago',
-  //     views: '28.7K',
-  //     likes: '412',
-  //     comments: '56',
-  //     duration: '18:32',
-  //     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-  //   },
-  //   {
-  //     id: 'fallback-3',
-  //     title: 'Toyota Glanza 2024 Real World Test Drive | Fuel Efficiency & City Performance',
-  //     thumbnail: 'https://img.youtube.com/vi/ScMzIvxBSi4/maxresdefault.jpg',
-  //     channelName: '93CarsOfficial',
-  //     publishedAt: '1 week ago',
-  //     views: '19.5K',
-  //     likes: '189',
-  //     comments: '23',
-  //     duration: '14:20',
-  //     videoUrl: 'https://www.youtube.com/watch?v=ScMzIvxBSi4'
-  //   },
-  //   {
-  //     id: 'fallback-4',
-  //     title: 'Mahindra Thar 2024 Off-Road Adventure | Mountain Trail Experience',
-  //     thumbnail: 'https://img.youtube.com/vi/p1rAyCQbUBU/maxresdefault.jpg',
-  //     channelName: '93CarsOfficial',
-  //     publishedAt: '2 weeks ago',
-  //     views: '42.1K',
-  //     likes: '689',
-  //     comments: '87',
-  //     duration: '16:54',
-  //     videoUrl: 'https://www.youtube.com/watch?v=p1rAyCQbUBU'
-  //   },
-  //   {
-  //     id: 'fallback-5',
-  //     title: 'Honda City 2024 Interior Features Review | Technology & Comfort Analysis',
-  //     thumbnail: 'https://img.youtube.com/vi/8CMlWIuUqvI/maxresdefault.jpg',
-  //     channelName: '93CarsOfficial',
-  //     publishedAt: '3 weeks ago',
-  //     views: '31.3K',
-  //     likes: '298',
-  //     comments: '45',
-  //     duration: '11:28',
-  //     videoUrl: 'https://www.youtube.com/watch?v=8CMlWIuUqvI'
-  //   },
-  //   {
-  //     id: 'fallback-6',
-  //     title: 'Tata Nexon EV 2024 Long Range Test | Electric Vehicle Review',
-  //     thumbnail: 'https://img.youtube.com/vi/gDzkyJ4N6aI/maxresdefault.jpg',
-  //     channelName: '93CarsOfficial',
-  //     publishedAt: '1 month ago',
-  //     views: '26.8K',
-  //     likes: '334',
-  //     comments: '72',
-  //     duration: '20:15',
-  //     videoUrl: 'https://www.youtube.com/watch?v=gDzkyJ4N6aI'
-  //   }
-  // ];
+//   const getFallbackVideos = () => [
+//     {
+//       id: 'fallback-1',
+//       title: 'Toyota Taisor 3500+ Km Long Term Review: Subtly Smart!',
+//       thumbnail: 'https://img.youtube.com/vi/aVLYr_E1tJQ/maxresdefault.jpg',
+//       channelName: 'CarDekho',
+//       publishedAt: '4 days ago',
+//       views: '2.6K',
+//       likes: '2',
+//       comments: '0',
+//       duration: '10:03',
+//       videoUrl: 'https://www.youtube.com/watch?v=aVLYr_E1tJQ'
+//     },
+//     {
+//       id: 'fallback-2',
+//       title: 'Mahindra XEV 9e Detailed Review: Itna Sab Kon Deta Hai?',
+//       thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+//       channelName: 'CarDekho',
+//       publishedAt: '8 days ago',
+//       views: '13.8K',
+//       likes: '5',
+//       comments: '2',
+//       duration: '29:01',
+//       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+//     },
+//     {
+//       id: 'fallback-3',
+//       title: 'The Defender Octa is everything you need. And MORE.',
+//       thumbnail: 'https://img.youtube.com/vi/ScMzIvxBSi4/maxresdefault.jpg',
+//       channelName: 'PowerDrift',
+//       publishedAt: '15 days ago',
+//       views: '14.9K',
+//       likes: '8',
+//       comments: '3',
+//       duration: '6:27',
+//       videoUrl: 'https://www.youtube.com/watch?v=ScMzIvxBSi4'
+//     },
+//     {
+//       id: 'fallback-4',
+//       title: 'Mahindra\'s Future SUVs Unveiled | New Thar, Creta-rival SUV',
+//       thumbnail: 'https://img.youtube.com/vi/p1rAyCQbUBU/maxresdefault.jpg',
+//       channelName: 'PowerDrift',
+//       publishedAt: '20 days ago',
+//       views: '25.2K',
+//       likes: '12',
+//       comments: '5',
+//       duration: '8:45',
+//       videoUrl: 'https://www.youtube.com/watch?v=p1rAyCQbUBU'
+//     }
+//   ];
 
   const formatTimeAgo = (dateString) => {
     const now = new Date();
@@ -191,17 +165,8 @@ const VideoSection = () => {
     );
   }
 
-  const getEmbedUrl = (videoUrl) => {
-    const videoId = videoUrl.split('v=')[1]?.split('&')[0];
-    return `https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0`;
-  };
-
-  const featuredVideo = videos[featuredVideoIndex];
-  const otherVideos = videos.filter((_, index) => index !== featuredVideoIndex);
-
-  const handleVideoSelect = (videoIndex) => {
-    setFeaturedVideoIndex(videoIndex);
-  };
+  const featuredVideo = videos[0];
+  const otherVideos = videos.slice(1);
 
   return (
     <section id="videos-section" className="py-5 bg-light">
@@ -222,15 +187,20 @@ const VideoSection = () => {
             <div className="col-lg-8 mb-4">
               <div className="card border-0 shadow-lg featured-video">
                 <div className="position-relative overflow-hidden rounded">
-                  <iframe
-                    src={getEmbedUrl(featuredVideo.videoUrl)}
-                    title={featuredVideo.title}
-                    className="w-100"
-                    style={{ height: '400px' }}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <img
+                    src={featuredVideo.thumbnail}
+                    alt={featuredVideo.title}
+                    className="card-img featured-thumbnail"
+                    style={{ height: '400px', objectFit: 'cover', width: '100%' }}
+                    onError={(e) => {
+                      e.target.src = 'https://via.placeholder.com/800x400/f8f9fa/6c757d?text=Featured+Video';
+                    }}
+                  />
+                  <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center video-overlay">
+                    <div className="bg-dark bg-opacity-75 rounded-circle p-4">
+                      <Play className="text-white" size={48} fill="white" />
+                    </div>
+                  </div>
                   <div className="position-absolute bottom-0 end-0 bg-dark bg-opacity-75 text-white px-3 py-2 m-3 rounded">
                     <span className="fw-bold">{featuredVideo.duration}</span>
                   </div>
@@ -244,64 +214,52 @@ const VideoSection = () => {
                     {featuredVideo.title}
                   </h3>
                   
-                  <div className="d-flex align-items-center justify-content-between mb-3">
-                    <div className="d-flex align-items-center">
-                      <img 
-                        src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
-                        alt="93Cars logo"
-                        className="rounded-circle me-3"
-                        style={{ width: '32px', height: '32px', objectFit: 'cover' }}
-                      />
-                      <div>
-                        <div className="fw-semibold">{featuredVideo.channelName}</div>
-                        <div className="text-muted small">{featuredVideo.publishedAt}</div>
-                      </div>
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-danger rounded-circle text-white d-flex align-items-center justify-content-center me-3" 
+                         style={{ width: '32px', height: '32px', fontSize: '14px' }}>
+                      {featuredVideo.channelName.charAt(0).toUpperCase()}
                     </div>
-                    <button 
-                      className="btn btn-danger btn-sm"
-                      onClick={() => window.open('https://www.youtube.com/@93CarsOfficial?sub_confirmation=1', '_blank')}
-                    >
-                      Subscribe
+                    <div>
+                      <div className="fw-semibold">{featuredVideo.channelName}</div>
+                      <div className="text-muted small">{featuredVideo.publishedAt}</div>
+                    </div>
+                  </div>
+                  
+                  <div className="d-flex align-items-center justify-content-between">
+                    <div className="d-flex align-items-center text-muted">
+                      <Eye size={16} className="me-2" />
+                      <span className="me-4">{featuredVideo.views} Views</span>
+                      <ThumbsUp size={16} className="me-2" />
+                      <span className="me-4">{featuredVideo.likes} Likes</span>
+                      <MessageCircle size={16} className="me-2" />
+                      <span>{featuredVideo.comments} Comments</span>
+                    </div>
+                    <button className="btn btn-outline-secondary btn-sm">
+                      <Share2 size={16} className="me-1" />
+                      Share
                     </button>
                   </div>
                   
-                  <div className="d-flex align-items-center text-muted">
-                    <Eye size={16} className="me-2" />
-                    <span className="me-4">{featuredVideo.views} Views</span>
-                    <ThumbsUp size={16} className="me-2" />
-                    <span className="me-4">{featuredVideo.likes} Likes</span>
-                    <MessageCircle size={16} className="me-2" />
-                    <span>{featuredVideo.comments} Comments</span>
-                  </div>
+                  <button 
+                    className="btn btn-danger btn-lg w-100 mt-3"
+                    onClick={() => window.open(featuredVideo.videoUrl, '_blank')}
+                  >
+                    <Play size={20} className="me-2" fill="white" />
+                    Watch Now
+                  </button>
                 </div>
               </div>
             </div>
 
-            {/* Other Videos - Scrollable List */}
+            {/* Other Videos - Two Column Grid */}
             <div className="col-lg-4">
               <div className="d-flex flex-column gap-3">
                 <h5 className="fw-bold mb-0">Up Next</h5>
-                <ScrollArea className="h-96 pr-2" style={{ scrollbarWidth: 'thin' }}>
-                  <style jsx>{`
-                    .scrollbar-visible [data-radix-scroll-area-scrollbar] {
-                      opacity: 1 !important;
-                      background: rgba(0, 0, 0, 0.1);
-                      border-radius: 4px;
-                      width: 8px;
-                    }
-                    .scrollbar-visible [data-radix-scroll-area-thumb] {
-                      background: rgba(0, 0, 0, 0.3) !important;
-                    }
-                  `}</style>
-                  <div className="scrollbar-visible">
-                  <div className="d-flex flex-column gap-3">
-                    {otherVideos.map((video, idx) => {
-                  const originalIndex = videos.findIndex(v => v.id === video.id);
-                  return (
+                {otherVideos.slice(0, 6).map((video) => (
                   <div key={video.id} className="card border-0 shadow-sm video-card-small">
                     <div className="row g-0">
                       <div className="col-5">
-                        <div className="position-relative overflow-hidden rounded-start" style={{ cursor: 'pointer' }} onClick={() => handleVideoSelect(originalIndex)}>
+                        <div className="position-relative overflow-hidden rounded-start">
                           <img
                             src={video.thumbnail}
                             alt={video.title}
@@ -311,11 +269,6 @@ const VideoSection = () => {
                               e.target.src = 'https://via.placeholder.com/160x90/f8f9fa/6c757d?text=Video';
                             }}
                           />
-                          <div className="position-absolute top-50 start-50 translate-middle">
-                            <div className="bg-dark bg-opacity-75 rounded-circle p-1">
-                              <Play className="text-white" size={16} fill="white" />
-                            </div>
-                          </div>
                           <div className="position-absolute bottom-0 end-0 bg-dark bg-opacity-75 text-white px-1 rounded" style={{ fontSize: '10px' }}>
                             {video.duration}
                           </div>
@@ -335,12 +288,10 @@ const VideoSection = () => {
                           </h6>
                           
                           <div className="d-flex align-items-center mb-1">
-                            <img 
-                              src="/lovable-uploads/c46e1522-af82-4a23-9984-0f13ea99096e.png"
-                              alt="93Cars logo"
-                              className="rounded-circle me-1"
-                              style={{ width: '12px', height: '12px', objectFit: 'cover' }}
-                            />
+                            <div className="bg-danger rounded-circle text-white d-flex align-items-center justify-content-center me-1" 
+                                 style={{ width: '12px', height: '12px', fontSize: '7px' }}>
+                              {video.channelName.charAt(0).toUpperCase()}
+                            </div>
                             <span className="text-muted" style={{ fontSize: '0.7rem' }}>{video.channelName}</span>
                           </div>
                           
@@ -350,15 +301,19 @@ const VideoSection = () => {
                             <Clock size={10} className="me-1" />
                             <span>{video.publishedAt}</span>
                           </div>
+                          
+                          <button 
+                            className="btn btn-outline-danger btn-sm mt-1 w-100"
+                            style={{ fontSize: '0.7rem', padding: '2px 8px' }}
+                            onClick={() => window.open(video.videoUrl, '_blank')}
+                          >
+                            Watch
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                    );
-                    })}
-                    </div>
-                  </div>
-                </ScrollArea>
+                ))}
               </div>
             </div>
           </div>
