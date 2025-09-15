@@ -4,12 +4,13 @@ import carsData from '../data/cars.json';
 import { findCarBySlug, createCarSlug } from '../utils/carUtils';
 
 const CarDetail = () => {
-  const { id: slug } = useParams();
+  const { brand, name } = useParams();
   const [car, setCar] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [modelVariants, setModelVariants] = useState([]);
 
   useEffect(() => {
+    const slug = `${brand}/${name}`;
     const foundCar = findCarBySlug(carsData, slug);
     setCar(foundCar);
     
@@ -21,7 +22,7 @@ const CarDetail = () => {
       );
       setModelVariants(variants);
     }
-  }, [slug]);
+  }, [brand, name]);
 
   if (!car) {
     return (
