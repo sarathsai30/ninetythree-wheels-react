@@ -235,7 +235,7 @@ const CarDetail = () => {
                         className={`${variant.id === car.id ? 'table-active' : ''} ${variant.id !== car.id ? 'cursor-pointer' : ''}`}
                         onClick={() => {
                           if (variant.id !== car.id) {
-                            window.location.href = `/cars/${createCarSlug(variant.name)}`;
+                            window.location.href = `/cars/${createCarSlug(variant.brand, variant.name)}`;
                           }
                         }}
                         style={variant.id !== car.id ? { cursor: 'pointer' } : {}}
