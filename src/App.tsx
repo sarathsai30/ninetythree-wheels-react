@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import CarList from './pages/CarList';
 import CarDetail from './pages/CarDetail';
 import OnRoadPrice from './pages/CarVariantsTable/OnRoadPrice';
+import VideoGallery from './pages/VideoGallery';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
@@ -27,6 +28,7 @@ function App() {
             <Route path="/cars" element={<CarList />} />
             <Route path="/cars/:id" element={<CarDetail />} />
             <Route path="/on-road-price/:statename" element={<OnRoadPrice />} />
+            <Route path="/videos" element={<VideoGallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/management-dashboard-93cars" element={<Admin />} />

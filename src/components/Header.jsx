@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
@@ -38,7 +37,8 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-5 text-[17px] font-medium">
             <Link to="/" className={isActive('/')}>Home</Link>
             <Link to="/cars" className={isActive('/cars')}>Cars</Link>
-            <button 
+            <Link to="/videos" className={isActive('/videos')}>Videos</Link>
+            {/* <button 
               onClick={() => {
                 if (location.pathname === '/') {
                   document.getElementById('videos-section')?.scrollIntoView({ behavior: 'smooth' });
@@ -49,7 +49,7 @@ const Header = () => {
               className="text-gray-700 hover:text-blue-600"
             >
               Videos
-            </button>
+            </button> */}
             <Link to="/about" className={isActive('/about')}>About</Link>
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
             
