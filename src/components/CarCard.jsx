@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
+import { createCarSlug } from '../utils/carUtils';
 
 const CarCard = ({ car }) => {
   // Converting the price (₹) into lakhs with 2 decimals
@@ -49,7 +50,7 @@ const CarCard = ({ car }) => {
                 </h5>
               </div>
             </div>
-            <Link to={`/cars/${car.id}`} className="btn btn-primary w-100 fw-semibold">
+                <Link to={`/cars/${createCarSlug(car.brand, car.name)}`} className="btn btn-primary w-100 fw-semibold">
               View Details
             </Link>
           </div>

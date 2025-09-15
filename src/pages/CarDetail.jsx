@@ -3,9 +3,12 @@ import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
 import CarVariantsTable from './CarVariantsTable/CarVariantsTable';
 import OnRoadPrice from './CarVariantsTable/OnRoadPrice';
+import { findCarBySlug, createCarSlug } from '../utils/carUtils';
 
 const CarDetail = () => {
   const { id } = useParams();
+  const { id: slug } = useParams();
+  const { brand, name } = useParams();
   const [car, setCar] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [modelVariants, setModelVariants] = useState([]);
@@ -13,7 +16,8 @@ const CarDetail = () => {
   const [selectedModel, setSelectedModel] = useState(null);
 
   useEffect(() => {
-    const foundCar = carsData.find(c => c.id === id);
+    const slug = `${brand}/${name}`;
+    const foundCar = findCarBySlug(carsData, slug);
     setCar(foundCar);
     
     // Get all variants of the same brand and model series
@@ -24,7 +28,7 @@ const CarDetail = () => {
       );
       setModelVariants(variants);
     }
-  }, [id]);
+  }, [slug]);
 
   if (!car) {
     return (
