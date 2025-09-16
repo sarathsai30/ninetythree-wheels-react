@@ -1,15 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
+import CarVariantsTable from './CarVariantsTable/CarVariantsTable';
+import OnRoadPrice from './CarVariantsTable/OnRoadPrice';
+import { findCarBySlug, createCarSlug } from '../utils/carUtils';
 
 const CarDetail = () => {
   const { id } = useParams();
+  const { id: slug } = useParams();
+  const { brand, name } = useParams();
   const [car, setCar] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [modelVariants, setModelVariants] = useState([]);
+  const [selectedCity, setSelectedCity] = useState(null);
+  const [selectedModel, setSelectedModel] = useState(null);
 
   useEffect(() => {
-    const foundCar = carsData.find(c => c.id === id);
+    const slug = `${brand}/${name}`;
+    const foundCar = findCarBySlug(carsData, slug);
     setCar(foundCar);
     
     // Get all variants of the same brand and model series
@@ -20,7 +28,7 @@ const CarDetail = () => {
       );
       setModelVariants(variants);
     }
-  }, [id]);
+  }, [slug]);
 
   if (!car) {
     return (
@@ -211,7 +219,7 @@ const CarDetail = () => {
           </div>
 
           {/* Model Variants Table */}
-          <div className="card border-0 shadow-sm">
+          {/* <div className="card border-0 shadow-sm">
             <div className="card-header bg-white">
               <h4 className="fw-bold mb-0">Available Variants</h4>
             </div>
@@ -252,12 +260,12 @@ const CarDetail = () => {
                 </table>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="col-lg-4">
           {/* Price Card */}
-          <div className="card border-0 shadow-sm sticky-top" style={{top: '20px'}}>
+          <div className="card border-0 shadow-sm sticky-top" style={{top: '20px', zIndex: '9'}}>
             <div className="card-body">
               <div className="text-center">
                 <h3 className="text-primary fw-bold mb-0">{formatPrice(car.price)}</h3>
@@ -267,6 +275,15 @@ const CarDetail = () => {
           </div>
         </div>
       </div>
+      <CarVariantsTable variants={modelVariants} currentId={car.id} onCitySelect={setSelectedCity} onModelVariant={setSelectedModel} />
+    {/* <div>
+      {selectedCity ? (
+        <h2>Selected City: {selectedCity}</h2>
+      ) : (
+        <p>No city selected yet</p>
+      )}
+    </div> */}
+    {/* <OnRoadPrice stateName = {selectedCity} variantName={car.model} exShowroom={car.price} fuelType={car.fuelType} onVariant={selectedModel}/> */}
     </div>
   );
 };

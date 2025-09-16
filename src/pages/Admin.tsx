@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Download } from 'lucide-react';
 import BlogAdmin from '../components/BlogAdmin';
 import VideoAdmin from '../components/VideoAdmin';
+import YoutubeAdmin from './YoutubeAdmin'; 
 import { useAdmin } from '../hooks/useAdmin';
 
 const datasets = {
@@ -39,7 +40,7 @@ const Admin = () => {
         URL.revokeObjectURL(url);
     };
 
-    const handleLogin = (e) => {
+    const handleLogin = (e: React.FormEvent) => {
         e.preventDefault();
         if (login(adminPassword)) {
             setAdminPassword('');
@@ -115,6 +116,14 @@ const Admin = () => {
                         Video Management
                     </button>
                 </li>
+                <li className="nav-item">
+                    <button 
+                        className={`nav-link ${activeTab === 'youtube' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('youtube')}
+                    >
+                        YouTube Videos
+                    </button>
+                </li>
             </ul>
 
             {/* Tab Content */}
@@ -161,6 +170,8 @@ const Admin = () => {
             {activeTab === 'blog' && <BlogAdmin />}
 
             {activeTab === 'video' && <VideoAdmin />}
+
+            {activeTab === 'youtube' && <YoutubeAdmin />} {/* 👈 New tab content */}
         </div>
     );
 };

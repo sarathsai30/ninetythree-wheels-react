@@ -1,10 +1,9 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Trash2, Plus, Edit3, RefreshCw, Upload, X } from 'lucide-react';
 import { blogService } from '../services/blogService';
 import { supabase } from '../integrations/supabase/client';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import JoditEditor from 'jodit-react';
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState([]);
@@ -23,37 +22,55 @@ const BlogAdmin = () => {
   const [imageFile, setImageFile] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
   const [uploadingImage, setUploadingImage] = useState(false);
+  const editorRef = useRef(null);
 
-  // Rich text editor configuration
-  const quillModules = {
-    toolbar: [
-      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-      ['bold', 'italic', 'underline', 'strike'],
-      [{ 'color': [] }, { 'background': [] }],
-      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-      [{ 'indent': '-1'}, { 'indent': '+1' }],
-      [{ 'align': [] }],
-      ['link', 'image', 'video', 'code-block'],
-      ['blockquote'],
-      ['clean'],
-      // Custom button for YouTube embed
-      ['youtube-embed']
+  // Jodit editor configuration - memoized to prevent re-creation
+  const editorConfig = React.useMemo(() => ({
+    readonly: false,
+    height: 400,
+    uploader: {
+      insertImageAsBase64URI: true
+    },
+    removeButtons: [],
+    showCharsCounter: false,
+    showWordsCounter: false,
+    toolbarAdaptive: false,
+    spellcheck: false,
+    buttons: [
+      'source', '|',
+      'bold', 'italic', 'underline', 'strikethrough', '|',
+      'ul', 'ol', '|', 
+      'outdent', 'indent', '|',
+      'font', 'fontsize', 'brush', 'paragraph', '|',
+      'image', 'file', 'video', 'table', 'link', '|',
+      'align', 'undo', 'redo', '|',
+      'hr', 'eraser', 'copyformat', '|',
+      'symbol', 'fullsize'
     ],
-    clipboard: {
-      // Allow pasting of HTML content including Instagram embeds and tables
-      matchVisual: false,
-      allowed: {
-        tags: ['blockquote', 'script', 'div', 'p', 'a', 'svg', 'g', 'path', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'iframe'],
-        attributes: ['class', 'style', 'data-instgrm-permalink', 'data-instgrm-version', 'href', 'target', 'rel', 'src', 'async', 'colspan', 'rowspan', 'width', 'height', 'frameborder', 'allowfullscreen', 'allow']
+    askBeforePasteHTML: false,
+    askBeforePasteFromWord: false,
+    defaultActionOnPaste: 'insert_clear_html',
+    // Table configuration to prevent focus loss
+    table: {
+      selectionCellStyle: 'border: 1px solid #1e88e5 !important;',
+      useExtraClassesOptions: false
+    },
+    // Prevent focus loss during table editing
+    events: {
+      afterInit: function(editor) {
+        editor.events.on('keydown', function(event) {
+          if (event.target.closest('table')) {
+            event.stopPropagation();
+          }
+        });
       }
     }
-  };
+  }), []);
 
-  const quillFormats = [
-    'header', 'bold', 'italic', 'underline', 'strike',
-    'color', 'background', 'list', 'bullet', 'indent', 'align',
-    'link', 'image', 'video', 'code-block', 'blockquote'
-  ];
+  // Debounced content change handler to prevent focus loss
+  const handleContentChange = useCallback((content) => {
+    setNewBlog(prev => ({ ...prev, content }));
+  }, []);
 
   // Load blogs from Firebase on component mount
   useEffect(() => {
@@ -384,27 +401,23 @@ const BlogAdmin = () => {
               <label className="form-label">Content *</label>
               <div className="alert alert-info">
                 <small>
-                  <strong>Rich Content Support:</strong>
+                  <strong>Full HTML Editor with Rich Content Support:</strong>
                   <ul className="mb-0 mt-2">
-                    <li><strong>Tables:</strong> Use the table button in the toolbar or paste HTML tables directly</li>
-                    <li><strong>YouTube Videos:</strong> Paste YouTube URLs directly in content - they'll auto-embed</li>
-                    <li><strong>Instagram Embeds:</strong> Paste embed codes using the code block button</li>
-                    <li><strong>Formatting:</strong> Use the toolbar for headers, lists, quotes, and more</li>
+                    <li><strong>Tables:</strong> Use Table button in toolbar to insert/edit tables</li>
+                    <li><strong>HTML Code:</strong> Use Source button (&lt;/&gt;) to edit raw HTML</li>
+                    <li><strong>Instagram/Social Embeds:</strong> Paste embed codes in Source mode</li>
+                    <li><strong>Media:</strong> Use Video/Image buttons to embed content</li>
+                    <li><strong>Paste:</strong> HTML content is preserved when pasting</li>
                   </ul>
                 </small>
               </div>
-              <div style={{ height: '300px' }}>
-                <ReactQuill
-                  theme="snow"
-                  value={newBlog.content}
-                  onChange={(content) => setNewBlog({...newBlog, content})}
-                  modules={quillModules}
-                  formats={quillFormats}
-                  placeholder="Write your blog content here... You can paste Instagram embed codes directly."
-                  style={{ height: '240px' }}
-                  readOnly={operationLoading}
-                />
-              </div>
+              <JoditEditor
+                ref={editorRef}
+                value={newBlog.content}
+                config={editorConfig}
+                onChange={handleContentChange}
+                onBlur={() => {}} // Prevent blur from causing issues
+              />
             </div>
             <div className="row">
               <div className="col-md-8">
