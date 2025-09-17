@@ -13,6 +13,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
 import News from './pages/News';
+import FuelCostCalculator from './components/FuelCostCalculator';
 import BlogDetail from './pages/BlogDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -34,6 +35,7 @@ function App() {
             <Route path="/management-dashboard-93cars" element={<Admin />} />
             <Route path="/blog" element={<BlogSection />} />
             <Route path="/news" element={<News />} />
+            <Route path="/fuelcostcalculator" element={<FuelCostCalculator />} />
             <Route path="/news/:slug" element={<BlogDetail />} />
             <Route path="/cars/:brand/:name" element={<CarDetail />} />
           </Routes>
