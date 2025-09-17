@@ -103,7 +103,7 @@ const VideoGallery = () => {
       <h2 className="text-xl sm:text-2xl font-bold mb-4">Videos</h2>
 
       {/* Tabs */}
-      <div className="flex flex-wrap gap-4 border-b mb-6 text-gray-600 font-medium text-sm sm:text-base">
+      {/* <div className="flex flex-wrap gap-4 border-b mb-6 text-gray-600 font-medium text-sm sm:text-base">
         {["News", "Reviews", "Special Reports", "Images", "Videos"].map((tab, i) => (
           <button
             key={i}
@@ -112,13 +112,27 @@ const VideoGallery = () => {
             {tab}
           </button>
         ))}
+      </div> */}
+
+      <div className="flex flex-wrap gap-4 border-b mb-6 text-gray-600 font-medium text-sm sm:text-base">
+        {/* <button className="pb-2">News</button> */}
+        {/* <button className="pb-2">Reviews</button> */}
+        {/* <button className="pb-2">Special Reports</button> */}
+        {/* <button className="pb-2">Images</button> */}
+        <button className="pb-2 border-b-2 border-blue-600 text-blue-600">
+          Videos
+        </button>
       </div>
+
 
       {/* Search */}
       <div className="mb-6">
         <input
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            setCurrentPage(1); // reset pagination on search
+          }}
           type="text"
           placeholder="Search videos..."
           className="w-full border rounded-lg px-3 sm:px-4 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"

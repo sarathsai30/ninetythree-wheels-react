@@ -408,6 +408,7 @@ return (
 };
 
 const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
+
   const { statename } = useParams();
   const location = useLocation();
   const { carId, city, variant } = location.state || {};
@@ -418,6 +419,10 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
   const [selectedFuels, setSelectedFuels] = useState([]);
   const [selectedTransmissions, setSelectedTransmissions] = useState([]);
   const [showAll, setShowAll] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   const formatINR = (value) =>
     new Intl.NumberFormat("en-IN", {
