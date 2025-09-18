@@ -2,8 +2,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BlogSection from './components/BlogSection';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import ModernHeader from './components/ModernHeader';
+import ModernFooter from './components/ModernFooter';
 import Home from './pages/Home';
 import CarList from './pages/CarList';
 import CarDetail from './pages/CarDetail';
@@ -21,9 +21,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {
   return (
     <Router>
-      <div className="d-flex flex-column min-vh-100">
-        <Header />
-        <main className="flex-grow-1">
+      <div className="min-h-screen flex flex-col">
+        <ModernHeader />
+        <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cars" element={<CarList />} />
@@ -39,7 +39,7 @@ function App() {
           <Route path="/news/:slug" element={<BlogDetail />} />
           </Routes>
         </main>
-        <Footer />
+        <ModernFooter />
       </div>
     </Router>
   );

@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import carsData from '../data/cars.json';
-import HeroSection from '../components/HeroSection';
-import FeaturedCars from '../components/FeaturedCars';
+import ModernHeroSection from '../components/ModernHeroSection';
+import ModernFeaturedCars from '../components/ModernFeaturedCars';
 import PopularBrands from '../components/PopularBrands';
 import VideoSection from '../components/VideoSection';
 import BlogSection from '../components/BlogSection';
@@ -33,8 +33,8 @@ const Home = () => {
 
   return (
     <div>
-      <HeroSection />
-      <FeaturedCars featuredCars={featuredCars} />
+      <ModernHeroSection />
+      <ModernFeaturedCars featuredCars={featuredCars} />
       <PopularBrands brands={brands} onBrandClick={handleBrandClick} />
       <VideoSection />
       <ParkingChecker />
