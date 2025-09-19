@@ -66,7 +66,7 @@ const CarList = () => {
 
     // Brand filter
     if (selectedBrand && selectedBrand !== '') {
-      filtered = filtered.filter(car => car.brand === selectedBrand);
+      filtered = filtered.filter(car => car.brand === selectedBrand || car.name === selectedBrand);
     }
 
     // Fuel type filter
@@ -124,6 +124,8 @@ const CarList = () => {
     // Clear URL parameters
     window.history.replaceState({}, '', '/cars');
   };
+
+  
 
   return (
     <div className="container py-4">
