@@ -6,6 +6,7 @@ const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isNewsDropdownOpen, setIsNewsDropdownOpen] = useState(false);
+  const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState(false);
 
   const isActive = (path) =>
     location.pathname === path ? 'text-blue-600 font-semibold' : 'text-gray-700';
@@ -17,6 +18,8 @@ const Header = () => {
   const toggleNewsDropdown = () => {
     setIsNewsDropdownOpen(!isNewsDropdownOpen);
   };
+
+  const toggleMoreDropdown = () => setIsMoreDropdownOpen(!isMoreDropdownOpen);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50 h-[105px]">
@@ -75,6 +78,27 @@ const Header = () => {
                 </div>
               )}
             </div>
+            {/* More Dropdown */}
+            <div className="relative">
+              <button
+                onClick={toggleMoreDropdown}
+                className="flex items-center gap-1 text-gray-700 hover:text-blue-600"
+              >
+                More
+                <ChevronDown className={`w-4 h-4 transition-transform ${isMoreDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isMoreDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-50">
+                  <Link
+                    to="/fuelcostcalculator"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                    onClick={() => setIsMoreDropdownOpen(false)}
+                  >
+                    Fuel Cost Calculator
+                  </Link>
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -119,6 +143,7 @@ const Header = () => {
             <Link to="/about" className={isActive('/about')} onClick={() => setIsMenuOpen(false)}>About</Link>
             <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <Link to="/news" className={isActive('/news')} onClick={() => setIsMenuOpen(false)}>Latest News</Link>
+            <Link to="/fuelcostcalculator" className={isActive('/fuelcostcalculator')} onClick={() => setIsMenuOpen(false)}>Fuel Cost Calculator</Link>
             <Link
               to="/cars"
               className="bg-blue-500 hover:bg-blue-600 text-white text-sm px-3 py-2 rounded inline-block w-fit"

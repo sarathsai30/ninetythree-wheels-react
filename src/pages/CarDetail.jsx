@@ -53,6 +53,7 @@ const CarDetail = () => {
         <ol className="breadcrumb">
           <li className="breadcrumb-item"><Link to="/">Home</Link></li>
           <li className="breadcrumb-item"><Link to="/cars">Cars</Link></li>
+          <li className="breadcrumb-item">{car.brand}</li>
           <li className="breadcrumb-item active">{car.name}</li>
         </ol>
       </nav>
