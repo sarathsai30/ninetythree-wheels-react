@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { useParams, useLocation, useNavigate } from "react-router-dom";
+import { useParams, useLocation, useNavigate, Link } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import rtoData from "../../data/RTO.json";
 import cars from "../../data/cars.json";
@@ -632,6 +632,23 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
 
   return (
     <div className="mx-4 sm:mx-6 md:mx-10 mt-5">
+      <nav aria-label="breadcrumb" className="mb-4">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+          <li className="breadcrumb-item"><Link to="/cars">Cars</Link></li>
+          <li className="breadcrumb-item">
+            <Link to={`/cars?brand=${encodeURIComponent(variant.brand)}`}>
+              {variant.brand}
+            </Link>
+          </li>
+          <li className="breadcrumb-item">
+            <Link to={`/cars?brand=${encodeURIComponent(variant.name)}`}>
+              {variant.name}
+            </Link>
+          </li>
+          <li className="breadcrumb-item active">{variant.model}</li>
+        </ol>
+      </nav>
       {/* Top Section: Car details + Price card */}
       <div className="grid grid-cols-5 gap-6">
         {/* Left: Car details */}
