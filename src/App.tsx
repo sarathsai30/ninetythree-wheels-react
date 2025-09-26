@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import Admin from './pages/Admin';
 import News from './pages/News';
 import FuelCostCalculator from './components/FuelCostCalculator';
+import CarLoanEMICalculator from './components/CarLoanEMICalculator';
 import BlogDetail from './pages/BlogDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -36,6 +37,7 @@ function App() {
             <Route path="/blog" element={<BlogSection />} />
             <Route path="/news" element={<News />} />
             <Route path="/fuelcostcalculator" element={<FuelCostCalculator />} />
+            <Route path="/carloanemicalculator" element={<CarLoanEMICalculator />} />
             <Route path="/news/:slug" element={<BlogDetail />} />
             <Route path="/cars/:brand/:name" element={<CarDetail />} />
           </Routes>
