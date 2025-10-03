@@ -5,6 +5,7 @@ import rtoData from "../../data/RTO.json";
 import cars from "../../data/cars.json";
 import postOffices from "../../data/pincode.json";
 import GetBrouchers from "./GetBrouchers";
+import OffersModal from "./OffersModal";
 
 const CityIcons = {
   Mumbai: (
@@ -419,6 +420,8 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
   const [selectedFuels, setSelectedFuels] = useState([]);
   const [selectedTransmissions, setSelectedTransmissions] = useState([]);
   const [showAll, setShowAll] = useState(false);
+  const [isOfferModalOpen, setIsOfferModalOpen] = useState(false);
+  const [selectedOfferVariant, setSelectedOfferVariant] = useState(null);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -932,10 +935,25 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
                     />
                   </label>
                   <div className="mt-2 text-sm text-blue-600 space-x-2 font-semibold">
-                    <a href="#" className="hover:underline">
+                    <button
+                      onClick={() => {
+                        setSelectedOfferVariant(v);
+                        setIsOfferModalOpen(true);
+                      }}
+                      className="hover:underline focus:outline-none"
+                    >
                       Get Offers
-                    </a>
+                    </button>
                   </div>
+
+                  {selectedOfferVariant && (
+                    <OffersModal
+                      isOpen={isOfferModalOpen}
+                      model={selectedOfferVariant.model} // <-- pass selected variant
+                      brand={selectedOfferVariant.brand}
+                      onClose={() => setIsOfferModalOpen(false)}
+                    />
+                  )}
                 </div>
               </div>
             ))
@@ -970,6 +988,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
         {modalVariant && ( <PriceBreakupModal variant={modalVariant} onClose={() => setModalVariant(null)} onConfirmCity={handleModalConfirm}  /> )}
       </div>
       <GetBrouchers carname = {variant.name}/>
+      <Toaster position="top-right" />
     </div>
 
   );

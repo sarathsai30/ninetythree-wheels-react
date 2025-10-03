@@ -3,6 +3,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import postOffices from "../../data/pincode.json";
+import OffersModal from './OffersModal';
 
 {/* Price View Breakup Starting */}
 
@@ -503,6 +504,8 @@ const CarVariantsTable = ({ variants = [], currentId, onCitySelect, onModelVaria
   const [showAll, setShowAll] = useState(false);
   const [selectedCity, setSelectedCity] = useState(null);
   const [modalVariant, setModalVariant] = useState(null); {/* view price breakup modal */}
+  const [isOfferModalOpen, setIsOfferModalOpen] = useState(false);
+  const [selectedOfferVariant, setSelectedOfferVariant] = useState(null);
 
   const getCompositeKey = (v) => `${v.id}-${v.model}-${v.fuelType}`;
 
@@ -628,19 +631,39 @@ const CarVariantsTable = ({ variants = [], currentId, onCitySelect, onModelVaria
                   <span>Compare</span>
                   <input type="checkbox" className="h-4 w-4 text-blue-600 border-gray-300 rounded" />
                 </label>
-                <div className="mt-2 text-sm text-blue-600 space-x-2 font-semibold">
-                  <a href="" className="hover:underline" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setModalVariant(v);
-                    }}>
+                <div className="mt-2 flex items-center text-sm text-blue-600 font-semibold space-x-1">
+                  <a
+                    href=""
+                    className="hover:underline"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setModalVariant(v);
+                    }}
+                  >
                     View Price Breakup
                   </a>
+
                   <span>|</span>
-                  <a href="#" className="hover:underline">
+
+                  <button
+                    onClick={() => {
+                      setSelectedOfferVariant(v);
+                      setIsOfferModalOpen(true);
+                    }}
+                    className="hover:underline focus:outline-none"
+                  >
                     Get Offers
-                  </a>
+                  </button>
                 </div>
+
+                {selectedOfferVariant && (
+                  <OffersModal
+                    isOpen={isOfferModalOpen}
+                    model={selectedOfferVariant.model} // <-- pass selected variant
+                    brand={selectedOfferVariant.brand}
+                    onClose={() => setIsOfferModalOpen(false)}
+                  />
+                )}
               </div>
             </div>
           ))
@@ -671,6 +694,7 @@ const CarVariantsTable = ({ variants = [], currentId, onCitySelect, onModelVaria
         </div>
       )}
       {modalVariant && ( <PriceBreakupModal variant={modalVariant} carId={currentId} onClose={() => setModalVariant(null)} onConfirmCity={handleModalConfirm} /> )}
+        <Toaster position="top-right" />
     </div>
   );
 };
