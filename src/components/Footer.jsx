@@ -178,7 +178,15 @@ const Footer = () => {
             <p className="text-white-50 mb-0">&copy; 2024 93cars. All rights reserved.</p>
           </div>
           <div className="col-md-6 text-md-end">
-            <p className="text-white-50 mb-0">Privacy Policy | Terms of Service</p>
+            <p className="text-white-50 mb-0">
+              <Link to="/privacy-policy" className="text-decoration-none text-white-50 me-2">
+                Privacy Policy
+              </Link>
+              |
+              <Link to="/terms" className="text-decoration-none text-white-50 ms-2">
+                Terms of Service
+              </Link>
+            </p>
           </div>
         </div>
       </div>
