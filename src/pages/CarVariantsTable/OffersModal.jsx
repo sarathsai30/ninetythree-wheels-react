@@ -193,7 +193,7 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
                     setLocation(e.target.value);
                     setSelectedLocation(null);
                   }}
-                  placeholder="Search by office name, district, or pincode"
+                  placeholder="Search by city, district, or pincode"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white pr-12"
                 />
                 <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
