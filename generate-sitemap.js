@@ -56,7 +56,7 @@ function collectUrls() {
 
 // Generate sitemap file in ./public/sitemap.xml
 async function generate() {
-  const hostname = 'http://localhost:8080';
+  const hostname = 'https://93cars.com';
   const sitemap = new SitemapStream({ hostname });
   const writeStream = createWriteStream('./public/sitemap.xml');
   sitemap.pipe(writeStream);

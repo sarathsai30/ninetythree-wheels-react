@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BlogSection from './components/BlogSection';
 import Header from './components/Header';
@@ -16,6 +14,8 @@ import News from './pages/News';
 import FuelCostCalculator from './components/FuelCostCalculator';
 import CarLoanEMICalculator from './components/CarLoanEMICalculator';
 import BlogDetail from './pages/BlogDetail';
+import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -40,6 +40,8 @@ function App() {
             <Route path="/carloanemicalculator" element={<CarLoanEMICalculator />} />
             <Route path="/news/:slug" element={<BlogDetail />} />
             <Route path="/cars/:brand/:name" element={<CarDetail />} />
+            <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />
