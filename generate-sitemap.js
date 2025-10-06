@@ -8,10 +8,14 @@ import { staticRoutes } from './src/routes.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load cars.json
-let carsDataRaw = JSON.parse(
-  readFileSync(path.join(__dirname, './src/data/cars.json'), 'utf-8')
-);
+// Load cars.json safely
+let carsDataRaw;
+try {
+  carsDataRaw = JSON.parse(readFileSync(path.join(__dirname, './src/data/cars.json'), 'utf-8'));
+} catch (err) {
+  console.error('Error reading cars.json:', err);
+  carsDataRaw = [];
+}
 const carsData = Array.isArray(carsDataRaw) ? carsDataRaw : carsDataRaw.cars || [];
 
 // Slugify utility to normalize strings for URLs
@@ -25,53 +29,90 @@ function slugify(str) {
     .replace(/(^-|-$)+/g, '');   // Remove leading/trailing hyphens
 }
 
-// Collect all unique URLs ensuring unique URL slugs and unique cars by id
-function collectUrls() {
+// Collect car URLs ensuring unique slugs
+function collectCarUrls() {
   const urls = [];
-  urls.push(...staticRoutes.map(r => r.path));
-
-  const seenFull = new Set();  // To track uniqueness including id
-  const seenSlug = new Set();  // To track unique URL slugs
+  const seenSlug = new Set();
 
   carsData.forEach(c => {
     const brandSlug = slugify(c.brand);
     const carSlug = slugify(c.name);
     const modelSlug = slugify(c.model);
-
-    const fullKey = `${c.id}-${brandSlug}-${carSlug}-${modelSlug}`;
     const slugKey = `${brandSlug}-${carSlug}-${modelSlug}`;
 
-    if (!seenFull.has(fullKey)) {
-      seenFull.add(fullKey);
-
-      if (!seenSlug.has(slugKey)) {
-        seenSlug.add(slugKey);
-        urls.push(`/cars/${brandSlug}/${carSlug}/${modelSlug}`);
-      }
+    if (!seenSlug.has(slugKey)) {
+      seenSlug.add(slugKey);
+      urls.push(`/cars/${brandSlug}/${carSlug}/${modelSlug}`);
     }
   });
 
   return urls;
 }
 
-// Generate sitemap file in ./public/sitemap.xml
-async function generate() {
+// Generate sitemap for static routes
+async function generateStaticSitemap() {
   const hostname = 'https://93cars.com';
   const sitemap = new SitemapStream({ hostname });
-  const writeStream = createWriteStream('./public/sitemap.xml');
+  const writeStream = createWriteStream(path.join(__dirname, 'public', 'sitemap_static.xml'));
   sitemap.pipe(writeStream);
 
-  const urls = collectUrls();
-  console.log('Total unique URLs:', urls.length);
-  urls.forEach(u => console.log(u));
+  staticRoutes.forEach(route => {
+    sitemap.write({ url: route.path, changefreq: 'daily', priority: 0.8 });
+  });
 
-  urls.forEach(url =>
-    sitemap.write({ url, changefreq: 'daily', priority: 0.8 })
+  sitemap.end();
+  await streamToPromise(sitemap);
+
+  console.log('✅ sitemap-static.xml for static routes generated');
+}
+
+// Generate sitemap for car URLs
+async function generateCarSitemap() {
+  const hostname = 'https://93cars.com';
+  const sitemap = new SitemapStream({ hostname });
+  const writeStream = createWriteStream(path.join(__dirname, 'public', 'sitemap_cars.xml'));
+  sitemap.pipe(writeStream);
+
+  const carUrls = collectCarUrls();
+
+  carUrls.forEach(path =>
+    sitemap.write({ url: `${hostname}${path}`, changefreq: 'daily', priority: 0.8 })
   );
 
   sitemap.end();
   await streamToPromise(sitemap);
-  console.log('✅ sitemap.xml generated in ./public');
+
+  console.log('✅ sitemap-cars.xml for car URLs generated');
 }
 
-generate().catch(console.error);
+// Generate sitemap index to reference above sitemaps
+async function generateSitemapIndex() {
+  const sitemapIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://93cars.com/sitemap_static.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://93cars.com/sitemap_cars.xml</loc>
+  </sitemap>
+</sitemapindex>`;
+
+  const indexPath = path.join(__dirname, 'public', 'sitemap_index.xml');
+  await new Promise((resolve, reject) => {
+    const writeStream = createWriteStream(indexPath);
+    writeStream.write(sitemapIndexContent);
+    writeStream.end();
+    writeStream.on('finish', resolve);
+    writeStream.on('error', reject);
+  });
+
+  console.log('✅ sitemap-index.xml generated referencing static and cars sitemaps');
+}
+
+async function generateAllSitemaps() {
+  await generateStaticSitemap();
+  await generateCarSitemap();
+  await generateSitemapIndex();
+}
+
+generateAllSitemaps().catch(console.error);

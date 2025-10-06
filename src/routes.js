@@ -8,4 +8,6 @@ export const staticRoutes = [
   { path: '/news' },
   { path: '/fuelcostcalculator' },
   { path: '/carloanemicalculator' },
+  { path: '/privacy-policy' },
+  { path: '/terms' },
 ];
