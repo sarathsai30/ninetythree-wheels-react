@@ -89,7 +89,7 @@ const CityIcons = {
 };
 
 
-const PriceBreakupModal = ({ carId, variant, onClose, onConfirmCity }) => {
+const PriceBreakupModal = ({ carId, displayVariant, onClose, onConfirmCity }) => {
   const [query, setQuery] = useState('');
   const [selectedCity, setSelectedCity] = useState({ name: "Bengaluru" });
   const [selectedStateName, setSelectedStateName] = useState(null);
@@ -110,7 +110,7 @@ const PriceBreakupModal = ({ carId, variant, onClose, onConfirmCity }) => {
     { name: "Chandigarh", pincode: "160017" },
   ];
 
-  if (!variant) return null;
+  if (!displayVariant) return null;
 
 // triggers query after 3rd letter then matches with json data
 
@@ -253,7 +253,7 @@ const PriceBreakupModal = ({ carId, variant, onClose, onConfirmCity }) => {
       let state_lower = matchedOffice.statename
         .toLowerCase();
       navigate(`/on-road-price/${state_lower}`, {
-        state: { carId, city: matchedOffice.statename, variant },
+        state: { carId, city: matchedOffice.statename, displayVariant },
       });
     } else {
       // console.log("Else Part because this is object printing statname:", selectedCity.statename);
@@ -261,7 +261,7 @@ const PriceBreakupModal = ({ carId, variant, onClose, onConfirmCity }) => {
       let state_lower = selectedCity.statename
         .toLowerCase();
       navigate(`/on-road-price/${state_lower}`, {
-        state: { carId, city: selectedCity.statename, variant },
+        state: { carId, city: selectedCity.statename, displayVariant },
       });
     }
 
@@ -273,7 +273,7 @@ const PriceBreakupModal = ({ carId, variant, onClose, onConfirmCity }) => {
     let state_lower = matchedOffice.statename
         .toLowerCase();
     navigate(`/on-road-price/${state_lower}`, {
-      state: { carId, city: selectedCity.statename, variant },
+      state: { carId, city: selectedCity.statename, displayVariant },
     });
   }
 };
@@ -409,10 +409,13 @@ return (
 };
 
 const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
-
   const { statename } = useParams();
   const location = useLocation();
-  const { carId, city, variant } = location.state || {};
+  const { carId, city, variant: initialVariant } = location.state || {};
+  
+  // State management for variants
+  const [displayVariant, setDisplayVariant] = useState(initialVariant);
+  const [localCurrentVariantId, setLocalCurrentVariantId] = useState(initialVariant?.id || null);
   const [modalVariant, setModalVariant] = useState(null);
   const [expanded, setExpanded] = useState(false);
   const [car, setCar] = useState(null);
@@ -422,6 +425,15 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
   const [showAll, setShowAll] = useState(false);
   const [isOfferModalOpen, setIsOfferModalOpen] = useState(false);
   const [selectedOfferVariant, setSelectedOfferVariant] = useState(null);
+  const [selectedVariant, setSelectedVariant] = useState(initialVariant);
+
+  // Sync with initial variant
+  useEffect(() => {
+    if (initialVariant) {
+      setDisplayVariant(initialVariant);
+      setLocalCurrentVariantId(initialVariant.id);
+    }
+  }, [initialVariant]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -439,18 +451,37 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
     (s) => s.stateName?.toLowerCase() === statename?.toLowerCase()
   );
 
-  if (!stateData || !variant) {
-    return null;
-  }
+  if (!stateData || !displayVariant || !selectedVariant) return null;
 
-  const exShowroom = variant.price;
-  const fuelType = variant.fuelType;
+  const exShowroom = displayVariant.price;
+  const fuelType = displayVariant.fuelType;
 
   const fuelKeyMap = {
     petrol: "petrol",
     diesel: "diesel",
     electric: "ev",
     ev: "ev",
+  };
+  // Compute On-Road Price per variant
+  const computeOnRoadPrice = (variant) => {
+    if (!variant) return 0;
+    const exShowroom = variant.price;
+    const fuelType = variant.fuelType;
+
+    const rtoRule = stateData.rtoRules.find(
+      (r) => exShowroom >= r.minPrice && exShowroom <= r.maxPrice
+    );
+    const rtoPercentage = rtoRule
+      ? rtoRule.fuelRates[fuelKeyMap[fuelType?.toLowerCase()] || fuelType?.toLowerCase()] || 0
+      : 0;
+
+    const registration = Math.round((exShowroom * rtoPercentage) / 100);
+    const insurance = Math.round(
+      (exShowroom * (stateData.insurancePercentage || 3)) / 100
+    );
+    const otherCharges = stateData.otherCharges || 0;
+
+    return exShowroom + registration + insurance + otherCharges;
   };
 
   // --- getting the RTO Rate based on formula ---
@@ -476,17 +507,15 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
   useEffect(() => {
     if (!carId) return;
     const foundCar = cars.find((c) => c.id === carId);
-    setCar(foundCar);
-    if (foundCar) {
-      const seriesName = foundCar.name.split(" ").slice(0, 2).join(" ");
-      const variants = cars.filter(
-        (c) => c.brand === foundCar.brand && c.name.startsWith(seriesName)
-      );
-      setModelVariants(variants);
-    } else {
-      setModelVariants([]);
-    }
-  }, [carId]);
+    if (!foundCar) return;
+
+    const seriesName = foundCar.name.split(" ").slice(0, 2).join(" ");
+    const variants = cars.filter(
+      (c) => c.brand === foundCar.brand && c.name.startsWith(seriesName)
+    );
+    setModelVariants(variants);
+    setSelectedVariant(initialVariant || variants[0]);
+  }, [carId, initialVariant]);
 
   // --- Variant Table ---
 
@@ -542,11 +571,16 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
 
   const displayedVariants = showAll ? filtered : filtered.slice(0, 4);
 
-  const sortedVariants = [...displayedVariants].sort((a, b) => {
-    if (a.id === variant.id) return -1;
-    if (b.id === variant.id) return 1;
-    return 0;
-  });
+  // Handle variant selection with immediate visual feedback
+  const handleVariantClick = (variant) => {
+    console.log("Variant clicked:", variant.id, "Current ID:", localCurrentVariantId);
+    
+    if (String(variant.id) !== String(localCurrentVariantId)) {
+      // Update local state immediately for visual feedback
+      setLocalCurrentVariantId(variant.id);
+      setDisplayVariant(variant);
+    }
+  };
 
   const FilterButton = ({ children, selected, onClick }) => (
     <button
@@ -623,15 +657,13 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
     </div>
   );
 
-
   const handleModalConfirm = (city) => {
     if (onCitySelect) {
-      onCitySelect(city); // send city to parent
-      onModelVariant(modalVariant);
+      onCitySelect(city);
     }
   };
 
-  console.log("car name: ", variant.name);
+  console.log("car name: ", displayVariant.name);
 
   return (
     <div className="mx-4 sm:mx-6 md:mx-10 mt-5">
@@ -640,45 +672,46 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
           <li className="breadcrumb-item"><Link to="/">Home</Link></li>
           <li className="breadcrumb-item"><Link to="/cars">Cars</Link></li>
           <li className="breadcrumb-item">
-            <Link to={`/cars?brand=${encodeURIComponent(variant.brand)}`}>
-              {variant.brand}
+            <Link to={`/cars?brand=${encodeURIComponent(displayVariant.brand)}`}>
+              {displayVariant.brand}
             </Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to={`/cars?brand=${encodeURIComponent(variant.name)}`}>
-              {variant.name}
+            <Link to={`/cars?brand=${encodeURIComponent(displayVariant.name)}`}>
+              {displayVariant.name}
             </Link>
           </li>
-          <li className="breadcrumb-item active">{variant.model}</li>
+          <li className="breadcrumb-item active">{displayVariant.model}</li>
         </ol>
       </nav>
+      
       {/* Top Section: Car details + Price card */}
       <div className="grid grid-cols-5 gap-6">
         {/* Left: Car details */}
         <div className="col-span-5 md:col-span-3 bg-white border border-gray-200 rounded-lg shadow p-4 sm:p-6">
           <img
             src={
-              variant.image.startsWith("http")
-                ? variant.image
-                : `/${variant.image}`
+              displayVariant.image.startsWith("http")
+                ? displayVariant.image
+                : `/${displayVariant.image}`
             }
-            alt={variant.model}
+            alt={displayVariant.model}
             className="w-full h-48 sm:h-60 object-cover rounded-xl mb-4 sm:mb-6"
           />
           <h2 className="text-lg sm:text-xl font-semibold mb-2">
-            {variant.model}
+            {displayVariant.model}
           </h2>
           <p className="text-gray-600 text-sm sm:text-base">
-            {variant.description ||
+            {displayVariant.description ||
               "This car offers great mileage, features, and solid performance."}
           </p>
-          {variant.features && variant.features.length > 0 && (
+          {displayVariant.features && displayVariant.features.length > 0 && (
             <div className="mt-4">
               <h3 className="text-md sm:text-lg font-semibold mb-2">
                 Features
               </h3>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-base text-gray-700">
-                {variant.features.map((feature, idx) => (
+                {displayVariant.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center">
                     <svg
                       className="w-4 h-4 text-green-600 mr-2 flex-shrink-0"
@@ -701,18 +734,17 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
         <div className="col-span-5 md:col-span-2 max-w-md w-full mx-auto bg-white border border-gray-200 rounded-lg shadow p-4 sm:p-6 flex flex-col justify-between">
           <div>
             <h2 className="text-lg sm:text-xl font-semibold text-center mb-4">
-              {variant.model} On Road Price in {stateData.stateName}
+              {displayVariant.model} On Road Price in {stateData.stateName}
             </h2>
             <div className="space-y-3 sm:space-y-4 px-1 sm:px-2">
               {/* Location Edit Button */}
               <div className="flex items-center text-gray-600">
                 <span>Location: {stateData.stateName}</span>
                 <button
-                  onClick={() => setModalVariant(variant)} // your handler function
+                  onClick={() => setModalVariant(displayVariant)}
                   className="ml-2 text-gray-400 hover:text-gray-600"
                   aria-label="Edit Location"
                 >
-                  {/* Pencil Icon */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -739,7 +771,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="text-gray-600">Ex-Showroom Price</div>
                 <div className="font-semibold break-words">
-                  {formatINR(variant.price)}
+                  {formatINR(displayVariant.price)}
                 </div>
               </div>
 
@@ -830,7 +862,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
                 On Road Price in {stateData.stateName}
               </div>
               <div className="text-xl sm:text-2xl md:text-2xl lg:text-2xl font-bold break-words">
-                {formatINR(onRoadPrice)}
+                {formatINR(computeOnRoadPrice(displayVariant))}
               </div>
             </div>
 
@@ -895,19 +927,26 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
           <div className="col-span-3 text-center">Compare</div>
         </div>
 
-        {/* List */}
+        {/* List - UPDATED WITH PROPER SELECTION FUNCTIONALITY */}
         <div className="border border-t-0 border-gray-200 rounded-b-lg divide-y divide-gray-200 overflow-x-auto">
-          {sortedVariants.length ? (
-            sortedVariants.map((v, i) => (
+          {displayedVariants.length ? (
+            displayedVariants.map((v, i) => (
               <div
                 key={`${v.compositeKey}-${i}`}
-                className={`relative grid grid-cols-1 md:grid-cols-12 items-center p-4 ${
-                  v.isDuplicate ? "bg-yellow-50" : "bg-white"
+                onClick={() => {
+                  handleVariantClick(v);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className={`relative grid grid-cols-1 md:grid-cols-12 items-center p-4 transition cursor-pointer ${
+                  String(v.id) === String(localCurrentVariantId) 
+                    ? 'bg-blue-50 border-l-4 border-l-blue-600 cursor-default' 
+                    : 'bg-white hover:bg-gray-50 cursor-pointer'
                 }`}
               >
-                {v.id === variant.id && (
-                  <span className="absolute top-4 right-0 bg-blue-600 text-white text-xs font-semibold px-2 py-0.5 rounded-l">
-                    Current Car
+                {/* Current Car badge */}
+                {String(v.id) === String(localCurrentVariantId) && (
+                  <span className="absolute top-2 right-2 bg-blue-600 text-white text-xs font-semibold px-2 py-0.5 rounded">
+                    {v.id === selectedVariant.id ? 'Current Car' : 'Selected'}
                   </span>
                 )}
 
@@ -921,22 +960,27 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
 
                 {/* Price Column */}
                 <div className="col-span-3 mt-4 md:mt-0 text-base font-semibold text-gray-800 text-center">
-                  {formatPrice(v.price + registration + insurance + otherCharges)}
+                  {formatINR(computeOnRoadPrice(v))}
                 </div>
 
                 {/* Compare */}
                 <div className="col-span-3 mt-4 md:mt-0 flex flex-col items-center">
-                  <label className="flex items-center text-gray-600 text-sm space-x-1">
+                  <label 
+                    className="flex items-center text-gray-600 text-sm space-x-1"
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <span>Compare</span>
                     <input
                       type="checkbox"
                       className="h-4 w-4 text-blue-600 border-gray-300 rounded"
                       aria-label={`Compare ${v.model}`}
+                      onClick={(e) => e.stopPropagation()}
                     />
                   </label>
                   <div className="mt-2 text-sm text-blue-600 space-x-2 font-semibold">
                     <button
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.stopPropagation();
                         setSelectedOfferVariant(v);
                         setIsOfferModalOpen(true);
                       }}
@@ -945,15 +989,6 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
                       Get Offers
                     </button>
                   </div>
-
-                  {selectedOfferVariant && (
-                    <OffersModal
-                      isOpen={isOfferModalOpen}
-                      model={selectedOfferVariant.model} // <-- pass selected variant
-                      brand={selectedOfferVariant.brand}
-                      onClose={() => setIsOfferModalOpen(false)}
-                    />
-                  )}
                 </div>
               </div>
             ))
@@ -971,7 +1006,6 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
               className="inline-flex items-center text-blue-600 hover:underline text-sm"
               onClick={() => setShowAll(!showAll)}
             >
-
               {showAll ? "Show Less" : "View More Variants"}
               <svg
                 className={`w-4 h-4 ml-1 transform ${showAll ? "rotate-270" : "rotate-90"}`}
@@ -985,12 +1019,28 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
             </button>
           </div>
         )}
-        {modalVariant && ( <PriceBreakupModal variant={modalVariant} onClose={() => setModalVariant(null)} onConfirmCity={handleModalConfirm}  /> )}
+        
+        {modalVariant && ( 
+          <PriceBreakupModal 
+            displayVariant={modalVariant} 
+            onClose={() => setModalVariant(null)} 
+            onConfirmCity={handleModalConfirm}  
+          /> 
+        )}
+        
+        {selectedOfferVariant && (
+          <OffersModal
+            isOpen={isOfferModalOpen}
+            model={selectedOfferVariant.model}
+            brand={selectedOfferVariant.brand}
+            onClose={() => setIsOfferModalOpen(false)}
+          />
+        )}
       </div>
-      <GetBrouchers carname = {variant.name}/>
+      
+      <GetBrouchers carname={displayVariant.name}/>
       <Toaster position="top-right" />
     </div>
-
   );
 };
 

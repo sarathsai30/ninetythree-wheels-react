@@ -498,18 +498,19 @@ const ButtonGroup = ({ options, selected, onToggle }) => (
   </div>
 );
 
-const CarVariantsTable = ({ variants = [], currentId, onCitySelect, onModelVariant }) => {
+const CarVariantsTable = ({ variants = [], onCitySelect, onModelVariant, onVariantSelect }) => {
   const [selectedFuels, setSelectedFuels] = useState([]);
   const [selectedTransmissions, setSelectedTransmissions] = useState([]);
   const [showAll, setShowAll] = useState(false);
-  const [selectedCity, setSelectedCity] = useState(null);
-  const [modalVariant, setModalVariant] = useState(null); {/* view price breakup modal */}
+  const [modalVariant, setModalVariant] = useState(null);
   const [isOfferModalOpen, setIsOfferModalOpen] = useState(false);
   const [selectedOfferVariant, setSelectedOfferVariant] = useState(null);
 
+  // First car is Current Car by default
+  const [selectedVariantId, setSelectedVariantId] = useState(variants[0]?.id);
+
   const getCompositeKey = (v) => `${v.id}-${v.model}-${v.fuelType}`;
 
-  console.log("variants : ",variants);
   const variantsWithDuplicateFlag = useMemo(() => {
     const seen = new Set();
     return variants.map((v) => {
@@ -520,40 +521,27 @@ const CarVariantsTable = ({ variants = [], currentId, onCitySelect, onModelVaria
     });
   }, [variants]);
 
-  const fuelTypes = useMemo(
-    () => [...new Set(variantsWithDuplicateFlag.map((v) => v.fuelType))],
-    [variantsWithDuplicateFlag]
-  );
-  const transmissionTypes = useMemo(
-    () => [...new Set(variantsWithDuplicateFlag.map((v) => v.transmission))],
-    [variantsWithDuplicateFlag]
-  );
+  const fuelTypes = useMemo(() => [...new Set(variantsWithDuplicateFlag.map((v) => v.fuelType))], [variantsWithDuplicateFlag]);
+  const transmissionTypes = useMemo(() => [...new Set(variantsWithDuplicateFlag.map((v) => v.transmission))], [variantsWithDuplicateFlag]);
 
   const toggleSelection = (value, arr, setArr) => {
     setArr(arr.includes(value) ? arr.filter((v) => v !== value) : [...arr, value]);
   };
 
-  const filtered = useMemo(
-    () =>
-      variantsWithDuplicateFlag.filter((v) => {
-        const fuelOk = !selectedFuels.length || selectedFuels.includes(v.fuelType);
-        const transOk = !selectedTransmissions.length || selectedTransmissions.includes(v.transmission);
-        return fuelOk && transOk;
-      }),
-    [variantsWithDuplicateFlag, selectedFuels, selectedTransmissions]
-  );
+  const filtered = useMemo(() => variantsWithDuplicateFlag.filter(v => {
+    const fuelOk = !selectedFuels.length || selectedFuels.includes(v.fuelType);
+    const transOk = !selectedTransmissions.length || selectedTransmissions.includes(v.transmission);
+    return fuelOk && transOk;
+  }), [variantsWithDuplicateFlag, selectedFuels, selectedTransmissions]);
 
   const formatPrice = (p) =>
-    new Intl.NumberFormat('en-IN', {
-      style: 'currency',
-      currency: 'INR',
-      maximumFractionDigits: 0,
-    }).format(p);
+    new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(p);
 
   const displayedVariants = showAll ? filtered : filtered.slice(0, 4);
+
   const handleModalConfirm = (city) => {
     if (onCitySelect) {
-      onCitySelect(city); // send city to parent
+      onCitySelect(city);
       onModelVariant(modalVariant);
     }
   };
@@ -563,32 +551,11 @@ const CarVariantsTable = ({ variants = [], currentId, onCitySelect, onModelVaria
       {/* Filters */}
       <div className="mb-4">
         <div className="flex items-center text-gray-600 mb-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            width={30}
-            height={30}
-          >
-            <path d="M7 8h34L28 24v12l-8 4V24L7 8z" stroke="currentColor" fill="none" />
-          </svg>
-          <span className="text-lg font-semibold">Filter By Fuel type &amp; Transmission</span>
+          <span className="text-lg font-semibold">Filter By Fuel type & Transmission</span>
         </div>
         <div className="flex flex-wrap gap-4">
-          <ButtonGroup
-            options={fuelTypes}
-            selected={selectedFuels}
-            onToggle={(v) => toggleSelection(v, selectedFuels, setSelectedFuels)}
-          />
-          <ButtonGroup
-            options={transmissionTypes}
-            selected={selectedTransmissions}
-            onToggle={(v) => toggleSelection(v, selectedTransmissions, setSelectedTransmissions)}
-          />
+          <ButtonGroup options={fuelTypes} selected={selectedFuels} onToggle={(v) => toggleSelection(v, selectedFuels, setSelectedFuels)} />
+          <ButtonGroup options={transmissionTypes} selected={selectedTransmissions} onToggle={(v) => toggleSelection(v, selectedTransmissions, setSelectedTransmissions)} />
         </div>
       </div>
 
@@ -601,31 +568,48 @@ const CarVariantsTable = ({ variants = [], currentId, onCitySelect, onModelVaria
 
       {/* List */}
       <div className="border border-t-0 border-gray-200 rounded-b-lg divide-y divide-gray-200">
-        {displayedVariants.length ? (
-          displayedVariants.map((v, i) => (
+        {displayedVariants.length ? displayedVariants.map((v, i) => {
+          const isCurrentCar = v.id === variants[0]?.id && v.id === selectedVariantId;
+          const isSelected = v.id === selectedVariantId && v.id !== variants[0]?.id;
+
+
+          return (
             <div
               key={`${v.compositeKey}-${i}`}
-              className={`relative grid grid-cols-1 md:grid-cols-3 items-center p-4 ${
-                v.isDuplicate ? 'bg-yellow-50' : 'bg-white'
+              onClick={() => {
+                setSelectedVariantId(v.id);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (onVariantSelect) {
+                  onVariantSelect(v);
+                }
+              }}
+              className={`relative grid grid-cols-1 md:grid-cols-3 items-center p-4 transition ${
+                isCurrentCar ? 'bg-blue-50 cursor-default' : isSelected ? 'bg-blue-50 cursor-default' : 'bg-white hover:bg-gray-50 cursor-pointer'
               }`}
+
             >
-              {v.id === currentId && (
+              {/* Badges */}
+              {isCurrentCar && (
                 <span className="absolute top-2 right-2 bg-blue-600 text-white text-xs font-semibold px-2 py-0.5 rounded">
                   Current Car
                 </span>
               )}
-              {/* Variants column */}
+              {isSelected && (
+                <span className="absolute top-2 right-2 bg-blue-600 text-white text-xs font-semibold px-2 py-0.5 rounded">
+                  Selected
+                </span>
+              )}
+
+              {/* Variant Info */}
               <div>
                 <div className="font-semibold text-gray-800">{v.model}</div>
-                <div className="text-sm text-gray-500 mt-1">
-                  {v.engine}, {v.fuelType}, {v.transmission}, {v.mileage}
-                </div>
+                <div className="text-sm text-gray-500 mt-1">{v.engine}, {v.fuelType}, {v.transmission}, {v.mileage}</div>
               </div>
-              {/* Price column */}
-              <div className="mt-4 md:mt-0 text-base font-semibold text-gray-800 text-center">
-                {formatPrice(v.price)}
-              </div>
-              {/* Compare column */}
+
+              {/* Price */}
+              <div className="mt-4 md:mt-0 text-base font-semibold text-gray-800 text-center">{formatPrice(v.price)}</div>
+
+              {/* Actions */}
               <div className="mt-4 md:mt-0 flex flex-col items-end">
                 <label className="flex items-center text-gray-600 text-sm space-x-1">
                   <span>Compare</span>
@@ -633,41 +617,28 @@ const CarVariantsTable = ({ variants = [], currentId, onCitySelect, onModelVaria
                 </label>
                 <div className="mt-2 flex items-center text-sm text-blue-600 font-semibold space-x-1">
                   <a
-                    href=""
+                    href="#"
                     className="hover:underline"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setModalVariant(v);
-                    }}
-                  >
-                    View Price Breakup
-                  </a>
-
+                    onClick={(e) => { e.preventDefault(); setModalVariant(v); }}
+                  >View Price Breakup</a>
                   <span>|</span>
-
                   <button
-                    onClick={() => {
-                      setSelectedOfferVariant(v);
-                      setIsOfferModalOpen(true);
-                    }}
+                    onClick={(e) => { e.stopPropagation(); setSelectedOfferVariant(v); setIsOfferModalOpen(true); }}
                     className="hover:underline focus:outline-none"
-                  >
-                    Get Offers
-                  </button>
+                  >Get Offers</button>
                 </div>
-
                 {selectedOfferVariant && (
                   <OffersModal
                     isOpen={isOfferModalOpen}
-                    model={selectedOfferVariant.model} // <-- pass selected variant
+                    model={selectedOfferVariant.model}
                     brand={selectedOfferVariant.brand}
                     onClose={() => setIsOfferModalOpen(false)}
                   />
                 )}
               </div>
             </div>
-          ))
-        ) : (
+          );
+        }) : (
           <div className="py-8 text-center text-gray-500">No variants match the selected filters.</div>
         )}
       </div>
@@ -690,16 +661,22 @@ const CarVariantsTable = ({ variants = [], currentId, onCitySelect, onModelVaria
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
             </svg>
           </button>
-          
         </div>
       )}
-      {modalVariant && ( <PriceBreakupModal variant={modalVariant} carId={currentId} onClose={() => setModalVariant(null)} onConfirmCity={handleModalConfirm} /> )}
-        <Toaster position="top-right" />
+
+      {/* Price Breakup Modal */}
+      {modalVariant && (
+        <PriceBreakupModal
+          variant={modalVariant}
+          carId={variants[0]?.id}
+          onClose={() => setModalVariant(null)}
+          onConfirmCity={handleModalConfirm}
+        />
+      )}
+
+      <Toaster position="top-right" />
     </div>
   );
 };
 
-{/* Filtering Table Based on Car Variant Ending */}
-
 export default CarVariantsTable;
-

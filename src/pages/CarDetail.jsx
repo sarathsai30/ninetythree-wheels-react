@@ -14,6 +14,8 @@ const CarDetail = () => {
   const [modelVariants, setModelVariants] = useState([]);
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedModel, setSelectedModel] = useState(null);
+  const [selectedCar, setSelectedCar] = useState(car);
+
 
   useEffect(() => {
     const slug = `${brand}/${name}`;
@@ -39,6 +41,8 @@ const CarDetail = () => {
     );
   }
 
+  const displayCar = selectedCar || car;
+
   const formatPrice = (price) => {
     return new Intl.NumberFormat('en-IN', {
       style: 'currency',
@@ -53,8 +57,8 @@ const CarDetail = () => {
         <ol className="breadcrumb">
           <li className="breadcrumb-item"><Link to="/">Home</Link></li>
           <li className="breadcrumb-item"><Link to="/cars">Cars</Link></li>
-          <li className="breadcrumb-item">{car.brand}</li>
-          <li className="breadcrumb-item active">{car.name}</li>
+          <li className="breadcrumb-item">{displayCar.brand}</li>
+          <li className="breadcrumb-item active">{displayCar.name}</li>
         </ol>
       </nav>
 
@@ -65,7 +69,7 @@ const CarDetail = () => {
             <div className="card-body p-0">
               <div id="carImageCarousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                  {car.gallery.map((image, index) => (
+                  {displayCar.gallery.map((image, index) => (
                     <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                       <img 
                         src={image} 
@@ -86,7 +90,7 @@ const CarDetail = () => {
               
               {/* Thumbnail images */}
               <div className="d-flex gap-2 p-3 overflow-auto">
-                {car.gallery.map((image, index) => (
+                {displayCar.gallery.map((image, index) => (
                   <img
                     key={index}
                     src={image}
@@ -103,36 +107,36 @@ const CarDetail = () => {
           {/* Car Details */}
           <div className="card border-0 shadow-sm mb-4">
             <div className="card-body">
-              <h2 className="card-title fw-bold mb-3">{car.name}</h2>
-              <p className="text-muted mb-4">{car.description}</p>
+              <h2 className="card-title fw-bold mb-3">{displayCar.name}</h2>
+              <p className="text-muted mb-4">{displayCar.description}</p>
               
               <div className="row g-4">
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
                     <i className="fas fa-gas-pump text-primary fa-2x mb-2"></i>
                     <h6 className="fw-bold">Fuel Type</h6>
-                    <span>{car.fuelType}</span>
+                    <span>{displayCar.fuelType}</span>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
                     <i className="fas fa-cogs text-primary fa-2x mb-2"></i>
                     <h6 className="fw-bold">Transmission</h6>
-                    <span>{car.transmission}</span>
+                    <span>{displayCar.transmission}</span>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
                     <i className="fas fa-tachometer-alt text-primary fa-2x mb-2"></i>
                     <h6 className="fw-bold">Mileage</h6>
-                    <span>{car.mileage}</span>
+                    <span>{displayCar.mileage}</span>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="text-center p-3 bg-light rounded">
                     <i className="fas fa-users text-primary fa-2x mb-2"></i>
                     <h6 className="fw-bold">Seats</h6>
-                    <span>{car.seatingCapacity}</span>
+                    <span>{displayCar.seatingCapacity}</span>
                   </div>
                 </div>
               </div>
@@ -151,11 +155,11 @@ const CarDetail = () => {
                     <tbody>
                       <tr>
                         <td className="fw-semibold">Brand</td>
-                        <td>{car.brand}</td>
+                        <td>{displayCar.brand}</td>
                       </tr>
                       <tr>
                         <td className="fw-semibold">Model</td>
-                        <td>{car.model}</td>
+                        <td>{displayCar.model}</td>
                       </tr>
                       {/* <tr>
                         <td className="fw-semibold">Year</td>
@@ -163,11 +167,11 @@ const CarDetail = () => {
                       </tr> */}
                       <tr>
                         <td className="fw-semibold">Body Type</td>
-                        <td>{car.bodyType}</td>
+                        <td>{displayCar.bodyType}</td>
                       </tr>
                       <tr>
                         <td className="fw-semibold">Engine</td>
-                        <td>{car.engine}</td>
+                        <td>{displayCar.engine}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -189,11 +193,11 @@ const CarDetail = () => {
                       </tr> */}
                       <tr>
                         <td className="fw-semibold">Seating</td>
-                        <td>{car.seatingCapacity} Seater</td>
+                        <td>{displayCar.seatingCapacity} Seater</td>
                       </tr>
                       <tr>
                         <td className="fw-semibold">Transmission</td>
-                        <td>{car.transmission}</td>
+                        <td>{displayCar.transmission}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -209,7 +213,7 @@ const CarDetail = () => {
             </div>
             <div className="card-body">
               <div className="row">
-                {car.features.map((feature, index) => (
+                {displayCar.features.map((feature, index) => (
                   <div key={index} className="col-md-6 col-lg-4 mb-2">
                     <i className="fas fa-check text-primary me-2"></i>
                     {feature}
@@ -269,14 +273,25 @@ const CarDetail = () => {
           <div className="card border-0 shadow-sm sticky-top" style={{top: '20px', zIndex: '9'}}>
             <div className="card-body">
               <div className="text-center">
-                <h3 className="text-primary fw-bold mb-0">{formatPrice(car.price)}</h3>
+                <h3 className="text-primary fw-bold mb-0">{formatPrice(displayCar.price)}</h3>
                 <p className="text-muted">On-road Price (Mumbai)</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <CarVariantsTable variants={modelVariants} currentId={car.id} onCitySelect={setSelectedCity} onModelVariant={setSelectedModel} />
+      
+      <CarVariantsTable
+  variants={modelVariants}
+  currentId={displayCar.id}
+  onCitySelect={setSelectedCity}
+  onModelVariant={setSelectedModel}
+  onVariantSelect={(variant) => {
+    setSelectedCar(variant);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }}
+/>
+
     {/* <div>
       {selectedCity ? (
         <h2>Selected City: {selectedCity}</h2>
