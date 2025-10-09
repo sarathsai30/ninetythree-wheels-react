@@ -8,7 +8,7 @@ import { findCarBySlug, createCarSlug } from '../utils/carUtils';
 const CarDetail = () => {
   const { id } = useParams();
   const { id: slug } = useParams();
-  const { brand, name } = useParams();
+  const { brand, name, model } = useParams();
   const [car, setCar] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [modelVariants, setModelVariants] = useState([]);
@@ -18,7 +18,7 @@ const CarDetail = () => {
 
 
   useEffect(() => {
-    const slug = `${brand}/${name}`;
+    const slug = `${brand}/${name}/${model}`;
     const foundCar = findCarBySlug(carsData, slug);
     setCar(foundCar);
     

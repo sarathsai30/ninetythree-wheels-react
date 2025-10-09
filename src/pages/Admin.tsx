@@ -7,6 +7,7 @@ import { Download } from 'lucide-react';
 import BlogAdmin from '../components/BlogAdmin';
 import VideoAdmin from '../components/VideoAdmin';
 import YoutubeAdmin from './YoutubeAdmin'; 
+// import InstagramAdmin from './InstagramAdmin'; 
 import { useAdmin } from '../hooks/useAdmin';
 
 const datasets = {
@@ -124,6 +125,14 @@ const Admin = () => {
                         YouTube Videos
                     </button>
                 </li>
+                {/* <li className="nav-item">
+                    <button
+                        className={`nav-link ${activeTab === "instagram" ? 'active' : ''}`}
+                        onClick={() => setActiveTab("instagram")}
+                    >
+                    Instagram
+                    </button>
+                </li> */}
             </ul>
 
             {/* Tab Content */}
@@ -172,6 +181,7 @@ const Admin = () => {
             {activeTab === 'video' && <VideoAdmin />}
 
             {activeTab === 'youtube' && <YoutubeAdmin />} {/* 👈 New tab content */}
+            {/* {activeTab === 'instagram' && <InstagramAdmin />} */}
         </div>
     );
 };

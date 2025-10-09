@@ -39,7 +39,7 @@ function App() {
             <Route path="/fuelcostcalculator" element={<FuelCostCalculator />} />
             <Route path="/carloanemicalculator" element={<CarLoanEMICalculator />} />
             <Route path="/news/:slug" element={<BlogDetail />} />
-            <Route path="/cars/:brand/:name" element={<CarDetail />} />
+            <Route path="/cars/:brand/:name/:model" element={<CarDetail />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>

@@ -50,7 +50,7 @@ const CarCard = ({ car }) => {
                 </h5>
               </div>
             </div>
-                <Link to={`/cars/${createCarSlug(car.brand, car.name)}`} className="btn btn-primary w-100 fw-semibold">
+                <Link to={`/cars/${createCarSlug(car.brand, car.name, car.model)}`} className="btn btn-primary w-100 fw-semibold">
               View Details
             </Link>
           </div>
