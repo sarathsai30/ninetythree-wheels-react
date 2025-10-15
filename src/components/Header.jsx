@@ -49,7 +49,7 @@ const Header = () => {
             <Link to="/videos" className={isActive('/videos')}>Videos</Link>
             <Link to="/about" className={isActive('/about')}>About</Link>
             <Link to="/contact" className={isActive('/contact')}>Contact</Link>
-            
+            <Link to="/dealers" className={isActive('/dealers')}>Dealers</Link>
             {/* News Dropdown */}
             <div className="relative dropdown-parent">
               <button
@@ -133,6 +133,7 @@ const Header = () => {
             <Link to="/videos" className={isActive('/videos')} onClick={() => setIsMenuOpen(false)}>Videos</Link>
             <Link to="/about" className={isActive('/about')} onClick={() => setIsMenuOpen(false)}>About</Link>
             <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
+            <Link to="/dealers" className={isActive('/dealers')} onClick={() => setIsMenuOpen(false)}>Dealers</Link>
             <Link to="/news" className={isActive('/news')} onClick={() => setIsMenuOpen(false)}>Latest News</Link>
             <Link to="/fuelcostcalculator" className={isActive('/fuelcostcalculator')} onClick={() => setIsMenuOpen(false)}>Fuel Cost Calculator</Link>
             <Link

@@ -9,6 +9,7 @@ import OnRoadPrice from './pages/CarVariantsTable/OnRoadPrice';
 import VideoGallery from './pages/VideoGallery';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Dealers from './pages/Dealers';
 import Admin from './pages/Admin';
 import News from './pages/News';
 import FuelCostCalculator from './components/FuelCostCalculator';
@@ -33,6 +34,7 @@ function App() {
             <Route path="/videos" element={<VideoGallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/dealers" element={<Dealers />} />
             <Route path="/management-dashboard-93cars" element={<Admin />} />
             <Route path="/blog" element={<BlogSection />} />
             <Route path="/news" element={<News />} />

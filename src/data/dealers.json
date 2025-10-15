@@ -1,0 +1,1184 @@
+{
+  "brands": [ 
+    {
+      "name": "Maruti Suzuki",
+      "logo": "./brand_logos/maruti-suzuki.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Varun Motors",
+              "address": "IT Park, Financial District, Near Wipro Circle, Behind Cyient, Nanakramguda, Hyderabad, Telangana 500034",
+              "contact_number": "9100050934"
+            },
+            {
+              "shop_name": "Sai Services Nexa Q-City",
+              "address": "Q city Road, Survey No 78 Adjacent to HP petrol pump, Gopanapally, Gachibowli, Hyderabad, Telangana 500082",
+              "contact_number": "7331168888"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "V3 Maruti Suzuki",
+              "address": "Plot No. 3, Sector 7, Dwarka, New Delhi 110075",
+              "contact_number": "1128032323"
+            },
+            {
+              "shop_name": "Suzuki Auto Planet",
+              "address": "A-1/2, Phase II, Wazirpur Industrial Area, Delhi 110052",
+              "contact_number": "1147032323"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mahindra",
+      "logo": "./brand_logos/mahindra.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Mahindra First Choice",
+              "address": "Madhapur, Hyderabad 500081",
+              "contact_number": "4043456789"
+            },
+            {
+              "shop_name": "Aaditya Mahindra",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4043456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Mahindra World",
+              "address": "South Extension, Delhi 110049",
+              "contact_number": "1143456789"
+            },
+            {
+              "shop_name": "Sahara Mahindra",
+              "address": "Pitampura, Delhi 110034",
+              "contact_number": "1143456790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tata",
+      "logo": "./brand_logos/tata.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Concorde Tata Motors",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4033456789"
+            },
+            {
+              "shop_name": "KUN Tata",
+              "address": "Kukatpally, Hyderabad 500072",
+              "contact_number": "4033456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Tata Motors Premier",
+              "address": "Connaught Place, Delhi 110001",
+              "contact_number": "1133456789"
+            },
+            {
+              "shop_name": "KGP Tata",
+              "address": "Rohini, Delhi 110085",
+              "contact_number": "1133456790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hyundai",
+      "logo": "./brand_logos/hyundai.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Shree Hyundai",
+              "address": "Plot No. 5, Hitech City Road, Madhapur, Hyderabad 500081",
+              "contact_number": "4023456789"
+            },
+            {
+              "shop_name": "Shah Hyundai",
+              "address": "Banjara Hills, Road No. 12, Hyderabad 500034",
+              "contact_number": "4023456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Modern Hyundai",
+              "address": "Kashmere Gate, Delhi 110006",
+              "contact_number": "1123456789"
+            },
+            {
+              "shop_name": "V3 Hyundai",
+              "address": "Dwarka, Sector 10, Delhi 110075",
+              "contact_number": "1123456790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toyota",
+      "logo": "./brand_logos/toyota.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Toyota Hyderabad",
+              "address": "Kompally, Hyderabad 500014",
+              "contact_number": "4063456789"
+            },
+            {
+              "shop_name": "KUN Toyota",
+              "address": "Kukatpally, Hyderabad 500072",
+              "contact_number": "4063456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Toyota Liva",
+              "address": "Saket, Delhi 110017",
+              "contact_number": "1163456789"
+            },
+            {
+              "shop_name": "V3 Toyota",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1163456790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kia",
+      "logo": "./brand_logos/kia.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Kia Motors Hyderabad",
+              "address": "Kukatpally, Hyderabad 500072",
+              "contact_number": "4073456789"
+            },
+            {
+              "shop_name": "KUN Kia",
+              "address": "Madhapur, Hyderabad 500081",
+              "contact_number": "4073456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Kia Motors Delhi",
+              "address": "Rajouri Garden, Delhi 110027",
+              "contact_number": "1173456789"
+            },
+            {
+              "shop_name": "KGP Kia",
+              "address": "Rohini, Delhi 110085",
+              "contact_number": "1173456790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SKODA",
+      "logo": "./brand_logos/skoda.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "SKODA Hyderabad",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4113456789"
+            },
+            {
+              "shop_name": "Premium SKODA",
+              "address": "Madhapur, Hyderabad 500081",
+              "contact_number": "4113456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "SKODA Delhi",
+              "address": "South Extension, Delhi 110049",
+              "contact_number": "1141156789"
+            },
+            {
+              "shop_name": "Elite SKODA",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1141156790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BMW",
+      "logo": "./brand_logos/bmw.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "BMW Hyderabad",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4123456789"
+            },
+            {
+              "shop_name": "German Motors BMW",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4123456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "BMW Delhi",
+              "address": "Connaught Place, Delhi 110001",
+              "contact_number": "1141256789"
+            },
+            {
+              "shop_name": "Premium BMW",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1241256789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Citroen",
+      "logo": "./brand_logos/citroen.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Citroen Hyderabad",
+              "address": "Madhapur, Hyderabad 500081",
+              "contact_number": "4133456789"
+            },
+            {
+              "shop_name": "French Motors",
+              "address": "Kukatpally, Hyderabad 500072",
+              "contact_number": "4133456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Citroen Delhi",
+              "address": "Saket, Delhi 110017",
+              "contact_number": "1141356789"
+            },
+            {
+              "shop_name": "Euro Cars Citroen",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1141356790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Renault",
+      "logo": "./brand_logos/renault.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Renault Hyderabad",
+              "address": "Kukatpally, Hyderabad 500072",
+              "contact_number": "4103456789"
+            },
+            {
+              "shop_name": "KUN Renault",
+              "address": "Madhapur, Hyderabad 500081",
+              "contact_number": "4103456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Renault Delhi",
+              "address": "Rajouri Garden, Delhi 110027",
+              "contact_number": "1110456789"
+            },
+            {
+              "shop_name": "V3 Renault",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1110456790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Honda",
+      "logo": "./brand_logos/honda.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Honda Cars Hyderabad",
+              "address": "Kompally, Hyderabad 500014",
+              "contact_number": "4053456789"
+            },
+            {
+              "shop_name": "Vintage Honda",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4053456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Honda Downtown",
+              "address": "Karol Bagh, Delhi 110005",
+              "contact_number": "1153456789"
+            },
+            {
+              "shop_name": "V3 Honda",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1153456790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Land Rover",
+      "logo": "./brand_logos/land-rover.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Land Rover Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4143456789"
+            },
+            {
+              "shop_name": "Premium Land Rover",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4143456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Land Rover Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1141456789"
+            },
+            {
+              "shop_name": "Elite Land Rover",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1241456789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Volkswagen",
+      "logo": "./brand_logos/volkswagen.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Volkswagen Hyderabad",
+              "address": "Kukatpally, Hyderabad 500072",
+              "contact_number": "4153456789"
+            },
+            {
+              "shop_name": "German Auto VW",
+              "address": "Madhapur, Hyderabad 500081",
+              "contact_number": "4153456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Volkswagen Delhi",
+              "address": "South Extension, Delhi 110049",
+              "contact_number": "1141556789"
+            },
+            {
+              "shop_name": "Premium VW",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1141556790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mercedes-Benz",
+      "logo": "./brand_logos/mercedes-benz.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Mercedes-Benz Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4163456789"
+            },
+            {
+              "shop_name": "German Luxury Motors",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4163456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Mercedes-Benz Delhi",
+              "address": "Connaught Place, Delhi 110001",
+              "contact_number": "1141656789"
+            },
+            {
+              "shop_name": "Premium Mercedes",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1241656789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nissan",
+      "logo": "./brand_logos/nissan.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Nissan Hyderabad",
+              "address": "Kukatpally, Hyderabad 500072",
+              "contact_number": "4173456789"
+            },
+            {
+              "shop_name": "Japanese Motors Nissan",
+              "address": "Madhapur, Hyderabad 500081",
+              "contact_number": "4173456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Nissan Delhi",
+              "address": "Rajouri Garden, Delhi 110027",
+              "contact_number": "1141756789"
+            },
+            {
+              "shop_name": "Premium Nissan",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1141756790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jeep",
+      "logo": "./brand_logos/jeep.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Jeep Hyderabad",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4183456789"
+            },
+            {
+              "shop_name": "American Motors Jeep",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4183456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Jeep Delhi",
+              "address": "South Extension, Delhi 110049",
+              "contact_number": "1141856789"
+            },
+            {
+              "shop_name": "Premium Jeep",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1241856789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Audi",
+      "logo": "./brand_logos/audi.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Audi Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4193456789"
+            },
+            {
+              "shop_name": "German Premium Audi",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4193456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Audi Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1141956789"
+            },
+            {
+              "shop_name": "Premium Audi",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1241956789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MG",
+      "logo": "./brand_logos/mg.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "MG Motor Hyderabad",
+              "address": "Hitech City, Madhapur, Hyderabad 500081",
+              "contact_number": "4093456789"
+            },
+            {
+              "shop_name": "KUN MG",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4093456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "MG Motor Delhi",
+              "address": "South Extension, Delhi 110049",
+              "contact_number": "1193456789"
+            },
+            {
+              "shop_name": "MG World",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1245345678"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Volvo",
+      "logo": "./brand_logos/volvo.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Volvo Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4203456789"
+            },
+            {
+              "shop_name": "Swedish Motors Volvo",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4203456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Volvo Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1142056789"
+            },
+            {
+              "shop_name": "Premium Volvo",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1242056789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Porsche",
+      "logo": "./brand_logos/porsche.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Porsche Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4213456789"
+            },
+            {
+              "shop_name": "German Sports Porsche",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4213456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Porsche Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1142156789"
+            },
+            {
+              "shop_name": "Premium Porsche",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1242156789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lexus",
+      "logo": "./brand_logos/lexus.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Lexus Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4223456789"
+            },
+            {
+              "shop_name": "Japanese Luxury Lexus",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4223456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Lexus Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1142256789"
+            },
+            {
+              "shop_name": "Premium Lexus",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1242256789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vinfast",
+      "logo": "./brand_logos/vinfast.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Vinfast Hyderabad",
+              "address": "Hitech City, Hyderabad 500081",
+              "contact_number": "4233456789"
+            },
+            {
+              "shop_name": "Electric Motors Vinfast",
+              "address": "Madhapur, Hyderabad 500081",
+              "contact_number": "4233456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Vinfast Delhi",
+              "address": "Saket, Delhi 110017",
+              "contact_number": "1142356789"
+            },
+            {
+              "shop_name": "Premium Vinfast",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1142356790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lamborghini",
+      "logo": "./brand_logos/lamborghini.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Lamborghini Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4243456789"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Lamborghini Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1142456789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BYD",
+      "logo": "./brand_logos/byd.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "BYD Hyderabad",
+              "address": "Hitech City, Hyderabad 500081",
+              "contact_number": "4253456789"
+            },
+            {
+              "shop_name": "Electric Auto BYD",
+              "address": "Madhapur, Hyderabad 500081",
+              "contact_number": "4253456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "BYD Delhi",
+              "address": "Saket, Delhi 110017",
+              "contact_number": "1142556789"
+            },
+            {
+              "shop_name": "Premium BYD",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1142556790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ferrari",
+      "logo": "./brand_logos/ferrari.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Ferrari Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4263456789"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Ferrari Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1142656789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MINI",
+      "logo": "./brand_logos/mini.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "MINI Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4273456789"
+            },
+            {
+              "shop_name": "Premium MINI",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4273456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "MINI Delhi",
+              "address": "South Extension, Delhi 110049",
+              "contact_number": "1142756789"
+            },
+            {
+              "shop_name": "MINI World",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1242756789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jaguar",
+      "logo": "./brand_logos/jaguar.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Jaguar Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4283456789"
+            },
+            {
+              "shop_name": "British Motors Jaguar",
+              "address": "Banjara Hills, Hyderabad 500034",
+              "contact_number": "4283456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Jaguar Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1142856789"
+            },
+            {
+              "shop_name": "Premium Jaguar",
+              "address": "Gurgaon, Haryana 122002",
+              "contact_number": "1242856789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Force Motors",
+      "logo": "./brand_logos/force-motors.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Force Motors Hyderabad",
+              "address": "Kukatpally, Hyderabad 500072",
+              "contact_number": "4293456789"
+            },
+            {
+              "shop_name": "Utility Motors Force",
+              "address": "Secunderabad, Hyderabad 500003",
+              "contact_number": "4293456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Force Motors Delhi",
+              "address": "Rajouri Garden, Delhi 110027",
+              "contact_number": "1142956789"
+            },
+            {
+              "shop_name": "Premium Force",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1142956790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Maserati",
+      "logo": "./brand_logos/maserati.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Maserati Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4303456789"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Maserati Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1143056789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rolls-Royce",
+      "logo": "./brand_logos/rolls-royce.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Rolls-Royce Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4313456789"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Rolls-Royce Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1143156789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Isuzu",
+      "logo": "./brand_logos/isuzu.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Isuzu Hyderabad",
+              "address": "Kukatpally, Hyderabad 500072",
+              "contact_number": "4323456789"
+            },
+            {
+              "shop_name": "Commercial Motors Isuzu",
+              "address": "Secunderabad, Hyderabad 500003",
+              "contact_number": "4323456790"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Isuzu Delhi",
+              "address": "Rajouri Garden, Delhi 110027",
+              "contact_number": "1143256789"
+            },
+            {
+              "shop_name": "Premium Isuzu",
+              "address": "Dwarka, Delhi 110075",
+              "contact_number": "1143256790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aston Martin",
+      "logo": "./brand_logos/aston-martin.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Aston Martin Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4333456789"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Aston Martin Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1143356789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "McLaren",
+      "logo": "./brand_logos/mclaren.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "McLaren Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4343456789"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "McLaren Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1143456789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bentley",
+      "logo": "./brand_logos/bentley.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Bentley Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4353456789"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Bentley Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1143556789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lotus",
+      "logo": "./brand_logos/lotus.avif",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "dealers": [
+            {
+              "shop_name": "Lotus Hyderabad",
+              "address": "Jubilee Hills, Hyderabad 500033",
+              "contact_number": "4363456789"
+            }
+          ]
+        },
+        {
+          "name": "Delhi",
+          "dealers": [
+            {
+              "shop_name": "Lotus Delhi",
+              "address": "Chanakyapuri, Delhi 110021",
+              "contact_number": "1143656789"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
