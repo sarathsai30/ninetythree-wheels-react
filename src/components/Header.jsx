@@ -99,6 +99,14 @@ const Header = () => {
                   >
                     EMI Calculator
                   </Link>
+
+                  <Link
+                    to="/ev-calculator"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                    onClick={() => setOpenDropdown(null)}
+                  >
+                    EV Calculator
+                  </Link>
                 </div>
               )}
             </div>
