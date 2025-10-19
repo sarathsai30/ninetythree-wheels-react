@@ -3,7 +3,7 @@ import { Car } from 'lucide-react';
 
 const PageLoader = () => {
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-primary via-purple-600 to-primary z-50 flex items-center justify-center">
+    <div className="fixed inset-0 bg-gray-900 z-50 flex items-center justify-center">
       <div className="text-center space-y-6 animate-fade-in">
         <div className="relative">
           <Car 
