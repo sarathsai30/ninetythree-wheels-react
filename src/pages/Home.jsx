@@ -9,23 +9,33 @@ import VideoSection from '../components/VideoSection';
 import BlogSection from '../components/BlogSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import ChatBot from '../components/ChatBot';
+import PageLoader from '../components/PageLoader';
 
 const Home = () => {
     const [featuredCars, setFeaturedCars] = useState([]);
     const [brands, setBrands] = useState([]);
     const [searchResults, setSearchResults] = useState([]);
     const [isSearching, setIsSearching] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
-        const mainVariantCars = carsData.filter(car => /^\D+\d+$/.test(car.id));
-        // Get featured cars (first 3 main variants)
-        setFeaturedCars(mainVariantCars.slice(0, 8));
+        const loadData = async () => {
+            // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
+            const mainVariantCars = carsData.filter(car => /^\D+\d+$/.test(car.id));
+            // Get featured cars (first 3 main variants)
+            setFeaturedCars(mainVariantCars.slice(0, 8));
 
-        // Get unique brands
-        const uniqueBrands = [...new Set(carsData.map(car => car.brand))];
-        setBrands(uniqueBrands);
+            // Get unique brands
+            const uniqueBrands = [...new Set(carsData.map(car => car.brand))];
+            setBrands(uniqueBrands);
+
+            // Show loader for at least 1.5 seconds
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 1500);
+        };
+        loadData();
     }, []);
 
     const handleBrandClick = (brand) => {
@@ -49,6 +59,10 @@ const Home = () => {
         setSearchResults(mainVariantResults.slice(0, 8));
         setIsSearching(searchTerm.trim() !== '');
     };
+
+    if (isLoading) {
+        return <PageLoader />;
+    }
 
     return (
         <div>
