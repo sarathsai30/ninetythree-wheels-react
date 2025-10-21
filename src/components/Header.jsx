@@ -6,6 +6,7 @@ const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null); // "news" | "more" | null
+  const [isCalculatorsOpen, setIsCalculatorsOpen] = useState(false);
 
   const isActive = (path) =>
     location.pathname === path ? 'text-blue-600 font-semibold' : 'text-gray-700';
@@ -143,7 +144,60 @@ const Header = () => {
             <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <Link to="/dealers" className={isActive('/dealers')} onClick={() => setIsMenuOpen(false)}>Dealers</Link>
             <Link to="/news" className={isActive('/news')} onClick={() => setIsMenuOpen(false)}>Latest News</Link>
-            <Link to="/fuelcostcalculator" className={isActive('/fuelcostcalculator')} onClick={() => setIsMenuOpen(false)}>Fuel Cost Calculator</Link>
+            
+            {/* Calculators Dropdown */}
+            <div className="relative">
+              <button
+                className={`inline-flex items-center gap-2 text-left ${
+                  isActive('/fuelcostcalculator') || 
+                  isActive('/carloanemicalculator') || 
+                  isActive('/ev-calculator') 
+                    ? 'text-blue-600 font-semibold' 
+                    : 'text-gray-900'
+                }`}
+                onClick={() => setIsCalculatorsOpen(!isCalculatorsOpen)}
+              >
+                <span>More</span>
+                <svg
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    isCalculatorsOpen ? 'rotate-180' : 'rotate-0'
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              {isCalculatorsOpen && (
+                <div className="ml-4 mt-2 space-y-3 border-l-2 border-gray-200 pl-4">
+                  <Link 
+                    to="/fuelcostcalculator" 
+                    className={`${isActive('/fuelcostcalculator')} block`} 
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Fuel Cost Calculator
+                  </Link>
+                  <Link 
+                    to="/carloanemicalculator" 
+                    className={`${isActive('/carloanemicalculator')} block`} 
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    EMI Calculator
+                  </Link>
+                  <Link 
+                    to="/ev-calculator" 
+                    className={`${isActive('/ev-calculator')} block`} 
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    EV Calculator
+                  </Link>
+                </div>
+              )}
+            </div>
+
             <Link
               to="/cars"
               className="bg-blue-500 hover:bg-blue-600 text-white text-sm px-3 py-2 rounded inline-block w-fit"
