@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 
-const AccordionItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
   return (
     <div className="border border-gray-200 rounded-xl mb-4 shadow-sm hover:shadow-md transition-shadow duration-300">
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={onToggle}
         className="w-full text-left px-6 py-4 bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 flex justify-between items-center font-semibold text-gray-800 rounded-xl transition-all duration-300"
       >
         <span className="text-lg pr-4">{question}</span>
         <svg
           className={`w-6 h-6 transition-transform duration-300 text-red-600 ${isOpen ? 'rotate-180' : 'rotate-0'}`}
           fill="none"
-          stroke="currentColor"
+          stroke="gray"
           viewBox="0 0 24 24"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -29,6 +28,12 @@ const AccordionItem = ({ question, answer }) => {
 
 const CarInsurancePage = () => {
   const [activeTab, setActiveTab] = useState('car');
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  // Function to toggle FAQ
+  const toggleFaq = (index) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  };
 
   const affiliateLinks = {
     car: "https://inr.deals/track?id=car778279331&src=merchant-detail-backend&campaign=cpm_car&url=https%3A%2F%2Fwww.acko.com%2Flp%2Fnew-car-comprehensive&subid=93cars",
@@ -1092,7 +1097,13 @@ const CarInsurancePage = () => {
             </div>
             <div className="max-w-5xl mx-auto">
               {carFAQs.map(({ question, answer }, index) => (
-                <AccordionItem key={index} question={question} answer={answer} />
+                <AccordionItem 
+                  key={index} 
+                  question={question} 
+                  answer={answer} 
+                  isOpen={openFaqIndex === index}
+                  onToggle={() => toggleFaq(index)}
+                />
               ))}
             </div>
           </section>
@@ -1108,7 +1119,13 @@ const CarInsurancePage = () => {
             </div>
             <div className="max-w-5xl mx-auto">
               {bikeFAQs.map(({ question, answer }, index) => (
-                <AccordionItem key={index} question={question} answer={answer} />
+                <AccordionItem 
+                  key={index} 
+                  question={question} 
+                  answer={answer} 
+                  isOpen={openFaqIndex === index}
+                  onToggle={() => toggleFaq(index)}
+                />
               ))}
             </div>
           </section>
