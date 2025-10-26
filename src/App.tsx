@@ -15,6 +15,8 @@ import News from './pages/News';
 import FuelCostCalculator from './components/FuelCostCalculator';
 import CarLoanEMICalculator from './components/CarLoanEMICalculator';
 import EVCalculator from './components/EVCalculator';
+import CarInsurancePage from './components/CarInsurancePage';
+import UsedCarPriceChecker from './components/UsedCarPriceChecker';
 import BlogDetail from './pages/BlogDetail';
 import TermsOfService from './pages/TermsOfService';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -41,7 +43,9 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/fuelcostcalculator" element={<FuelCostCalculator />} />
             <Route path="/carloanemicalculator" element={<CarLoanEMICalculator />} />
-            <Route path="/ev-calculator" element={<EVCalculator />} />
+            <Route path="/ev-savings-calculator" element={<EVCalculator />} />
+            <Route path="/car-price-checker" element={<UsedCarPriceChecker />} />
+            <Route path="/insurance" element={<CarInsurancePage />} />
             <Route path="/news/:slug" element={<BlogDetail />} />
             <Route path="/cars/:brand/:name/:model" element={<CarDetail />} />
             <Route path="/terms" element={<TermsOfService />} />

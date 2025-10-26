@@ -9,7 +9,7 @@ const Header = () => {
   const [isCalculatorsOpen, setIsCalculatorsOpen] = useState(false);
 
   const isActive = (path) =>
-    location.pathname === path ? 'text-blue-600 font-semibold' : 'text-gray-700';
+    location.pathname === path;
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -45,17 +45,48 @@ const Header = () => {
 
           {/* Desktop Menu Items */}
           <nav className="hidden lg:flex items-center space-x-5 text-[17px] font-medium">
-            <Link to="/" className={isActive('/')}>Home</Link>
-            <Link to="/cars" className={isActive('/cars')}>Cars</Link>
-            <Link to="/videos" className={isActive('/videos')}>Videos</Link>
-            <Link to="/about" className={isActive('/about')}>About</Link>
-            <Link to="/contact" className={isActive('/contact')}>Contact</Link>
-            <Link to="/dealers" className={isActive('/dealers')}>Dealers</Link>
+            <Link 
+              to="/" 
+              className={`${isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/cars" 
+              className={`${isActive('/cars') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              Cars
+            </Link>
+            <Link 
+              to="/videos" 
+              className={`${isActive('/videos') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              Videos
+            </Link>
+            <Link 
+              to="/about" 
+              className={`${isActive('/about') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              About
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`${isActive('/contact') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              Contact
+            </Link>
+            <Link 
+              to="/dealers" 
+              className={`${isActive('/dealers') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              Dealers
+            </Link>
+            
             {/* News Dropdown */}
             <div className="relative dropdown-parent">
               <button
                 onClick={() => toggleDropdown("news")}
-                className={`flex items-center gap-1 ${isActive('/news')}`}
+                className={`flex items-center gap-1 ${isActive('/news') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
               >
                 News
                 <ChevronDown className={`w-4 h-4 transition-transform ${openDropdown === "news" ? 'rotate-180' : ''}`} />
@@ -65,7 +96,9 @@ const Header = () => {
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-50">
                   <Link
                     to="/news"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/news') ? 'bg-blue-50 text-blue-600' : ''
+                    }`}
                     onClick={() => setOpenDropdown(null)}
                   >
                     Latest News
@@ -78,35 +111,69 @@ const Header = () => {
             <div className="relative dropdown-parent">
               <button
                 onClick={() => toggleDropdown("more")}
-                className="flex items-center gap-1 text-gray-700 hover:text-blue-600"
+                className={`flex items-center gap-1 ${
+                  isActive('/fuelcostcalculator') || 
+                  isActive('/carloanemicalculator') || 
+                  isActive('/ev-savings-calculator') ||
+                  isActive('/insurance') || 
+                  isActive('/car-price-checker')
+                    ? 'text-blue-600 font-semibold' 
+                    : 'text-gray-700 hover:text-blue-600'
+                }`}
               >
                 More
                 <ChevronDown className={`w-4 h-4 transition-transform ${openDropdown === "more" ? 'rotate-180' : ''}`} />
               </button>
               {openDropdown === "more" && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-50">
+                <div className="absolute top-full left-0 mt-2 w-60 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-50">
                   <Link
                     to="/fuelcostcalculator"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/fuelcostcalculator') ? 'bg-blue-50 text-blue-600' : ''
+                    }`}
                     onClick={() => setOpenDropdown(null)}
                   >
                     Fuel Cost Calculator
                   </Link>
-                
+
                   <Link
                     to="/carloanemicalculator"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/carloanemicalculator') ? 'bg-blue-50 text-blue-600' : ''
+                    }`}
                     onClick={() => setOpenDropdown(null)}
                   >
                     EMI Calculator
                   </Link>
 
                   <Link
-                    to="/ev-calculator"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                    to="/ev-savings-calculator"
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/ev-savings-calculator') ? 'bg-blue-50 text-blue-600' : ''
+                    }`}
                     onClick={() => setOpenDropdown(null)}
                   >
-                    EV Calculator
+                    EV Savings Calculator
+                  </Link>
+
+                  <Link
+                    to="/insurance"
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/insurance') ? 'bg-blue-50 text-blue-600' : ''
+                    }`}
+                    onClick={() => setOpenDropdown(null)}
+                  >
+                    Buy / Renew Insurance 
+                  </Link>
+
+                  <Link
+                    to="/car-price-checker"
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/car-price-checker') ? 'bg-blue-50 text-blue-600' : ''
+                    }`}
+                    onClick={() => setOpenDropdown(null)}
+                  >
+                    Used Car Price
                   </Link>
                 </div>
               )}
@@ -137,23 +204,68 @@ const Header = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200 py-4 px-6">
           <nav className="flex flex-col space-y-4 text-[17px] font-medium">
-            <Link to="/" className={isActive('/')} onClick={() => setIsMenuOpen(false)}>Home</Link>
-            <Link to="/cars" className={isActive('/cars')} onClick={() => setIsMenuOpen(false)}>Cars</Link>
-            <Link to="/videos" className={isActive('/videos')} onClick={() => setIsMenuOpen(false)}>Videos</Link>
-            <Link to="/about" className={isActive('/about')} onClick={() => setIsMenuOpen(false)}>About</Link>
-            <Link to="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</Link>
-            <Link to="/dealers" className={isActive('/dealers')} onClick={() => setIsMenuOpen(false)}>Dealers</Link>
-            <Link to="/news" className={isActive('/news')} onClick={() => setIsMenuOpen(false)}>Latest News</Link>
+            <Link 
+              to="/" 
+              className={`${isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/cars" 
+              className={`${isActive('/cars') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Cars
+            </Link>
+            <Link 
+              to="/videos" 
+              className={`${isActive('/videos') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Videos
+            </Link>
+            <Link 
+              to="/about" 
+              className={`${isActive('/about') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`${isActive('/contact') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </Link>
+            <Link 
+              to="/dealers" 
+              className={`${isActive('/dealers') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Dealers
+            </Link>
+            <Link 
+              to="/news" 
+              className={`${isActive('/news') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Latest News
+            </Link>
             
             {/* Calculators Dropdown */}
             <div className="relative">
               <button
-                className={`inline-flex items-center gap-2 text-left ${
+                className={`flex items-center gap-1 ${
                   isActive('/fuelcostcalculator') || 
                   isActive('/carloanemicalculator') || 
-                  isActive('/ev-calculator') 
+                  isActive('/ev-savings-calculator') ||
+                  isActive('/insurance') || 
+                  isActive('/car-price-checker') ||
+                  isCalculatorsOpen
                     ? 'text-blue-600 font-semibold' 
-                    : 'text-gray-900'
+                    : 'text-gray-700 hover:text-blue-600'
                 }`}
                 onClick={() => setIsCalculatorsOpen(!isCalculatorsOpen)}
               >
@@ -175,25 +287,64 @@ const Header = () => {
                 <div className="ml-4 mt-2 space-y-3 border-l-2 border-gray-200 pl-4">
                   <Link 
                     to="/fuelcostcalculator" 
-                    className={`${isActive('/fuelcostcalculator')} block`} 
-                    onClick={() => setIsMenuOpen(false)}
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/fuelcostcalculator') ? 'bg-blue-50 text-blue-600' : ''
+                    }`} 
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsCalculatorsOpen(false);
+                    }}
                   >
                     Fuel Cost Calculator
                   </Link>
                   <Link 
                     to="/carloanemicalculator" 
-                    className={`${isActive('/carloanemicalculator')} block`} 
-                    onClick={() => setIsMenuOpen(false)}
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/carloanemicalculator') ? 'bg-blue-50 text-blue-600' : ''
+                    }`} 
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsCalculatorsOpen(false);
+                    }}
                   >
                     EMI Calculator
                   </Link>
                   <Link 
-                    to="/ev-calculator" 
-                    className={`${isActive('/ev-calculator')} block`} 
-                    onClick={() => setIsMenuOpen(false)}
+                    to="/ev-savings-calculator" 
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/ev-savings-calculator') ? 'bg-blue-50 text-blue-600' : ''
+                    }`} 
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsCalculatorsOpen(false);
+                    }}
                   >
-                    EV Calculator
+                    EV Savings Calculator
                   </Link>
+                  <Link 
+                    to="/insurance" 
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/insurance') ? 'bg-blue-50 text-blue-600' : ''
+                    }`} 
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsCalculatorsOpen(false);
+                    }}
+                  >
+                    Buy / Renew Insurance 
+                  </Link>
+                  <Link 
+                    to="/car-price-checker" 
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/car-price-checker') ? 'bg-blue-50 text-blue-600' : ''
+                    }`} 
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsCalculatorsOpen(false);
+                    }}
+                  >
+                    Used Car Price
+                  </Link>                  
                 </div>
               )}
             </div>
