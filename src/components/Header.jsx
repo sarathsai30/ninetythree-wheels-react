@@ -84,7 +84,7 @@ const Header = () => {
                 <ChevronDown className={`w-4 h-4 transition-transform ${openDropdown === "more" ? 'rotate-180' : ''}`} />
               </button>
               {openDropdown === "more" && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-50">
+                <div className="absolute top-full left-0 mt-2 w-60 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-50">
                   <Link
                     to="/fuelcostcalculator"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
@@ -102,11 +102,18 @@ const Header = () => {
                   </Link>
 
                   <Link
-                    to="/ev-calculator"
+                    to="/ev-savings-calculator"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
                     onClick={() => setOpenDropdown(null)}
                   >
-                    EV Calculator
+                    EV Savings Calculator
+                  </Link>
+                  <Link
+                    to="/insurance"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                    onClick={() => setOpenDropdown(null)}
+                  >
+                    Insurance
                   </Link>
                 </div>
               )}
@@ -151,7 +158,8 @@ const Header = () => {
                 className={`inline-flex items-center gap-2 text-left ${
                   isActive('/fuelcostcalculator') || 
                   isActive('/carloanemicalculator') || 
-                  isActive('/ev-calculator') 
+                  isActive('/ev-savings-calculator') ||
+                  isActive('/insurance')
                     ? 'text-blue-600 font-semibold' 
                     : 'text-gray-900'
                 }`}
@@ -188,11 +196,18 @@ const Header = () => {
                     EMI Calculator
                   </Link>
                   <Link 
-                    to="/ev-calculator" 
-                    className={`${isActive('/ev-calculator')} block`} 
+                    to="/ev-savings-calculator" 
+                    className={`${isActive('/ev-savings-calculator')} block`} 
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    EV Calculator
+                    EV Savings Calculator
+                  </Link>
+                  <Link 
+                    to="/insurance" 
+                    className={`${isActive('/insurance')} block`} 
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Insurance
                   </Link>
                 </div>
               )}
