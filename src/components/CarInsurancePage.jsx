@@ -56,7 +56,7 @@ const CarInsurancePage = () => {
             onClick={() => openAffiliateLink(affiliateLinks.car)}
             className="bg-white text-red-600 px-6 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
-            Buy/Renew Car Insurance
+            Buy/Renew Acko Car Insurance
           </button>
           
           <button
