@@ -62,6 +62,8 @@ const UsedCarPriceChecker = () => {
   return (
     <div className="min-h-screen from-gray-50 via-white to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
+
+        
         
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -73,10 +75,29 @@ const UsedCarPriceChecker = () => {
           </p>
         </div>
 
+        {/* Main CTA Section */}
+        <div className="bg-[#FFC107] from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center text-black mb-12 shadow-md">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Get Instant Used Car Valuation
+          </h2>
+          <p className="text-black-100 text-lg mb-8 max-w-2xl mx-auto">
+            Find out exactly how much your car is worth in today's market. Our advanced algorithm provides real-time pricing based on current market trends.
+          </p>
+          <button
+            onClick={openAffiliateLink}
+            className="bg-black text-white hover:text-[#FFC107] px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 shadow-sm hover:shadow-md inline-flex items-center"
+          >
+            <span>Get Used Car Price</span>
+            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+
         {/* Car Brands Grid */}
         <div className="bg-white rounded-2xl shadow-sm p-8 mb-12 border border-gray-100">
             <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">
-                All Car Brands
+                Check Used Car Price by Brand
             </h2>
             
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-8">
@@ -125,26 +146,7 @@ const UsedCarPriceChecker = () => {
                 </button>
                 </div>
             )}
-        </div>
-
-        {/* Main CTA Section */}
-        <div className="bg-[#FFC107] from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center text-black mb-12 shadow-md">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get Instant Used Car Valuation
-          </h2>
-          <p className="text-black-100 text-lg mb-8 max-w-2xl mx-auto">
-            Find out exactly how much your car is worth in today's market. Our advanced algorithm provides real-time pricing based on current market trends.
-          </p>
-          <button
-            onClick={openAffiliateLink}
-            className="bg-black text-white hover:text-[#FFC107] px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 shadow-sm hover:shadow-md inline-flex items-center"
-          >
-            <span>Get Used Car Price</span>
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </button>
-        </div>
+        </div>        
 
         {/* FAQ Section with Accordion */}
         <div className="bg-white mb-5 p-8">
