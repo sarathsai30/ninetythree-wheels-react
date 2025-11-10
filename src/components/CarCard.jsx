@@ -23,7 +23,7 @@ const CarCard = ({ car }) => {
       <div className="card h-100 border-0 shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
         <div className="position-relative overflow-hidden rounded-top">
           <div
-            className="d-flex align-items-center justify-content-center bg-light"
+            className="d-flex align-items-center justify-content-center"
             style={{ height: '220px', overflow: 'hidden' }}
           >
             <img

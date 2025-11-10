@@ -6,6 +6,7 @@ import cars from "../../data/cars.json";
 import postOffices from "../../data/pincode.json";
 import GetBrouchers from "./GetBrouchers";
 import OffersModal from "./OffersModal";
+import EMICalculatorModal from "./EMICalculatorModal";
 
 const CityIcons = {
   Mumbai: (
@@ -427,6 +428,8 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
   const [selectedOfferVariant, setSelectedOfferVariant] = useState(null);
   const [selectedVariant, setSelectedVariant] = useState(initialVariant);
 
+  const [isEMIModalOpen, setIsEMIModalOpen] = useState(false);
+
   // Sync with initial variant
   useEffect(() => {
     if (initialVariant) {
@@ -816,41 +819,147 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
                 </button>
               </div>
 
-              {/* Expand Toggle */}
-              <button
-                onClick={() => setExpanded(!expanded)}
-                className="flex items-center text-blue-600 hover:underline text-sm w-full justify-center mt-2 select-none"
-                aria-expanded={expanded}
-              >
-                {expanded
-                  ? "Hide Detailed Price Breakup"
-                  : "Show Detailed Price Breakup"}
-                <svg
-                  className={`w-4 h-4 ml-1 transform ${
-                    expanded ? "rotate-180" : "rotate-0"
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M6 9l6 6 6-6" />
-                </svg>
-              </button>
-
-              {expanded && (
-                <div className="mt-3 text-sm text-gray-700 bg-gray-50 p-3 rounded">
-                  <p>
-                    Road Tax ({rtoPercentage}%): {formatINR(registration)}
-                  </p>
-                  <p>
-                    Insurance ({stateData.insurancePercentage}%):{" "}
-                    {formatINR(insurance)}
-                  </p>
-                  <p>Other Charges: {formatINR(otherCharges)}</p>
+{/* EMI Calculator Section */}
+<div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-4">
+  {/* First Line: EMI Amount and Get EMI Offers button */}
+  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+    {/* Left Section: EMI Info */}
+    <div className="flex flex-col xs:flex-row xs:items-center gap-3">
+      {/* EMI Label with Tooltip */}
+      <div className="flex items-center gap-2">
+        <span className="text-sm font-semibold text-blue-800 whitespace-nowrap">EMI</span>
+        {/* Tooltip Icon */}
+        <div className="group relative flex-shrink-0">
+          <svg 
+            className="w-4 h-4 text-blue-500 cursor-help hover:text-blue-600 transition-colors" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" 
+            />
+          </svg>
+          
+          {/* Tooltip Content */}
+          <div className="absolute bottom-full left-0 mb-2 hidden group-hover:block w-72 sm:w-80 z-50">
+            <div className="bg-gray-900 text-white text-xs rounded-lg p-4 shadow-xl border border-gray-700">
+              <div className="font-semibold mb-2 text-blue-300">EMI Calculated basis:</div>
+              <ul className="space-y-1.5">
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">•</span>
+                  <span>Down Payment - {formatINR(257490)}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">•</span>
+                  <span>Interest Rate - 10% p.a.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">•</span>
+                  <span>Tenure - 5 Years</span>
+                </li>
+              </ul>
+              <div className="mt-3 pt-2 border-t border-gray-700">
+                <div className="text-blue-200 text-[11px] leading-relaxed">
+                  For exact EMI quotes please get in touch with Authorized Dealer
                 </div>
-              )}
+                <div className="text-blue-200 text-[11px] leading-relaxed mt-1">
+                  Fill in your details and get best loan deals
+                </div>
+                <div className="text-white font-medium text-[11px] mt-1">
+                  Visit 93Cars Loan page
+                </div>
+              </div>
+              
+              {/* Tooltip arrow */}
+              <div className="absolute top-full left-3 border-8 border-transparent border-t-gray-900"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* EMI Amount and Duration */}
+      <div className="flex items-center gap-2 flex-wrap">
+        <span className="text-lg font-bold text-gray-900 whitespace-nowrap">
+          {formatINR(Math.round(computeOnRoadPrice(displayVariant) * 0.02))}
+          <span className="text-sm text-gray-600 font-normal ml-1">/month</span>
+        </span>
+        <span className="text-sm text-gray-600 whitespace-nowrap">for 5 years</span>
+      </div>
+    </div>
+    
+    {/* Get EMI Offers Button */}
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        // toast.success("EMI Offers will be shown here");
+      }}
+      className="px-2 py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white font-medium text-sm transition-all duration-200 whitespace-nowrap shadow-sm hover:shadow-md w-full sm:w-auto text-center"
+    >
+      Get EMI Offers
+    </button>
+  </div>
+
+  {/* Second Line: Calculate EMI link */}
+  <div className="flex items-center justify-between pt-2 border-t border-blue-200">
+    <Link 
+      to="#" 
+      onClick={(e) => {
+        e.preventDefault();
+        setIsEMIModalOpen(true);
+      }}
+      className="text-sm text-blue-600 hover:text-blue-700 hover:underline font-medium transition-colors flex items-center gap-1"
+    >
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      </svg>
+      Calculate EMI
+    </Link>
+    <div className="text-xs text-gray-500 bg-blue-100 px-2 py-1 rounded">
+      Starting from 8.5% p.a.
+    </div>
+  </div>
+</div>
+
+      {/* Expand Toggle */}
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="flex items-center text-blue-600 hover:underline text-sm w-full justify-center mt-2 select-none"
+        aria-expanded={expanded}
+      >
+        {expanded
+          ? "Hide Detailed Price Breakup"
+          : "Show Detailed Price Breakup"}
+        <svg
+          className={`w-4 h-4 ml-1 transform ${
+            expanded ? "rotate-180" : "rotate-0"
+          }`}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </button>
+
+      {expanded && (
+        <div className="mt-3 text-sm text-gray-700 bg-gray-50 p-3 rounded">
+          <p>
+            Road Tax ({rtoPercentage}%): {formatINR(registration)}
+          </p>
+          <p>
+            Insurance ({stateData.insurancePercentage}%):{" "}
+            {formatINR(insurance)}
+          </p>
+          <p>Other Charges: {formatINR(otherCharges)}</p>
+        </div>
+      )}
+              
             </div>
           </div>
 
@@ -867,7 +976,11 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
             </div>
 
             <button
-              onClick={onOffersClick}
+              onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedOfferVariant(displayVariant);
+                        setIsOfferModalOpen(true);
+                      }}
               className="w-full sm:w-full md:w-full lg:w-auto px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 min-w-[140px]"
             >
               Get Offers
@@ -1039,6 +1152,11 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
       </div>
       
       <GetBrouchers carname={displayVariant.name}/>
+      <EMICalculatorModal 
+        isOpen={isEMIModalOpen}
+        onClose={() => setIsEMIModalOpen(false)}
+        carData={displayVariant}
+      />
       <Toaster position="top-right" />
     </div>
   );

@@ -116,7 +116,8 @@ const Header = () => {
                   isActive('/carloanemicalculator') || 
                   isActive('/ev-savings-calculator') ||
                   isActive('/insurance') || 
-                  isActive('/car-price-checker')
+                  isActive('/car-price-checker') ||
+                  isActive('/car-loan-application')
                     ? 'text-blue-600 font-semibold' 
                     : 'text-gray-700 hover:text-blue-600'
                 }`}
@@ -174,6 +175,16 @@ const Header = () => {
                     onClick={() => setOpenDropdown(null)}
                   >
                     Used Car Price
+                  </Link>
+
+                  <Link
+                    to="/car-loan-application"
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/car-loan-application') ? 'bg-blue-50 text-blue-600' : ''
+                    }`}
+                    onClick={() => setOpenDropdown(null)}
+                  >
+                    Get Instant Loan
                   </Link>
                 </div>
               )}
@@ -263,6 +274,7 @@ const Header = () => {
                   isActive('/ev-savings-calculator') ||
                   isActive('/insurance') || 
                   isActive('/car-price-checker') ||
+                  isActive('/car-loan-application') ||
                   isCalculatorsOpen
                     ? 'text-blue-600 font-semibold' 
                     : 'text-gray-700 hover:text-blue-600'
@@ -344,7 +356,19 @@ const Header = () => {
                     }}
                   >
                     Used Car Price
-                  </Link>                  
+                  </Link> 
+                  <Link 
+                    to="/car-loan-application" 
+                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 ${
+                      isActive('/car-loan-application') ? 'bg-blue-50 text-blue-600' : ''
+                    }`} 
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsCalculatorsOpen(false);
+                    }}
+                  >
+                    Get Instant Loan
+                  </Link>                                  
                 </div>
               )}
             </div>
