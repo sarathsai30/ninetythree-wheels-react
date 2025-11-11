@@ -2,11 +2,11 @@ import React, { useState, useMemo, useEffect } from "react";
 import { BsLightbulbFill as Lightbulb } from "react-icons/bs";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
-const EMICalculatorModal = ({ isOpen, onClose, carData }) => {
+const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, FinalPrice }) => {
   // --- State ---
   const [activeLoanType, setActiveLoanType] = useState("standard");
   const [activeView, setActiveView] = useState("graph");
-  const [downPayment, setDownPayment] = useState(532604);
+  const [downPayment, setDownPayment] = useState((FinalPrice * 0.3));
   const [tenure, setTenure] = useState(5);
   const [interestRate, setInterestRate] = useState(10);
   const [monthlyIncome, setMonthlyIncome] = useState(60000);
@@ -16,7 +16,7 @@ const EMICalculatorModal = ({ isOpen, onClose, carData }) => {
 
   const carName = carData?.name || "Hyundai Venue";
   const fuelType = carData?.fuelType || "1.2 Petrol";
-  const onRoadPrice = carData?.onRoadPrice ?? 1021466;
+  const onRoadPrice = FinalPrice;
   const loanAmount = Math.max(0, onRoadPrice - downPayment);
 
   // --- Prevent background scroll when modal is open ---
@@ -141,7 +141,7 @@ const EMICalculatorModal = ({ isOpen, onClose, carData }) => {
             <p className="text-sm text-gray-500">
               On-road Price:{" "}
               <span className="font-medium text-black">
-                {formatINR(onRoadPrice)}
+                {formatINR(FinalPrice)}
               </span>
             </p>
           </div>
@@ -194,50 +194,85 @@ const EMICalculatorModal = ({ isOpen, onClose, carData }) => {
               </div>
 
               {/* Down Payment Slider */}
-              <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span>Down Payment</span>
-                  <span className="font-semibold text-[#FFC107]">
-                    {formatINR(downPayment)}
-                  </span>
+              <div className="mb-4">
+                <div className="flex justify-between items-center text-sm mb-2">
+                  <span className="text-gray-700">Down Payment</span>
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="number"
+                      min={onRoadPrice * 0.1}
+                      max={onRoadPrice - 50000}
+                      step="1000"
+                      value={downPayment}
+                      onChange={(e) => setDownPayment(Number(e.target.value))}
+                      className="w-28 text-right border border-gray-300 rounded-md px-2 py-1 text-sm focus:ring-[#FFC107] focus:border-[#FFC107]"
+                    />
+                    {/* <span className="font-semibold text-[#FFC107] text-sm">
+                      {formatINR(downPayment)}
+                    </span> */}
+                  </div>
                 </div>
+
                 <input
                   type="range"
                   min={onRoadPrice * 0.1}
                   max={onRoadPrice - 50000}
-                  step="10000"
+                  step="1000"
                   value={downPayment}
                   onChange={(e) => setDownPayment(Number(e.target.value))}
-                  className="w-full accent-[#FFC107]"
+                  className="w-full accent-[#FFC107] cursor-pointer"
                 />
+
+                <p className="text-xs text-gray-500 mt-1">
+                  Your Loan Amount will be {formatINR(loanAmount)}
+                </p>
               </div>
 
               {/* Tenure Slider */}
-              <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span>Tenure</span>
-                  <span className="font-semibold text-[#FFC107]">
-                    {tenure} years
-                  </span>
+              <div className="mb-4">
+                <div className="flex justify-between items-center text-sm mb-2">
+                  <span className="text-gray-700">Tenure (Years)</span>
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="number"
+                      min="1"
+                      max="7"
+                      value={tenure}
+                      onChange={(e) => setTenure(Number(e.target.value))}
+                      className="w-16 text-right border border-gray-300 rounded-md px-2 py-1 text-sm focus:ring-[#FFC107] focus:border-[#FFC107]"
+                    />
+                    {/* <span className="font-semibold text-[#FFC107]">{tenure} yrs</span> */}
+                  </div>
                 </div>
+
                 <input
                   type="range"
                   min="1"
                   max="7"
                   value={tenure}
                   onChange={(e) => setTenure(Number(e.target.value))}
-                  className="w-full accent-[#FFC107]"
+                  className="w-full accent-[#FFC107] cursor-pointer"
                 />
               </div>
 
-              {/* Interest Slider */}
+              {/* Interest Rate Slider */}
               <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span>Interest Rate</span>
-                  <span className="font-semibold text-[#FFC107]">
-                    {interestRate}%
-                  </span>
+                <div className="flex justify-between items-center text-sm mb-2">
+                  <span className="text-gray-700">Interest Rate %</span>
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="number"
+                      min="8"
+                      max="20"
+                      step="0.25"
+                      value={interestRate}
+                      onChange={(e) => setInterestRate(Number(e.target.value))}
+                      className="w-16 text-right border border-gray-300 rounded-md px-2 py-1 text-sm focus:ring-[#FFC107] focus:border-[#FFC107]"
+                    />
+                    {/* <span className="font-semibold text-[#FFC107]">{interestRate}%</span> */}
+                  </div>
                 </div>
+
                 <input
                   type="range"
                   min="8"
@@ -245,9 +280,10 @@ const EMICalculatorModal = ({ isOpen, onClose, carData }) => {
                   step="0.25"
                   value={interestRate}
                   onChange={(e) => setInterestRate(Number(e.target.value))}
-                  className="w-full accent-[#FFC107]"
+                  className="w-full accent-[#FFC107] cursor-pointer"
                 />
               </div>
+
 
               {/* Affordability Meter */}
               <div>
@@ -501,7 +537,7 @@ const EMICalculatorModal = ({ isOpen, onClose, carData }) => {
 
                 <button
                   type="submit"
-                  className="w-full py-2 bg-[#FFC107] text-black rounded-md font-semibold shadow-md hover:shadow-lg hover:-translate-y-[2px] hover:bg-black hover:text-[#FFC107] transition-all duration-300 ease-in-out"
+                  className="w-full py-2 bg-[#FFC107] text-black rounded-md font-semibold shadow-md hover:shadow-lg hover:-translate-y-[2px] hover:bg-[#FFB300] hover:text-[#FFC107] transition-all duration-300 ease-in-out"
                 >
                   Get Loan Offers
                 </button>
@@ -536,7 +572,12 @@ const EMICalculatorModal = ({ isOpen, onClose, carData }) => {
           <span className="text-xs text-gray-500">
             Secure • Transparent • Trusted Partners
           </span>
-          <button className="px-6 py-2 bg-[#FFC107] text-black rounded-md font-semibold hover:bg-black hover:text-[#FFC107] transition">
+          <button className="px-6 py-2 bg-[#FFC107] text-black rounded-md font-semibold hover:bg-[#FFB300] hover:text-[#FFC107] transition" onClick={(e) => {
+            e.stopPropagation();
+            window.location.href =
+                        "https://inr.deals/track?id=car778279331&src=merchant-detail-backend&campaign=cpl&url=https%3A%2F%2Fwww.bharatloan.com%2Fapply-now&subid=93cars";
+            // toast.success("EMI Offers will be shown here");
+          }}>
             Get EMI Offers
           </button>
         </div>
