@@ -222,6 +222,7 @@ const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, Fin
                   </div>
                 </div>
 
+
                 <input
                   type="range"
                   min={onRoadPrice * 0.1}
@@ -231,6 +232,10 @@ const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, Fin
                   onChange={(e) => setDownPayment(Number(e.target.value))}
                   className="w-full accent-[#FFC107] cursor-pointer"
                 />
+
+                <p className="text-xs text-gray-500 mt-1">
+                  Your Loan Amount will be {formatINR(loanAmount)}
+                </p>
 
                 <p className="text-xs text-gray-500 mt-1">
                   Your Loan Amount will be {formatINR(loanAmount)}
@@ -254,6 +259,7 @@ const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, Fin
                   </div>
                 </div>
 
+
                 <input
                   type="range"
                   min="1"
@@ -264,6 +270,7 @@ const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, Fin
                 />
               </div>
 
+              {/* Interest Rate Slider */}
               {/* Interest Rate Slider */}
               <div>
                 <div className="flex justify-between items-center text-sm mb-2">
@@ -280,7 +287,22 @@ const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, Fin
                     />
                     {/* <span className="font-semibold text-[#FFC107]">{interestRate}%</span> */}
                   </div>
+                <div className="flex justify-between items-center text-sm mb-2">
+                  <span className="text-gray-700">Interest Rate %</span>
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="number"
+                      min="8"
+                      max="20"
+                      step="0.25"
+                      value={interestRate}
+                      onChange={(e) => setInterestRate(Number(e.target.value))}
+                      className="w-16 text-right border border-gray-300 rounded-md px-2 py-1 text-sm focus:ring-[#FFC107] focus:border-[#FFC107]"
+                    />
+                    {/* <span className="font-semibold text-[#FFC107]">{interestRate}%</span> */}
+                  </div>
                 </div>
+
 
                 <input
                   type="range"
