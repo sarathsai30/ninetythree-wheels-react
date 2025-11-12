@@ -429,7 +429,12 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
   const [selectedVariant, setSelectedVariant] = useState(initialVariant);
 
   const [isEMIModalOpen, setIsEMIModalOpen] = useState(false);
+  const [emiValue, setEmiValue] = useState(0);
 
+  // Function to receive EMI from child
+  const handleEmiCalculated = (emi) => {
+    setEmiValue(emi);
+  };
   // Sync with initial variant
   useEffect(() => {
     if (initialVariant) {
@@ -860,7 +865,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
               <ul className="space-y-1.5">
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">•</span>
-                  <span>Down Payment - {formatINR(257490)}</span>
+                  <span>Down Payment - {formatINR(onRoadPrice * 0.3)}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">•</span>
@@ -892,8 +897,12 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
       
       {/* EMI Amount and Duration */}
       <div className="flex items-center gap-2 flex-wrap">
-        <span className="text-lg font-bold text-gray-900 whitespace-nowrap">          
+        {/* <span className="text-lg font-bold text-gray-900 whitespace-nowrap">          
           {formatINR(Math.floor(calculatedEMI))}
+          <span className="text-sm text-gray-600 font-normal ml-1">/month</span>
+        </span> */}
+        <span className="text-lg font-bold text-gray-900 whitespace-nowrap">          
+          {emiValue > 0 ? formatINR(emiValue) : formatINR(Math.floor(calculatedEMI))}
           <span className="text-sm text-gray-600 font-normal ml-1">/month</span>
         </span>
         <span className="text-sm text-gray-600 whitespace-nowrap">for 5 years</span>
@@ -1167,6 +1176,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
         onClose={() => setIsEMIModalOpen(false)}
         carData={displayVariant}
         FinalPrice={computeOnRoadPrice(displayVariant)}
+        onEmiCalculated={handleEmiCalculated}
       />
       <Toaster position="top-right" />
     </div>

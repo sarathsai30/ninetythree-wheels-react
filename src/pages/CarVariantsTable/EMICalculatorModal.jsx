@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import { BsLightbulbFill as Lightbulb } from "react-icons/bs";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
-const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, FinalPrice }) => {
+const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, FinalPrice, onEmiCalculated }) => {
   // --- State ---
   const [activeLoanType, setActiveLoanType] = useState("standard");
   const [activeView, setActiveView] = useState("graph");
@@ -30,6 +30,10 @@ const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, Fin
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    setDownPayment(FinalPrice * 0.3);
+  }, [FinalPrice]);
 
   // --- EMI Calculations ---
   const { emi, totalPayment, totalInterest } = useMemo(() => {
@@ -115,7 +119,12 @@ const EMICalculatorModal = ({ isOpen, onClose, carData, CarPriceOnRoadPrice, Fin
     }
     return schedule;
   };
-
+  // Calculate EMI whenever relevant values change
+  useEffect(() => {
+    if (emi > 0 && onEmiCalculated) {
+      onEmiCalculated(emi);
+    }
+  }, [emi, onEmiCalculated]);
   const scheduleData = generateSchedule();
 
   const pieData = [
