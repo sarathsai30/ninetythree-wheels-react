@@ -31861,8 +31861,1596 @@
     "kmDriven": 0,
     "owner": "First",
     "location": "Mumbai"
-  }
+  },
+
+  {
+    "id": "car102",
+    "name": " VINFAST VF 6",
+    "brand": "VinFast",
+    "model": " VF 6 Earth",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "bodyType": "SUV",
+    "price": 1751000,
+    "mileage": "468 km (Earth)",
+    "engine": "59.6 kWh Battery Pack",
+    "seatingCapacity": 5,
+    "image": "VinFast/vf6_earth.jpg",
+    "gallery": [
+      "VinFast/vf6_earth.jpg",
+      "VinFast/vf6_wind.jpg",
+      "VinFast/vf6_wind_infinity.jpg"
+    ],
+    "emi": "₹28,000/month",
+    "description": "VinFast VF 6 is an all-electric compact SUV available in three variants — Earth, Wind, and Wind Infinity. Each variant comes with a 59.6 kWh battery and automatic transmission, offering a range up to 468 km.",
+    "features": [
+      "Electric Powertrain",
+      "Automatic Transmission",
+      "Long Range Battery",
+      "Advanced Infotainment System"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+    },
   
+    {
+    "id": "car102B",
+    "name": " VINFAST VF 6",
+    "brand": "VinFast",
+    "model": " VF 6 Wind",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "bodyType": "SUV",
+    "price": 1887000,
+    "mileage": "463 km",
+    "engine": "59.6 kWh Battery Pack",
+    "seatingCapacity": 5,
+    "image": "VinFast/vf6_wind.jpg",
+    "gallery": [
+      "VinFast/vf6_wind_1.jpg",
+      "VinFast/vf6_wind_2.jpg",
+      "VinFast/vf6_wind_3.jpg"
+    ],
+    "emi": "₹30,000/month",
+    "description": "VinFast VF 6 Wind variant with 59.6 kWh battery, 463 km range and premium automatic transmission setup.",
+    "features": [
+      "Electric Powertrain",
+      "Automatic Transmission",
+      "Fast Charging Support",
+      "Comfort & Connectivity Features"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  {
+    "id": "car102C",
+    "name": " VINFAST VF 6",
+    "brand": "VinFast",
+    "model": " VF 6 Wind Infinity",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "bodyType": "SUV",
+    "price": 1939000,
+    "mileage": "463 km",
+    "engine": "59.6 kWh Battery Pack",
+    "seatingCapacity": 5,
+    "image": "VinFast/vf6_wind_infinity.jpg",
+    "gallery": [
+      "VinFast/vf6_wind_infinity_1.jpg",
+      "VinFast/vf6_wind_infinity_2.jpg",
+      "VinFast/vf6_wind_infinity_3.jpg"
+    ],
+    "emi": "₹31,000/month",
+    "description": "VinFast VF 6 Wind Infinity variant featuring advanced electric drivetrain, automatic transmission, and premium interiors with 463 km range.",
+    "features": [
+      "Electric Powertrain",
+      "Automatic Transmission",
+      "Premium Interior",
+      "Advanced Infotainment & Safety"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  {
+    "id": "car103",
+    "name": " Vinfast VF 7",
+    "brand": "VinFast",
+    "model": "VF 7 Earth",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "bodyType": "SUV",
+    "price": 2212000,
+    "mileage": "438 km",
+    "engine": "59.6 kWh ",
+    "seatingCapacity": 5,
+    "image": "VinFast/vf7_earth.jpg",
+    "gallery": [
+      "VinFast/vf7_earth_1.jpg",
+      "VinFast/vf7_earth_2.jpg",
+      "VinFast/vf7_earth_3.jpg"
+    ],
+    "emi": "₹35,000/month",
+    "description": "VinFast VF 7 Earth offers a 59.6 kWh battery, automatic transmission, and a certified range of 438 km.",
+    "features": [
+      "Electric Powertrain",
+      "Automatic Transmission",
+      "Long Range",
+      "Advanced Safety Features"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  {
+    "id": "car103B",
+    "name": " Vinfast VF 7",
+    "brand": "VinFast",
+    "model": "VF 7 Wind",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "bodyType": "SUV",
+    "price": 2503000,
+    "mileage": "532 km",
+    "engine": "70.8 kWh Battery Pack",
+    "seatingCapacity": 5,
+    "image": "VinFast/vf7_wind.jpg",
+    "gallery": [
+      "VinFast/vf7_wind_1.jpg",
+      "VinFast/vf7_wind_2.jpg",
+      "VinFast/vf7_wind_3.jpg"
+    ],
+    "emi": "₹40,000/month",
+    "description": "VinFast VF 7 Wind comes with a 70.8 kWh battery, 532 km range and automatic transmission.",
+    "features": [
+      "Electric Powertrain",
+      "Automatic Transmission",
+      "Extended Range",
+      "Premium Comfort Features"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  {
+    "id": "car103C",
+    "name": " Vinfast VF 7",
+    "brand": "VinFast",
+    "model": "VF 7 Sky",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "bodyType": "SUV",
+    "price": 2660000,
+    "mileage": "510 km",
+    "engine": "70.8 kWh Battery Pack",
+    "seatingCapacity": 5,
+    "image": "VinFast/vf7_sky.jpg",
+    "gallery": [
+      "VinFast/vf7_sky_1.jpg",
+      "VinFast/vf7_sky_2.jpg",
+      "VinFast/vf7_sky_3.jpg"
+    ],
+    "emi": "₹43,000/month",
+    "description": "VinFast VF 7 Sky features a 70.8 kWh battery with a 510 km driving range and premium electric SUV capabilities.",
+    "features": [
+      "Electric Powertrain",
+      "Automatic Transmission",
+      "High Range",
+      "Luxury Interior"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  {
+    "id": "car103D",
+    "name": " Vinfast VF 7",
+    "brand": "VinFast",
+    "model": "VF 7 Sky Infinity",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "bodyType": "SUV",
+    "price": 2712000,
+    "mileage": "510 km",
+    "engine": "70.8 kWh Battery Pack",
+    "seatingCapacity": 5,
+    "image": "VinFast/vf7_sky_infinity.jpg",
+    "gallery": [
+      "VinFast/vf7_sky_infinity_1.jpg",
+      "VinFast/vf7_sky_infinity_2.jpg",
+      "VinFast/vf7_sky_infinity_3.jpg"
+    ],
+    "emi": "₹44,000/month",
+    "description": "VinFast VF 7 Sky Infinity includes a 70.8 kWh battery, 510 km range and top-end luxury features.",
+    "features": [
+      "Electric Powertrain",
+      "Automatic Transmission",
+      "High Range",
+      "Top-Class Interior & Safety"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  {
+    "id": "car103E",
+    "name": " Vinfast VF 7",
+    "brand": "VinFast",
+    "model": "VF 7 Wind Infinity",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "bodyType": "SUV",
+    "price": 2555000,
+    "mileage": "532 km",
+    "engine": "70.8 kWh Battery Pack",
+    "seatingCapacity": 5,
+    "image": "VinFast/vf7_wind_infinity.jpg",
+    "gallery": [
+      "VinFast/vf7_wind_infinity_1.jpg",
+      "VinFast/vf7_wind_infinity_2.jpg",
+      "VinFast/vf7_wind_infinity_3.jpg"
+    ],
+    "emi": "₹41,000/month",
+    "description": "VinFast VF 7 Wind Infinity delivers a 70.8 kWh battery, 532 km range and enhanced premium features.",
+    "features": [
+      "Electric Powertrain",
+      "Automatic Transmission",
+      "Extended Range",
+      "Premium Interior & Tech"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  
+  {
+    "id": "car104",
+    "name": "Renault Kwid",
+    "brand": "Renault",
+    "model": "Kwid Authentic MT",
+    "fuelType": "Petrol",
+    "transmission": "Manual",
+    "bodyType": "Hatchback",
+    "price": 514000,
+    "mileage": "N/A",
+    "engine": "999 cc, 67 bhp",
+    "seatingCapacity": 5,
+    "image": "Renault/kwid_authentic_mt.jpg",
+    "gallery": [
+      "Renault/kwid_authentic_mt_1.jpg",
+      "Renault/kwid_authentic_mt_2.jpg",
+      "Renault/kwid_authentic_mt_3.jpg"
+    ],
+    "emi": "₹8,600/month",
+    "description": "Renault Kwid Authentic MT — 999 cc petrol hatchback, manual transmission, practical and affordable city car.",
+    "features": [
+      "Petrol Engine",
+      "Manual Transmission",
+      "Compact Hatchback",
+      "5 Seater"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  {
+    "id": "car104B",
+    "name": "Renault Kwid",
+    "brand": "Renault",
+    "model": "Kwid Evolution MT",
+    "fuelType": "Petrol",
+    "transmission": "Manual",
+    "bodyType": "Hatchback",
+    "price": 557000,
+    "mileage": "N/A",
+    "engine": "999 cc, 67 bhp",
+    "seatingCapacity": 5,
+    "image": "Renault/kwid_evolution_mt.jpg",
+    "gallery": [
+      "Renault/kwid_evolution_mt_1.jpg",
+      "Renault/kwid_evolution_mt_2.jpg",
+      "Renault/kwid_evolution_mt_3.jpg"
+    ],
+    "emi": "₹9,300/month",
+    "description": "Renault Kwid Evolution MT — upgraded features over base, 999 cc petrol with manual gearbox.",
+    "features": [
+      "Petrol Engine",
+      "Manual Transmission",
+      "Enhanced Features",
+      "5 Seater"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  {
+    "id": "car104C",
+    "name": "Renault Kwid",
+    "brand": "Renault",
+    "model": "Kwid Authentic CNG",
+    "fuelType": "CNG",
+    "transmission": "Manual",
+    "bodyType": "Hatchback",
+    "price": 589000,
+    "mileage": "N/A",
+    "engine": "999 cc, CNG, 67 bhp",
+    "seatingCapacity": 5,
+    "image": "Renault/kwid_authentic_cng.jpg",
+    "gallery": [
+      "Renault/kwid_authentic_cng_1.jpg",
+      "Renault/kwid_authentic_cng_2.jpg",
+      "Renault/kwid_authentic_cng_3.jpg"
+    ],
+    "emi": "₹9,800/month",
+    "description": "Renault Kwid Authentic CNG — factory-fitted CNG option for lower running costs, 999 cc equivalent output.",
+    "features": [
+      "CNG Kit",
+      "Manual Transmission",
+      "Fuel Efficient",
+      "5 Seater"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  {
+    "id": "car104D",
+    "name": "Renault Kwid",
+    "brand": "Renault",
+    "model": "Kwid Evolution AMT",
+    "fuelType": "Petrol",
+    "transmission": "Automatic (AMT)",
+    "bodyType": "Hatchback",
+    "price": 595000,
+    "mileage": "22 kmpl",
+    "engine": "999 cc, 67 bhp",
+    "seatingCapacity": 5,
+    "image": "Renault/kwid_evolution_amt.jpg",
+    "gallery": [
+      "Renault/kwid_evolution_amt_1.jpg",
+      "Renault/kwid_evolution_amt_2.jpg",
+      "Renault/kwid_evolution_amt_3.jpg"
+    ],
+    "emi": "₹9,900/month",
+    "description": "Renault Kwid Evolution AMT — convenient automatic (AMT) gearbox, 22 kmpl claimed economy.",
+    "features": [
+      "Petrol Engine",
+      "Automatic (AMT)",
+      "Good Mileage",
+      "5 Seater"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+  
+  
+  {
+    "id": "car104E",
+    "name": "Renault Kwid",
+    "brand": "Renault",
+    "model": "Kwid Techno MT",
+    "fuelType": "Petrol",
+    "transmission": "Manual",
+    "bodyType": "Hatchback",
+    "price": 595000,
+    "mileage": "21.7 kmpl",
+    "engine": "999 cc, 67 bhp",
+    "seatingCapacity": 5,
+    "image": "Renault/kwid_techno_mt.jpg",
+    "gallery": [
+      "Renault/kwid_techno_mt_1.jpg",
+      "Renault/kwid_techno_mt_2.jpg",
+      "Renault/kwid_techno_mt_3.jpg"
+    ],
+    "emi": "₹9,900/month",
+    "description": "Renault Kwid Techno MT — techno pack with added convenience and infotainment, manual gearbox, 21.7 kmpl.",
+    "features": [
+      "Petrol Engine",
+      "Manual Transmission",
+      "Tech Features",
+      "5 Seater"
+    ],
+    "year": 2025,
+    "kmDriven": 0,
+    "owner": "First",
+    "location": "Mumbai"
+  },
+
+  {
+  "id": "car104F",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": "Kwid 10th Anniversary Edition MT",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "Hatchback",
+  "price": 619000,
+  "mileage": "21.7 kmpl",
+  "engine": "999 cc, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_10th_anniversary_mt.jpg",
+  "gallery": [
+    "Renault/kwid_10th_anniversary_mt_1.jpg",
+    "Renault/kwid_10th_anniversary_mt_2.jpg",
+    "Renault/kwid_10th_anniversary_mt_3.jpg"
+  ],
+  "emi": "₹10,300/month",
+  "description": "Renault Kwid 10th Anniversary Edition MT — special edition with unique styling cues and standard equipment.",
+  "features": [
+    "Petrol Engine",
+    "Manual Transmission",
+    "Special Edition Styling",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car104G",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": " Kwid Evolution CNG",
+  "fuelType": "CNG",
+  "transmission": "Manual",
+  "bodyType": "Hatchback",
+  "price": 632000,
+  "mileage": "N/A",
+  "engine": "999 cc, CNG, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_evolution_cng.jpg",
+  "gallery": [
+    "Renault/kwid_evolution_cng_1.jpg",
+    "Renault/kwid_evolution_cng_2.jpg",
+    "Renault/kwid_evolution_cng_3.jpg"
+  ],
+  "emi": "₹10,500/month",
+  "description": "Renault Kwid Evolution CNG — CNG-powered variant for economical running costs with Evolution features.",
+  "features": [
+    "CNG Kit",
+    "Manual Transmission",
+    "Fuel Efficient",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car104H",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": "Kwid Climber 1.0 MT",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "Hatchback",
+  "price": 657000,
+  "mileage": "21.7 kmpl",
+  "engine": "999 cc, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_climber_1_0_mt.jpg",
+  "gallery": [
+    "Renault/kwid_climber_1_0_mt_1.jpg",
+    "Renault/kwid_climber_1_0_mt_2.jpg",
+    "Renault/kwid_climber_1_0_mt_3.jpg"
+  ],
+  "emi": "₹11,000/month",
+  "description": "Renault Kwid CLIMBER 1.0 MT — rugged styling, manual gearbox, 21.7 kmpl claimed fuel efficiency.",
+  "features": [
+    "Petrol Engine",
+    "Manual Transmission",
+    "Rugged Styling",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car104I",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": "Kwid Techno AMT",
+  "fuelType": "Petrol",
+  "transmission": "Automatic (AMT)",
+  "bodyType": "Hatchback",
+  "price": 659000,
+  "mileage": "22 kmpl",
+  "engine": "999 cc, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_techno_amt.jpg",
+  "gallery": [
+    "Renault/kwid_techno_amt_1.jpg",
+    "Renault/kwid_techno_amt_2.jpg",
+    "Renault/kwid_techno_amt_3.jpg"
+  ],
+  "emi": "₹11,000/month",
+  "description": "Renault Kwid Techno AMT — techno features with AMT convenience and claimed 22 kmpl mileage.",
+  "features": [
+    "Petrol Engine",
+    "Automatic (AMT)",
+    "Tech Features",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car104J",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": " Kwid Climber 1.0 MT Dual Tone",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "Hatchback",
+  "price": 670000,
+  "mileage": "21.7 kmpl",
+  "engine": "999 cc, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_climber_1_0_mt_dual_tone.jpg",
+  "gallery": [
+    "Renault/kwid_climber_1_0_mt_dual_tone_1.jpg",
+    "Renault/kwid_climber_1_0_mt_dual_tone_2.jpg",
+    "Renault/kwid_climber_1_0_mt_dual_tone_3.jpg"
+  ],
+  "emi": "₹11,200/month",
+  "description": "Renault Kwid CLIMBER 1.0 MT Dual Tone — dual-tone styling with Climber accessories and manual gearbox.",
+  "features": [
+    "Petrol Engine",
+    "Manual Transmission",
+    "Dual Tone Styling",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car104K",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": "Kwid Techno CNG",
+  "fuelType": "CNG",
+  "transmission": "Manual",
+  "bodyType": "Hatchback",
+  "price": 670000,
+  "mileage": "N/A",
+  "engine": "999 cc, CNG, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_techno_cng.jpg",
+  "gallery": [
+    "Renault/kwid_techno_cng_1.jpg",
+    "Renault/kwid_techno_cng_2.jpg",
+    "Renault/kwid_techno_cng_3.jpg"
+  ],
+  "emi": "₹11,200/month",
+  "description": "Renault Kwid Techno CNG — techno trim with factory CNG for better running economy.",
+  "features": [
+    "CNG Kit",
+    "Manual Transmission",
+    "Tech Features",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car104L",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": "Kwid 10th Anniversary Edition AMT",
+  "fuelType": "Petrol",
+  "transmission": "Automatic (AMT)",
+  "bodyType": "Hatchback",
+  "price": 677000,
+  "mileage": "22 kmpl",
+  "engine": "999 cc, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_10th_anniversary_amt.jpg",
+  "gallery": [
+    "Renault/kwid_10th_anniversary_amt_1.jpg",
+    "Renault/kwid_10th_anniversary_amt_2.jpg",
+    "Renault/kwid_10th_anniversary_amt_3.jpg"
+  ],
+  "emi": "₹11,300/month",
+  "description": "Renault Kwid 10th Anniversary Edition AMT — special edition with AMT convenience and unique styling.",
+  "features": [
+    "Petrol Engine",
+    "Automatic (AMT)",
+    "Special Edition Features",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car104M",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": "Kwid Climber 1.0 AMT",
+  "fuelType": "Petrol",
+  "transmission": "Automatic (AMT)",
+  "bodyType": "Hatchback",
+  "price": 706000,
+  "mileage": "22 kmpl",
+  "engine": "999 cc, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_climber_1_0_amt.jpg",
+  "gallery": [
+    "Renault/kwid_climber_1_0_amt_1.jpg",
+    "Renault/kwid_climber_1_0_amt_2.jpg",
+    "Renault/kwid_climber_1_0_amt_3.jpg"
+  ],
+  "emi": "₹11,800/month",
+  "description": "Renault Kwid CLIMBER 1.0 AMT — Climber styling with AMT convenience and claimed 22 kmpl mileage.",
+  "features": [
+    "Petrol Engine",
+    "Automatic (AMT)",
+    "Rugged Styling",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car104N",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": "Kwid Climber 1.0 AMT Dual Tone",
+  "fuelType": "Petrol",
+  "transmission": "Automatic (AMT)",
+  "bodyType": "Hatchback",
+  "price": 718000,
+  "mileage": "22 kmpl",
+  "engine": "999 cc, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_climber_1_0_amt_dual_tone.jpg",
+  "gallery": [
+    "Renault/kwid_climber_1_0_amt_dual_tone_1.jpg",
+    "Renault/kwid_climber_1_0_amt_dual_tone_2.jpg",
+    "Renault/kwid_climber_1_0_amt_dual_tone_3.jpg"
+  ],
+  "emi": "₹12,000/month",
+  "description": "Renault Kwid CLIMBER 1.0 AMT Dual Tone — premium dual-tone finish with AMT and Climber equipment.",
+  "features": [
+    "Petrol Engine",
+    "Automatic (AMT)",
+    "Dual Tone Styling",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car104O",
+  "name": "Renault Kwid",
+  "brand": "Renault",
+  "model": "Kwid Climber 1.0 MT CNG",
+  "fuelType": "CNG",
+  "transmission": "Manual",
+  "bodyType": "Hatchback",
+  "price": 732000,
+  "mileage": "N/A",
+  "engine": "999 cc, CNG, 67 bhp",
+  "seatingCapacity": 5,
+  "image": "Renault/kwid_climber_1_0_mt_cng.jpg",
+  "gallery": [
+    "Renault/kwid_climber_1_0_mt_cng_1.jpg",
+    "Renault/kwid_climber_1_0_mt_cng_2.jpg",
+    "Renault/kwid_climber_1_0_mt_cng_3.jpg"
+  ],
+  "emi": "₹12,200/month",
+  "description": "Renault Kwid CLIMBER 1.0 MT CNG — Climber variant with CNG option for economical running costs.",
+  "features": [
+    "CNG Kit",
+    "Manual Transmission",
+    "Rugged Styling",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "E NeoDrive E",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1366000,
+  "mileage": "21.11 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/neodrive_e.jpg",
+  "gallery": [
+    "NeoAuto/neodrive_e_1.jpg",
+    "NeoAuto/neodrive_e_2.jpg",
+    "NeoAuto/neodrive_e_3.jpg"
+  ],
+  "emi": "₹22,800/month",
+  "description": "NeoDrive E — 102 bhp petrol, 136.8 Nm torque, claimed 21.11 kmpl. On-road price from Rs. 13.66 Lakh .",
+  "features": [
+    "102 bhp Engine",
+    "136.8 Nm Torque",
+    "21.11 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105B",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "NeoDrive Aero Edition (E)",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1366000,
+  "mileage": "21.11 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/neodrive_aero_e.jpg",
+  "gallery": [
+    "NeoAuto/neodrive_aero_e_1.jpg",
+    "NeoAuto/neodrive_aero_e_2.jpg",
+    "NeoAuto/neodrive_aero_e_3.jpg"
+  ],
+  "emi": "₹22,800/month",
+  "description": "NeoDrive Aero Edition (E) — aero styling, 102 bhp petrol engine, 21.11 kmpl. On-road price Rs. 13.66 Lakh .",
+  "features": [
+    "Aero Styling",
+    "102 bhp Engine",
+    "21.11 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105C",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": " NeoDrive S",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1552000,
+  "mileage": "21.11 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/neodrive_s.jpg",
+  "gallery": [
+    "NeoAuto/neodrive_s_1.jpg",
+    "NeoAuto/neodrive_s_2.jpg",
+    "NeoAuto/neodrive_s_3.jpg"
+  ],
+  "emi": "₹25,900/month",
+  "description": "NeoDrive S — 102 bhp petrol, 136.8 Nm, 21.11 kmpl. On-road price from Rs. 15.52 Lakh .",
+  "features": [
+    "102 bhp Engine",
+    "136.8 Nm Torque",
+    "21.11 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105D",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "S NeoDrive Aero Edition",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1552000,
+  "mileage": "21.11 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/neodrive_aero_s.jpg",
+  "gallery": [
+    "NeoAuto/neodrive_aero_s_1.jpg",
+    "NeoAuto/neodrive_aero_s_2.jpg",
+    "NeoAuto/neodrive_aero_s_3.jpg"
+  ],
+  "emi": "₹25,900/month",
+  "description": "NeoDrive Aero Edition (S) — aero styling with S trim, 102 bhp engine and 21.11 kmpl. On-road price Rs. 15.52 Lakh.",
+  "features": [
+    "Aero Styling",
+    "102 bhp Engine",
+    "21.11 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105E",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "E-CNG(S)",
+  "fuelType": "CNG",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1658000,
+  "mileage": "N/A",
+  "engine": "87 bhp, 121.5 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/e_cng_s.jpg",
+  "gallery": [
+    "NeoAuto/e_cng_s_1.jpg",
+    "NeoAuto/e_cng_s_2.jpg",
+    "NeoAuto/e_cng_s_3.jpg"
+  ],
+  "emi": "₹27,600/month",
+  "description": "E-CNG (S) — CNG option with 87 bhp and 121.5 Nm, economical running. On-road price Rs. 16.58 Lakh .",
+  "features": [
+    "CNG Kit",
+    "87 bhp Engine",
+    "Fuel Efficient",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105F",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "S AT NeoDrive (S)",
+  "fuelType": "Petrol",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 1694000,
+  "mileage": "20.58 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/at_neodrive_s.jpg",
+  "gallery": [
+    "NeoAuto/at_neodrive_s_1.jpg",
+    "NeoAuto/at_neodrive_s_2.jpg",
+    "NeoAuto/at_neodrive_s_3.jpg"
+  ],
+  "emi": "₹28,200/month",
+  "description": "AT NeoDrive (S) — automatic variant with 102 bhp, 136.8 Nm and claimed 20.58 kmpl. On-road price Rs. 16.94 Lakh.",
+  "features": [
+    "Automatic Transmission",
+    "102 bhp Engine",
+    "20.58 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105G",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "Hybrid(S) ",
+  "fuelType": "Hybrid",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2045000,
+  "mileage": "27.97 kmpl",
+  "engine": "91 bhp, 122 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/hybrid_s.jpg",
+  "gallery": [
+    "NeoAuto/hybrid_s_1.jpg",
+    "NeoAuto/hybrid_s_2.jpg",
+    "NeoAuto/hybrid_s_3.jpg"
+  ],
+  "emi": "₹34,800/month",
+  "description": "Hybrid (S) — hybrid powertrain delivering 91 bhp, 122 Nm and claimed 27.97 kmpl. On-road price Rs. 20.45 Lakh.",
+  "features": [
+    "Hybrid Powertrain",
+    "91 bhp Engine",
+    "27.97 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105H",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "Hybrid Aero Edition(S)",
+  "fuelType": "Hybrid",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2045000,
+  "mileage": "27.97 kmpl",
+  "engine": "91 bhp, 122 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/hybrid_aero_s.jpg",
+  "gallery": [
+    "NeoAuto/hybrid_aero_s_1.jpg",
+    "NeoAuto/hybrid_aero_s_2.jpg",
+    "NeoAuto/hybrid_aero_s_3.jpg"
+  ],
+  "emi": "₹34,800/month",
+  "description": "Hybrid Aero Edition (S) — aero styling on Hybrid S trim, 91 bhp and 27.97 kmpl. On-road price Rs. 20.45 Lakh.",
+  "features": [
+    "Hybrid Powertrain",
+    "Aero Styling",
+    "27.97 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105I",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "NeoDrive G(O)",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1768000,
+  "mileage": "21.11 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/neodrive_go.jpg",
+  "gallery": [
+    "NeoAuto/neodrive_go_1.jpg",
+    "NeoAuto/neodrive_go_2.jpg",
+    "NeoAuto/neodrive_go_3.jpg"
+  ],
+  "emi": "₹29,500/month",
+  "description": "NeoDrive G(O) — variant with 102 bhp and 21.11 kmpl. On-road price from Rs. 17.68 Lakh .",
+  "features": [
+    "102 bhp Engine",
+    "136.8 Nm Torque",
+    "21.11 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105J",
+  "name": "Toyota Urban Cruiser Hyryder G",
+  "brand": "Toyota",
+  "model": "AT NeoDrive Aero",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1768000,
+  "mileage": "21.11 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/neodrive_aero_go.jpg",
+  "gallery": [
+    "NeoAuto/neodrive_aero_go_1.jpg",
+    "NeoAuto/neodrive_aero_go_2.jpg",
+    "NeoAuto/neodrive_aero_go_3.jpg"
+  ],
+  "emi": "₹29,500/month",
+  "description": "NeoDrive Aero Edition (G O) — aero styling for G(O) trim, 102 bhp and 21.11 kmpl. On-road price Rs. 17.68 Lakh.",
+  "features": [
+    "Aero Styling",
+    "102 bhp Engine",
+    "21.11 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105K",
+  "name": "Toyota Urban Cruiser Hyryder G",
+  "brand": "Toyota",
+  "model": "AT NeoDrive",
+  "fuelType": "Petrol",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 1915000,
+  "mileage": "20.58 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/at_neodrive_go.jpg",
+  "gallery": [
+    "NeoAuto/at_neodrive_go_1.jpg",
+    "NeoAuto/at_neodrive_go_2.jpg",
+    "NeoAuto/at_neodrive_go_3.jpg"
+  ],
+  "emi": "₹31,900/month",
+  "description": "AT NeoDrive (G O) — automatic G(O) trim with 102 bhp and 20.58 kmpl. On-road price Rs. 19.15 Lakh.",
+  "features": [
+    "Automatic Transmission",
+    "102 bhp Engine",
+    "20.58 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105L",
+  "name": "Toyota Urban Cruiser Hyryder G",
+  "brand": "Toyota",
+  "model": "Hybrid",
+  "fuelType": "Hybrid",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2289000,
+  "mileage": "27.97 kmpl",
+  "engine": "91 bhp, 122 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/hybrid_go.jpg",
+  "gallery": [
+    "NeoAuto/hybrid_go_1.jpg",
+    "NeoAuto/hybrid_go_2.jpg",
+    "NeoAuto/hybrid_go_3.jpg"
+  ],
+  "emi": "₹38,000/month",
+  "description": "Hybrid (G O) — hybrid G(O) trim offering improved economy and 91 bhp. On-road price Rs. 22.89 Lakh.",
+  "features": [
+    "Hybrid Powertrain",
+    "91 bhp Engine",
+    "27.97 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105M",
+  "name": "Toyota Urban Cruiser Hyryder G",
+  "brand": "Toyota",
+  "model": "Hybrid Aero Edition",
+  "fuelType": "Hybrid",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2289000,
+  "mileage": "27.97 kmpl",
+  "engine": "91 bhp, 122 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/hybrid_aero_go.jpg",
+  "gallery": [
+    "NeoAuto/hybrid_aero_go_1.jpg",
+    "NeoAuto/hybrid_aero_go_2.jpg",
+    "NeoAuto/hybrid_aero_go_3.jpg"
+  ],
+  "emi": "₹38,000/month",
+  "description": "Hybrid Aero Edition (G O) — aero styling on hybrid G(O) trim, 91 bhp and 27.97 kmpl. On-road price Rs. 22.89 Lakh.",
+  "features": [
+    "Hybrid Powertrain",
+    "Aero Styling",
+    "27.97 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105N",
+  "name": "Toyota Urban Cruiser Hyryder G",
+  "brand": "Toyota",
+  "model": "Hybrid Dual",
+  "fuelType": "Hybrid",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2313000,
+  "mileage": "27.97 kmpl",
+  "engine": "91 bhp, 122 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/hybrid_dual_tone_go.jpg",
+  "gallery": [
+    "NeoAuto/hybrid_dual_tone_go_1.jpg",
+    "NeoAuto/hybrid_dual_tone_go_2.jpg",
+    "NeoAuto/hybrid_dual_tone_go_3.jpg"
+  ],
+  "emi": "₹38,500/month",
+  "description": "Hybrid Dual Tone (G O) — dual-tone finish on hybrid G(O) trim, 91 bhp and 27.97 kmpl. On-road price Rs. 23.13 Lakh.",
+  "features": [
+    "Hybrid Powertrain",
+    "Dual Tone Styling",
+    "27.97 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105O",
+  "name": "Toyota Urban Cruiser Hyryder G",
+  "brand": "Toyota",
+  "model": "E-CNG ",
+  "fuelType": "CNG",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1903000,
+  "mileage": "N/A",
+  "engine": "87 bhp, 121.5 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/e_cng_g.jpg",
+  "gallery": [
+    "NeoAuto/e_cng_g_1.jpg",
+    "NeoAuto/e_cng_g_2.jpg",
+    "NeoAuto/e_cng_g_3.jpg"
+  ],
+  "emi": "₹31,700/month",
+  "description": "E-CNG (G) — CNG-powered G trim with 87 bhp and 121.5 Nm. On-road price Rs. 19.03 Lakh .",
+  "features": [
+    "CNG Kit",
+    "87 bhp Engine",
+    "Fuel Efficient",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105P",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "V NeoDrive ",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1956000,
+  "mileage": "21.11 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/neodrive_v.jpg",
+  "gallery": [
+    "NeoAuto/neodrive_v_1.jpg",
+    "NeoAuto/neodrive_v_2.jpg",
+    "NeoAuto/neodrive_v_3.jpg"
+  ],
+  "emi": "₹32,600/month",
+  "description": "NeoDrive V — V trim petrol variant with 102 bhp and 21.11 kmpl. On-road price Rs. 19.56 Lakh.",
+  "features": [
+    "102 bhp Engine",
+    "136.8 Nm Torque",
+    "21.11 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105Q",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "V NeoDrive Aero Edition",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1956000,
+  "mileage": "21.11 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/neodrive_aero_v.jpg",
+  "gallery": [
+    "NeoAuto/neodrive_aero_v_1.jpg",
+    "NeoAuto/neodrive_aero_v_2.jpg",
+    "NeoAuto/neodrive_aero_v_3.jpg"
+  ],
+  "emi": "₹32,600/month",
+  "description": "NeoDrive Aero Edition (V) — aero styling on V trim with 102 bhp. On-road price Rs. 19.56 Lakh.",
+  "features": [
+    "Aero Styling",
+    "102 bhp Engine",
+    "21.11 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105R",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "V NeoDrive Dual Tone",
+  "fuelType": "Petrol",
+  "transmission": "Manual",
+  "bodyType": "SUV",
+  "price": 1980000,
+  "mileage": "21.11 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/neodrive_dual_tone_v.jpg",
+  "gallery": [
+    "NeoAuto/neodrive_dual_tone_v_1.jpg",
+    "NeoAuto/neodrive_dual_tone_v_2.jpg",
+    "NeoAuto/neodrive_dual_tone_v_3.jpg"
+  ],
+  "emi": "₹33,000/month",
+  "description": "NeoDrive Dual Tone (V) — dual-tone finish on V trim, 102 bhp engine. On-road price Rs. 19.80 Lakh.",
+  "features": [
+    "Dual Tone Styling",
+    "102 bhp Engine",
+    "21.11 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105S",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "V AT NeoDrive",
+  "fuelType": "Petrol",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2098000,
+  "mileage": "20.58 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/at_neodrive_v.jpg",
+  "gallery": [
+    "NeoAuto/at_neodrive_v_1.jpg",
+    "NeoAuto/at_neodrive_v_2.jpg",
+    "NeoAuto/at_neodrive_v_3.jpg"
+  ],
+  "emi": "₹35,000/month",
+  "description": "AT NeoDrive (V) — automatic V trim with 102 bhp and 20.58 kmpl. On-road price Rs. 20.98 Lakh.",
+  "features": [
+    "Automatic Transmission",
+    "102 bhp Engine",
+    "20.58 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105T",
+  "name": "Toyota Urban Cruiser Hyryder V",
+  "brand": "Toyota",
+  "model": "V AT NeoDrive Dual Ton",
+  "fuelType": "Petrol",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2122000,
+  "mileage": "20.58 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/at_neodrive_dual_tone_v.jpg",
+  "gallery": [
+    "NeoAuto/at_neodrive_dual_tone_v_1.jpg",
+    "NeoAuto/at_neodrive_dual_tone_v_2.jpg",
+    "NeoAuto/at_neodrive_dual_tone_v_3.jpg"
+  ],
+  "emi": "₹35,400/month",
+  "description": "AT NeoDrive Dual Tone (V) — automatic with dual-tone finish, 102 bhp. On-road price Rs. 21.22 Lakh.",
+  "features": [
+    "Automatic Transmission",
+    "Dual Tone Styling",
+    "102 bhp Engine",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105U",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "V AT AWD NeoDrive",
+  "fuelType": "Petrol",
+  "transmission": "Automatic AWD",
+  "bodyType": "SUV",
+  "price": 2270000,
+  "mileage": "19.2 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/at_awd_neodrive_v.jpg",
+  "gallery": [
+    "NeoAuto/at_awd_neodrive_v_1.jpg",
+    "NeoAuto/at_awd_neodrive_v_2.jpg",
+    "NeoAuto/at_awd_neodrive_v_3.jpg"
+  ],
+  "emi": "₹38,000/month",
+  "description": "AT AWD NeoDrive (V) — automatic AWD variant with 102 bhp, AWD capability and 19.2 kmpl. On-road price Rs. 22.70 Lakh.",
+  "features": [
+    "AWD",
+    "Automatic Transmission",
+    "102 bhp Engine",
+    "19.2 kmpl"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105V",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "V AT AWD NeoDrive Dual Tone",
+  "fuelType": "Petrol",
+  "transmission": "Automatic AWD",
+  "bodyType": "SUV",
+  "price": 2294000,
+  "mileage": "19.2 kmpl",
+  "engine": "102 bhp, 136.8 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/at_awd_neodrive_dual_tone_v.jpg",
+  "gallery": [
+    "NeoAuto/at_awd_neodrive_dual_tone_v_1.jpg",
+    "NeoAuto/at_awd_neodrive_dual_tone_v_2.jpg",
+    "NeoAuto/at_awd_neodrive_dual_tone_v_3.jpg"
+  ],
+  "emi": "₹38,400/month",
+  "description": "AT AWD NeoDrive Dual Tone (V) — AWD automatic with dual-tone finish, 102 bhp. On-road price Rs. 22.94 Lakh.",
+  "features": [
+    "AWD",
+    "Dual Tone Styling",
+    "102 bhp Engine",
+    "19.2 kmpl"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105W",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "V Hybrid",
+  "fuelType": "Hybrid",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2427000,
+  "mileage": "27.97 kmpl",
+  "engine": "91 bhp, 122 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/hybrid_v.jpg",
+  "gallery": [
+    "NeoAuto/hybrid_v_1.jpg",
+    "NeoAuto/hybrid_v_2.jpg",
+    "NeoAuto/hybrid_v_3.jpg"
+  ],
+  "emi": "₹40,400/month",
+  "description": "Hybrid (V) — hybrid V trim with 91 bhp and 27.97 kmpl. On-road price Rs. 24.27 Lakh.",
+  "features": [
+    "Hybrid Powertrain",
+    "91 bhp Engine",
+    "27.97 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105X",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "V Hybrid Aero Edition",
+  "fuelType": "Hybrid",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2427000,
+  "mileage": "27.97 kmpl",
+  "engine": "91 bhp, 122 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/hybrid_aero_v.jpg",
+  "gallery": [
+    "NeoAuto/hybrid_aero_v_1.jpg",
+    "NeoAuto/hybrid_aero_v_2.jpg",
+    "NeoAuto/hybrid_aero_v_3.jpg"
+  ],
+  "emi": "₹40,400/month",
+  "description": "Hybrid Aero Edition (V) — aero styling on Hybrid V trim, 91 bhp and 27.97 kmpl. On-road price Rs. 24.27 Lakh.",
+  "features": [
+    "Hybrid Powertrain",
+    "Aero Styling",
+    "27.97 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+},
+
+{
+  "id": "car105Y",
+  "name": "Toyota Urban Cruiser Hyryder",
+  "brand": "Toyota",
+  "model": "V Hybrid Dual Tone",
+  "fuelType": "Hybrid",
+  "transmission": "Automatic",
+  "bodyType": "SUV",
+  "price": 2451000,
+  "mileage": "27.97 kmpl",
+  "engine": "91 bhp, 122 Nm",
+  "seatingCapacity": 5,
+  "image": "NeoAuto/hybrid_dual_tone_v.jpg",
+  "gallery": [
+    "NeoAuto/hybrid_dual_tone_v_1.jpg",
+    "NeoAuto/hybrid_dual_tone_v_2.jpg",
+    "NeoAuto/hybrid_dual_tone_v_3.jpg"
+  ],
+  "emi": "₹40,900/month",
+  "description": "Hybrid Dual Tone (V) — dual-tone finish on Hybrid V trim, 91 bhp and 27.97 kmpl. On-road price Rs. 24.51 Lakh.",
+  "features": [
+    "Hybrid Powertrain",
+    "Dual Tone Styling",
+    "27.97 kmpl",
+    "5 Seater"
+  ],
+  "year": 2025,
+  "kmDriven": 0,
+  "owner": "First",
+  "location": "Mumbai"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 ]
   
