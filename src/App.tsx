@@ -18,6 +18,7 @@ import EVCalculator from './components/EVCalculator';
 import CarInsurancePage from './components/CarInsurancePage';
 import UsedCarPriceChecker from './components/UsedCarPriceChecker';
 import CarLoanApplication from './components/CarLoanApplication';
+import CarBikeAccessories from './pages/CarAndBikeAccessories/CarBikeAccessories';
 import BlogDetail from './pages/BlogDetail';
 import TermsOfService from './pages/TermsOfService';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -48,6 +49,7 @@ function App() {
             <Route path="/car-price-checker" element={<UsedCarPriceChecker />} />
             <Route path="/insurance" element={<CarInsurancePage />} />
             <Route path="/car-loan-application" element={<CarLoanApplication />} />
+            <Route path="/car-and-bike-accessories" element={<CarBikeAccessories />} />
             <Route path="/news/:slug" element={<BlogDetail />} />
             <Route path="/cars/:brand/:name/:model" element={<CarDetail />} />
             <Route path="/terms" element={<TermsOfService />} />

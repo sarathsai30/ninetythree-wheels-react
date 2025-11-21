@@ -429,7 +429,12 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
   const [selectedVariant, setSelectedVariant] = useState(initialVariant);
 
   const [isEMIModalOpen, setIsEMIModalOpen] = useState(false);
+  const [emiValue, setEmiValue] = useState(0);
 
+  // Function to receive EMI from child
+  const handleEmiCalculated = (emi) => {
+    setEmiValue(emi);
+  };
   // Sync with initial variant
   useEffect(() => {
     if (initialVariant) {
@@ -666,6 +671,15 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
     }
   };
 
+  const loanAmount = onRoadPrice - computeOnRoadPrice(displayVariant) * 0.3; 
+
+  const monthlyRate = 10 / 12 / 100;
+  const numberOfMonths = 5 * 12;
+
+  const calculatedEMI =
+      (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, numberOfMonths)) /
+      (Math.pow(1 + monthlyRate, numberOfMonths) - 1);
+
   console.log("car name: ", displayVariant.name);
 
   return (
@@ -851,7 +865,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
               <ul className="space-y-1.5">
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">•</span>
-                  <span>Down Payment - {formatINR(257490)}</span>
+                  <span>Down Payment - {formatINR(onRoadPrice * 0.3)}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">•</span>
@@ -883,8 +897,12 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
       
       {/* EMI Amount and Duration */}
       <div className="flex items-center gap-2 flex-wrap">
-        <span className="text-lg font-bold text-gray-900 whitespace-nowrap">
-          {formatINR(Math.round(computeOnRoadPrice(displayVariant) * 0.02))}
+        {/* <span className="text-lg font-bold text-gray-900 whitespace-nowrap">          
+          {formatINR(Math.floor(calculatedEMI))}
+          <span className="text-sm text-gray-600 font-normal ml-1">/month</span>
+        </span> */}
+        <span className="text-lg font-bold text-gray-900 whitespace-nowrap">          
+          {emiValue > 0 ? formatINR(emiValue) : formatINR(Math.floor(calculatedEMI))}
           <span className="text-sm text-gray-600 font-normal ml-1">/month</span>
         </span>
         <span className="text-sm text-gray-600 whitespace-nowrap">for 5 years</span>
@@ -894,7 +912,8 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
     {/* Get EMI Offers Button */}
     <button
       onClick={(e) => {
-        e.stopPropagation();
+        window.location.href =
+                    "https://inr.deals/track?id=car778279331&src=merchant-detail-backend&campaign=cpl&url=https%3A%2F%2Fwww.bharatloan.com%2Fapply-now&subid=93cars";
         // toast.success("EMI Offers will be shown here");
       }}
       className="px-2 py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white font-medium text-sm transition-all duration-200 whitespace-nowrap shadow-sm hover:shadow-md w-full sm:w-auto text-center"
@@ -1156,6 +1175,8 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
         isOpen={isEMIModalOpen}
         onClose={() => setIsEMIModalOpen(false)}
         carData={displayVariant}
+        FinalPrice={computeOnRoadPrice(displayVariant)}
+        onEmiCalculated={handleEmiCalculated}
       />
       <Toaster position="top-right" />
     </div>
@@ -1186,6 +1207,5 @@ export default OnRoadPrice;
 // };
 
 // export default OnRoadPrice;
-
 
 
