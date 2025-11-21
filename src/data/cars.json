@@ -32132,7 +32132,7 @@
     "mileage": "N/A",
     "engine": "999 cc, 67 bhp",
     "seatingCapacity": 5,
-    "image": "Renault/kwid_authentic_mt.jpg",
+    "image": "Renault/kwid.webp",
     "gallery": [
       "Renault/kwid_authentic_mt_1.jpg",
       "Renault/kwid_authentic_mt_2.jpg",
@@ -32613,7 +32613,7 @@
   "mileage": "21.11 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/neodrive_e.jpg",
+  "image": "Toyota/Hyryder.webp",
   "gallery": [
     "NeoAuto/neodrive_e_1.jpg",
     "NeoAuto/neodrive_e_2.jpg",
@@ -33400,11 +33400,6 @@
   "owner": "First",
   "location": "Mumbai"
 }
-
-
-
-
-
 
 
 
