@@ -189,6 +189,12 @@ const Header = () => {
                 </div>
               )}
             </div>
+            <Link 
+              to="/car-and-bike-accessories" 
+              className={`${isActive('/car-and-bike-accessories') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              Accessories
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -372,6 +378,14 @@ const Header = () => {
                 </div>
               )}
             </div>
+
+            <Link 
+              to="/car-and-bike-accessories" 
+              className={`${isActive('/car-and-bike-accessories') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Accessories
+            </Link>
 
             <Link
               to="/cars"
