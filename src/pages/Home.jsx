@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import carsData from '../data/cars.json';
+import { carService } from '../services/carService';
 import ModernHeroSection from '../components/ModernHeroSection';
 import ModernFeaturedCars from '../components/ModernFeaturedCars';
 import PopularBrands from '../components/PopularBrands';
@@ -18,21 +18,27 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Simulate loading time
     const loadData = async () => {
-      // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
-      const mainVariantCars = carsData.filter(car => /^\D+\d+$/.test(car.id));
-      // Get featured cars (first 3 main variants)
-      setFeaturedCars(mainVariantCars.slice(0, 8));
-      
-      // Get unique brands
-      const uniqueBrands = [...new Set(carsData.map(car => car.brand))];
-      setBrands(uniqueBrands);
-      
-      // Show loader for at least 1.5 seconds
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1500);
+      try {
+        // Fetch cars from Firebase
+        const cars = await carService.getCars();
+        
+        // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
+        const mainVariantCars = cars.filter(car => /^\D+\d+$/.test(car.id));
+        // Get featured cars (first 8 main variants)
+        setFeaturedCars(mainVariantCars.slice(0, 8));
+        
+        // Get unique brands
+        const uniqueBrands = await carService.getBrands();
+        setBrands(uniqueBrands);
+      } catch (error) {
+        console.error('Error loading data:', error);
+      } finally {
+        // Show loader for at least 1.5 seconds
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 1500);
+      }
     };
     
     loadData();

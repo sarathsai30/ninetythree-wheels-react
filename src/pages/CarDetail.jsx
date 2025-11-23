@@ -1,28 +1,50 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import carsData from '../data/cars.json';
-import { findCarBySlug, createCarSlug } from '../utils/carUtils';
+import { carService } from '../services/carService';
+import { createCarSlug } from '../utils/carUtils';
 
 const CarDetail = () => {
   const { brand, name } = useParams();
   const [car, setCar] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [modelVariants, setModelVariants] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const slug = `${brand}/${name}`;
-    const foundCar = findCarBySlug(carsData, slug);
-    setCar(foundCar);
+    const fetchCarDetails = async () => {
+      try {
+        // Fetch car by slug from Firebase
+        const foundCar = await carService.findCarBySlug(brand, name);
+        setCar(foundCar);
+        
+        // Get all variants of the same brand and model series
+        if (foundCar) {
+          const allCars = await carService.getCars();
+          const variants = allCars.filter(c => 
+            c.brand === foundCar.brand && 
+            c.name.split(' ').slice(0, 2).join(' ') === foundCar.name.split(' ').slice(0, 2).join(' ')
+          );
+          setModelVariants(variants);
+        }
+      } catch (error) {
+        console.error('Error fetching car details:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
     
-    // Get all variants of the same brand and model series
-    if (foundCar) {
-      const variants = carsData.filter(c => 
-        c.brand === foundCar.brand && 
-        c.name.split(' ').slice(0, 2).join(' ') === foundCar.name.split(' ').slice(0, 2).join(' ')
-      );
-      setModelVariants(variants);
-    }
+    fetchCarDetails();
   }, [brand, name]);
+
+  if (loading) {
+    return (
+      <div className="container py-5 text-center">
+        <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    );
+  }
 
   if (!car) {
     return (
