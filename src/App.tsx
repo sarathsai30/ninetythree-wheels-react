@@ -10,6 +10,7 @@ import CarDetail from './pages/CarDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
+import CarManagement from './pages/CarManagement.jsx';
 import News from './pages/News';
 import ParkingPage from './pages/ParkingPage';
 import BlogDetail from './pages/BlogDetail';
@@ -33,7 +34,8 @@ function App() {
             <Route path="/youtube" element={<YouTube />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/management-dashboard-93cars" element={<Admin />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/management-dashboard-93cars" element={<CarManagement />} />
             <Route path="/blog" element={<BlogSection />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:slug" element={<BlogDetail />} />

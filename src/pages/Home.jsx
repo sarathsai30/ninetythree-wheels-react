@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { collection, addDoc, getDocs } from 'firebase/firestore';
-import { db } from '../firebase/config';
 import { carService } from '../services/carService';
-import carsData from '../data/cars.json';
 import ModernHeroSection from '../components/ModernHeroSection';
 import ModernFeaturedCars from '../components/ModernFeaturedCars';
 import PopularBrands from '../components/PopularBrands';
@@ -17,52 +14,7 @@ const Home = () => {
   const [featuredCars, setFeaturedCars] = useState([]);
   const [brands, setBrands] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [uploadStatus, setUploadStatus] = useState('');
-  const [isUploading, setIsUploading] = useState(false);
   const navigate = useNavigate();
-
-  const uploadCarsToFirebase = async () => {
-    if (isUploading) return;
-    
-    setIsUploading(true);
-    setUploadStatus('Starting upload...');
-    
-    try {
-      // Check if collection already has data
-      const existingCars = await getDocs(collection(db, 'cars'));
-      if (existingCars.size > 0) {
-        setUploadStatus(`Warning: Collection already has ${existingCars.size} documents. Upload cancelled.`);
-        setIsUploading(false);
-        return;
-      }
-
-      let successCount = 0;
-      const totalCars = carsData.length;
-      
-      setUploadStatus(`Uploading 0/${totalCars} cars...`);
-
-      // Upload each car
-      for (const car of carsData) {
-        await addDoc(collection(db, 'cars'), {
-          ...car,
-          createdAt: new Date(),
-          updatedAt: new Date()
-        });
-        successCount++;
-        
-        if (successCount % 10 === 0) {
-          setUploadStatus(`Uploading ${successCount}/${totalCars} cars...`);
-        }
-      }
-
-      setUploadStatus(`✅ Successfully uploaded ${successCount} cars!`);
-    } catch (error) {
-      console.error('Error uploading cars:', error);
-      setUploadStatus(`❌ Error: ${error.message}`);
-    } finally {
-      setIsUploading(false);
-    }
-  };
 
   useEffect(() => {
     const loadData = async () => {
@@ -102,20 +54,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* Temporary Upload Button */}
-      <div className="fixed top-20 right-4 z-50 bg-background border border-border rounded-lg p-4 shadow-lg max-w-xs">
-        <button
-          onClick={uploadCarsToFirebase}
-          disabled={isUploading}
-          className="w-full px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed font-semibold mb-2"
-        >
-          {isUploading ? 'Uploading...' : 'Upload Cars to Firebase'}
-        </button>
-        {uploadStatus && (
-          <p className="text-sm text-muted-foreground mt-2">{uploadStatus}</p>
-        )}
-      </div>
-
       <ModernHeroSection />
       <ModernFeaturedCars featuredCars={featuredCars} />
       <PopularBrands brands={brands} onBrandClick={handleBrandClick} />
