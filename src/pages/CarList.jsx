@@ -3,11 +3,12 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import CarCard from '../components/CarCard';
 import SearchFilter from '../components/SearchFilter';
-import carsData from '../data/cars.json';
+import { carService } from '../services/carService';
 import filtersData from '../data/filters.json';
 
 const CarList = () => {
   const [searchParams] = useSearchParams();
+  const [carsData, setCarsData] = useState([]);
   const [filteredCars, setFilteredCars] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedBrand, setSelectedBrand] = useState('');
@@ -15,6 +16,22 @@ const CarList = () => {
   const [selectedBodyType, setSelectedBodyType] = useState('');
   const [priceRange, setPriceRange] = useState([filtersData.priceRange.min, filtersData.priceRange.max]);
   const [sortBy, setSortBy] = useState('name');
+  const [loading, setLoading] = useState(true);
+
+  // Fetch cars from Firebase on mount
+  useEffect(() => {
+    const fetchCars = async () => {
+      try {
+        const cars = await carService.getCars();
+        setCarsData(cars);
+      } catch (error) {
+        console.error('Error fetching cars:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchCars();
+  }, []);
 
   // Handle URL parameters for filtering
   useEffect(() => {
@@ -43,6 +60,8 @@ const CarList = () => {
 
   // Apply all filters whenever any filter changes
   useEffect(() => {
+    if (carsData.length === 0) return;
+
     console.log('Applying filters:', {
       searchTerm,
       selectedBrand,
@@ -51,7 +70,7 @@ const CarList = () => {
       priceRange
     });
 
-    // let filtered = [...carsData];
+    // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
     let filtered = carsData.filter(car => /^\D+\d+$/.test(car.id));
 
     // Search filter - check name, brand, and model
@@ -112,7 +131,7 @@ const CarList = () => {
 
     console.log('Final filtered cars:', uniqueFiltered.length);
     setFilteredCars(uniqueFiltered);
-  }, [searchTerm, selectedBrand, selectedFuelType, selectedBodyType, priceRange, sortBy]);
+  }, [searchTerm, selectedBrand, selectedFuelType, selectedBodyType, priceRange, sortBy, carsData]);
 
   const clearFilters = () => {
     setSearchTerm('');
@@ -124,6 +143,16 @@ const CarList = () => {
     // Clear URL parameters
     window.history.replaceState({}, '', '/cars');
   };
+
+  if (loading) {
+    return (
+      <div className="container py-5 text-center">
+        <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="container py-4">
