@@ -14,8 +14,8 @@
     "seatingCapacity": 5,
     "image": "Maruti/dzire12.webp",
     "gallery": [
-      "/Maruti/dzire_front.webp",
-      "/Maruti/maruti_dzire1.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/dzire_front.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/maruti_dzire1.webp"
     ],
     "emi": "₹31,720/month",
     "description": "Enjoy an economical and thrilling drive in The Dazzling-New Dzire, India’s most Fuel-Efficiency sedan#. Keeping the essence of what makes the Dzire truly special, it boasts a fuel efficiency of 24.79* (in MT) and 33.73* km/kg (in MT) with S-CNG.",
@@ -237,9 +237,9 @@
     "mileage": "17.4 kmpl",
     "engine": "1497 cc",
     "seatingCapacity": 5,
-    "image": "Hyundai/creta.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta.webp",
     "gallery": [
-      "/Hyundai/creta.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta.webp"
       
     ],
     "emi": "₹34,420/month",
@@ -1691,9 +1691,9 @@
     "mileage": "17.01 kmpl",
     "engine": "1199 cc",
     "seatingCapacity": 5,
-    "image": "Tata/nexon.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexon.webp",
     "gallery": [
-      "/Tata/nexon.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexon.webp"
     ],
     "emi": "₹24,450/month",
     "description": "The Tata Nexon smart offers a premium experience with a powerful turbo-petrol engine and a smooth automatic gearbox.",
@@ -3147,21 +3147,21 @@
     "mileage": "25.75 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/swift12.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swift12.webp",
     "gallery": [
-      "/Maruti/swiftfrontside.webp",
-      "/Maruti/swiftfrontleft.webp",
-      "/Maruti/swiftback.webp",
-      "/Maruti/swiftinterior.webp",
-      "/Maruti/swiftinterior1.webp",
-      "/Maruti/swiftfrontcabin.webp",
-      "/Maruti/swiftseats.webp",
-      "/Maruti/swiftfrontdoor.webp",
-      "/Maruti/swiftdoorcontrols.webp",
-      "/Maruti/swiftdooropen.webp",
-      "/Maruti/swiftinfo.webp",
-      "/Maruti/swiftcluster.webp",
-      "/Maruti/swiftac.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftfrontside.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftfrontleft.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftback.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftinterior.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftinterior1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftfrontcabin.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftseats.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftfrontdoor.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftdoorcontrols.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftdooropen.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftinfo.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftcluster.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftac.webp"
 
     ],
     "emi": "₹17,400/month",
@@ -3549,19 +3549,19 @@
     "mileage": "17 kmpl",
     "engine": "1497 cc",
     "seatingCapacity": 5,
-    "image": "KIA/seltoss1.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltoss1.webp",
     "gallery": [
-      "/KIA/seltoss.webp",
-      "/KIA/seltoss2.webp",
-      "/KIA/seltoss3.webp",
-      "/KIA/seltos4.webp",
-      "/KIA/seltos5.webp",
-      "/KIA/seltos6.webp",
-      "/KIA/seltos7.webp",
-      "/KIA/seltos8.webp",
-      "/KIA/seltos9.webp",
-      "/KIA/seltos10.webp",
-      "/KIA/seltoss2.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltoss.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltoss2.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltoss3.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltos4.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltos5.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltos6.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltos7.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltos8.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltos9.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltos10.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltoss2.webp"
     ],
     "emi": "₹18,500/month",
     "description": "The Kia Seltos HTE (O) 1.5 Petrol MT delivers 113 bhp and a balanced driving experience with practical features.",
@@ -4156,13 +4156,13 @@
     "mileage": "16.5 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "KIA/syross.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/syross.webp",
     "gallery": [
-      "/KIA/syros1.webp",
-      "/KIA/syros2.webp",
-      "/KIA/syros3.webp",
-      "/KIA/syros4.webp",
-      "/KIA/syros5.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/syros1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/syros2.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/syros3.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/syros4.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/syros5.webp"
     ],
     "emi": "₹28,460/month",
     "description": "Base HTK variant with 12.3″ HD touchscreen, wireless Android Auto/Apple CarPlay, halogen headlamps, rear camera, and robust 20‑Hi safety package with 6 airbags and ADAS Level‑2 support.",
@@ -4497,9 +4497,9 @@
     "mileage": "15 kmpl",
     "engine": "1999 cc",
     "seatingCapacity": 7,
-    "image": "Mahindra/XUV700_XUV700.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/XUV700_XUV700.webp",
     "gallery": [
-      "/Mahindra/XUV700_XUV700.Webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/XUV700_XUV700.webp"
       
     ],
     "emi": "₹34,420/month",
@@ -5567,17 +5567,17 @@
     "mileage": "17.8 kmpl",
     "engine": "1498 cc",
     "seatingCapacity": 5,
-    "image": "Honda/city1.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city1.jpg",
     "gallery": [
-      "/Honda/city.jpg",
-      "/Honda/city1.jpg",
-      "/Honda/city2.jpg",
-      "/Honda/city3.jpg",
-      "/Honda/city4.jpg",
-      "/Honda/city5.jpg",
-      "/Honda/city6.jpg",
-      "/Honda/city7.jpg",
-      "/Honda/city8.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city3.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city4.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city5.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city6.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city7.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city8.jpg"
     ],
     "emi": "₹36,500/month",
     "description": "The Honda City SV is the base model offering a reliable and fuel-efficient drive with essential features.",
@@ -5885,20 +5885,20 @@
     "mileage": "—",
     "engine": "1199 cc",
     "seatingCapacity": 5,
-    "image": "Tata/altroz1.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altroz1.webp",
     "gallery": [
-      "/Tata/altrozfront.jpg",
-      "/Tata/altrozsideview.jpg",
-      "/Tata/altrozsideview1.jpg",
-      "/Tata/altrozheadlights.jpg",
-      "/Tata/altrozdrls.jpg",
-      "/Tata/altrozdoor.jpg",
-      "/Tata/altrozdashboard1.jpg",
-      "/Tata/altrozsteering.jpg",
-      "/Tata/altrozdashboard1.jpg",
-      "/Tata/altrozcabin.jpg",
-      "/Tata/altrozboot.jpg",
-      "/Tata/altrozback.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozfront.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozsideview.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozsideview1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozheadlights.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozdrls.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozdoor.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozdashboard1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozsteering.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozdashboard1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozcabin.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozboot.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozback.jpg"
     ],
     "emi": "₹13,125/month",
     "description": "The Tata Altroz Smart is the base model offering a sporty design and essential features for daily city drives.",
@@ -6466,12 +6466,12 @@
     "mileage": "20.8 kmpl",
     "engine": "999 cc",
     "seatingCapacity": 5,
-    "image": "Volkswagen/virtus1.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/virtus1.webp",
     "gallery": [
-      "/Volkswagen/virtusfullview.jpg",
-      "/Volkswagen/virtusside.jpg",
-      "/Volkswagen/virtusfront.jpg",
-      "/Volkswagen/virtus2.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/virtusfullview.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/virtusside.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/virtusfront.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/virtus2.webp"
     
     ],
     "emi": "₹35,200/month",
@@ -6804,15 +6804,15 @@
     "mileage": "17.38 kmpl",
     "engine": "1462 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/breza.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/breza.webp",
     "gallery": [
-      "/Maruti/breza_front.webp",
-      "/Maruti/breza_interior.webp",
-      "/Maruti/breza_info.webp",
-      "/Maruti/brezaback.webp",
-      "/Maruti/breza_front_door.webp",
-      "/Maruti/breza_cluster.webp",
-      "/Maruti/breza_tyre.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/breza_front.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/breza_interior.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/breza_info.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/brezaback.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/breza_front_door.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/breza_cluster.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/breza_tyre.webp"
     ],
     "emi": "₹26,540/month",
     "description": "Brezza Lxi is the entry-level SUV offering essential features and solid performance for budget-conscious buyers.",
@@ -7329,27 +7329,27 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/vitarafront1.webp",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarafront1.webp",
   "gallery": [
-    "/Maruti/vitarafront.webp",
-    "/Maruti/vitaraside.webp",
-    "/Maruti/vitararear.webp",
-    "/Maruti/vitarafrontgrill.webp",
-    "/Maruti/vitarafrontsideview1.webp",
-    "/Maruti/vitararearsideview.webp",
-    "/Maruti/vitarafrontdoor.webp",
-    "/Maruti/vitaracabinside.webp",
-    "/Maruti/vitarasteering.webp",
-    "/Maruti/vitarainfo.webp",
-    "/Maruti/vitaracluster.webp",
-    "/Maruti/vitaraac.webp",
-    "/Maruti/vitaradoorbuttons.webp",
-    "/Maruti/vitararearcabin.webp",
-    "/Maruti/vitararearacvents.webp",
-    "/Maruti/vitararearseats.webp",
-    "/Maruti/vitarareardefoger.webp",
-    "/Maruti/vitararearindicators.webp",
-    "/Maruti/vitarareartyre.webp"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarafront.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitaraside.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitararear.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarafrontgrill.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarafrontsideview1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitararearsideview.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarafrontdoor.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitaracabinside.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarasteering.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarainfo.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitaracluster.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitaraac.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitaradoorbuttons.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitararearcabin.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitararearacvents.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitararearseats.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarareardefoger.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitararearindicators.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarareartyre.webp"
   ],
   "emi": "₹35,720/month",
   "description": "The Maruti Grand Vitara is a stylish and feature-rich SUV offering strong performance, premium interiors, and excellent fuel efficiency.",
@@ -7371,9 +7371,9 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7397,9 +7397,9 @@
   "mileage": "26.6 km/kg",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7423,9 +7423,9 @@
   "mileage": "20.58 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7449,9 +7449,9 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7475,9 +7475,9 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7501,9 +7501,9 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7527,9 +7527,9 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7553,9 +7553,9 @@
   "mileage": "26.6 km/kg",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7579,9 +7579,9 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7605,9 +7605,9 @@
   "mileage": "20.58 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7631,9 +7631,9 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7657,9 +7657,9 @@
   "mileage": "20.58 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7683,9 +7683,9 @@
   "mileage": "20.58 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7709,9 +7709,9 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7735,9 +7735,9 @@
   "mileage": "20.58 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7761,9 +7761,9 @@
   "mileage": "21.11 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7787,9 +7787,9 @@
   "mileage": "27.97 kmpl",
   "engine": "1490 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7813,9 +7813,9 @@
   "mileage": "20.58 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7839,9 +7839,9 @@
   "mileage": "20.58 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7865,9 +7865,9 @@
   "mileage": "20.58 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7891,9 +7891,9 @@
   "mileage": "20.58 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7917,9 +7917,9 @@
   "mileage": "27.97 kmpl",
   "engine": "1490 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7943,9 +7943,9 @@
   "mileage": "27.97 kmpl",
   "engine": "1490 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7969,9 +7969,9 @@
   "mileage": "19.38 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -7995,9 +7995,9 @@
   "mileage": "19.38 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -8021,9 +8021,9 @@
   "mileage": "27.97 kmpl",
   "engine": "1490 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -8047,9 +8047,9 @@
   "mileage": "27.97 kmpl",
   "engine": "1490 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -8073,9 +8073,9 @@
   "mileage": "19.38 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -8099,9 +8099,9 @@
   "mileage": "19.38 kmpl",
   "engine": "1462 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -8125,9 +8125,9 @@
   "mileage": "27.97 kmpl",
   "engine": "1490 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -8151,9 +8151,9 @@
   "mileage": "27.97 kmpl",
   "engine": "1490 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -8177,9 +8177,9 @@
   "mileage": "27.97 kmpl",
   "engine": "1490 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -8203,9 +8203,9 @@
   "mileage": "27.97 kmpl",
   "engine": "1490 cc",
   "seatingCapacity": 5,
-  "image": "Maruti/grandvitara.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara.jpg",
   "gallery": [
-    "Maruti/grandvitara1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp",
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
   ],
@@ -8229,25 +8229,25 @@
     "mileage": "22.35 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/balenofront.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenofront.jpg",
     "gallery": [
-      "/Maruti/balenoside.jpg",
-      "/Maruti/balenosideview.jpg",
-      "/Maruti/balenofrontlights.jpg",
-      "/Maruti/balenoheadlight1.jpg",
-      "/Maruti/balenotyre.jpg",
-      "/Maruti/balenogoglamp.jpg",
-      "/Maruti/balenodoorbuttons.jpg",
-      "/Maruti/balenofrontcabin.jpg",
-      "/Maruti/balenodashboard.jpg",
-      "/Maruti/balenosteering.jpg",
-      "/Maruti/balenocluster.jpg",
-      "/Maruti/balenoinfo.jpg",
-      "/Maruti/balenoseats.jpg",
-      "/Maruti/balenopushstart.jpg",
-      "/Maruti/balenoleftdoor.jpg",
-      "/Maruti/balenoorvm.jpg",
-      "/Maruti/balenorear.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenoside.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenosideview.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenofrontlights.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenoheadlight1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenotyre.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenogoglamp.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenodoorbuttons.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenofrontcabin.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenodashboard.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenosteering.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenocluster.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenoinfo.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenoseats.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenopushstart.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenoleftdoor.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenoorvm.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenorear.jpg"
     ],
     "emi": "₹12,720/month",
     "description": "The Maruti Baleno is a premium hatchback offering a stylish design, efficient performance, and modern features.",
@@ -8269,9 +8269,9 @@
     "mileage": "22.35 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/baleno.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno.jpg",
     "gallery": [
-      "Maruti/baleno1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8295,9 +8295,9 @@
     "mileage": "22.94 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/baleno.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno.jpg",
     "gallery": [
-      "Maruti/baleno1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8321,9 +8321,9 @@
     "mileage": "30.61 km/kg",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/baleno.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno.jpg",
     "gallery": [
-      "Maruti/baleno1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8347,9 +8347,9 @@
     "mileage": "22.35 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/baleno.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno.jpg",
     "gallery": [
-      "Maruti/baleno1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8373,9 +8373,9 @@
     "mileage": "22.35 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/baleno.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno.jpg",
     "gallery": [
-      "Maruti/baleno1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8399,9 +8399,9 @@
     "mileage": "22.35 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/baleno.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno.jpg",
     "gallery": [
-      "Maruti/baleno1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8425,9 +8425,9 @@
     "mileage": "22.94 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/baleno.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno.jpg",
     "gallery": [
-      "Maruti/baleno1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8451,9 +8451,9 @@
     "mileage": "30.61 km/kg",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/baleno.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno.jpg",
     "gallery": [
-      "Maruti/baleno1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8477,9 +8477,9 @@
     "mileage": "22.35 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/baleno.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno.jpg",
     "gallery": [
-      "Maruti/baleno1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.devMaruti/baleno1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8503,32 +8503,32 @@
     "mileage": "20.97 kmpl",
     "engine": "1462 cc",
     "seatingCapacity": 6,
-    "image": "Maruti/XL61.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL61.jpg",
     "gallery": [
-      "/Maruti/XL61.jpg",
-      "/Maruti/XL62.jpg",
-      "/Maruti/XL63.jpg",
-      "/Maruti/XL64.jpg",
-      "/Maruti/XL65.jpg",
-      "/Maruti/XL66.jpg",
-      "/Maruti/XL67.jpg",
-      "/Maruti/XL68.jpg",
-      "/Maruti/XL69.jpg",
-      "/Maruti/XL610.jpg",
-      "/Maruti/XL611.jpg",
-      "/Maruti/XL612.jpg",
-      "/Maruti/XL613.jpg",
-      "/Maruti/XL614.jpg",
-      "/Maruti/XL615.jpg",
-      "/Maruti/XL616.jpg",
-      "/Maruti/XL617.jpg",
-      "/Maruti/XL618.jpg",
-      "/Maruti/XL619.jpg",
-      "/Maruti/XL620.jpg",
-      "/Maruti/XL621.jpg",
-      "/Maruti/XL622.jpg",
-      "/Maruti/XL623.jpg",
-      "/Maruti/XL624.JPG"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL61.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL62.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL63.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL64.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL65.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL66.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL67.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL68.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL69.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL610.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL611.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL612.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL613.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL614.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL615.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL616.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL617.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL618.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL619.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL620.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL621.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL622.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL623.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL624.JPG"
 
   
     ],
@@ -8552,9 +8552,9 @@
     "mileage": "26.32 km/kg",
     "engine": "1462 cc",
     "seatingCapacity": 6,
-    "image": "Maruti/xl6.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6.jpg",
     "gallery": [
-      "Maruti/xl6_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6_1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8578,9 +8578,9 @@
     "mileage": "20.97 kmpl",
     "engine": "1462 cc",
     "seatingCapacity": 6,
-    "image": "Maruti/xl6.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6.jpg",
     "gallery": [
-      "Maruti/xl6_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6_1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8604,9 +8604,9 @@
     "mileage": "20.27 kmpl",
     "engine": "1462 cc",
     "seatingCapacity": 6,
-    "image": "Maruti/xl6.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6.jpg",
     "gallery": [
-      "Maruti/xl6_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6_1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8630,9 +8630,9 @@
     "mileage": "20.97 kmpl",
     "engine": "1462 cc",
     "seatingCapacity": 6,
-    "image": "Maruti/xl6.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6.jpg",
     "gallery": [
-      "Maruti/xl6_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6_1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8656,9 +8656,9 @@
     "mileage": "20.97 kmpl",
     "engine": "1462 cc",
     "seatingCapacity": 6,
-    "image": "Maruti/xl6.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6.jpg",
     "gallery": [
-      "Maruti/xl6_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6_1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8682,9 +8682,9 @@
     "mileage": "20.27 kmpl",
     "engine": "1462 cc",
     "seatingCapacity": 6,
-    "image": "Maruti/xl6.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6.jpg",
     "gallery": [
-      "Maruti/xl6_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6_1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8708,9 +8708,9 @@
     "mileage": "20.27 kmpl",
     "engine": "1462 cc",
     "seatingCapacity": 6,
-    "image": "Maruti/xl6.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6.jpg",
     "gallery": [
-      "Maruti/xl6_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6_1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8734,9 +8734,9 @@
     "mileage": "20.27 kmpl",
     "engine": "1462 cc",
     "seatingCapacity": 6,
-    "image": "Maruti/xl6.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6.jpg",
     "gallery": [
-      "Maruti/xl6_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6_1.webp",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1494976688153-c9c804128400?w=800&h=600&fit=crop"
     ],
@@ -8760,9 +8760,9 @@
     "mileage": "23.24 kmpl",
     "engine": "1987 cc",
     "seatingCapacity": 7,
-    "image": "Maruti/invicto.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/invicto.jpg",
     "gallery": [
-      "Maruti/invicto.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/invicto.jpg",
       "https://images.unsplash.com/photo-1617806111188-621c57670af7?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1617805691210-562b5df44f2b?w=800&h=600&fit=crop"
     ],
@@ -8786,9 +8786,9 @@
     "mileage": "23.24 kmpl",
     "engine": "1987 cc",
     "seatingCapacity": 8,
-    "image": "Maruti/invicto.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/invicto.jpg",
     "gallery": [
-      "Maruti/invicto_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/invicto_1.webp",
       "https://images.unsplash.com/photo-1617806111188-621c57670af7?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1617805691210-562b5df44f2b?w=800&h=600&fit=crop"
     ],
@@ -8812,9 +8812,9 @@
     "mileage": "23.24 kmpl",
     "engine": "1987 cc",
     "seatingCapacity": 7,
-    "image": "Maruti/invicto.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/invicto.jpg",
     "gallery": [
-      "Maruti/invicto_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/invicto_1.webp",
       "https://images.unsplash.com/photo-1617806111188-621c57670af7?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1617805691210-562b5df44f2b?w=800&h=600&fit=crop"
     ],
@@ -8838,21 +8838,21 @@
     "mileage": "21.79 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronxfront.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxfront.webp",
     "gallery": [
-      "/Maruti/fronx123.jpg",
-      "/Maruti/fronxfront.webp",
-      "/Maruti/fronxside.webp",
-      "/Maruti/fronxback.webp",
-      "/Maruti/fronxfrontcabin.webp",
-      "/Maruti/fronxfrontdoor.webp",
-      "/Maruti/fronxdashboard.webp",
-      "/Maruti/fronxrearseats.webp",
-      "/Maruti/fronxreardoor.webp",
-      "/Maruti/fronxgrill.webp",
-      "/Maruti/fronxlightsview.webp",
-      "/Maruti/fronxlights1.webp",
-      "/Maruti/fronxtaillamp.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx123.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxfront.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxside.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxback.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxfrontcabin.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxfrontdoor.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxdashboard.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxrearseats.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxreardoor.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxgrill.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxlightsview.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxlights1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxtaillamp.webp"
     ],
     "emi": "₹15,350/month",
     "description": "The Maruti Fronx is a stylish compact SUV with a bold design, efficient engines, and modern features for daily driving comfort.",
@@ -8874,9 +8874,9 @@
     "mileage": "21.79 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_1.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -8900,9 +8900,9 @@
     "mileage": "28.51 km/kg",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_1.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -8926,9 +8926,9 @@
     "mileage": "21.79 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_2.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_2.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -8952,9 +8952,9 @@
     "mileage": "22.89 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_2.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_2.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -8978,9 +8978,9 @@
     "mileage": "21.79 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_2.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_2.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9004,9 +9004,9 @@
     "mileage": "22.89 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_2.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_2.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9030,9 +9030,9 @@
     "mileage": "28.51 km/kg",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_2.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_2.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9056,9 +9056,9 @@
     "mileage": "22.89 kmpl",
     "engine": "1197 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_3.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_3.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9082,9 +9082,9 @@
     "mileage": "21.5 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_3.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_3.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9108,9 +9108,9 @@
     "mileage": "21.5 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_3.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_3.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9134,9 +9134,9 @@
     "mileage": "21.5 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_4.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_4.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9160,9 +9160,9 @@
     "mileage": "21.5 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_4.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_4.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9186,9 +9186,9 @@
     "mileage": "20.01 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_4.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_4.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9212,9 +9212,9 @@
     "mileage": "20.01 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_5.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_5.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9238,9 +9238,9 @@
     "mileage": "20.01 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/fronx.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx.jpg",
     "gallery": [
-      "Maruti/fronx_5.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_5.webp",
       "https://images.unsplash.com/photo-1605559424843-1d3bfa29f0e3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9264,9 +9264,9 @@
     "mileage": "9 kmpl",
     "engine": "1497 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar123.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar123.webp",
     "gallery": [
-      "Mahindra/thar123.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar123.webp"
     ],
     "emi": "₹25,875/month",
     "description": "The Mahindra Thar is a rugged off-roader with a bold presence, powerful performance, and modern tech features for adventures.",
@@ -9288,9 +9288,9 @@
     "mileage": "9 kmpl",
     "engine": "1497 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9314,9 +9314,9 @@
     "mileage": "8 kmpl",
     "engine": "1997 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9340,9 +9340,9 @@
     "mileage": "8 kmpl",
     "engine": "1997 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9366,9 +9366,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9392,9 +9392,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9418,9 +9418,9 @@
     "mileage": "8 kmpl",
     "engine": "1997 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9444,9 +9444,9 @@
     "mileage": "8 kmpl",
     "engine": "1997 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9470,9 +9470,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9496,9 +9496,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9522,9 +9522,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9548,9 +9548,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9574,9 +9574,9 @@
     "mileage": "8 kmpl",
     "engine": "1997 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9600,9 +9600,9 @@
     "mileage": "8 kmpl",
     "engine": "1997 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9626,9 +9626,9 @@
     "mileage": "8 kmpl",
     "engine": "1997 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9652,9 +9652,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9678,9 +9678,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9704,9 +9704,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9730,9 +9730,9 @@
     "mileage": "9 kmpl",
     "engine": "2184 cc",
     "seatingCapacity": 4,
-    "image": "Mahindra/thar.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar.jpg",
     "gallery": [
-      "Mahindra/thar_1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp",
       "https://images.unsplash.com/photo-1623891031180-e1226d1e2b41?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1638297019810-0f9423781f44?w=800&h=600&fit=crop"
     ],
@@ -9756,15 +9756,15 @@
     "mileage": "332 km/full charge",
     "engine": "38 kWh, 134 bhp",
     "seatingCapacity": 5,
-    "image": "MG/windsor1.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor1.webp",
     "gallery": [
-      "MG/windsor1.webp",
-      "MG/windsor2.webp",
-      "MG/windsor3.webp",
-      "MG/windsor4.webp",
-      "MG/windsor5.webp",
-      "MG/windsor6.webp",
-      "MG/windsor7.webp"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor2.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor3.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor4.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor5.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor6.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor7.webp"
     ],
     "emi": "₹29,500/month",
     "description": "The Windsor EV Excite offers efficient electric mobility with stylish design, modern interiors, and practical urban range.",
@@ -9786,9 +9786,9 @@
     "mileage": "332 km/full charge",
     "engine": "38 kWh, 134 bhp",
     "seatingCapacity": 5,
-    "image": "Windsor/windsor_ev.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Windsor/windsor_ev.jpg",
     "gallery": [
-      "Windsor/windsor_ev1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Windsor/windsor_ev1.webp",
       "https://images.unsplash.com/photo-1638432330079-7b278e2f06cb?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1609102201989-8f4f2523d3e7?w=800&h=600&fit=crop"
     ],
@@ -9812,9 +9812,9 @@
     "mileage": "332 km/full charge",
     "engine": "38 kWh, 134 bhp",
     "seatingCapacity": 5,
-    "image": "Windsor/windsor_ev.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Windsor/windsor_ev.jpg",
     "gallery": [
-      "Windsor/windsor_ev1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Windsor/windsor_ev1.webp",
       "https://images.unsplash.com/photo-1638432330079-7b278e2f06cb?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1609102201989-8f4f2523d3e7?w=800&h=600&fit=crop"
     ],
@@ -9838,9 +9838,9 @@
     "mileage": "449 km/full charge",
     "engine": "52.9 kWh, 134 bhp",
     "seatingCapacity": 5,
-    "image": "Windsor/windsor_ev.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Windsor/windsor_ev.jpg",
     "gallery": [
-      "Windsor/windsor_ev1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Windsor/windsor_ev1.webp",
       "https://images.unsplash.com/photo-1638432330079-7b278e2f06cb?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1609102201989-8f4f2523d3e7?w=800&h=600&fit=crop"
     ],
@@ -9864,9 +9864,9 @@
     "mileage": "449 km/full charge",
     "engine": "52.9 kWh, 134 bhp",
     "seatingCapacity": 5,
-    "image": "Windsor/windsor_ev.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Windsor/windsor_ev.jpg",
     "gallery": [
-      "Windsor/windsor_ev1.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Windsor/windsor_ev1.webp",
       "https://images.unsplash.com/photo-1638432330079-7b278e2f06cb?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1609102201989-8f4f2523d3e7?w=800&h=600&fit=crop"
     ],
@@ -9890,7 +9890,7 @@
     "mileage": "20.09 kmpl",
     "engine": "1199 cc",
     "seatingCapacity": 5,
-    "image": "Tata/punch.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch.jpg",
     "gallery": [
       "https://images.unsplash.com/photo-1616573999071-0d41e06f4d3a?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1616573427164-6f610f5e7f62?w=800&h=600&fit=crop"
@@ -10605,8 +10605,8 @@
     "mileage": "26.99 km/kg",
     "engine": "1199 cc",
     "seatingCapacity": 5,
-    "image": "Tata/punch1.jpg",
-    "gallery": ["Tata/punch1.jpg", "Tata/punch2.jpg", "Tata/punch3.jpg"],
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg",
+    "gallery": ["https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch2.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch3.jpg"],
     "emi": "₹14,700/month",
     "description": "Economical and bold with camo accents and CNG efficiency.",
     "features": ["CNG Efficiency", "Bold Camo Design", "7-inch Display", "ABS with EBD", "Rear Defogger"],
@@ -10627,8 +10627,8 @@
     "mileage": "20.09 kmpl",
     "engine": "1199 cc",
     "seatingCapacity": 5,
-    "image": "Tata/punch1.jpg",
-    "gallery": ["Tata/punch1.jpg", "Tata/punch2.jpg", "Tata/punch3.jpg"],
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg",
+    "gallery": ["https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch2.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch3.jpg"],
     "emi": "₹14,800/month",
     "description": "Creative Plus S Camo adds exclusive flair with rich features.",
     "features": ["Camo Theme", "7-inch Touchscreen", "Cruise Control", "Projector Headlamps", "Dual Airbags"],
@@ -10647,10 +10647,9 @@
     "bodyType": "SUV",
     "price": 972000,
     "mileage": "18.8 kmpl",
-    "engine": "1199 cc",
     "seatingCapacity": 5,
-    "image": "Tata/punch1.jpg",
-    "gallery": ["Tata/punch1.jpg", "Tata/punch2.jpg", "Tata/punch3.jpg"],
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg",
+    "gallery": ["https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch2.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch3.jpg"],
     "emi": "₹14,800/month",
     "description": "Convenient AMT with high-tech infotainment and premium feel.",
     "features": ["AMT Gearbox", "Voice Commands", "Dual-tone Dashboard", "ABS with EBD", "Touchscreen"],
@@ -10671,8 +10670,8 @@
     "mileage": "18.8 kmpl",
     "engine": "1199 cc",
     "seatingCapacity": 5,
-    "image": "Tata/punch1.jpg",
-    "gallery": ["Tata/punch1.jpg", "Tata/punch2.jpg", "Tata/punch3.jpg"],
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg",
+    "gallery": ["https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch2.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch3.jpg"],
     "emi": "₹15,000/month",
     "description": "Creative Camo AMT combines convenience and offbeat looks.",
     "features": ["Camo Pack", "7-inch Touchscreen", "Connected Car Tech", "ABS with EBD", "Fog Lamps"],
@@ -10693,8 +10692,8 @@
     "mileage": "26.99 km/kg",
     "engine": "1199 cc",
     "seatingCapacity": 5,
-    "image": "Tata/punch1.jpg",
-    "gallery": ["Tata/punch1.jpg", "Tata/punch2.jpg", "Tata/punch3.jpg"],
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg",
+    "gallery": ["https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch2.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch3.jpg"],
     "emi": "₹15,200/month",
     "description": "Top-end S CNG model with features and economy combined.",
     "features": ["CNG System", "Driver Seat Height Adjust", "Rear Camera", "7-inch Display", "Cruise Control"],
@@ -10715,8 +10714,8 @@
     "mileage": "26.99 km/kg",
     "engine": "1199 cc",
     "seatingCapacity": 5,
-    "image": "Tata/punch1.jpg",
-    "gallery": ["Tata/punch1.jpg", "Tata/punch2.jpg", "Tata/punch3.jpg"],
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg",
+    "gallery": ["https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch2.jpg", "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch3.jpg"],
     "emi": "₹15,500/month",
     "description": "Fully loaded CNG SUV with exclusive camo design and top features.",
     "features": ["Camo + CNG Combo", "7-inch Touch", "ABS with EBD", "Alloy Wheels", "Rear AC Vents"],
@@ -31144,11 +31143,11 @@
     "mileage": "24.39 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/alto_k10_vxi_o.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o.jpg",
     "gallery": [
-      "MarutiSuzuki/alto_k10_vxi_o.jpg",
-      "MarutiSuzuki/alto_k10_vxi_o_2.jpg",
-      "MarutiSuzuki/alto_k10_vxi_o_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o_3.jpg"
     ],
     "emi": "₹12,800/month",
     "description": "Mid variant petrol manual with enhanced comfort and style.",
@@ -31174,11 +31173,11 @@
     "mileage": "24.39 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/alto_k10_vxi_plus_o.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/alto_k10_vxi_plus_o.jpg",
     "gallery": [
-      "MarutiSuzuki/alto_k10_vxi_plus_o.jpg",
-      "MarutiSuzuki/alto_k10_vxi_plus_o_2.jpg",
-      "MarutiSuzuki/alto_k10_vxi_plus_o_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_plus_o.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_plus_o_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_plus_o_3.jpg"
     ],
     "emi": "₹13,500/month",
     "description": "Top manual petrol variant with additional features and styling.",
@@ -31204,11 +31203,11 @@
     "mileage": "24.9 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/alto_k10_vxi_o_ags.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o_ags.jpg",
     "gallery": [
-      "MarutiSuzuki/alto_k10_vxi_o_ags.jpg",
-      "MarutiSuzuki/alto_k10_vxi_o_ags_2.jpg",
-      "MarutiSuzuki/alto_k10_vxi_o_ags_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o_ags.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o_ags_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o_ags_3.jpg"
     ],
     "emi": "₹14,000/month",
     "description": "Petrol automatic variant with AMT gearbox for ease in city traffic.",
@@ -31234,11 +31233,11 @@
     "mileage": "N/A",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/alto_k10_lxi_o_cng.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_lxi_o_cng.jpg",
     "gallery": [
-      "MarutiSuzuki/alto_k10_lxi_o_cng.jpg",
-      "MarutiSuzuki/alto_k10_lxi_o_cng_2.jpg",
-      "MarutiSuzuki/alto_k10_lxi_o_cng_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_lxi_o_cng.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_lxi_o_cng_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_lxi_o_cng_3.jpg"
     ],
     "emi": "₹14,200/month",
     "description": "Manual CNG variant for eco-friendly and economical city driving.",
@@ -31264,11 +31263,11 @@
     "mileage": "24.9 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/alto_k10_vxi_plus_o_ags.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_plus_o_ags.jpg",
     "gallery": [
-      "MarutiSuzuki/alto_k10_vxi_plus_o_ags.jpg",
-      "MarutiSuzuki/alto_k10_vxi_plus_o_ags_2.jpg",
-      "MarutiSuzuki/alto_k10_vxi_plus_o_ags_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_plus_o_ags.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_plus_o_ags_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_plus_o_ags_3.jpg"
     ],
     "emi": "₹14,600/month",
     "description": "Automatic petrol variant with AMT and extra features for convenience.",
@@ -31324,11 +31323,11 @@
     "mileage": "24.12 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "Maruti/spresso.webp",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso.webp",
     "gallery": [
-      "/Maruti/spresso.webp",
-      "MarutiSuzuki/spresso_std_o_2.jpg",
-      "MarutiSuzuki/spresso_std_o_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_std_o_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_std_o_3.jpg"
     ],
     "emi": "₹10,300/month",
     "description": "Base petrol manual variant of S-Presso with efficient mileage.",
@@ -31354,11 +31353,11 @@
     "mileage": "24.12 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/spresso_lxi_o.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_lxi_o.jpg",
     "gallery": [
-      "MarutiSuzuki/spresso_lxi_o.jpg",
-      "MarutiSuzuki/spresso_lxi_o_2.jpg",
-      "MarutiSuzuki/spresso_lxi_o_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_lxi_o.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_lxi_o_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_lxi_o_3.jpg"
     ],
     "emi": "₹12,000/month",
     "description": "Manual petrol variant with added features for city driving.",
@@ -31384,11 +31383,11 @@
     "mileage": "24.76 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/spresso_vxi_o.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_o.jpg",
     "gallery": [
-      "MarutiSuzuki/spresso_vxi_o.jpg",
-      "MarutiSuzuki/spresso_vxi_o_2.jpg",
-      "MarutiSuzuki/spresso_vxi_o_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_o.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_o_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_o_3.jpg"
     ],
     "emi": "₹12,500/month",
     "description": "Mid petrol manual variant with style and efficiency.",
@@ -31414,11 +31413,11 @@
     "mileage": "24.76 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/spresso_vxi_plus_o.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_plus_o.jpg",
     "gallery": [
-      "MarutiSuzuki/spresso_vxi_plus_o.jpg",
-      "MarutiSuzuki/spresso_vxi_plus_o_2.jpg",
-      "MarutiSuzuki/spresso_vxi_plus_o_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_plus_o.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_plus_o_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_plus_o_3.jpg"
     ],
     "emi": "₹13,200/month",
     "description": "Top petrol manual variant with enhanced features.",
@@ -31444,11 +31443,11 @@
     "mileage": "25.3 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/spresso_vxi_o_amt.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_amt.jpg",
     "gallery": [
-      "MarutiSuzuki/spresso_vxi_o_amt.jpg",
-      "MarutiSuzuki/spresso_vxi_o_amt_2.jpg",
-      "MarutiSuzuki/spresso_vxi_o_amt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_amt.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_amt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_amt_3.jpg"
     ],
     "emi": "₹13,700/month",
     "description": "Automatic petrol variant with AMT gearbox for easy city driving.",
@@ -31474,11 +31473,11 @@
     "mileage": "N/A",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/spresso_lxi_o_cng.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_lxi_o_cng.jpg",
     "gallery": [
-      "MarutiSuzuki/spresso_lxi_o_cng.jpg",
-      "MarutiSuzuki/spresso_lxi_o_cng_2.jpg",
-      "MarutiSuzuki/spresso_lxi_o_cng_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_lxi_o_cng.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_lxi_o_cng_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_lxi_o_cng_3.jpg"
     ],
     "emi": "₹14,000/month",
     "description": "Manual CNG variant for economical city driving.",
@@ -31504,11 +31503,11 @@
     "mileage": "25.3 kmpl",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/spresso_vxi_plus_o_amt.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_plus_o_amt.jpg",
     "gallery": [
-      "MarutiSuzuki/spresso_vxi_plus_o_amt.jpg",
-      "MarutiSuzuki/spresso_vxi_plus_o_amt_2.jpg",
-      "MarutiSuzuki/spresso_vxi_plus_o_amt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_plus_o_amt.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_plus_o_amt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_plus_o_amt_3.jpg"
     ],
     "emi": "₹14,200/month",
     "description": "Automatic petrol variant with AMT and enhanced features.",
@@ -31534,11 +31533,11 @@
     "mileage": "N/A",
     "engine": "998 cc",
     "seatingCapacity": 5,
-    "image": "MarutiSuzuki/spresso_vxi_o_cng.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_cng.jpg",
     "gallery": [
-      "MarutiSuzuki/spresso_vxi_o_cng.jpg",
-      "MarutiSuzuki/spresso_vxi_o_cng_2.jpg",
-      "MarutiSuzuki/spresso_vxi_o_cng_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_cng.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_cng_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_cng_3.jpg"
     ],
     "emi": "₹14,500/month",
     "description": "Manual CNG variant with efficient fuel use and city driving comfort.",
@@ -31564,11 +31563,11 @@
     "mileage": "N/A",
     "engine": "2184 cc, 130 bhp",
     "seatingCapacity": 7,
-    "image": "Mahindra/scorpio.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio.jpg",
     "gallery": [
-      "/Mahindra/scorpio.webp",
-      "Mahindra/scorpio_s_mt_7str_2.jpg",
-      "Mahindra/scorpio_s_mt_7str_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s_mt_7str_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s_mt_7str_3.jpg"
     ],
     "emi": "₹31,600/month",
     "description": "Basic 7-seater Scorpio with diesel manual transmission.",
@@ -31595,11 +31594,11 @@
     "mileage": "N/A",
     "engine": "2184 cc, 130 bhp",
     "seatingCapacity": 9,
-    "image": "Mahindra/scorpio_s_mt_9str.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s_mt_9str.jpg",
     "gallery": [
-      "Mahindra/scorpio_s_mt_9str.jpg",
-      "Mahindra/scorpio_s_mt_9str_2.jpg",
-      "Mahindra/scorpio_s_mt_9str_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s_mt_9str.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s_mt_9str_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s_mt_9str_3.jpg"
     ],
     "emi": "₹32,100/month",
     "description": "Diesel Scorpio with manual transmission and 9-seater layout.",
@@ -31626,11 +31625,11 @@
     "mileage": "N/A",
     "engine": "2184 cc, 130 bhp",
     "seatingCapacity": 7,
-    "image": "Mahindra/scorpio_s11_mt_7s.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s.jpg",
     "gallery": [
-      "Mahindra/scorpio_s11_mt_7s.jpg",
-      "Mahindra/scorpio_s11_mt_7s_2.jpg",
-      "Mahindra/scorpio_s11_mt_7s_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s_3.jpg"
     ],
     "emi": "₹40,700/month",
     "description": "Higher variant Scorpio S11 with 7 seats and diesel manual transmission.",
@@ -31657,11 +31656,11 @@
     "mileage": "N/A",
     "engine": "2184 cc, 130 bhp",
     "seatingCapacity": 7,
-    "image": "Mahindra/scorpio_s11_mt_7s_cc.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s_cc.jpg",
     "gallery": [
-      "Mahindra/scorpio_s11_mt_7s_cc.jpg",
-      "Mahindra/scorpio_s11_mt_7s_cc_2.jpg",
-      "Mahindra/scorpio_s11_mt_7s_cc_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s_cc.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s_cc_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s_cc_3.jpg"
     ],
     "emi": "₹40,700/month",
     "description": "Scorpio S11 manual 7-seater with climate control feature.",
@@ -31690,9 +31689,9 @@
     "seatingCapacity": 5,
     "image": "KIA/sonet.Webp",
     "gallery": [
-      "/KIA/sonet.webp",
-      "Kia/sonet_hte_1_2_petrol_mt_2.jpg",
-      "Kia/sonet_hte_1_2_petrol_mt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/sonet.webp",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_1_2_petrol_mt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_1_2_petrol_mt_3.jpg"
     ],
     "emi": "₹18,300/month",
     "description": "Entry-level Sonet petrol manual variant with 82 bhp engine.",
@@ -31719,11 +31718,11 @@
     "mileage": "N/A",
     "engine": "1197 cc, 82 bhp",
     "seatingCapacity": 5,
-    "image": "Kia/sonet_hte_o_1_2_petrol_mt.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_2_petrol_mt.jpg",
     "gallery": [
-      "Kia/sonet_hte_o_1_2_petrol_mt.jpg",
-      "Kia/sonet_hte_o_1_2_petrol_mt_2.jpg",
-      "Kia/sonet_hte_o_1_2_petrol_mt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_2_petrol_mt.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_2_petrol_mt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_2_petrol_mt_3.jpg"
     ],
     "emi": "₹19,300/month",
     "description": "Sonet HTE optional petrol manual variant with enhanced features.",
@@ -31750,11 +31749,11 @@
     "mileage": "N/A",
     "engine": "1197 cc, 82 bhp",
     "seatingCapacity": 5,
-    "image": "Kia/sonet_htk_1_2_petrol_mt.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_2_petrol_mt.jpg",
     "gallery": [
-      "Kia/sonet_htk_1_2_petrol_mt.jpg",
-      "Kia/sonet_htk_1_2_petrol_mt_2.jpg",
-      "Kia/sonet_htk_1_2_petrol_mt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_2_petrol_mt.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_2_petrol_mt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_2_petrol_mt_3.jpg"
     ],
     "emi": "₹21,100/month",
     "description": "Mid-level Sonet petrol manual variant with 82 bhp engine.",
@@ -31781,11 +31780,11 @@
     "mileage": "N/A",
     "engine": "1197 cc, 82 bhp",
     "seatingCapacity": 5,
-    "image": "Kia/sonet_htk_o_1_2_petrol_mt.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/sonet_htk_o_1_2_petrol_mt.jpg",
     "gallery": [
-      "Kia/sonet_htk_o_1_2_petrol_mt.jpg",
-      "Kia/sonet_htk_o_1_2_petrol_mt_2.jpg",
-      "Kia/sonet_htk_o_1_2_petrol_mt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/sonet_htk_o_1_2_petrol_mt.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/sonet_htk_o_1_2_petrol_mt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/sonet_htk_o_1_2_petrol_mt_3.jpg"
     ],
     "emi": "₹21,900/month",
     "description": "Sonet HTK optional petrol manual variant with added comfort.",
@@ -31812,11 +31811,11 @@
     "mileage": "N/A",
     "engine": "998 cc, 118 bhp",
     "seatingCapacity": 5,
-    "image": "Kia/sonet_htk_1_0_turbo_petrol_imt.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_0_turbo_petrol_imt.jpg",
     "gallery": [
-      "Kia/sonet_htk_1_0_turbo_petrol_imt.jpg",
-      "Kia/sonet_htk_1_0_turbo_petrol_imt_2.jpg",
-      "Kia/sonet_htk_1_0_turbo_petrol_imt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_0_turbo_petrol_imt.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_0_turbo_petrol_imt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_0_turbo_petrol_imt_3.jpg"
     ],
     "emi": "₹22,000/month",
     "description": "Sonet turbo petrol clutchless manual transmission variant.",
@@ -31843,11 +31842,11 @@
     "mileage": "N/A",
     "engine": "1493 cc, 114 bhp",
     "seatingCapacity": 5,
-    "image": "Kia/sonet_hte_o_1_5_diesel_mt.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_5_diesel_mt.jpg",
     "gallery": [
-      "Kia/sonet_hte_o_1_5_diesel_mt.jpg",
-      "Kia/sonet_hte_o_1_5_diesel_mt_2.jpg",
-      "Kia/sonet_hte_o_1_5_diesel_mt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_5_diesel_mt.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_5_diesel_mt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_5_diesel_mt_3.jpg"
     ],
     "emi": "₹23,000/month",
     "description": "Diesel manual variant with 114 bhp engine and optional trim.",
@@ -31862,8 +31861,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-
-  {
+{
     "id": "car102",
     "name": " VINFAST VF 6",
     "brand": "VinFast",
@@ -31875,11 +31873,11 @@
     "mileage": "468 km (Earth)",
     "engine": "59.6 kWh Battery Pack",
     "seatingCapacity": 5,
-    "image": "VinFast/vf6_earth.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_earth.jpg",
     "gallery": [
-      "VinFast/vf6_earth.jpg",
-      "VinFast/vf6_wind.jpg",
-      "VinFast/vf6_wind_infinity.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_earth.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind_infinity.jpg"
     ],
     "emi": "₹28,000/month",
     "description": "VinFast VF 6 is an all-electric compact SUV available in three variants — Earth, Wind, and Wind Infinity. Each variant comes with a 59.6 kWh battery and automatic transmission, offering a range up to 468 km.",
@@ -31894,7 +31892,7 @@
     "owner": "First",
     "location": "Mumbai"
     },
-  
+
     {
     "id": "car102B",
     "name": " VINFAST VF 6",
@@ -31907,11 +31905,11 @@
     "mileage": "463 km",
     "engine": "59.6 kWh Battery Pack",
     "seatingCapacity": 5,
-    "image": "VinFast/vf6_wind.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind.jpg",
     "gallery": [
-      "VinFast/vf6_wind_1.jpg",
-      "VinFast/vf6_wind_2.jpg",
-      "VinFast/vf6_wind_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind_1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind_3.jpg"
     ],
     "emi": "₹30,000/month",
     "description": "VinFast VF 6 Wind variant with 59.6 kWh battery, 463 km range and premium automatic transmission setup.",
@@ -31926,7 +31924,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
+
   {
     "id": "car102C",
     "name": " VINFAST VF 6",
@@ -31941,9 +31939,9 @@
     "seatingCapacity": 5,
     "image": "VinFast/vf6_wind_infinity.jpg",
     "gallery": [
-      "VinFast/vf6_wind_infinity_1.jpg",
-      "VinFast/vf6_wind_infinity_2.jpg",
-      "VinFast/vf6_wind_infinity_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind_infinity_1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind_infinity_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind_infinity_3.jpg"
     ],
     "emi": "₹31,000/month",
     "description": "VinFast VF 6 Wind Infinity variant featuring advanced electric drivetrain, automatic transmission, and premium interiors with 463 km range.",
@@ -31958,7 +31956,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
+
   {
     "id": "car103",
     "name": " Vinfast VF 7",
@@ -31990,7 +31988,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
+
   {
     "id": "car103B",
     "name": " Vinfast VF 7",
@@ -32022,7 +32020,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
+
   {
     "id": "car103C",
     "name": " Vinfast VF 7",
@@ -32054,7 +32052,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
+
   {
     "id": "car103D",
     "name": " Vinfast VF 7",
@@ -32086,7 +32084,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
+
   {
     "id": "car103E",
     "name": " Vinfast VF 7",
@@ -32118,8 +32116,8 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
-  
+
+
   {
     "id": "car104",
     "name": "Renault Kwid",
@@ -32151,7 +32149,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
+
   {
     "id": "car104B",
     "name": "Renault Kwid",
@@ -32183,7 +32181,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
+
   {
     "id": "car104C",
     "name": "Renault Kwid",
@@ -32196,11 +32194,11 @@
     "mileage": "N/A",
     "engine": "999 cc, CNG, 67 bhp",
     "seatingCapacity": 5,
-    "image": "Renault/kwid_authentic_cng.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_authentic_cng.jpg",
     "gallery": [
-      "Renault/kwid_authentic_cng_1.jpg",
-      "Renault/kwid_authentic_cng_2.jpg",
-      "Renault/kwid_authentic_cng_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_authentic_cng_1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_authentic_cng_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_authentic_cng_3.jpg"
     ],
     "emi": "₹9,800/month",
     "description": "Renault Kwid Authentic CNG — factory-fitted CNG option for lower running costs, 999 cc equivalent output.",
@@ -32215,7 +32213,7 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
+
   {
     "id": "car104D",
     "name": "Renault Kwid",
@@ -32228,11 +32226,11 @@
     "mileage": "22 kmpl",
     "engine": "999 cc, 67 bhp",
     "seatingCapacity": 5,
-    "image": "Renault/kwid_evolution_amt.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_amt.jpg",
     "gallery": [
-      "Renault/kwid_evolution_amt_1.jpg",
-      "Renault/kwid_evolution_amt_2.jpg",
-      "Renault/kwid_evolution_amt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_amt_1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_amt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_amt_3.jpg"
     ],
     "emi": "₹9,900/month",
     "description": "Renault Kwid Evolution AMT — convenient automatic (AMT) gearbox, 22 kmpl claimed economy.",
@@ -32247,8 +32245,8 @@
     "owner": "First",
     "location": "Mumbai"
   },
-  
-  
+
+
   {
     "id": "car104E",
     "name": "Renault Kwid",
@@ -32261,11 +32259,11 @@
     "mileage": "21.7 kmpl",
     "engine": "999 cc, 67 bhp",
     "seatingCapacity": 5,
-    "image": "Renault/kwid_techno_mt.jpg",
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_mt.jpg",
     "gallery": [
-      "Renault/kwid_techno_mt_1.jpg",
-      "Renault/kwid_techno_mt_2.jpg",
-      "Renault/kwid_techno_mt_3.jpg"
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_mt_1.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_mt_2.jpg",
+      "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_mt_3.jpg"
     ],
     "emi": "₹9,900/month",
     "description": "Renault Kwid Techno MT — techno pack with added convenience and infotainment, manual gearbox, 21.7 kmpl.",
@@ -32293,11 +32291,11 @@
   "mileage": "21.7 kmpl",
   "engine": "999 cc, 67 bhp",
   "seatingCapacity": 5,
-  "image": "Renault/kwid_10th_anniversary_mt.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_mt.jpg",
   "gallery": [
-    "Renault/kwid_10th_anniversary_mt_1.jpg",
-    "Renault/kwid_10th_anniversary_mt_2.jpg",
-    "Renault/kwid_10th_anniversary_mt_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_mt_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_mt_3.jpg"
   ],
   "emi": "₹10,300/month",
   "description": "Renault Kwid 10th Anniversary Edition MT — special edition with unique styling cues and standard equipment.",
@@ -32325,11 +32323,11 @@
   "mileage": "N/A",
   "engine": "999 cc, CNG, 67 bhp",
   "seatingCapacity": 5,
-  "image": "Renault/kwid_evolution_cng.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_cng.jpg",
   "gallery": [
-    "Renault/kwid_evolution_cng_1.jpg",
-    "Renault/kwid_evolution_cng_2.jpg",
-    "Renault/kwid_evolution_cng_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_cng_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_cng_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_cng_3.jpg"
   ],
   "emi": "₹10,500/month",
   "description": "Renault Kwid Evolution CNG — CNG-powered variant for economical running costs with Evolution features.",
@@ -32357,11 +32355,11 @@
   "mileage": "21.7 kmpl",
   "engine": "999 cc, 67 bhp",
   "seatingCapacity": 5,
-  "image": "Renault/kwid_climber_1_0_mt.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt.jpg",
   "gallery": [
-    "Renault/kwid_climber_1_0_mt_1.jpg",
-    "Renault/kwid_climber_1_0_mt_2.jpg",
-    "Renault/kwid_climber_1_0_mt_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_3.jpg"
   ],
   "emi": "₹11,000/month",
   "description": "Renault Kwid CLIMBER 1.0 MT — rugged styling, manual gearbox, 21.7 kmpl claimed fuel efficiency.",
@@ -32391,9 +32389,9 @@
   "seatingCapacity": 5,
   "image": "Renault/kwid_techno_amt.jpg",
   "gallery": [
-    "Renault/kwid_techno_amt_1.jpg",
-    "Renault/kwid_techno_amt_2.jpg",
-    "Renault/kwid_techno_amt_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_amt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_amt_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_amt_3.jpg"
   ],
   "emi": "₹11,000/month",
   "description": "Renault Kwid Techno AMT — techno features with AMT convenience and claimed 22 kmpl mileage.",
@@ -32423,9 +32421,9 @@
   "seatingCapacity": 5,
   "image": "Renault/kwid_climber_1_0_mt_dual_tone.jpg",
   "gallery": [
-    "Renault/kwid_climber_1_0_mt_dual_tone_1.jpg",
-    "Renault/kwid_climber_1_0_mt_dual_tone_2.jpg",
-    "Renault/kwid_climber_1_0_mt_dual_tone_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_dual_tone_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_dual_tone_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_dual_tone_3.jpg"
   ],
   "emi": "₹11,200/month",
   "description": "Renault Kwid CLIMBER 1.0 MT Dual Tone — dual-tone styling with Climber accessories and manual gearbox.",
@@ -32453,11 +32451,11 @@
   "mileage": "N/A",
   "engine": "999 cc, CNG, 67 bhp",
   "seatingCapacity": 5,
-  "image": "Renault/kwid_techno_cng.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_cng.jpg",
   "gallery": [
-    "Renault/kwid_techno_cng_1.jpg",
-    "Renault/kwid_techno_cng_2.jpg",
-    "Renault/kwid_techno_cng_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_cng_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_cng_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_cng_3.jpg"
   ],
   "emi": "₹11,200/month",
   "description": "Renault Kwid Techno CNG — techno trim with factory CNG for better running economy.",
@@ -32485,11 +32483,11 @@
   "mileage": "22 kmpl",
   "engine": "999 cc, 67 bhp",
   "seatingCapacity": 5,
-  "image": "Renault/kwid_10th_anniversary_amt.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_amt.jpg",
   "gallery": [
-    "Renault/kwid_10th_anniversary_amt_1.jpg",
-    "Renault/kwid_10th_anniversary_amt_2.jpg",
-    "Renault/kwid_10th_anniversary_amt_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_amt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_amt_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_amt_3.jpg"
   ],
   "emi": "₹11,300/month",
   "description": "Renault Kwid 10th Anniversary Edition AMT — special edition with AMT convenience and unique styling.",
@@ -32517,11 +32515,11 @@
   "mileage": "22 kmpl",
   "engine": "999 cc, 67 bhp",
   "seatingCapacity": 5,
-  "image": "Renault/kwid_climber_1_0_amt.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt.jpg",
   "gallery": [
-    "Renault/kwid_climber_1_0_amt_1.jpg",
-    "Renault/kwid_climber_1_0_amt_2.jpg",
-    "Renault/kwid_climber_1_0_amt_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt_3.jpg"
   ],
   "emi": "₹11,800/month",
   "description": "Renault Kwid CLIMBER 1.0 AMT — Climber styling with AMT convenience and claimed 22 kmpl mileage.",
@@ -32549,11 +32547,11 @@
   "mileage": "22 kmpl",
   "engine": "999 cc, 67 bhp",
   "seatingCapacity": 5,
-  "image": "Renault/kwid_climber_1_0_amt_dual_tone.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt_dual_tone.jpg",
   "gallery": [
-    "Renault/kwid_climber_1_0_amt_dual_tone_1.jpg",
-    "Renault/kwid_climber_1_0_amt_dual_tone_2.jpg",
-    "Renault/kwid_climber_1_0_amt_dual_tone_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt_dual_tone_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt_dual_tone_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt_dual_tone_3.jpg"
   ],
   "emi": "₹12,000/month",
   "description": "Renault Kwid CLIMBER 1.0 AMT Dual Tone — premium dual-tone finish with AMT and Climber equipment.",
@@ -32583,9 +32581,9 @@
   "seatingCapacity": 5,
   "image": "Renault/kwid_climber_1_0_mt_cng.jpg",
   "gallery": [
-    "Renault/kwid_climber_1_0_mt_cng_1.jpg",
-    "Renault/kwid_climber_1_0_mt_cng_2.jpg",
-    "Renault/kwid_climber_1_0_mt_cng_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_cng_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_cng_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_cng_3.jpg"
   ],
   "emi": "₹12,200/month",
   "description": "Renault Kwid CLIMBER 1.0 MT CNG — Climber variant with CNG option for economical running costs.",
@@ -32613,11 +32611,11 @@
   "mileage": "21.11 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "Toyota/Hyryder.webp",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/Hyryder.webp",
   "gallery": [
-    "NeoAuto/neodrive_e_1.jpg",
-    "NeoAuto/neodrive_e_2.jpg",
-    "NeoAuto/neodrive_e_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_e_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_e_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_e_3.jpg"
   ],
   "emi": "₹22,800/month",
   "description": "NeoDrive E — 102 bhp petrol, 136.8 Nm torque, claimed 21.11 kmpl. On-road price from Rs. 13.66 Lakh .",
@@ -32647,9 +32645,9 @@
   "seatingCapacity": 5,
   "image": "NeoAuto/neodrive_aero_e.jpg",
   "gallery": [
-    "NeoAuto/neodrive_aero_e_1.jpg",
-    "NeoAuto/neodrive_aero_e_2.jpg",
-    "NeoAuto/neodrive_aero_e_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_e_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_e_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_e_3.jpg"
   ],
   "emi": "₹22,800/month",
   "description": "NeoDrive Aero Edition (E) — aero styling, 102 bhp petrol engine, 21.11 kmpl. On-road price Rs. 13.66 Lakh .",
@@ -32679,9 +32677,9 @@
   "seatingCapacity": 5,
   "image": "NeoAuto/neodrive_s.jpg",
   "gallery": [
-    "NeoAuto/neodrive_s_1.jpg",
-    "NeoAuto/neodrive_s_2.jpg",
-    "NeoAuto/neodrive_s_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_s_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_s_3.jpg"
   ],
   "emi": "₹25,900/month",
   "description": "NeoDrive S — 102 bhp petrol, 136.8 Nm, 21.11 kmpl. On-road price from Rs. 15.52 Lakh .",
@@ -32711,9 +32709,9 @@
   "seatingCapacity": 5,
   "image": "NeoAuto/neodrive_aero_s.jpg",
   "gallery": [
-    "NeoAuto/neodrive_aero_s_1.jpg",
-    "NeoAuto/neodrive_aero_s_2.jpg",
-    "NeoAuto/neodrive_aero_s_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_s_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_s_3.jpg"
   ],
   "emi": "₹25,900/month",
   "description": "NeoDrive Aero Edition (S) — aero styling with S trim, 102 bhp engine and 21.11 kmpl. On-road price Rs. 15.52 Lakh.",
@@ -32743,9 +32741,9 @@
   "seatingCapacity": 5,
   "image": "NeoAuto/e_cng_s.jpg",
   "gallery": [
-    "NeoAuto/e_cng_s_1.jpg",
-    "NeoAuto/e_cng_s_2.jpg",
-    "NeoAuto/e_cng_s_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/e_cng_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/e_cng_s_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/e_cng_s_3.jpg"
   ],
   "emi": "₹27,600/month",
   "description": "E-CNG (S) — CNG option with 87 bhp and 121.5 Nm, economical running. On-road price Rs. 16.58 Lakh .",
@@ -32773,11 +32771,11 @@
   "mileage": "20.58 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/at_neodrive_s.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_s.jpg",
   "gallery": [
-    "NeoAuto/at_neodrive_s_1.jpg",
-    "NeoAuto/at_neodrive_s_2.jpg",
-    "NeoAuto/at_neodrive_s_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_s_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_s_3.jpg"
   ],
   "emi": "₹28,200/month",
   "description": "AT NeoDrive (S) — automatic variant with 102 bhp, 136.8 Nm and claimed 20.58 kmpl. On-road price Rs. 16.94 Lakh.",
@@ -32805,11 +32803,11 @@
   "mileage": "27.97 kmpl",
   "engine": "91 bhp, 122 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/hybrid_s.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_s.jpg",
   "gallery": [
-    "NeoAuto/hybrid_s_1.jpg",
-    "NeoAuto/hybrid_s_2.jpg",
-    "NeoAuto/hybrid_s_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_s_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_s_3.jpg"
   ],
   "emi": "₹34,800/month",
   "description": "Hybrid (S) — hybrid powertrain delivering 91 bhp, 122 Nm and claimed 27.97 kmpl. On-road price Rs. 20.45 Lakh.",
@@ -32837,11 +32835,11 @@
   "mileage": "27.97 kmpl",
   "engine": "91 bhp, 122 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/hybrid_aero_s.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_s.jpg",
   "gallery": [
-    "NeoAuto/hybrid_aero_s_1.jpg",
-    "NeoAuto/hybrid_aero_s_2.jpg",
-    "NeoAuto/hybrid_aero_s_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_s_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_s_3.jpg"
   ],
   "emi": "₹34,800/month",
   "description": "Hybrid Aero Edition (S) — aero styling on Hybrid S trim, 91 bhp and 27.97 kmpl. On-road price Rs. 20.45 Lakh.",
@@ -32869,11 +32867,11 @@
   "mileage": "21.11 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/neodrive_go.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_go.jpg",
   "gallery": [
-    "NeoAuto/neodrive_go_1.jpg",
-    "NeoAuto/neodrive_go_2.jpg",
-    "NeoAuto/neodrive_go_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_go_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_go_3.jpg"
   ],
   "emi": "₹29,500/month",
   "description": "NeoDrive G(O) — variant with 102 bhp and 21.11 kmpl. On-road price from Rs. 17.68 Lakh .",
@@ -32901,11 +32899,11 @@
   "mileage": "21.11 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/neodrive_aero_go.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_go.jpg",
   "gallery": [
-    "NeoAuto/neodrive_aero_go_1.jpg",
-    "NeoAuto/neodrive_aero_go_2.jpg",
-    "NeoAuto/neodrive_aero_go_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_go_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_go_3.jpg"
   ],
   "emi": "₹29,500/month",
   "description": "NeoDrive Aero Edition (G O) — aero styling for G(O) trim, 102 bhp and 21.11 kmpl. On-road price Rs. 17.68 Lakh.",
@@ -32933,11 +32931,11 @@
   "mileage": "20.58 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/at_neodrive_go.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_go.jpg",
   "gallery": [
-    "NeoAuto/at_neodrive_go_1.jpg",
-    "NeoAuto/at_neodrive_go_2.jpg",
-    "NeoAuto/at_neodrive_go_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_go_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_go_3.jpg"
   ],
   "emi": "₹31,900/month",
   "description": "AT NeoDrive (G O) — automatic G(O) trim with 102 bhp and 20.58 kmpl. On-road price Rs. 19.15 Lakh.",
@@ -32967,9 +32965,9 @@
   "seatingCapacity": 5,
   "image": "NeoAuto/hybrid_go.jpg",
   "gallery": [
-    "NeoAuto/hybrid_go_1.jpg",
-    "NeoAuto/hybrid_go_2.jpg",
-    "NeoAuto/hybrid_go_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_go_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_go_3.jpg"
   ],
   "emi": "₹38,000/month",
   "description": "Hybrid (G O) — hybrid G(O) trim offering improved economy and 91 bhp. On-road price Rs. 22.89 Lakh.",
@@ -32997,11 +32995,11 @@
   "mileage": "27.97 kmpl",
   "engine": "91 bhp, 122 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/hybrid_aero_go.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_go.jpg",
   "gallery": [
-    "NeoAuto/hybrid_aero_go_1.jpg",
-    "NeoAuto/hybrid_aero_go_2.jpg",
-    "NeoAuto/hybrid_aero_go_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_go_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_go_3.jpg"
   ],
   "emi": "₹38,000/month",
   "description": "Hybrid Aero Edition (G O) — aero styling on hybrid G(O) trim, 91 bhp and 27.97 kmpl. On-road price Rs. 22.89 Lakh.",
@@ -33029,11 +33027,11 @@
   "mileage": "27.97 kmpl",
   "engine": "91 bhp, 122 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/hybrid_dual_tone_go.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_go.jpg",
   "gallery": [
-    "NeoAuto/hybrid_dual_tone_go_1.jpg",
-    "NeoAuto/hybrid_dual_tone_go_2.jpg",
-    "NeoAuto/hybrid_dual_tone_go_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_go_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_go_3.jpg"
   ],
   "emi": "₹38,500/month",
   "description": "Hybrid Dual Tone (G O) — dual-tone finish on hybrid G(O) trim, 91 bhp and 27.97 kmpl. On-road price Rs. 23.13 Lakh.",
@@ -33063,9 +33061,9 @@
   "seatingCapacity": 5,
   "image": "NeoAuto/e_cng_g.jpg",
   "gallery": [
-    "NeoAuto/e_cng_g_1.jpg",
-    "NeoAuto/e_cng_g_2.jpg",
-    "NeoAuto/e_cng_g_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/e_cng_g_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/e_cng_g_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/e_cng_g_3.jpg"
   ],
   "emi": "₹31,700/month",
   "description": "E-CNG (G) — CNG-powered G trim with 87 bhp and 121.5 Nm. On-road price Rs. 19.03 Lakh .",
@@ -33095,9 +33093,9 @@
   "seatingCapacity": 5,
   "image": "NeoAuto/neodrive_v.jpg",
   "gallery": [
-    "NeoAuto/neodrive_v_1.jpg",
-    "NeoAuto/neodrive_v_2.jpg",
-    "NeoAuto/neodrive_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_v_3.jpg"
   ],
   "emi": "₹32,600/month",
   "description": "NeoDrive V — V trim petrol variant with 102 bhp and 21.11 kmpl. On-road price Rs. 19.56 Lakh.",
@@ -33125,11 +33123,11 @@
   "mileage": "21.11 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/neodrive_aero_v.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_v.jpg",
   "gallery": [
-    "NeoAuto/neodrive_aero_v_1.jpg",
-    "NeoAuto/neodrive_aero_v_2.jpg",
-    "NeoAuto/neodrive_aero_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_v_3.jpg"
   ],
   "emi": "₹32,600/month",
   "description": "NeoDrive Aero Edition (V) — aero styling on V trim with 102 bhp. On-road price Rs. 19.56 Lakh.",
@@ -33157,11 +33155,11 @@
   "mileage": "21.11 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/neodrive_dual_tone_v.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_dual_tone_v.jpg",
   "gallery": [
-    "NeoAuto/neodrive_dual_tone_v_1.jpg",
-    "NeoAuto/neodrive_dual_tone_v_2.jpg",
-    "NeoAuto/neodrive_dual_tone_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_dual_tone_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_dual_tone_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_dual_tone_v_3.jpg"
   ],
   "emi": "₹33,000/month",
   "description": "NeoDrive Dual Tone (V) — dual-tone finish on V trim, 102 bhp engine. On-road price Rs. 19.80 Lakh.",
@@ -33189,11 +33187,11 @@
   "mileage": "20.58 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/at_neodrive_v.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_v.jpg",
   "gallery": [
-    "NeoAuto/at_neodrive_v_1.jpg",
-    "NeoAuto/at_neodrive_v_2.jpg",
-    "NeoAuto/at_neodrive_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_v_3.jpg"
   ],
   "emi": "₹35,000/month",
   "description": "AT NeoDrive (V) — automatic V trim with 102 bhp and 20.58 kmpl. On-road price Rs. 20.98 Lakh.",
@@ -33223,9 +33221,9 @@
   "seatingCapacity": 5,
   "image": "NeoAuto/at_neodrive_dual_tone_v.jpg",
   "gallery": [
-    "NeoAuto/at_neodrive_dual_tone_v_1.jpg",
-    "NeoAuto/at_neodrive_dual_tone_v_2.jpg",
-    "NeoAuto/at_neodrive_dual_tone_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_dual_tone_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_dual_tone_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_dual_tone_v_3.jpg"
   ],
   "emi": "₹35,400/month",
   "description": "AT NeoDrive Dual Tone (V) — automatic with dual-tone finish, 102 bhp. On-road price Rs. 21.22 Lakh.",
@@ -33253,11 +33251,11 @@
   "mileage": "19.2 kmpl",
   "engine": "102 bhp, 136.8 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/at_awd_neodrive_v.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_awd_neodrive_v.jpg",
   "gallery": [
-    "NeoAuto/at_awd_neodrive_v_1.jpg",
-    "NeoAuto/at_awd_neodrive_v_2.jpg",
-    "NeoAuto/at_awd_neodrive_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_awd_neodrive_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_awd_neodrive_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_awd_neodrive_v_3.jpg"
   ],
   "emi": "₹38,000/month",
   "description": "AT AWD NeoDrive (V) — automatic AWD variant with 102 bhp, AWD capability and 19.2 kmpl. On-road price Rs. 22.70 Lakh.",
@@ -33287,9 +33285,9 @@
   "seatingCapacity": 5,
   "image": "NeoAuto/at_awd_neodrive_dual_tone_v.jpg",
   "gallery": [
-    "NeoAuto/at_awd_neodrive_dual_tone_v_1.jpg",
-    "NeoAuto/at_awd_neodrive_dual_tone_v_2.jpg",
-    "NeoAuto/at_awd_neodrive_dual_tone_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_awd_neodrive_dual_tone_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_awd_neodrive_dual_tone_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_awd_neodrive_dual_tone_v_3.jpg"
   ],
   "emi": "₹38,400/month",
   "description": "AT AWD NeoDrive Dual Tone (V) — AWD automatic with dual-tone finish, 102 bhp. On-road price Rs. 22.94 Lakh.",
@@ -33317,11 +33315,11 @@
   "mileage": "27.97 kmpl",
   "engine": "91 bhp, 122 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/hybrid_v.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_v.jpg",
   "gallery": [
-    "NeoAuto/hybrid_v_1.jpg",
-    "NeoAuto/hybrid_v_2.jpg",
-    "NeoAuto/hybrid_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_v_3.jpg"
   ],
   "emi": "₹40,400/month",
   "description": "Hybrid (V) — hybrid V trim with 91 bhp and 27.97 kmpl. On-road price Rs. 24.27 Lakh.",
@@ -33349,11 +33347,11 @@
   "mileage": "27.97 kmpl",
   "engine": "91 bhp, 122 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/hybrid_aero_v.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_v.jpg",
   "gallery": [
-    "NeoAuto/hybrid_aero_v_1.jpg",
-    "NeoAuto/hybrid_aero_v_2.jpg",
-    "NeoAuto/hybrid_aero_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_v_3.jpg"
   ],
   "emi": "₹40,400/month",
   "description": "Hybrid Aero Edition (V) — aero styling on Hybrid V trim, 91 bhp and 27.97 kmpl. On-road price Rs. 24.27 Lakh.",
@@ -33381,11 +33379,11 @@
   "mileage": "27.97 kmpl",
   "engine": "91 bhp, 122 Nm",
   "seatingCapacity": 5,
-  "image": "NeoAuto/hybrid_dual_tone_v.jpg",
+  "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_v.jpg",
   "gallery": [
-    "NeoAuto/hybrid_dual_tone_v_1.jpg",
-    "NeoAuto/hybrid_dual_tone_v_2.jpg",
-    "NeoAuto/hybrid_dual_tone_v_3.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_v_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_v_3.jpg"
   ],
   "emi": "₹40,900/month",
   "description": "Hybrid Dual Tone (V) — dual-tone finish on Hybrid V trim, 91 bhp and 27.97 kmpl. On-road price Rs. 24.51 Lakh.",
@@ -33400,52 +33398,6 @@
   "owner": "First",
   "location": "Mumbai"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
 ]
   
