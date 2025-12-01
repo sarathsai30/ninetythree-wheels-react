@@ -248,13 +248,13 @@ export default function CarBikeAccessories() {
       id: 1, 
       name: '90% OFF', 
       image: '/Sale/90.webp',
-      amazonLink: 'https://amazon.com/dp/EXAMPLE1'
+      amazonLink: 'https://amzn.to/3M8fi6w'
     },
     { 
       id: 2, 
       name: '80% OFF', 
       image: '/Sale/80.webp',
-      amazonLink: 'https://amazon.com/dp/EXAMPLE2'
+      amazonLink: 'https://amzn.to/3M8fi6w'
     },
     { 
       id: 3, 
