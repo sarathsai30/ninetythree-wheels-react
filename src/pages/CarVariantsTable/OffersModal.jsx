@@ -1,8 +1,7 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import toast from "react-hot-toast";
-import postOffices from "../../data/pincode.json";
 
 const OffersModal = ({ isOpen, onClose, model, brand }) => {
   const [name, setName] = useState("");
@@ -11,30 +10,128 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
   const [location, setLocation] = useState("");
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [filteredLocations, setFilteredLocations] = useState([]);
+  const [loadingLocations, setLoadingLocations] = useState(false);
+  
+  // Cache for API responses
+  const cache = useRef(new Map());
+  const debounceTimer = useRef(null);
 
   // Clean office name
   const cleanOfficeName = (name) =>
-    name.replace(/\b(B\.O|D\.O|S\.O)\b/gi, "").trim();
+    name ? name.replace(/\b(B\.O|D\.O|S\.O)\b/gi, "").trim() : "";
 
-  // Search filter
-  const filteredLocations = useMemo(() => {
-    if (!location || location.trim().length === 0) {
-      return [];
+  // Search by pincode API
+  const searchByPincode = async (pincode) => {
+    const cacheKey = `pincode-${pincode}`;
+    
+    if (cache.current.has(cacheKey)) {
+      return cache.current.get(cacheKey);
     }
 
-    const query = location.toLowerCase().trim();
+    try {
+      const response = await fetch(`https://api.postalpincode.in/pincode/${pincode}`);
+      const data = await response.json();
+      
+      if (data[0]?.Status === 'Success' && data[0]?.PostOffice) {
+        const formatted = data[0].PostOffice.map((office) => ({
+          pincode: office.Pincode,
+          officename: office.Name,
+          district: office.District,
+          statename: office.State,
+          regionname: office.Region,
+        }));
+        
+        cache.current.set(cacheKey, formatted);
+        return formatted;
+      }
+    } catch (error) {
+      console.error('Error fetching pincode data:', error);
+    }
     
-    return postOffices
-      .filter((office) => {
-        return (
-          office.officename.toLowerCase().includes(query) ||
-          office.district.toLowerCase().includes(query) ||
-          office.pincode.includes(query) ||
-          office.statename.toLowerCase().includes(query)
-        );
-      })
-      .slice(0, 8);
-  }, [location]);
+    return [];
+  };
+
+  // Search by city/district name API
+  const searchByCity = async (cityName) => {
+    const cacheKey = `city-${cityName.toLowerCase()}`;
+    
+    if (cache.current.has(cacheKey)) {
+      return cache.current.get(cacheKey);
+    }
+
+    try {
+      const response = await fetch(`https://api.postalpincode.in/postoffice/${cityName}`);
+      const data = await response.json();
+      
+      if (data[0]?.Status === 'Success' && data[0]?.PostOffice) {
+        const formatted = data[0].PostOffice.map((office) => ({
+          pincode: office.Pincode,
+          officename: office.Name,
+          district: office.District,
+          statename: office.State,
+          regionname: office.Region,
+        }));
+        
+        cache.current.set(cacheKey, formatted);
+        return formatted;
+      }
+    } catch (error) {
+      console.error('Error fetching city data:', error);
+    }
+    
+    return [];
+  };
+
+  // Perform search
+  const performSearch = async (searchQuery) => {
+    if (searchQuery.length < 2) {
+      setFilteredLocations([]);
+      return;
+    }
+
+    setLoadingLocations(true);
+    console.log("Searching for:", searchQuery);
+
+    try {
+      let results = [];
+      
+      // Check if query is a pincode (all digits)
+      if (/^\d+$/.test(searchQuery)) {
+        results = await searchByPincode(searchQuery);
+      } else {
+        results = await searchByCity(searchQuery);
+      }
+      
+      setFilteredLocations(results.slice(0, 8)); // Limit to 8 results
+    } catch (error) {
+      console.error('Search error:', error);
+      setFilteredLocations([]);
+    } finally {
+      setLoadingLocations(false);
+    }
+  };
+
+  // Debounced search effect
+  useEffect(() => {
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+
+    if (location.trim() && !selectedLocation) {
+      debounceTimer.current = setTimeout(() => {
+        performSearch(location.trim());
+      }, 300); // 300ms debounce
+    } else {
+      setFilteredLocations([]);
+    }
+
+    return () => {
+      if (debounceTimer.current) {
+        clearTimeout(debounceTimer.current);
+      }
+    };
+  }, [location, selectedLocation]);
 
   const handleSubmit = async () => {
     if (!name || !contact || !selectedLocation) {
@@ -70,6 +167,7 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
       setContact("");
       setLocation("");
       setSelectedLocation(null);
+      setFilteredLocations([]);
     } catch (e) {
       console.error("Error adding document: ", e);
       toast.error("Something went wrong while saving data.");
@@ -84,6 +182,26 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
     setLocation(
       `${cleanOfficeName(office.officename)}, ${office.district}, ${office.statename} (${office.pincode})`
     );
+    setFilteredLocations([]);
+  };
+
+  // Clear location selection
+  const handleClearLocation = () => {
+    setSelectedLocation(null);
+    setLocation("");
+    setFilteredLocations([]);
+  };
+
+  // Handle modal close
+  const handleClose = () => {
+    // Clear all fields when closing
+    setName("");
+    setEmail("");
+    setContact("");
+    setLocation("");
+    setSelectedLocation(null);
+    setFilteredLocations([]);
+    onClose();
   };
 
   if (!isOpen) return null;
@@ -105,8 +223,9 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
                 </p>
               </div>
               <button
-                onClick={onClose}
+                onClick={handleClose}
                 className="text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full p-2 transition-colors"
+                disabled={isSubmitting}
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -128,7 +247,8 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Enter your full name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white pr-12"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white pr-12 disabled:bg-gray-100"
+                  disabled={isSubmitting}
                 />
                 <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -149,7 +269,8 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white pr-12"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white pr-12 disabled:bg-gray-100"
+                  disabled={isSubmitting}
                 />
                 <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -170,7 +291,8 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
                   value={contact}
                   onChange={(e) => setContact(e.target.value)}
                   placeholder="Enter your contact number"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white pr-12"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white pr-12 disabled:bg-gray-100"
+                  disabled={isSubmitting}
                 />
                 <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -194,13 +316,32 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
                     setSelectedLocation(null);
                   }}
                   placeholder="Search by city, district, or pincode"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white pr-12"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white pr-12 disabled:bg-gray-100"
+                  disabled={isSubmitting}
                 />
+                
+                {/* Clear button for location */}
+                {location && !isSubmitting && (
+                  <button
+                    onClick={handleClearLocation}
+                    className="absolute right-10 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                )}
+                
+                {/* Location icon */}
                 <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
+                  {loadingLocations ? (
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
+                  ) : (
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  )}
                 </div>
 
                 {/* Location Suggestions */}
@@ -210,7 +351,7 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
                       <div
                         key={`${office.pincode}-${idx}`}
                         onClick={() => handleLocationSelect(office)}
-                        className="px-4 py-3 border-b border-gray-100 last:border-b-0 hover:bg-blue-50 cursor-pointer"
+                        className="px-4 py-3 border-b border-gray-100 last:border-b-0 hover:bg-blue-50 cursor-pointer transition-colors"
                       >
                         <div className="font-medium text-gray-800">
                           {cleanOfficeName(office.officename)}
@@ -222,22 +363,56 @@ const OffersModal = ({ isOpen, onClose, model, brand }) => {
                     ))}
                   </div>
                 )}
+                
+                {/* No results message */}
+                {location.length >= 2 && !loadingLocations && filteredLocations.length === 1 && (
+                  <div className="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg p-4">
+                    <div className="text-center text-gray-500">
+                      No locations found. Try a different search.
+                    </div>
+                  </div>
+                )}
               </div>
+              
+              {/* Selected location display */}
+              {selectedLocation && (
+                <div className="mt-2 p-3 bg-green-50 border border-green-200 rounded-lg">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="font-medium text-green-800">
+                        Selected: {cleanOfficeName(selectedLocation.officename)}
+                      </div>
+                      <div className="text-sm text-green-600">
+                        {selectedLocation.district}, {selectedLocation.statename} • {selectedLocation.pincode}
+                      </div>
+                    </div>
+                    <button
+                      onClick={handleClearLocation}
+                      className="text-green-600 hover:text-green-800 ml-2"
+                      disabled={isSubmitting}
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Action Buttons */}
             <div className="flex justify-end space-x-3 pt-4">
               <button
-                onClick={onClose}
+                onClick={handleClose}
                 disabled={isSubmitting}
-                className="px-5 py-2.5 text-gray-700 hover:text-gray-900 font-medium rounded-lg hover:bg-gray-100 disabled:opacity-50 border border-gray-300 transition-colors"
+                className="px-5 py-2.5 text-gray-700 hover:text-gray-900 font-medium rounded-lg hover:bg-gray-100 disabled:opacity-50 border border-gray-300 transition-colors disabled:cursor-not-allowed"
               >
                 Cancel
               </button>
               <button
                 onClick={handleSubmit}
-                disabled={isSubmitting}
-                className="px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:hover:bg-blue-600 transition-colors flex items-center"
+                disabled={isSubmitting || !name || !contact || !selectedLocation}
+                className="px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:hover:bg-blue-600 transition-colors flex items-center disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <>
