@@ -187,22 +187,22 @@ const VehicleTypesGrid = () => {
     { 
       id: 1, 
       name: 'VEHICLES', 
-      amazonLink: 'https://amazon.com/dp/VEHICLES1'
+      amazonLink: 'https://amzn.to/4rinVLT'
     },
     { 
       id: 2, 
       name: 'PETROL VEHICLES', 
-      amazonLink: 'https://amazon.com/dp/PETROL1'
+      amazonLink: 'https://amzn.to/484Ys0Z'
     },
     { 
       id: 3, 
       name: 'ELECTRIC VEHICLES', 
-      amazonLink: 'https://amazon.com/dp/ELECTRIC1'
+      amazonLink: 'https://amzn.to/4pz6gOs'
     },
     { 
       id: 4, 
       name: 'PERFORMANCE MOTORCYCLES', 
-      amazonLink: 'https://amazon.com/dp/MOTORCYCLES1'
+      amazonLink: 'https://amzn.to/3KiG2k8'
     }
   ];
 
@@ -248,73 +248,73 @@ export default function CarBikeAccessories() {
       id: 1, 
       name: '90% OFF', 
       image: '/Sale/90.webp',
-      amazonLink: 'https://amazon.com/dp/EXAMPLE1'
+      amazonLink: 'https://amzn.to/3M8fi6w'
     },
     { 
       id: 2, 
       name: '80% OFF', 
       image: '/Sale/80.webp',
-      amazonLink: 'https://amazon.com/dp/EXAMPLE2'
+      amazonLink: 'https://amzn.to/3M8fi6w'
     },
     { 
       id: 3, 
       name: '70% OFF', 
       image: '/Sale/70.webp',
-      amazonLink: 'https://amazon.com/dp/EXAMPLE3'
+      amazonLink: 'https://amzn.to/3M8fi6w'
     },
     { 
       id: 4, 
       name: '60% OFF', 
       image: '/Sale/60.webp',
-      amazonLink: 'https://amazon.com/dp/EXAMPLE4'
+      amazonLink: 'https://amzn.to/3XYVQM5'
     },
     { 
       id: 5, 
       name: '50% OFF', 
       image: '/Sale/50.webp',
-      amazonLink: 'https://amazon.com/dp/EXAMPLE5'
+      amazonLink: 'https://amzn.to/4p0EM4h'
     },
   ];
 
   const accessories = [
-    { id: 1, name: 'Car Phone Holder', image: '/Affiliate/All Products/car phone holder.webp', amazonLink: 'https://amazon.com/dp/EXAMPLE1', category: 'car' },
-    { id: 2, name: 'Bike Helmet', image: '/Affiliate/Vehicle Categories/helmets.webp', amazonLink: 'https://amazon.com/dp/EXAMPLE2', category: 'bike' },
-    { id: 3, name: 'Car Seat Covers', image: '/Affiliate/Interior Accessories/Car_Covers.webp', amazonLink: 'https://amazon.com/dp/EXAMPLE3', category: 'car' },
-    { id: 4, name: 'Bike Phone Mount', image: '/Affiliate/All Products/bike phone mount.webp', amazonLink: 'https://amazon.com/dp/EXAMPLE4', category: 'bike' },
-    { id: 5, name: 'Car Dash Cam', image: '/Affiliate/All Products/car dash cam.webp', amazonLink: 'https://amazon.com/dp/EXAMPLE5', category: 'car' },
-    { id: 6, name: 'Bike Lock', image: '/Affiliate/All Products/bike lock.webp', amazonLink: 'https://amazon.com/dp/EXAMPLE6', category: 'bike' }
+    { id: 1, name: 'Car Phone Holder', image: '/Affiliate/All Products/car phone holder.webp', amazonLink: 'https://amzn.to/4ikPLmy', category: 'car' },
+    { id: 2, name: 'Bike Helmet', image: '/Affiliate/Vehicle Categories/helmets.webp', amazonLink: 'https://amzn.to/49E2b6U', category: 'bike' },
+    { id: 3, name: 'Car Seat Covers', image: '/Affiliate/Interior Accessories/Car_Covers.webp', amazonLink: 'https://amzn.to/3XnEnNh', category: 'car' },
+    { id: 4, name: 'Bike Phone Mount', image: '/Affiliate/All Products/bike phone mount.webp', amazonLink: 'https://amzn.to/4rtERPU', category: 'bike' },
+    { id: 5, name: 'Car Dash Cam', image: '/Affiliate/All Products/car dash cam.webp', amazonLink: 'https://amzn.to/4rkdpE9', category: 'car' },
+    { id: 6, name: 'Bike Lock', image: '/Affiliate/All Products/bike lock.webp', amazonLink: 'https://amzn.to/487WsoU', category: 'bike' }
   ];
 
   // New sections data based on the images
   const interiorAccessories = [
-    { id: 1, name: 'Car Cover', image: '/Affiliate/Interior Accessories/Car_Covers.webp', amazonLink: 'https://amazon.com/dp/INT1' },
-    { id: 2, name: 'Car Mats', image: '/Affiliate/Interior Accessories/car_mats.webp', amazonLink: 'https://amazon.com/dp/INT2' },
-    { id: 3, name: 'Car Pillows', image: '/Affiliate/Interior Accessories/car_pillows.webp', amazonLink: 'https://amazon.com/dp/INT3' },
-    { id: 4, name: 'Seat Covers', image: '/Affiliate/Interior Accessories/Car_Seat_Covers.webp', amazonLink: 'https://amazon.com/dp/INT4' },
-    { id: 5, name: 'Organizers', image: '/Affiliate/Interior Accessories/Organizers.webp', amazonLink: 'https://amazon.com/dp/INT5' },
-    { id: 6, name: 'Dashboard Accessories', image: '/Affiliate/Interior Accessories/Car_Dashboard_Accessories.webp', amazonLink: 'https://amazon.com/dp/INT6' }
+    { id: 1, name: 'Car Cover', image: '/Affiliate/Interior Accessories/Car_Covers.webp', amazonLink: 'https://amzn.to/4oq91Rh' },
+    { id: 2, name: 'Car Mats', image: '/Affiliate/Interior Accessories/car_mats.webp', amazonLink: 'https://amzn.to/3XYWxVH' },
+    { id: 3, name: 'Car Pillows', image: '/Affiliate/Interior Accessories/car_pillows.webp', amazonLink: 'https://amzn.to/4ovYDri' },
+    { id: 4, name: 'Seat Covers', image: '/Affiliate/Interior Accessories/Car_Seat_Covers.webp', amazonLink: 'https://amzn.to/3XnEnNh' },
+    { id: 5, name: 'Organizers', image: '/Affiliate/Interior Accessories/Organizers.webp', amazonLink: 'https://amzn.to/4pv4H3V' },
+    { id: 6, name: 'Dashboard Accessories', image: '/Affiliate/Interior Accessories/Car_Dashboard_Accessories.webp', amazonLink: 'https://amzn.to/4pFGiJj' }
   ];
 
   const cleaningAccessories = [
-    { id: 1, name: 'Wiper Blades', image: '/Affiliate/Cleaning Accessories/wiper_blades.webp', amazonLink: 'https://amazon.com/dp/CLEAN1' },
-    { id: 2, name: 'Microfibre Cloth', image: '/Affiliate/Cleaning Accessories/micro_fiber_cloth.webp', amazonLink: 'https://amazon.com/dp/CLEAN2' },
-    { id: 3, name: 'Duster', image: '/Affiliate/Cleaning Accessories/duster.webp', amazonLink: 'https://amazon.com/dp/CLEAN3' },
-    { id: 4, name: 'Shampoos, Wax & Polish', image: '/Affiliate/Cleaning Accessories/shampoos,wax&polish.webp', amazonLink: 'https://amazon.com/dp/CLEAN4' },
-    { id: 5, name: 'Dashboard Cleaners', image: '/Affiliate/Cleaning Accessories/Dashboard_cleaners.webp', amazonLink: 'https://amazon.com/dp/CLEAN5' },
-    { id: 6, name: 'Lights', image: '/Affiliate/Cleaning Accessories/lights.webp', amazonLink: 'https://amazon.com/dp/CLEAN6' },
-    { id: 7, name: 'Cleaning Kits', image: '/Affiliate/Cleaning Accessories/cleaning_kits.webp', amazonLink: 'https://amazon.com/dp/CLEAN7' }
+    { id: 1, name: 'Wiper Blades', image: '/Affiliate/Cleaning Accessories/wiper_blades.webp', amazonLink: 'https://amzn.to/4ioItyb' },
+    { id: 2, name: 'Microfibre Cloth', image: '/Affiliate/Cleaning Accessories/micro_fiber_cloth.webp', amazonLink: 'https://amzn.to/4oletVs' },
+    { id: 3, name: 'Duster', image: '/Affiliate/Cleaning Accessories/duster.webp', amazonLink: 'https://amzn.to/44ue1wP' },
+    { id: 4, name: 'Shampoos, Wax & Polish', image: '/Affiliate/Cleaning Accessories/shampoos,wax&polish.webp', amazonLink: 'https://amzn.to/4pzzw7I' },
+    { id: 5, name: 'Dashboard Cleaners', image: '/Affiliate/Cleaning Accessories/Dashboard_cleaners.webp', amazonLink: 'https://amzn.to/4pFGiJj' },
+    { id: 6, name: 'Lights', image: '/Affiliate/Cleaning Accessories/lights.webp', amazonLink: 'https://amzn.to/3JYYO05' },
+    { id: 7, name: 'Cleaning Kits', image: '/Affiliate/Cleaning Accessories/cleaning_kits.webp', amazonLink: 'https://amzn.to/3XXlil6' }
   ];
 
   const vehicleCategories = [
-    { id: 1, name: 'Helmets', image: '/Affiliate/Vehicle Categories/helmets.webp', amazonLink: 'https://amazon.com/dp/CAT1' },
-    { id: 2, name: 'Electric Vehicles', image: '/Affiliate/Vehicle Categories/electric vehicles.webp', amazonLink: 'https://amazon.com/dp/CAT2' },
-    { id: 3, name: 'Petrol Vehicles', image: '/Affiliate/Vehicle Categories/petrol vehicles.webp', amazonLink: 'https://amazon.com/dp/CAT3' },
-    { id: 4, name: 'Vehicle Tools & Appliances', image: '/Affiliate/Vehicle Categories/vehicle tools & appliances.webp', amazonLink: 'https://amazon.com/dp/CAT4' },
-    { id: 5, name: 'Connected Mobility', image: '/Affiliate/Vehicle Categories/connected mobility.webp', amazonLink: 'https://amazon.com/dp/CAT5' },
-    { id: 6, name: 'Car & Bike Accessories', image: '/Affiliate/Vehicle Categories/car & bike accessories.webp', amazonLink: 'https://amazon.com/dp/CAT6' },
-    { id: 7, name: 'Vehicle Care', image: '/Affiliate/Vehicle Categories/vehicle care.webp', amazonLink: 'https://amazon.com/dp/CAT7' },
-    { id: 8, name: 'Vehicle Parts', image: '/Affiliate/Vehicle Categories/vehicle parts.webp', amazonLink: 'https://amazon.com/dp/CAT8' },
-    { id: 9, name: 'Car & Bike Tyres', image: '/Affiliate/Vehicle Categories/car & bike tyres.webp', amazonLink: 'https://amazon.com/dp/CAT9' }
+    { id: 1, name: 'Helmets', image: '/Affiliate/Vehicle Categories/helmets.webp', amazonLink: 'https://amzn.to/49E2b6U' },
+    { id: 2, name: 'Electric Vehicles', image: '/Affiliate/Vehicle Categories/electric vehicles.webp', amazonLink: 'https://amzn.to/4pz6gOs' },
+    { id: 3, name: 'Petrol Vehicles', image: '/Affiliate/Vehicle Categories/petrol vehicles.webp', amazonLink: 'https://amzn.to/484Ys0Z' },
+    { id: 4, name: 'Vehicle Tools & Appliances', image: '/Affiliate/Vehicle Categories/vehicle tools & appliances.webp', amazonLink: 'https://amzn.to/4rn8KkJ' },
+    { id: 5, name: 'Connected Mobility', image: '/Affiliate/Vehicle Categories/connected mobility.webp', amazonLink: 'https://amzn.to/4ikPLmy' },
+    { id: 6, name: 'Car & Bike Accessories', image: '/Affiliate/Vehicle Categories/car & bike accessories.webp', amazonLink: 'https://amzn.to/4ikPLmy' },
+    { id: 7, name: 'Vehicle Care', image: '/Affiliate/Vehicle Categories/vehicle care.webp', amazonLink: 'https://amzn.to/3XXlil6' },
+    { id: 8, name: 'Vehicle Parts', image: '/Affiliate/Vehicle Categories/vehicle parts.webp', amazonLink: 'https://amzn.to/4rn8KkJ' },
+    { id: 9, name: 'Car & Bike Tyres', image: '/Affiliate/Vehicle Categories/car & bike tyres.webp', amazonLink: 'https://amzn.to/4rn8KkJ' }
   ];
 
   const filteredItems = accessories.filter(item => filter === 'all' || item.category === filter);
