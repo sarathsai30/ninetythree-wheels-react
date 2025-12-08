@@ -241,27 +241,7 @@ const Header = () => {
             >
               Videos
             </Link>
-            <Link 
-              to="/about" 
-              className={`${isActive('/about') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link 
-              to="/contact" 
-              className={`${isActive('/contact') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </Link>
-            <Link 
-              to="/dealers" 
-              className={`${isActive('/dealers') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Dealers
-            </Link>
+
             <Link 
               to="/news" 
               className={`${isActive('/news') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
@@ -269,7 +249,23 @@ const Header = () => {
             >
               Latest News
             </Link>
-            
+
+            <Link 
+              to="/dealers" 
+              className={`${isActive('/dealers') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Dealers
+            </Link>
+
+            <Link 
+              to="/car-and-bike-accessories" 
+              className={`${isActive('/car-and-bike-accessories') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Accessories
+            </Link>
+
             {/* Calculators Dropdown */}
             <div className="relative">
               <button
@@ -379,11 +375,19 @@ const Header = () => {
             </div>
 
             <Link 
-              to="/car-and-bike-accessories" 
-              className={`${isActive('/car-and-bike-accessories') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              to="/about" 
+              className={`${isActive('/about') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
               onClick={() => setIsMenuOpen(false)}
             >
-              Accessories
+              About
+            </Link>
+
+            <Link 
+              to="/contact" 
+              className={`${isActive('/contact') ? 'text-blue-600 font-semibold' : 'text-gray-700'}`} 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
             </Link>
 
             <Link
