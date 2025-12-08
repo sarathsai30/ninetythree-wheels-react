@@ -63,26 +63,7 @@ const Header = () => {
             >
               Videos
             </Link>
-            <Link 
-              to="/about" 
-              className={`${isActive('/about') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
-            >
-              About
-            </Link>
-            <Link 
-              to="/contact" 
-              className={`${isActive('/contact') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
-            >
-              Contact
-            </Link>
-            <Link 
-              to="/dealers" 
-              className={`${isActive('/dealers') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
-            >
-              Dealers
-            </Link>
-            
-            {/* News Dropdown */}
+                        {/* News Dropdown */}
             <div className="relative dropdown-parent">
               <button
                 onClick={() => toggleDropdown("news")}
@@ -108,6 +89,18 @@ const Header = () => {
             </div>
             
             {/* More Dropdown */}
+            <Link 
+              to="/dealers" 
+              className={`${isActive('/dealers') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              Dealers
+            </Link>
+            <Link 
+              to="/car-and-bike-accessories" 
+              className={`${isActive('/car-and-bike-accessories') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              Accessories
+            </Link>
             <div className="relative dropdown-parent">
               <button
                 onClick={() => toggleDropdown("more")}
@@ -190,10 +183,16 @@ const Header = () => {
               )}
             </div>
             <Link 
-              to="/car-and-bike-accessories" 
-              className={`${isActive('/car-and-bike-accessories') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+              to="/about" 
+              className={`${isActive('/about') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
             >
-              Accessories
+              About
+            </Link>
+                        <Link 
+              to="/contact" 
+              className={`${isActive('/contact') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'}`}
+            >
+              Contact
             </Link>
           </nav>
 
