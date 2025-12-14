@@ -287,11 +287,10 @@
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/kylaq_signature_plus_lava_blue.jpg",
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/kylaq_signature_plus_lava_blue_AT.jpg",
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/kylaq_prestige.jpg",
-    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/kylaq_prestige_AT.jpg"
-  ],
-  "Skoda kylaq": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/kylaq_prestige_AT.jpg",
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/Kylaq_Signature_Plus.jpg"
   ],
+
   "Skoda Slavia": [
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Skoda/slaviaa.webp",
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_signature.jpg",
@@ -571,11 +570,10 @@
   "BYD eMAX 7": [
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/emax_7.webp",
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/eMax7_Superior_6STR.jpg",
-    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/eMax7_Superior_7STR.jpg"
-  ],
-  "BYD eMAX 7": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/eMax7_Superior_7STR.jpg",
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/eMax7_Premium_7STR1.jpg"
   ],
+
   "Toyota Fortuner Legender": [
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_legender_28_4x2_at_1.jpg",
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_legender_28_4x4_mt_1.jpg",
@@ -972,7 +970,9 @@
   ],
   "Mercedes-Benz Maybach": [
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/maybach_s580_4matic_1.jpg",
-    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/maybach_night_series_1.jpg"
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/maybach_night_series_1.jpg",
+    "Mercedes/maybach_eqs_suv_680_1.jpg",
+    "Mercedes/maybach_eqs_suv_night_series_1.jpg"
   ],
   "Mercedes-Benz GLE": [
     "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gle_300d_amg_line_1.jpg",
@@ -988,10 +988,7 @@
     "Mercedes/gle_450_4matic_lwb_1.jpg",
     "Mercedes/gle_450d_4matic_lwb_1.jpg"
   ],
-  "Mercedes-Benz Maybach": [
-    "Mercedes/maybach_eqs_suv_680_1.jpg",
-    "Mercedes/maybach_eqs_suv_night_series_1.jpg"
-  ],
+
   "Mercedes-Benz EQE": [
     "Mercedes/eqe_suv_500_4matic_1.jpg"
   ],

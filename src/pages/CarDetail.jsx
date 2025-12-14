@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
+import galleries from '../data/galleries.json';
 import CarVariantsTable from './CarVariantsTable/CarVariantsTable';
 import OnRoadPrice from './CarVariantsTable/OnRoadPrice';
 import { findCarBySlug, createCarSlug } from '../utils/carUtils';
@@ -69,7 +70,7 @@ const CarDetail = () => {
             <div className="card-body p-0">
               <div id="carImageCarousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                  {carsData.galleries[displayCar.name]?.map((image, index) => (
+                  {galleries[displayCar.name]?.map((image, index) => (
                     <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                       <img 
                         src={image} 
@@ -90,7 +91,7 @@ const CarDetail = () => {
               
               {/* Thumbnail images */}
               <div className="d-flex gap-2 p-3 overflow-auto">
-                {carsData.galleries[displayCar.name]?.map((image, index) => (
+                {galleries[displayCar.name]?.map((image, index) => (
                   <img
                     key={index}
                     src={image}
