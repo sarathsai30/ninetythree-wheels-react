@@ -1,0 +1,1091 @@
+{
+  "Maruti Swift Dzire": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/dzire_front.webp",
+    "https://images.unsplash.com/photo-1549924231-f129b911e442?w=800&h=600&fit=crop"
+  ],
+  "Hyundai Creta": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta.webp",
+    "https://images.unsplash.com/photo-1617808937120-1e553a850781?w=800&h=600&fit=crop"
+  ],
+  "Tata Nexon": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexon.webp",
+    "https://images.unsplash.com/photo-1617808937120-1e553a850781?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1626012354119-c6036c64b584?w=800&h=600&fit=crop"
+  ],
+  "Maruti Swift": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swiftfrontside.webp",
+    "https://images.unsplash.com/photo-1589395937772-f19a91f0b315?w=800&h=600&fit=crop"
+  ],
+  "Kia Seltos": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltoss.webp",
+    "https://images.unsplash.com/photo-1620325867502-221cfb5faa5f?w=800&h=600&fit=crop"
+  ],
+  "KIA Syros": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/syros1.webp",
+    "https://images.unsplash.com/photo-1617808937120-1e553a850781?w=800&h=600&fit=crop"
+  ],
+  "Mahindra XUV700": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/XUV700_XUV700.webp",
+    "https://images.unsplash.com/photo-1617808937120-1e553a850781?w=800&h=600&fit=crop"
+  ],
+  "Honda City": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city.jpg",
+    "https://images.unsplash.com/photo-1617808937120-1e553a850781?w=800&h=600&fit=crop"
+  ],
+  "Tata Altroz": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altrozfront.jpg",
+    "https://images.unsplash.com/photo-1615868967213-76c2111fa2e9?w=800&h=600&fit=crop"
+  ],
+  "Volkswagen Virtus": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/virtusfullview.jpg",
+    "",
+    "https://images.unsplash.com/photo-1617808937120-1e553a850781?w=800&h=600&fit=crop"
+  ],
+  "Maruti Brezza": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/breza_front.webp",
+    "https://images.unsplash.com/photo-1607513744894-45e1f6c4ea69?w=800&h=600&fit=crop"
+  ],
+  "Maruti Grand Vitara": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarafront.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/grandvitara1.webp"
+  ],
+  "Maruti Baleno": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenoside.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/baleno1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.devMaruti/baleno1.webp"
+  ],
+  "Maruti XL6": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL61.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/xl6_1.webp"
+  ],
+  "Maruti Invicto": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/invicto.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/invicto_1.webp"
+  ],
+  "Maruti Fronx": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx123.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_2.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_3.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_4.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronx_5.webp"
+  ],
+  "Mahindra Thar": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar123.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar_1.webp"
+  ],
+  "Windsor EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Windsor/windsor_ev1.webp"
+  ],
+  "Tata punch": [
+    "https://images.unsplash.com/photo-1616573999071-0d41e06f4d3a?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1626891542038-cb97e797f73e?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1603215688961-7fa1967db05d?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1604066867774-42c53af12f3b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1603460763984-392de7c4c3e5?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1601379404073-309aaa51d2ba?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1616769118187-4a36ea663799?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1622029580962-5279648b7fdf?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1589828107461-3cf51c2e9a2e?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1592890289785-04213cfae86a?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1604066867775-75c4de40ae6e?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1590001310046-8f74aa14f989?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1609909935344-3907c897f881?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1617082320541-97b7c20b9be1?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1624539718446-20ec4fc0f57e?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1596265367993-19294a94cba0?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1635530799986-f85f42d9e2ee?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1606933748384-22f457caeb9c?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1617048023229-600bdb9e52a6?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1623054089878-55b604b1a8b3?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1616777014773-357b3aeb7581?w=800&h=600&fit=crop",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch1.jpg"
+  ],
+  "Toyota Taisor": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor.png",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor4.jpg",
+    "Toyota/taisor5.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor6.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor7.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor8.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor9.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor10.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor11.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor12.jpg"
+  ],
+  "Toyota Rumion": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/rumion1.png",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/rumion2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/rumion3.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/rumion4.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/rumion5.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/rumion6.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/rumion7.jpg"
+  ],
+  "Toyota Glanza": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza.png",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza3.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza4.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza5.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza6.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza7.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza8.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza9.jpg"
+  ],
+  "Volkswagen Taigun": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigunfront1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun3.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun4.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun5.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun6.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun7.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun8.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun9.jpg",
+    "Volkswagen/taigun10.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun11.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun12.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun13.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun14.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigun15.jpg"
+  ],
+  "Mahindra XEV 9e": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/xev9e.webp"
+  ],
+  "XEV 9e": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e3.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e4.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e5.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e6.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e7.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e8.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e9.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e10.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e11.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e12.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e13.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e14.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e15.jpg"
+  ],
+  "Mahindra XUV400 EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/XUV400ev.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/xuv400_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/xuv400_3.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/xuv400_4.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/xuv400_5.jpg"
+  ],
+  "Mahindra BE 6": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/be6.webp"
+  ],
+  "BE 6": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_3.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_4.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_5.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_6.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_7.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_8.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_9.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_10.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_11.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_12.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_13.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_14.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_15.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_16.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_17.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_18.jpg"
+  ],
+  "MG Comet EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/comet_ev1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Comet/comet_excite.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Comet/comet_excite_fc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Comet/comet_exclusive.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Comet/comet_limited_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Comet/comet_exclusive_fc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Comet/comet_blackstorm.jpg"
+  ],
+  "Harrier EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/harrierev.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_3.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_4.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_5.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_6.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_7.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_8.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_9.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_10.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_11.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_12.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_13.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_14.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_15.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Harrier/harrier_16.jpg"
+  ],
+  "Tata Punch EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punchev.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_smart_plus.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_adventure.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_adventure_s.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_s.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_plus.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_adventure_lr.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_plus_s.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_adventure_s_lr.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_adventure_lr_acfc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_lr.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_s_lr.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_plus_lr.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_adventure_s_lr_acfc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_plus_s_lr.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_lr_acfc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_s_lr_acfc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_plus_lr_acfc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Punch/punch_ev_empowered_plus_s_lr_acfc.jpg"
+  ],
+  "Tata Tiago EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/tiago1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_ev_xt_mr.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_ev_xt_lr.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_ev_xz_plus_tech_lux_lr.jpg"
+  ],
+  "Tata Tigor EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/tigorev1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tigor/tigor_ev_xt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tigor/tigor_ev_xz_plus.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tigor/tigor_ev_xz_plus_lux.jpg"
+  ],
+  "Tata tiago": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/tiago1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xm.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xe_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xm_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xta_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xz.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xt_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xz_plus.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xza_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xta_amt_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xz_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tiago/tiago_xza_amt_cng.jpg"
+  ],
+  "Skoda Kylaq": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Skoda/kylaq1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/Kylaq_Classic_olive_Gold.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/Kylaq_Signature.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/Kylaq_Signature_Lava_Blue.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/Kylaq_Signature_AT.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/Kylaq_Signature_Lava_Blue_AT.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/Kylaq_Signature_Plus_AT.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/kylaq_signature_plus_lava_blue.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/kylaq_signature_plus_lava_blue_AT.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/kylaq_prestige.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/kylaq_prestige_AT.jpg"
+  ],
+  "Skoda kylaq": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/Kylaq_Signature_Plus.jpg"
+  ],
+  "Skoda Slavia": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Skoda/slaviaa.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_signature.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_sportline.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_signature_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_sportline_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_monte_carlo.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_prestige.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_sportline_dsg.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_monte_carlo_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_prestige_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_monte_carlo_dsg.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Slavia/slavia_prestige_dsg.jpg"
+  ],
+  "Skoda Kushaq": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Skoda/kushaq1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_onyx.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_onyx_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_signature.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_signature_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_sportline.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_sportline_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_sportline_dsg.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_monte_carlo.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_monte_carlo_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_monte_carlo_dsg.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_prestige.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_prestige_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_prestige_dsg.jpg"
+  ],
+  "Skoda Kushaq ": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kushaq/kushaq_signature_dsg.jpg"
+  ],
+  "Skoda Kodiaq": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kodiaq/kodiaq_sportline.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kodiaq/kodiaq_selection_l&k.jpg"
+  ],
+  "Nissan Magnite": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/magnite.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_visia_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_visia_plus.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_accenta.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_accenta_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_n-connecta.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_n-connecta_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_n-connecta__turbo_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_tekna.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_tekna_plus.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_tekna_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_tekna__turbo_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_visia_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_accenta_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_n-connecta_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_tekna_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_tekna_plus_cng.jpg"
+  ],
+  "Nissan X‑Trail": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_x-trail.jpg"
+  ],
+  "Tata Safari": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_smart_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_smart_o_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_pure_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_pure_o_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_pure_plus_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_pure_plus_s_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_pure_plus_s_dark_edition_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_pure_plus_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_adventure_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_pure_plus_s_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_pure_plus_s_dark_edition_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_adventure_plus_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_adventure_plus_dark_edition_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_adventure_plus_a_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_adventure_plus_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_adventure_plus_dark_edition_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_dual_tone_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_dark_edition_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_adventure_plus_a_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_dual_tone_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_6_str_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_dual_tone_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_dark_edition_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_dark_edition_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_6_str_dark_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_7_str_stealth_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_dual_tone_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_6_str_dual_tone_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_dark_edition_at_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_6_str_dark_edition_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_7_str_stealth_edition_at.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Safari/safari_accomplished_plus_6_str_stealth_edition_at.jpg"
+  ],
+  "MG Hector": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/hectorr.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_shine_pro_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_shine_pro_cvt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_shine_pro_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_smart_pro_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_select_pro_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_select_pro_cvt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_select_pro_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_smart_pro_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_sharp_pro_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_sharp_pro_cvt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_sharp_pro_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_100yr_le_cvt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_sharp_pro_snowstorm_cvt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_blackstorm_cvt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_100yr_le_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_sharp_pro_snowstorm_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_blackstorm_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hector/hector_savvy_pro_cvt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_style_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_select_pro_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_select_pro_petrol_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_select_pro_diesel_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_smart_pro_diesel_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_sharp_pro_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_sharp_pro_petrol_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_100yr_le_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_blackstorm_petrol_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_savvy_pro_petrol_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_sharp_pro_diesel_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_blackstorm_diesel_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_sharp_pro_snowstorm_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/HectorPlus/hector_plus_sharp_pro_snowstorm_diesel.jpg"
+  ],
+  "MG Astor": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/astor1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_shine.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_select.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_select_blackstorm.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_select_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_select_blackstorm_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_sharp_pro.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_100yr_le.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_sharp_pro_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_100yr_le_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_savvy_pro.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Astor/astor_savvy_pro_sangria.jpg"
+  ],
+  "Mahindra Scorpio N": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_n.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_n_front.webp",
+    "/https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_n_front.webp"
+  ],
+  "Mahindra Bolero Neo": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/bolero_neo.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/bolero_neo_front.webp"
+  ],
+  "Mahindra XUV 3XO": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/xuv3xo.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/xuv3xo_front.webp"
+  ],
+  "Renault Kwid": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_std.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_rxe.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_rxl_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_rxl_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_rxt_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_rxt_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_climber_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_climber_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_climber_dt_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_climber_dt_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_rxe_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_rxt_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_authentic_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_authentic_cng_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_amt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_evolution_cng_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_amt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_dual_tone_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_techno_cng_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_10th_anniversary_amt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_amt_dual_tone_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Renault/kwid_climber_1_0_mt_cng_1.jpg"
+  ],
+  "Renault Kiger": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxe.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxe_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxl.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxl_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxl_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxto.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxto_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxto_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxz.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxz_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxt_turbo_cvt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxz_turbo.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxz_turbo_cvt_dt.jpg"
+  ],
+  "Renault Triber": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Triber/triber_authentic_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Triber/triber_evolution_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Triber/triber_techno_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Triber/triber_emotion_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Triber/triber_emotion_amt_1.jpg"
+  ],
+  "Toyota Fortuner": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x2_at_27_petrol_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x2_at_27_petrol_white_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x2_mt_28_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x2_mt_28_diesel_white_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_leader_4x2_mt_28_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x2_at_28_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x2_at_28_diesel_white_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_leader_4x2_at_28_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x4_mt_28_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x4_mt_28_diesel_white_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x4_at_28_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x4_neodrive_at_48v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x4_neodrive_at_48v_white_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_grs_1.jpg"
+  ],
+  "Toyota Innova Crysta": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/crysta.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_gx_8str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_gx_7str_single_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_gx_8str_single_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_gxplus_7str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_gxplus_8str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_gxplus_7str_single_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_gxplus_8str_single_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_vx_7str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_vx_8str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_vx_7str_single_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_vx_8str_single_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_zx_7str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_crysta_zx_7str_single_1.jpg"
+  ],
+  "Toyota Hilux": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/hilux_std_4x4_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/hilux_high_4x4_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/hilux_high_4x4_at_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/hilux_black_edition_1.jpg"
+  ],
+  "Toyota Land Cruiser": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/land_cruiser_zx_diesel_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/land_cruiser_grs_1.jpg"
+  ],
+  "Toyota Innova Hycross": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_gx_7str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_gx_8str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_gx_7str_st_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_gx_8str_st_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_vx_hybrid_8str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_vxo_hybrid_7str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_vxo_hybrid_8str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_zx_hybrid_7str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_zxo_hybrid_7str_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_zxo_exclusive_1.jpg"
+  ],
+  "BYD Atto 3": [
+    "/BYD/atto3_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/atto_3_premium.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/atto_3_superior.jpg"
+  ],
+  "BYD Seal": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/Seal_Dynamic.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/Seal_Premium.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/Seal_Performance.jpg"
+  ],
+  "BYD Sealion 7 ": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/Sealion7_Premium.jpg"
+  ],
+  "BYD Sealion 7": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/Sealion7_Performance.jpg"
+  ],
+  "BYD eMAX 7": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/emax_7.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/eMax7_Superior_6STR.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/eMax7_Superior_7STR.jpg"
+  ],
+  "BYD eMAX 7": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/eMax7_Premium_7STR1.jpg"
+  ],
+  "Toyota Fortuner Legender": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_legender_28_4x2_at_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_legender_28_4x4_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_legender_28_4x4_at_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_legender_4x4_neodrive_at_1.jpg"
+  ],
+  "Kia Carens Clavis": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/carensclavis1.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_hteo_15_petrol_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_hteo_15_turbo_petrol_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_15_petrol_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_hte_15_diesel_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_15_turbo_petrol_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_hteo_15_diesel_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_plus_15_turbo_petrol_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_15_diesel_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_plus_o_15_turbo_petrol_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_plus_15_diesel_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_plus_15_turbo_petrol_dct_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_plus_o_15_diesel_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_plus_o_15_turbo_petrol_dct_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htk_plus_15_diesel_at_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htx_15_turbo_petrol_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htx_15_turbo_petrol_imt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htx_plus_15_turbo_petrol_6str_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htx_plus_15_turbo_petrol_7str_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htx_15_diesel_mt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htx_plus_15_turbo_petrol_7str_imt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htx_plus_15_turbo_petrol_6str_imt_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htx_plus_15_turbo_petrol_7str_dct_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_htx_plus_15_turbo_petrol_6str_dct_1.jpg"
+  ],
+  "Kia Carens": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/carens.webp"
+  ],
+  "Kia Carens EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/carensev.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_ev_htx_front.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_ev_htx_er_front.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carens_clavis_ev_htx_plus_er_front.webp"
+  ],
+  "Kia Carnival": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carnival_limousine_plus_front.webp"
+  ],
+  "Kia EV6": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/ev6_gt_line_awd_front.webp"
+  ],
+  "Kia EV9": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/ev9_gt_line_awd_front.webp"
+  ],
+  "MG M9 EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/M9/m9_ev_presidential_limo_front.webp"
+  ],
+  "MG Gloster": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_sharp_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_savvy_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_savvy_6str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_blackstorm_6str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_blackstorm_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_desertstorm_6str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_desertstorm_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_snowstorm_7str.jpg"
+  ],
+  "Gloster": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_savvy_twin_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_savvy_twin_6str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_blackstorm_twin_6str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_blackstorm_twin_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_desertstorm_twin_6str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_desertstorm_twin_7str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_snowstorm_twin_7str.jpg"
+  ],
+  "Citroen C3": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/c3.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/c3_front.webp"
+  ],
+  "Citroen Basalt": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/basalt.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/basalt_front.webp"
+  ],
+  "Citroen C3 Aircross": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/aircross.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/aircross_front.webp"
+  ],
+  "Citroen eC3": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/c3_ev.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/ec3_front.webp"
+  ],
+  "Citroen C5 Aircross": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/c5_front.webp"
+  ],
+  "Tata Curvv": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/curvv.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/curvv_front.webp"
+  ],
+  "TATA Curvv EV": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/curvvev.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/curvv_ev_front.webp"
+  ],
+  "Hyundai Venue": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_e_plus_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_s_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_s_plus_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_so_plus_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_so_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_executive_10_turbo_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_so_12_mt_knight_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_so_plus_12_mt_adventure_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_executive_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_s_plus_15_diesel.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_so_10_turbo_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_12_mt_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_12_mt_adventure_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_12_mt_adventure_edition_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_12_mt_knight_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_12_mt_knight_edition_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_so_10_turbo_dct.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_15_diesel.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sxo_mt_10_turbo_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_15_diesel_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sxo_mt_10_turbo_mt_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sxo_10_turbo_mt_knight_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sxo_10_turbo_mt_knight_edition_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sxo_10_turbo_dct.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_so_turbo_dct1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_diesel1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_mt1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_diesel_dual_tone1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_mt_dual_tone1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_mt_knight1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_mt_knight_dual_tone1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_mt_knight_dual_tone2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_dct1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_diesel1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_dct_knight1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_dct_adventure1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_dct_dual_tone1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_diesel_dual_tone1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_dct_knight_dual_tone1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_dct_knight_dual_tone2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/venue_sx_o_turbo_dct_adventure_dual_tone1.jpg"
+  ],
+  "Tata nexon ev": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexonev_front.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexonev_side.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexonev_rear.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexonev_dashboard.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexonev_dark_front.webp"
+  ],
+  "Honda Elevate": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/elevate.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/elevate_front.webp"
+  ],
+  "Honda Amaze": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/amaze.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/amaze_front.webp"
+  ],
+  "Hyundai Exter": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_ex_o_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_ex_12_cng_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_smart_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_plus_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_smart_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_smart_12_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_12_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_mt_knight.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_tech_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_mt_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_exec_12_cng_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_plus_smart_12_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_exec_12_cng_duo_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_mt_knight_edition_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_smart_12_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_plus_exec_12_cng_duo_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_o_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_amt_knight_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_tech_12_petrol_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_smart_12_hycng_duo.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_amt_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_cng_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_mt_hycng_duo.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_amt_knight_edition_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_12_mt_knight_edition_hycng_duo.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sx_tech_hycng_duo_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sxo_1_2_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sxo_connect_1_2_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sxo_connect_knight_edition.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sxo_connect_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sxo_connect_knight_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sxo_connect_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sxo_connect_amt_knight.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sxo_connect_amt_dual_tone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_sxo_connect_amt_knight_dual_tone.jpg"
+  ],
+  "Exter": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_smart_12_cng_duo.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_plus_12_amt.jpg"
+  ],
+  "Hyundai Grand i10 Nios": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/nios.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grandnios_magna_1_2_kappa.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grandnios_corporate_1_2_kappa.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_sportz.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_magna_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_magna_amt_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_magna_amt_3.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_sportz_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_sportz_o.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_corporate_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_magna_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_sportz_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_asta.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_sportz_o_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev//grand_nios_sportz_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_sportz_hycng_duo.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/grand_nios_asta_amt.jpg"
+  ],
+  "Hyundai Verna": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_s_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sx_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_s_petrol_ivt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sx_plus_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sx_petrol_ivt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sxo_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sx_turbo_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sx_turbo_petrol_mt_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sx_plus_petrol_ivt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_so_turbo_petrol_dct.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sxo_turbo_petrol_mt_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sxo_turbo_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sx_turbo_petrol_dct_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sx_turbo_petrol_dct.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sxo_petrol_ivt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sxo_turbo_petrol_dct_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna_sxo_turbo_petrol_dct.jpg"
+  ],
+  "Hyundai i20": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_sportz_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_sportz_12_mt_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_magna_12_ivt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_sportz_o_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_sportz_o_12_5mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_asta_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_asta_o_12_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_sportz_12_ivt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_asta_o_12_mt_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_asta_o_12_ivt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_asta_o_12_ivt_dualtone.jpg"
+  ],
+  "Hyundai creta Electric": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/cretaev1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_smart_42kwh.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_smart_o_42kwh.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_smart_o_42kwh_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_premium_42kwh.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_premium_42kwh_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_smart_o_42kwh_hc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_smart_o_42kwh_hc_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_premium_42kwh_hc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_premium_42kwh_hc_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_smart_o_51_4kwh.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_smart_o_51_4kwh_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_smart_o_51_4kwh_lr_hc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_smart_o_51_4kwh_lr_hc_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_excellence_51_4kwh_lr.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_excellence_51_4kwh_lr_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_excellence_51_4kwh_lr_hc.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta_electric_excellence_51_4kwh_lr_hc_dualtone.jpg"
+  ],
+  "Maruti Wagon R": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/wagnor.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_vxi_1_0.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_zxi_1_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_lxi_1_0_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_vxi_1_0_ags.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_zxi_plus_1_2.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_zxi_1_2_ags.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_zxi_plus_1_2_dualtone.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_vxi_1_0_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_zxi_plus_1_2_ags.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/wagonr_zxi_plus_1_2_ags_dualtone.jpg"
+  ],
+  "Maruti Alto K10": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/alto1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_lxi_o.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_plus_o.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o_ags.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_lxi_o_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_plus_o_ags.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/alto_k10_vxi_o_cng.jpg"
+  ],
+  "Maruti S-Presso": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_lxi_o.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_o.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_plus_o.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_o_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_lxi_o_cng.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_plus_o_amt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MarutiSuzuki/spresso_vxi_o_cng.jpg"
+  ],
+  "Mahindra Scorpio": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s_mt_9str.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_s11_mt_7s_cc.jpg"
+  ],
+  "KIA Sonet": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/sonet.webp",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_2_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_2_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/sonet_htk_o_1_2_petrol_mt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_htk_1_0_turbo_petrol_imt.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/sonet_hte_o_1_5_diesel_mt.jpg"
+  ],
+  " VINFAST VF 6": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_earth.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_wind_infinity_1.jpg"
+  ],
+  " Vinfast VF 7": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf7_earth_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf7_wind_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf7_sky_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf7_sky_infinity_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf7_wind_infinity_1.jpg"
+  ],
+  "Toyota Urban Cruiser Hyryder": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_e_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_e_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/e_cng_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_s_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_dual_tone_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_awd_neodrive_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_awd_neodrive_dual_tone_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_v_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_v_1.jpg"
+  ],
+  "Toyota Urban Cruiser Hyryder G": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_aero_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/hybrid_dual_tone_go_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/e_cng_g_1.jpg"
+  ],
+  "Toyota Urban Cruiser Hyryder V": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/at_neodrive_dual_tone_v_1.jpg"
+  ],
+  "Mercedes-Benz c": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/c_class_c200_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/c_class_c220d_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/c_class_c300_1.jpg"
+  ],
+  "Mercedes-Benz A": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/a_class_limousine_200_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev//a_class_limousine_200d_1.jpg"
+  ],
+  "Mercedes-Benz G": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/g_class_1.jpg"
+  ],
+  "Mercedes-Benz GLA": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gla_200_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gla_220d_4matic_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gla_220d_amg_4matic_1.jpg"
+  ],
+  "Mercedes-Benz GLS": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gls_450_4matic_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gls_450d_4matic_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gls_450_amg_line_1.jpg"
+  ],
+  "Mercedes-Benz E": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/e_class_e200_lwb_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/e_class_e220d_lwb_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/e_class_450_4matic_lwb_1.jpg"
+  ],
+  "Mercedes-Benz Maybach": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/maybach_s580_4matic_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/maybach_night_series_1.jpg"
+  ],
+  "Mercedes-Benz GLE": [
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gle_300d_amg_line_1.jpg",
+    "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gle_450_4matic_lwb_1.jpg",
+    "Mercedes/gle_450d_4matic_lwb_1.jpg"
+  ],
+  "Mercedes-Benz S-Class": [
+    "Mercedes/s_class_s450_4matic_1.jpg",
+    "Mercedes/s_class_s350d_1.jpg"
+  ],
+  " Mercedes-Benz GLE ": [
+    "Mercedes/gle_300d_amg_line_1.jpg",
+    "Mercedes/gle_450_4matic_lwb_1.jpg",
+    "Mercedes/gle_450d_4matic_lwb_1.jpg"
+  ],
+  "Mercedes-Benz Maybach": [
+    "Mercedes/maybach_eqs_suv_680_1.jpg",
+    "Mercedes/maybach_eqs_suv_night_series_1.jpg"
+  ],
+  "Mercedes-Benz EQE": [
+    "Mercedes/eqe_suv_500_4matic_1.jpg"
+  ],
+  "Mercedes-Benz AMG": [
+    "Mercedes/amg_eqs_53_4matic_plus_1.jpg"
+  ],
+  "Mercedes-Benz GT 63 s": [
+    "Mercedes/amg_gt_63_s_4matic_plus_1.jpg"
+  ],
+  "Mercedes-Benz AMG S": [
+    "Mercedes/amg_s63_e_performance_1.jpg"
+  ],
+  "Mercedes-Benz EQA": [
+    "Mercedes/eqa_250_plus_1.jpg"
+  ],
+  "Mercedes-Benz EQB": [
+    "Mercedes/eqb_350_4matic_1.jpg"
+  ],
+  "Mercedes-Benz EQB Plus": [
+    "Mercedes/eqb_250_plus_1.jpg"
+  ],
+  "Mercedes-Benz AMG-S": [
+    "Mercedes/amg_a45_s_4matic_plus_1.jpg"
+  ],
+  "Mercedes-Benz_AMG": [
+    "Mercedes/amg_e53_cabriolet_4matic_plus_1.jpg"
+  ],
+  "Ferrari Purosangue": [
+    "Ferrari/purosangue_v12_1.jpg"
+  ],
+  "Ferrari GTB 3.0": [
+    "Ferrari/296_gtb_1.jpg"
+  ],
+  "Ferrari F8 Tributo": [
+    "Ferrari/f8_tributo_berlinetta_1.jpg"
+  ],
+  "Ferrari Coupe": [
+    "Ferrari/roma_coupe_1.jpg"
+  ],
+  "Ferrari Portofino": [
+    "Ferrari/portofino_m_1.jpg"
+  ],
+  "Ferrari GTS": [
+    "Ferrari/296_gts_1.jpg"
+  ],
+  "Volvo XC90": [
+    "/Volvo/xc90_front.webp"
+  ],
+  "Volvo EX30": [
+    "/Volvo/ex30_front.webp"
+  ],
+  "Volvo XC60": [
+    "/Volvo/xc60_front.webp"
+  ],
+  "Volvo EX40": [
+    "/Volvo/ex40_front.webp"
+  ],
+  "Volvo EC40": [
+    "/Volvo/ec40_front.webp"
+  ],
+  "Jeep Compass": [
+    "/Jeep/compass_sport.webp",
+    "/Jeep/compass_sandstorm.webp",
+    "/Jeep/compass_longitude.webp",
+    "/Jeep/compass_longitude_sandstorm.webp",
+    "/Jeep/compass_longitude_at.webp",
+    "/Jeep/compass_longitude_o.webp",
+    "/Jeep/compass_longitude_o_sandstorm.webp",
+    "/Jeep/compass_trail.webp",
+    "/Jeep/compass_nighteagle.webp",
+    "/Jeep/compass_limited.webp",
+    "/Jeep/compass_longitude_o_at.webp",
+    "/Jeep/compass_blackshark.webp",
+    "/Jeep/compass_trail_at.webp",
+    "/Jeep/compass_nighteagle_at.webp",
+    "/Jeep/compass_limited_at.webp",
+    "/Jeep/compass_models.webp",
+    "/Jeep/compass_track.webp",
+    "/Jeep/compass_blackshark_at.webp",
+    "/Jeep/compass_models_at.webp",
+    "/Jeep/compass_track_at.webp",
+    "/Jeep/compass_models_4x4.webp",
+    "/Jeep/compass_track_4x4.webp"
+  ],
+  "Jeep Meridian": [
+    "/Jeep/meridian_front.webp"
+  ],
+  "Jeep Wrangler": [
+    "/Jeep/wrangler_unlimited_front.webp",
+    "/Jeep/wrangler_rubicon_front.webp",
+    "/Jeep/wrangler_willys_front.webp"
+  ],
+  "Jeep Grand Cherokee": [
+    "/Jeep/grand_cherokee_limited_front.webp",
+    "/Jeep/grand_cherokee_signature_front.webp"
+  ]
+}
