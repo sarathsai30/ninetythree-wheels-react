@@ -179,18 +179,6 @@ const CarDetail = () => {
                 <div className="col-md-6">
                   <table className="table table-borderless">
                     <tbody>
-                      {/* <tr>
-                        <td className="fw-semibold">KM Driven</td>
-                        <td>{car.kmDriven.toLocaleString()} km</td>
-                      </tr>
-                      <tr>
-                        <td className="fw-semibold">Owner</td>
-                        <td>{car.owner} Owner</td>
-                      </tr>
-                      <tr>
-                        <td className="fw-semibold">Location</td>
-                        <td>{car.location}</td>
-                      </tr> */}
                       <tr>
                         <td className="fw-semibold">Seating</td>
                         <td>{displayCar.seatingCapacity} Seater</td>
