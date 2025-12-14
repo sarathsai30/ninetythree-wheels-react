@@ -9,7 +9,7 @@ const CarCard = ({ car }) => {
   };
 
   // Comparing the names to lowercase for comparison
-  const relatedCars = carsData.filter(
+  const relatedCars = carsData.cars.filter(
     (c) => c.name.toLowerCase() === car.name.toLowerCase()
   );
 

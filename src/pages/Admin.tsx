@@ -11,7 +11,7 @@ import YoutubeAdmin from './YoutubeAdmin';
 import { useAdmin } from '../hooks/useAdmin';
 
 const datasets = {
-    cars: carsData,
+    cars: carsData.cars,
     filters: filtersData,
     blogs: blogsData,
 };

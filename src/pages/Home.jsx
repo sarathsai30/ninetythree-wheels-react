@@ -22,12 +22,12 @@ const Home = () => {
     useEffect(() => {
         const loadData = async () => {
             // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
-            const mainVariantCars = carsData.filter(car => /^\D+\d+$/.test(car.id));
+            const mainVariantCars = carsData.cars.filter(car => /^\D+\d+$/.test(car.id));
             // Get featured cars (first 3 main variants)
             setFeaturedCars(mainVariantCars.slice(0, 8));
 
             // Get unique brands
-            const uniqueBrands = [...new Set(carsData.map(car => car.brand))];
+            const uniqueBrands = [...new Set(carsData.cars.map(car => car.brand))];
             setBrands(uniqueBrands);
 
             // Show loader for at least 1.5 seconds
@@ -47,7 +47,7 @@ const Home = () => {
         setIsSearching(true);
 
         // Filter cars based on search term
-        const filteredCars = carsData.filter(car =>
+        const filteredCars = carsData.cars.filter(car =>
             car.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
             car.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
             car.model.toLowerCase().includes(searchTerm.toLowerCase())

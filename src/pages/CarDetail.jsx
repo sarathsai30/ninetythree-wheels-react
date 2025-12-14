@@ -19,12 +19,12 @@ const CarDetail = () => {
 
   useEffect(() => {
     const slug = `${brand}/${name}/${model}`;
-    const foundCar = findCarBySlug(carsData, slug);
+    const foundCar = findCarBySlug(carsData.cars, slug);
     setCar(foundCar);
     
     // Get all variants of the same brand and model series
     if (foundCar) {
-      const variants = carsData.filter(c => 
+      const variants = carsData.cars.filter(c => 
         c.brand === foundCar.brand && 
         c.name.split(' ').slice(0, 2).join(' ') === foundCar.name.split(' ').slice(0, 2).join(' ')
       );
@@ -69,7 +69,7 @@ const CarDetail = () => {
             <div className="card-body p-0">
               <div id="carImageCarousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                  {displayCar.gallery.map((image, index) => (
+                  {carsData.galleries[displayCar.name]?.map((image, index) => (
                     <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                       <img 
                         src={image} 
@@ -90,7 +90,7 @@ const CarDetail = () => {
               
               {/* Thumbnail images */}
               <div className="d-flex gap-2 p-3 overflow-auto">
-                {displayCar.gallery.map((image, index) => (
+                {carsData.galleries[displayCar.name]?.map((image, index) => (
                   <img
                     key={index}
                     src={image}

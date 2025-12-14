@@ -52,7 +52,14 @@ const CarList = () => {
     });
 
     // let filtered = [...carsData];
-    let filtered = carsData.filter(car => /^\D+\d+$/.test(car.id));
+    // Get unique cars by name (one per model, showing all variants in price range)
+    const uniqueCars = carsData.cars.reduce((acc, car) => {
+      if (!acc.find(existingCar => existingCar.name === car.name)) {
+        acc.push(car);
+      }
+      return acc;
+    }, []);
+    let filtered = [...uniqueCars];
 
     // Search filter - check name, brand, and model
     if (searchTerm.trim()) {
@@ -69,20 +76,27 @@ const CarList = () => {
       filtered = filtered.filter(car => car.brand === selectedBrand || car.name === selectedBrand);
     }
 
-    // Fuel type filter
+    // Fuel type filter - check if any variant has the selected fuel type
     if (selectedFuelType && selectedFuelType !== '') {
-      filtered = filtered.filter(car => car.fuelType === selectedFuelType);
+      filtered = filtered.filter(car => {
+        const variants = carsData.cars.filter(c => c.name === car.name);
+        return variants.some(variant => variant.fuelType === selectedFuelType);
+      });
     }
 
-    // Body type filter
+    // Body type filter - check if any variant has the selected body type
     if (selectedBodyType && selectedBodyType !== '') {
-      filtered = filtered.filter(car => car.bodyType === selectedBodyType);
+      filtered = filtered.filter(car => {
+        const variants = carsData.cars.filter(c => c.name === car.name);
+        return variants.some(variant => variant.bodyType === selectedBodyType);
+      });
     }
 
-    // Price range filter
-    filtered = filtered.filter(car => 
-      car.price >= priceRange[0] && car.price <= priceRange[1]
-    );
+    // Price range filter - check if any variant of the car falls within price range
+    filtered = filtered.filter(car => {
+      const variants = carsData.cars.filter(c => c.name === car.name);
+      return variants.some(variant => variant.price >= priceRange[0] && variant.price <= priceRange[1]);
+    });
 
     console.log('Filtered cars before sorting:', filtered.length);
 
