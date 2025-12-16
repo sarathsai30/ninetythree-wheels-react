@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
 import CarVariantsTable from './CarVariantsTable/CarVariantsTable';
+import Aside from './Aside';
 import OnRoadPrice from './CarVariantsTable/OnRoadPrice';
 import { findCarBySlug, createCarSlug } from '../utils/carUtils';
 
@@ -269,28 +270,41 @@ const CarDetail = () => {
         </div>
 
         <div className="col-lg-4">
-          {/* Price Card */}
-          <div className="card border-0 shadow-sm sticky-top" style={{top: '20px', zIndex: '9'}}>
-            <div className="card-body">
+          {/* Top Price Card */}
+          <div className="card border-0 shadow-md sticky-top mb-5" style={{top: '20px', zIndex: '9'}}>
+            <div className="card-body p-4">
               <div className="text-center">
                 <h3 className="text-primary fw-bold mb-0">{formatPrice(displayCar.price)}</h3>
                 <p className="text-muted">On-road Price (Mumbai)</p>
               </div>
             </div>
           </div>
+          
+          {/* Aside Component Card */}
+          <div className="card border-0 shadow-md rounded-3">
+            <div className="card-body p-0">
+              <Aside 
+                price={displayCar.price} 
+                city={selectedCity} 
+                carDetails={displayCar}
+                variant={displayCar}
+                key={displayCar.id}
+              />
+            </div>
+          </div>
         </div>
       </div>
       
       <CarVariantsTable
-  variants={modelVariants}
-  currentId={displayCar.id}
-  onCitySelect={setSelectedCity}
-  onModelVariant={setSelectedModel}
-  onVariantSelect={(variant) => {
-    setSelectedCar(variant);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }}
-/>
+        variants={modelVariants}
+        currentId={displayCar.id}
+        onCitySelect={setSelectedCity}
+        onModelVariant={setSelectedModel}
+        onVariantSelect={(variant) => {
+          setSelectedCar(variant);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+      />
 
     {/* <div>
       {selectedCity ? (
