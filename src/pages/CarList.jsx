@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import CarCard from '../components/CarCard';
 import SearchFilter from '../components/SearchFilter';
-import carsData from '../data/cars.json';
+import { getAllCars } from '../utils/carDataUtils';
 import filtersData from '../data/filters.json';
 
 const CarList = () => {
@@ -43,6 +43,7 @@ const CarList = () => {
 
   // Apply all filters whenever any filter changes
   useEffect(() => {
+    const carsData = getAllCars();
     console.log('Applying filters:', {
       searchTerm,
       selectedBrand,

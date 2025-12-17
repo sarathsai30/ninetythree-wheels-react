@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import carsData from '../data/cars.json';
+import { getAllCars } from '../utils/carDataUtils';
 import HeroSection from '../components/HeroSection';
 import FeaturedCars from '../components/FeaturedCars';
 import PopularBrands from '../components/PopularBrands';
@@ -21,6 +21,7 @@ const Home = () => {
 
     useEffect(() => {
         const loadData = async () => {
+            const carsData = getAllCars();
             // Filter cars to only show main variants (car001, car002, etc.) - not sub-variants
             const mainVariantCars = carsData.filter(car => /^\D+\d+$/.test(car.id));
             // Get featured cars (first 3 main variants)
@@ -46,6 +47,7 @@ const Home = () => {
     const handleCarSearch = (searchTerm) => {
         setIsSearching(true);
 
+        const carsData = getAllCars();
         // Filter cars based on search term
         const filteredCars = carsData.filter(car =>
             car.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
