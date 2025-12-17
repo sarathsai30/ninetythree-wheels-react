@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import carsData from '../data/cars.json';
+import { getAllCars } from '../utils/carDataUtils';
 import galleriesData from '../data/galleries.json';
 import CarVariantsTable from './CarVariantsTable/CarVariantsTable';
 import Aside from './Aside';
@@ -20,6 +20,7 @@ const CarDetail = () => {
 
 
   useEffect(() => {
+    const carsData = getAllCars();
     const slug = `${brand}/${name}/${model}`;
     const foundCar = findCarBySlug(carsData, slug);
     setCar(foundCar);

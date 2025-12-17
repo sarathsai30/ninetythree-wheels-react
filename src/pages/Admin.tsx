@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import carsData from '../data/cars.json';
+import { getAllCars } from '../utils/carDataUtils';
 import filtersData from '../data/filters.json';
 import blogsData from '../data/blogs.json';
 import { Textarea } from '@/components/ui/textarea';
@@ -11,7 +11,7 @@ import YoutubeAdmin from './YoutubeAdmin';
 import { useAdmin } from '../hooks/useAdmin';
 
 const datasets = {
-    cars: carsData,
+    cars: getAllCars(),
     filters: filtersData,
     blogs: blogsData,
 };

@@ -1,0 +1,2027 @@
+{
+  "Maruti Swift Dzire": {
+    "name": "Maruti Swift Dzire",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/dzire12.webp",
+    "description": "Enjoy an economical and thrilling drive in The Dazzling-New Dzire, India’s most Fuel-Efficiency sedan#. Keeping the essence of what makes the Dzire truly special, it boasts a fuel efficiency of 24.79* (in MT) and 33.73* km/kg (in MT) with S-CNG.",
+    "year": 2024
+  },
+  "Hyundai Creta": {
+    "name": "Hyundai Creta",
+    "brand": "Hyundai",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/creta.webp",
+    "description": "The Hyundai Creta is a premium SUV that blends bold design, advanced features, and refined performance. With spacious interiors, cutting-edge technology, and exceptional ride comfort, it’s built to dominate both city roads and highways.",
+    "year": 2024
+  },
+  "Tata Nexon": {
+    "name": "Tata Nexon",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexon.webp",
+    "description": "The Tata Nexon smart offers a premium experience with a powerful turbo-petrol engine and a smooth automatic gearbox.",
+    "year": 2024
+  },
+  "Maruti Swift": {
+    "name": "Maruti Swift",
+    "brand": "Maruti",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/swift12.webp",
+    "description": "The all-new Maruti Swift ZXI+ is a stylish, feature-loaded and fuel-efficient hatchback perfect for city driving.",
+    "year": 2024
+  },
+  "Kia Seltos": {
+    "name": "Kia Seltos",
+    "brand": "Kia",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/seltoss1.webp",
+    "description": "The Kia Seltos HTE (O) 1.5 Petrol MT delivers 113 bhp and a balanced driving experience with practical features.",
+    "year": 2024
+  },
+  "KIA Syros": {
+    "name": "KIA Syros",
+    "brand": "Kia",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/syross.webp",
+    "description": "Base HTK variant with 12.3″ HD touchscreen, wireless Android Auto/Apple CarPlay, halogen headlamps, rear camera, and robust 20‑Hi safety package with 6 airbags and ADAS Level‑2 support.",
+    "year": 2024
+  },
+  "Mahindra XUV700": {
+    "name": "Mahindra XUV700",
+    "brand": "Mahindra",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/XUV700_XUV700.webp",
+    "description": "The Mahindra XUV700 MX7 str is a balanced variant offering key features like the panoramic sunroof and dual screens.",
+    "year": 2024
+  },
+  "Honda City": {
+    "name": "Honda City",
+    "brand": "Honda",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/city.jpg",
+    "description": "The Honda City SV is the base model offering a reliable and fuel-efficient drive with essential features.",
+    "year": 2024
+  },
+  "Tata Altroz": {
+    "name": "Tata Altroz",
+    "brand": "Tata",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/altroz1.webp",
+    "description": "The Tata Altroz Smart is the base model offering a sporty design and essential features for daily city drives.",
+    "year": 2024
+  },
+  "Volkswagen Virtus": {
+    "name": "Volkswagen Virtus",
+    "brand": "Volkswagen",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/virtus1.webp",
+    "description": "The Comfortline is the base model of the Volkswagen Virtus with efficient performance and essential features.",
+    "year": 2024
+  },
+  "Maruti Brezza": {
+    "name": "Maruti Brezza",
+    "brand": "Maruti Suzuki",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/breza.webp",
+    "description": "Brezza Lxi is the entry-level SUV offering essential features and solid performance for budget-conscious buyers.",
+    "year": 2024
+  },
+  "Maruti Grand Vitara": {
+    "name": "Maruti Grand Vitara",
+    "brand": "Maruti Suzuki",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/vitarafront1.webp",
+    "description": "The Maruti Grand Vitara is a stylish and feature-rich SUV offering strong performance, premium interiors, and excellent fuel efficiency.",
+    "year": 2024
+  },
+  "Maruti Baleno": {
+    "name": "Maruti Baleno",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/balenofront.jpg",
+    "description": "The Maruti Baleno is a premium hatchback offering a stylish design, efficient performance, and modern features.",
+    "year": 2024
+  },
+  "Maruti XL6": {
+    "name": "Maruti XL6",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MUV",
+    "seatingCapacity": 6,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/XL61.jpg",
+    "description": "The Maruti XL6 is a premium 6-seater MUV with bold styling, comfort features, and strong fuel efficiency.",
+    "year": 2024
+  },
+  "Maruti Invicto": {
+    "name": "Maruti Invicto",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/invicto.jpg",
+    "description": "The Maruti Invicto offers spacious 7-seater comfort, premium interiors, and hybrid efficiency, making it ideal for large families.",
+    "year": 2024
+  },
+  "Maruti Fronx": {
+    "name": "Maruti Fronx",
+    "brand": "Maruti Suzuki",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/fronxfront.webp",
+    "description": "The Maruti Fronx is a stylish compact SUV with a bold design, efficient engines, and modern features for daily driving comfort.",
+    "year": 2024
+  },
+  "Mahindra Thar": {
+    "name": "Mahindra Thar",
+    "brand": "Mahindra",
+    "bodyType": "SUV",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/thar123.webp",
+    "description": "The Mahindra Thar is a rugged off-roader with a bold presence, powerful performance, and modern tech features for adventures.",
+    "year": 2024
+  },
+  "Windsor EV": {
+    "name": "Windsor EV",
+    "brand": "Windsor",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/windsor1.webp",
+    "description": "The Windsor EV Excite offers efficient electric mobility with stylish design, modern interiors, and practical urban range.",
+    "year": 2024
+  },
+  "Tata punch": {
+    "name": "Tata punch",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punch.jpg",
+    "description": "The Punch Pure offers a perfect blend of compact performance and city-friendly features, backed by Tata's rugged build.",
+    "year": 2024
+  },
+  "Toyota Taisor": {
+    "name": "Toyota Taisor",
+    "brand": "Toyota",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/taisor.png",
+    "description": "Base model with manual transmission and great efficiency.",
+    "year": 2024
+  },
+  "Toyota Rumion": {
+    "name": "Toyota Rumion",
+    "brand": "Toyota",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/rumion1.png",
+    "description": "Base model with standard safety and infotainment features. Best for family usage.",
+    "year": 2024
+  },
+  "Toyota Glanza": {
+    "name": "Toyota Glanza",
+    "brand": "Toyota",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/glanza.png",
+    "description": "Base model with manual transmission and reliable performance.",
+    "year": 2024
+  },
+  "Volkswagen Taigun": {
+    "name": "Volkswagen Taigun",
+    "brand": "Volkswagen",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volkswagen/taigunfront1.jpg",
+    "description": "Base model with efficient engine and essential features.",
+    "year": 2024
+  },
+  "Mahindra XEV 9e": {
+    "name": "Mahindra XEV 9e",
+    "brand": "mahindra",
+    "bodyType": "EV",
+    "seatingCapacity": 5,
+    "image": "Mahindra/xev9e.webp",
+    "description": "Base model electric vehicle with 59 kWh battery and 542 km range.",
+    "year": 2024
+  },
+  "XEV 9e": {
+    "name": "XEV 9e",
+    "brand": "mahindra",
+    "bodyType": "EV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/XEV/xev9e2.jpg",
+    "description": "Pack One variant with 7.2kw charger support.",
+    "year": 2024
+  },
+  "Mahindra XUV400 EV": {
+    "name": "Mahindra XUV400 EV",
+    "brand": "Mahindra",
+    "bodyType": "EV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/XUV400ev.webp",
+    "description": "Base model electric SUV with 34.5 kWh battery and 375 km range.",
+    "year": 2024
+  },
+  "Mahindra BE 6": {
+    "name": "Mahindra BE 6",
+    "brand": "mahindra",
+    "bodyType": "EV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/be6.webp",
+    "description": "Base model electric vehicle with 59 kWh battery and 557 km range.",
+    "year": 2024
+  },
+  "BE 6": {
+    "name": "BE 6",
+    "brand": "mahindra",
+    "bodyType": "EV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BE/be6_2.jpg",
+    "description": "Pack One variant with 7.2kw charger support.",
+    "year": 2024
+  },
+  "MG Comet EV": {
+    "name": "MG Comet EV",
+    "brand": "MG",
+    "bodyType": "EV",
+    "seatingCapacity": 2,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/comet_ev1.webp",
+    "description": "Base model electric vehicle with 17.3 kWh battery and 230 km range.",
+    "year": 2024
+  },
+  "Harrier EV": {
+    "name": "Harrier EV",
+    "brand": "TATA",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/harrierev.webp",
+    "description": "Base model with 65 kWh battery, 538 km range and 235 bhp power.",
+    "year": 2024
+  },
+  "Tata Punch EV": {
+    "name": "Tata Punch EV",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/punchev.jpg",
+    "description": "Base model with 25 kWh battery and 315 km range.",
+    "year": 2024
+  },
+  "Tata Tiago EV": {
+    "name": "Tata Tiago EV",
+    "brand": "Tata",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "Tata/tiagoev.jpg",
+    "description": "Base model with 19.2 kWh battery, 250 km range, 60.34 bhp power, 2 months waiting.",
+    "year": 2024
+  },
+  "Tata Tigor EV": {
+    "name": "Tata Tigor EV",
+    "brand": "Tata",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/tigorev1.jpg",
+    "description": "Base model with 26 kWh battery, 315 km range, 73.75 bhp power, 2 months waiting.",
+    "year": 2024
+  },
+  "Tata tiago": {
+    "name": "Tata tiago",
+    "brand": "Tata",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "Tata/tiago123.jpg",
+    "description": "Base model with 1199 cc petrol engine, manual transmission, and 19.01 kmpl mileage.",
+    "year": 2024
+  },
+  "Skoda Kylaq": {
+    "name": "Skoda Kylaq",
+    "brand": "Skoda",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Skoda/kylaq1.webp",
+    "description": "Base model with 999 cc petrol engine, manual transmission, and 19.68 kmpl mileage.",
+    "year": 2024
+  },
+  "Skoda kylaq": {
+    "name": "Skoda kylaq",
+    "brand": "Skoda",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kylaq/Kylaq_Signature_Plus.jpg",
+    "description": "Signature Plus variant with manual transmission, equipped with premium features and 999 cc petrol engine delivering 19.68 kmpl.",
+    "year": 2024
+  },
+  "Skoda Slavia": {
+    "name": "Skoda Slavia",
+    "brand": "Skoda",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Skoda/slaviaa.webp",
+    "description": "Entry‑level Classic trim with 1.0 TSI 115hp petrol engine, 6‑speed manual gearbox, and 20.32 kmpl ARAI mileage.",
+    "year": 2024
+  },
+  "Skoda Kushaq": {
+    "name": "Skoda Kushaq",
+    "brand": "Skoda",
+    "bodyType": "Suv",
+    "seatingCapacity": 5,
+    "image": "Skoda/kushaq1.webp",
+    "description": "Entry‑level Classic with 1.0 TSI petrol, 6‑speed manual, offering 19.76 kmpl.",
+    "year": 2024
+  },
+  "Skoda Kodiaq": {
+    "name": "Skoda Kodiaq",
+    "brand": "Skoda",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kodiaq/kodiaq_sportline.jpg",
+    "description": "Entry-level variant with 2.0TSI turbo‑petrol engine (190PS, 320Nm), AWD, and sporty black styling.",
+    "year": 2024
+  },
+  "Nissan Magnite": {
+    "name": "Nissan Magnite",
+    "brand": "Nissan",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/magnite1.webp",
+    "description": "Base Visia trim with naturally aspirated 1.0 L petrol engine and 5‑speed manual gearbox.",
+    "year": 2024
+  },
+  "Nissan X‑Trail": {
+    "name": "Nissan X‑Trail",
+    "brand": "Nissan",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Nissan/nissan_x-trail.jpg",
+    "description": "India‑spec X‑Trail launched as a CBU, powered by a 1.5 L three‑cylinder VC‑turbo petrol engine (161 PS/300 Nm) mated to shift‑by‑wire CVT with paddle shifters, featuring mild‑hybrid assistance and seven seats.",
+    "year": 2024
+  },
+  "Tata Safari": {
+    "name": "Tata Safari",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/safari.jpg",
+    "description": "Smart 7 STR variant with 1956 cc diesel engine, manual transmission, and 16.3 kmpl mileage.",
+    "year": 2024
+  },
+  "MG Hector": {
+    "name": "MG Hector",
+    "brand": "MG",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/hectorr.webp",
+    "description": "Base petrol manual variant with standard features, steel wheels, halogen lamps and fabric seats.",
+    "year": 2025
+  },
+  "MG Astor": {
+    "name": "MG Astor",
+    "brand": "MG",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/astor1.webp",
+    "description": "Entry‑level petrol manual variant with fabric seats and standard features.",
+    "year": 2025
+  },
+  "Mahindra Scorpio N": {
+    "name": "Mahindra Scorpio N",
+    "brand": "Mahindra",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio_n.webp",
+    "description": "The Mahindra Scorpio N Z2 Petrol MT 7 STR (ESP) offers a bold SUV presence with powerful 200 bhp petrol engine and manual transmission, delivering a blend of performance and comfort.",
+    "year": 2024
+  },
+  "Mahindra Bolero Neo": {
+    "name": "Mahindra Bolero Neo",
+    "brand": "Mahindra",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/bolero_neo.webp",
+    "description": "The Mahindra Bolero Neo N4 offers rugged design, 100 bhp diesel performance, and reliable manual transmission for everyday utility and comfort.",
+    "year": 2024
+  },
+  "Mahindra XUV 3XO": {
+    "name": "Mahindra XUV 3XO",
+    "brand": "Mahindra",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/xuv3xo.webp",
+    "description": "The Mahindra XUV 3XO MX1 1.2 Petrol offers a refined petrol engine with manual transmission and excellent fuel efficiency of 18.89 kmpl.",
+    "year": 2024
+  },
+  "Renault Kwid": {
+    "name": "Renault Kwid",
+    "brand": "Renault",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kwid/kwid_std.jpg",
+    "description": "Bare‑bones base model with LED DRLs, digital instrument cluster, heater, driver airbag, ABS.",
+    "year": 2025
+  },
+  "Renault Kiger": {
+    "name": "Renault Kiger",
+    "brand": "Renault",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kiger/kiger_rxe.jpg",
+    "description": "Base petrol manual variant with LED DRLs, digital cluster, ABS, dual airbags.",
+    "year": 2025
+  },
+  "Renault Triber": {
+    "name": "Renault Triber",
+    "brand": "Renault",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Triber/triber_authentic.jpg",
+    "description": "Facelift base variant now with 4‑power windows, central locking, projector headlamps.",
+    "year": 2025
+  },
+  "Toyota Fortuner": {
+    "name": "Toyota Fortuner",
+    "brand": "Toyota",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_4x2_at_27_petrol.webp",
+    "description": "Premium SUV with a powerful 2.7L petrol engine and automatic transmission, delivering 10.3 kmpl mileage.",
+    "year": 2024
+  },
+  "Toyota Innova Crysta": {
+    "name": "Toyota Innova Crysta",
+    "brand": "Toyota",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/crysta.jpg",
+    "description": "Innova Crysta GX 7-seater with powerful 2.4L diesel engine and comfortable cabin.",
+    "year": 2024
+  },
+  "Toyota Hilux": {
+    "name": "Toyota Hilux",
+    "brand": "Toyota",
+    "bodyType": "Pickup Truck",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/hilux_std_4x4_mt.webp",
+    "description": "The rugged Hilux STD 4X4 MT is built for extreme durability, with a 2.8L diesel engine delivering excellent off-road capability.",
+    "year": 2024
+  },
+  "Toyota Land Cruiser": {
+    "name": "Toyota Land Cruiser",
+    "brand": "Toyota",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/land_cruiser_zx_diesel.webp",
+    "description": "The Toyota Land Cruiser ZX Diesel combines unmatched off-road prowess with luxurious interiors, powered by a 3.3L twin-turbo diesel engine delivering 304 bhp.",
+    "year": 2024
+  },
+  "Toyota Innova Hycross": {
+    "name": "Toyota Innova Hycross",
+    "brand": "Toyota",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_gx_7str.webp",
+    "description": "The Toyota Innova Hycross GX 7 STR offers a refined petrol engine with CVT automatic transmission, spacious seating for seven, and a mileage of 16.13 kmpl.",
+    "year": 2024
+  },
+  "BYD Atto 3": {
+    "name": "BYD Atto 3",
+    "brand": "BYD",
+    "bodyType": "SUV (5‑seater)",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/atto3_1.jpg",
+    "description": "BYD Atto 3 Dynamic is the entry variant with a 49.92 kWh Blade battery, 201 bhp motor, and ~345 km ARAI range. Launched at ₹24.99 L ex‑showroom India.",
+    "year": 2025
+  },
+  "BYD Seal": {
+    "name": "BYD Seal",
+    "brand": "BYD",
+    "bodyType": "Sedan (5‑seater)",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/Seal_Dynamic.jpg",
+    "description": "BYD Seal Dynamic RWD with a 61.44 kWh Blade battery, approx. 201 bhp and 310 Nm, 0‑100 km/h in ~7.5 s, and ARAI‑claimed range of 510 km. Ex‑showroom ₹41 L in India. :contentReference[oaicite:1]{index=1}",
+    "year": 2025
+  },
+  "BYD Sealion 7": {
+    "name": "BYD Sealion 7 ",
+    "brand": "BYD",
+    "bodyType": "SUV‑coupe (5‑seat)",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/Sealion7_Premium.jpg",
+    "description": "BYD Sealion 7 Premium is the rear‑drive electric SUV‑coupe with a 82.56 kWh battery, ~308 bhp / 380 Nm, 0‑100 km/h in ~4.5 s, ARAI‑claimed range ≈567 km. Launched in India at ₹48.90 L ex‑showroom. :contentReference[oaicite:1]{index=1}",
+    "year": 2025
+  },
+  "BYD eMAX 7": {
+    "name": "BYD eMAX 7",
+    "brand": "BYD",
+    "bodyType": "MPV (6‑seat)",
+    "seatingCapacity": 6,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/emax_7.webp",
+    "description": "BYD eMAX 7 Premium 6‑seater variant with 55.4 kWh Blade battery, 161 bhp and 310 Nm, 0‑100 km/h in ~10.1 s, and ARAI‑claimed range of ~420 km. Ex‑showroom ₹26.90 L in India; on‑road Delhi around ₹31.2 L.",
+    "year": 2025
+  },
+  "BYD eMAX 7": {
+    "name": "BYD eMAX 7",
+    "brand": "BYD",
+    "bodyType": "MPV (7‑seat)",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BYD/eMax7_Premium_7STR.jpg",
+    "description": "BYD eMax 7 Premium 7‑seater variant. 55.4 kWh battery, ~161 bhp and 310 Nm, 0‑100 km/h ~10 s, ARAI range ~420 km. Ex‑showroom ₹27.50 L in India, on‑road ~₹29.56 L in Delhi.",
+    "year": 2025
+  },
+  "Toyota Fortuner Legender": {
+    "name": "Toyota Fortuner Legender",
+    "brand": "Toyota",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/fortuner_legender_28_4x2_at.webp",
+    "description": "Premium SUV variant with a powerful 2.8L diesel engine, automatic transmission, and advanced comfort features.",
+    "year": 2024
+  },
+  "Kia Carens Clavis": {
+    "name": "Kia Carens Clavis",
+    "brand": "Kia",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/carensclavis.webp",
+    "description": "Entry-level petrol variant offering a balance of comfort and affordability with Kia's signature design.",
+    "year": 2024
+  },
+  "Kia Carens": {
+    "name": "Kia Carens",
+    "brand": "KIA",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/carens.webp",
+    "description": "The Kia Carens Premium (O) 1.5 Petrol 7 STR offers a perfect combination of comfort, style, and practicality with spacious seating for seven passengers, advanced features, and a refined petrol engine.",
+    "year": 2024
+  },
+  "Kia Carens EV": {
+    "name": "Kia Carens EV",
+    "brand": "KIA.",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/KIA/carensev.webp",
+    "description": "The Carens Clavis EV HTK Plus comes with a 42 kWh battery, automatic transmission, and delivers smooth, eco-friendly performance for daily commutes and long drives.",
+    "year": 2024
+  },
+  "Kia Carnival": {
+    "name": "Kia Carnival",
+    "brand": "KIA.",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/carnival_limousine_plus.webp",
+    "description": "The Carnival Limousine Plus offers luxury and spacious interiors, powered by a 2151 cc diesel engine paired with a smooth 8-speed automatic transmission.",
+    "year": 2024
+  },
+  "Kia EV6": {
+    "name": "Kia EV6",
+    "brand": "Kia.",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/ev6_gt_line_awd.webp",
+    "description": "The Kia EV6 GT Line AWD delivers a thrilling electric performance with an impressive 663 km range, dual motor all-wheel-drive system, and advanced safety and comfort features.",
+    "year": 2024
+  },
+  "Kia EV9": {
+    "name": "Kia EV9",
+    "brand": "Kia..",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Kia/ev9_gt_line_awd.webp",
+    "description": "The Kia EV9 GT-Line AWD is a luxury all-electric SUV featuring a 99.8 kWh battery, advanced AWD system, premium comfort, and state-of-the-art technology for an exceptional driving experience.",
+    "year": 2024
+  },
+  "MG M9 EV": {
+    "name": "MG M9 EV",
+    "brand": "MG",
+    "bodyType": "Sedan",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/M9/m9_ev_presidential_limo.webp",
+    "description": "The M9 EV Presidential Limo is a premium electric sedan designed for luxury and comfort, offering a 90 kWh battery, 548 km range, and top-tier interior features.",
+    "year": 2024
+  },
+  "MG Gloster": {
+    "name": "MG Gloster",
+    "brand": "MG",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_sharp_7str.jpg",
+    "description": "Sharp variant with 7-seater configuration, 2.0L turbo diesel engine, and automatic transmission.",
+    "year": 2024
+  },
+  "Gloster": {
+    "name": "Gloster",
+    "brand": "MG",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/MG/gloster_savvy_twin_7str.jpg",
+    "description": "Savvy variant with 7-seater layout, powerful 2.0L twin-turbo diesel engine, and 4WD capability.",
+    "year": 2024
+  },
+  "Citroen C3": {
+    "name": "Citroen C3",
+    "brand": "Citroen",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/c3.webp",
+    "description": "Experience the Citroen C3 Live 1.2 Petrol with a 1198 cc engine, delivering 80 bhp power and excellent fuel efficiency of 19.3 kmpl for an engaging city and highway drive.",
+    "year": 2024
+  },
+  "Citroen Basalt": {
+    "name": "Citroen Basalt",
+    "brand": "Citroen",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/basalt13.webp",
+    "description": "The Citroen Basalt You 1.2 Petrol MT offers 80 bhp performance with 18 kmpl mileage, combining efficiency and SUV comfort.",
+    "year": 2024
+  },
+  "Citroen C3 Aircross": {
+    "name": "Citroen C3 Aircross",
+    "brand": "Citroen",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/aircross.webp",
+    "description": "The Citroen C3 Aircross You 1.2 5 STR offers 80 bhp performance with 17.5 kmpl efficiency, perfect for family trips.",
+    "year": 2024
+  },
+  "Citroen eC3": {
+    "name": "Citroen eC3",
+    "brand": "Citroen",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/c3_ev.jpg",
+    "description": "The Citroen eC3 Feel delivers an electric driving range of 320 km with a 29.2 kWh battery and smooth automatic transmission.",
+    "year": 2024
+  },
+  "Citroen C5 Aircross": {
+    "name": "Citroen C5 Aircross",
+    "brand": "Citroen",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Citroen/c5_aircross_shine_dualtone.webp",
+    "description": "The Citroen C5 Aircross Shine Dual Tone offers a premium SUV experience with a powerful diesel engine, dual tone styling, and smooth automatic transmission.",
+    "year": 2024
+  },
+  "Tata Curvv": {
+    "name": "Tata Curvv",
+    "brand": "Tata",
+    "bodyType": "SUV Coupe",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/curvv.jpg",
+    "description": "The Tata Curvv Smart 1.2 Revotron Petrol 6MT offers a stylish SUV coupe design with a powerful 118 bhp petrol engine and manual transmission.",
+    "year": 2024
+  },
+  "TATA Curvv EV": {
+    "name": "TATA Curvv EV",
+    "brand": "Tata",
+    "bodyType": "SUV Coupe",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/curvvev.jpg",
+    "description": "The Tata Curvv EV Creative 45 offers a 45 kWh battery delivering up to 430 km of range with modern SUV coupe styling.",
+    "year": 2024
+  },
+  "Hyundai Venue": {
+    "name": "Hyundai Venue",
+    "brand": "Hyundai",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "Hyundai/venue.jpg",
+    "description": "Base model with manual transmission and petrol engine, delivering 17.5 kmpl mileage.",
+    "year": 2024
+  },
+  "Tata nexon ev": {
+    "name": "Tata nexon ev",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/nexonev1.webp",
+    "description": "Experience electrifying performance and advanced features in the Tata Nexon EV Creative Plus Medium Range, offering a range of 325 km per charge and a premium driving experience.",
+    "year": 2024
+  },
+  "Honda Elevate": {
+    "name": "Honda Elevate",
+    "brand": "Honda",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/elevate.jpg",
+    "description": "The Honda Elevate SV MT offers a refined petrol engine with exceptional comfort, style, and efficiency, perfect for city drives and highway cruises.",
+    "year": 2024
+  },
+  "Honda Amaze": {
+    "name": "Honda Amaze",
+    "brand": "Honda",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Honda/amaze.jpg",
+    "description": "The Honda Amaze V 1.2 Petrol MT offers a stylish and practical sedan experience with excellent fuel efficiency and comfortable interiors.",
+    "year": 2024
+  },
+  "Hyundai Exter": {
+    "name": "Hyundai Exter",
+    "brand": "Hyundai",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter.jpg",
+    "description": "Base petrol manual variant with 82 bhp engine.",
+    "year": 2025
+  },
+  "Exter": {
+    "name": "Exter",
+    "brand": "Hyundai",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/exter_s_smart_12_cng_duo.jpg",
+    "description": "Smart variant with Hy-CNG manual transmission and dual fuel option.",
+    "year": 2025
+  },
+  "Hyundai Grand i10 Nios": {
+    "name": "Hyundai Grand i10 Nios",
+    "brand": "Hyundai",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/nios.jpg",
+    "description": "Base petrol manual variant of Grand i10 Nios with 82 bhp engine.",
+    "year": 2024
+  },
+  "Hyundai Verna": {
+    "name": "Hyundai Verna",
+    "brand": "Hyundai",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/verna.webp",
+    "description": "Base petrol manual variant of Hyundai Verna with efficient mileage.",
+    "year": 2025
+  },
+  "Hyundai i20": {
+    "name": "Hyundai i20",
+    "brand": "Hyundai",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/i20_1.jpg",
+    "description": "Magna variant with manual transmission and petrol engine.",
+    "year": 2025
+  },
+  "Hyundai creta Electric": {
+    "name": "Hyundai creta Electric",
+    "brand": "Hyundai",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Hyundai/cretaev.jpg",
+    "description": "Electric Creta Executive variant with 42KWh battery and 390 km range.",
+    "year": 2025
+  },
+  "Maruti Wagon R": {
+    "name": "Maruti Wagon R",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/wagnor.jpg",
+    "description": "Base petrol manual variant of Wagon R with 998 cc engine and good mileage.",
+    "year": 2025
+  },
+  "Maruti Alto K10": {
+    "name": "Maruti Alto K10",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/alto.jpg",
+    "description": "Base petrol manual variant of Alto K10 with excellent fuel efficiency.",
+    "year": 2025
+  },
+  "Maruti S-Presso": {
+    "name": "Maruti S-Presso",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso.webp",
+    "description": "Base petrol manual variant of S-Presso with efficient mileage.",
+    "year": 2025
+  },
+  "Mahindra Scorpio": {
+    "name": "Mahindra Scorpio",
+    "brand": "Mahindra",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/scorpio.jpg",
+    "description": "Basic 7-seater Scorpio with diesel manual transmission.",
+    "year": 2025
+  },
+  "KIA Sonet": {
+    "name": "KIA Sonet",
+    "brand": "Kia",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "KIA/sonet.Webp",
+    "description": "Entry-level Sonet petrol manual variant with 82 bhp engine.",
+    "year": 2025
+  },
+  "VINFAST VF 6": {
+    "name": " VINFAST VF 6",
+    "brand": "VinFast",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf6_earth.jpg",
+    "description": "VinFast VF 6 is an all-electric compact SUV available in three variants — Earth, Wind, and Wind Infinity. Each variant comes with a 59.6 kWh battery and automatic transmission, offering a range up to 468 km.",
+    "year": 2025
+  },
+  "Vinfast VF 7": {
+    "name": " Vinfast VF 7",
+    "brand": "VinFast",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/VinFast/vf7_earth.jpg",
+    "description": "VinFast VF 7 Earth offers a 59.6 kWh battery, automatic transmission, and a certified range of 438 km.",
+    "year": 2025
+  },
+  "Toyota Urban Cruiser Hyryder": {
+    "name": "Toyota Urban Cruiser Hyryder",
+    "brand": "Toyota",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/Hyryder.webp",
+    "description": "NeoDrive E — 102 bhp petrol, 136.8 Nm torque, claimed 21.11 kmpl. On-road price from Rs. 13.66 Lakh .",
+    "year": 2025
+  },
+  "Toyota Urban Cruiser Hyryder G": {
+    "name": "Toyota Urban Cruiser Hyryder G",
+    "brand": "Toyota",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/NeoAuto/neodrive_aero_go.jpg",
+    "description": "NeoDrive Aero Edition (G O) — aero styling for G(O) trim, 102 bhp and 21.11 kmpl. On-road price Rs. 17.68 Lakh.",
+    "year": 2025
+  },
+  "Toyota Urban Cruiser Hyryder V": {
+    "name": "Toyota Urban Cruiser Hyryder V",
+    "brand": "Toyota",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "NeoAuto/at_neodrive_dual_tone_v.jpg",
+    "description": "AT NeoDrive Dual Tone (V) — automatic with dual-tone finish, 102 bhp. On-road price Rs. 21.22 Lakh.",
+    "year": 2025
+  },
+  "Mercedes-Benz c": {
+    "name": "Mercedes-Benz c",
+    "brand": "Mercedes-Benz",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/c_class_c200.jpg",
+    "description": "Mercedes-Benz C-Class C 200 — 1496 cc mild-hybrid petrol engine producing 201 bhp. On-road price Rs. 68.76 Lakh.",
+    "year": 2025
+  },
+  "Mercedes-Benz A": {
+    "name": "Mercedes-Benz A",
+    "brand": "Mercedes-Benz",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/a_class_limousine_200.jpg",
+    "description": "Mercedes-Benz A-Class Limousine 200 — 1332 cc petrol engine producing 161 bhp. On-road price Rs. 51.95 Lakh.",
+    "year": 2025
+  },
+  "Mercedes-Benz G": {
+    "name": "Mercedes-Benz G",
+    "brand": "Mercedes-Benz",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/g_class.jpg",
+    "description": "The Mercedes-Benz G-Class is an iconic luxury off-road SUV with a 3.0-litre diesel engine producing 326 bhp and 700 Nm. Accelerates 0–100 kmph in 6.4 seconds and delivers exceptional off-road capability. On-road price: Rs. 3.49 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz GLA": {
+    "name": "Mercedes-Benz GLA",
+    "brand": "Mercedes-Benz",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gla_200.jpg",
+    "description": "Mercedes-Benz GLA 200 — 1332 cc petrol engine delivering 161 bhp with DCT automatic transmission. On-road price Rs. 59.05 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz GLS": {
+    "name": "Mercedes-Benz GLS",
+    "brand": "Mercedes Benz",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gls_450_4matic.jpg",
+    "description": "Mercedes-Benz GLS 450 4MATIC — 2999 cc petrol engine delivering 375 bhp with TC automatic transmission. On-road price Rs. 1.57 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz E": {
+    "name": "Mercedes-Benz E",
+    "brand": " Mercedes-Benz",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/e_class_e200_lwb.jpg",
+    "description": "Mercedes-Benz E-Class E200 LWB — 1999 cc petrol engine producing 201 bhp. On-road price Rs. 91.77 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz Maybach": {
+    "name": "Mercedes-Benz Maybach",
+    "brand": "Mercedes-Benz",
+    "bodyType": "Sedan",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/maybach_s580_4matic.jpg",
+    "description": "Mercedes-Maybach S 580 4MATIC — 3982 cc mild-hybrid V8 producing 496 bhp with AWD. Ultimate luxury limousine. On-road price Rs. 3.43 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz GLE": {
+    "name": "Mercedes-Benz GLE",
+    "brand": "Mercedes-Benz",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/gle_300d_amg_line.jpg",
+    "description": "Mercedes-Benz GLE 300d AMG Line — 1993 cc diesel engine producing 265 bhp. On-road price Rs. 1.16 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz S-Class": {
+    "name": "Mercedes-Benz S-Class",
+    "brand": "Mercedes-Benz",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/s_class_s450_4matic.jpg",
+    "description": "Mercedes-Benz S-Class S 450 4MATIC — 2999 cc mild-hybrid petrol engine delivering 375 bhp with AWD. On-road price Rs. 2.13 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes - Benz Maybach": {
+    "name": "Mercedes - Benz Maybach",
+    "brand": "Mercedes-Benz",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/maybach_eqs_suv_680.jpg",
+    "description": "Mercedes-Maybach EQS SUV 680 — 122 kWh ultra-luxury electric SUV offering 600 km range. On-road price Rs. 2.52 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz EQE": {
+    "name": "Mercedes-Benz EQE",
+    "brand": "Mercedes-Benz",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/eqe_suv_500_4matic.jpg",
+    "description": "Mercedes-Benz EQE SUV 500 4MATIC — 90.56 kWh luxury electric SUV with 550 km range and AWD capability. On-road price Rs. 1.47 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz AMG": {
+    "name": "Mercedes-Benz AMG",
+    "brand": "Mercedes-Benz",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/amg_eqs_53_4matic_plus.jpg",
+    "description": "Mercedes-Benz AMG EQS 53 4MATIC+ — 107.8 kWh high-performance electric sedan with 526 km range. On-road price Rs. 2.58 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz GT 63 s": {
+    "name": "Mercedes-Benz GT 63 s",
+    "brand": "Mercedes-Benz",
+    "bodyType": "Sedan",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/amg_gt_63_s_4matic_plus.jpg",
+    "description": "Mercedes-Benz AMG GT 63 S 4MATIC+ Limousine — 3982 cc twin-turbo V8 producing 630 bhp with AWD. Ultra-high-performance luxury four-door coupe. On-road price Rs. 3.21 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz AMG S": {
+    "name": "Mercedes-Benz AMG S",
+    "brand": "Mercedes-Benz",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/amg_s63_e_performance.jpg",
+    "description": "Mercedes-Benz AMG S 63 E Performance — 3982 cc V8 plug-in hybrid producing 794 bhp. One of the most powerful AMG sedans ever built. On-road price Rs. 4.10 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz EQA": {
+    "name": "Mercedes-Benz EQA",
+    "brand": "Mercedes-Benz",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/eqa_250_plus.jpg",
+    "description": "Mercedes-Benz EQA 250 Plus — 70.5 kWh electric SUV delivering 560 km range. On-road price Rs. 70.36 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz EQB": {
+    "name": "Mercedes-Benz EQB",
+    "brand": "Mercedes-Benz",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/eqb_350_4matic.jpg",
+    "description": "Mercedes-Benz EQB 350 4MATIC — 66.5 kWh electric luxury SUV offering 423 km range with AWD capability. On-road price Rs. 82.39 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz EQB Plus": {
+    "name": "Mercedes-Benz EQB Plus",
+    "brand": "Mercedes-Benz",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/eqb_250_plus.jpg",
+    "description": "Mercedes-Benz EQB 250 Plus — 70.5 kWh luxury electric SUV with spacious 7-seat configuration. On-road price Rs. 83.26 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz AMG-S": {
+    "name": "Mercedes-Benz AMG-S",
+    "brand": "Mercedes-Benz",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/amg_a45_s_4matic_plus.jpg",
+    "description": "Mercedes-Benz AMG A45 S 4MATIC+ — 1991 cc turbocharged petrol engine delivering 421 bhp. One of the most powerful hatchbacks in the world. On-road price Rs. 1.13 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Mercedes-Benz_AMG": {
+    "name": "Mercedes-Benz_AMG",
+    "brand": "Mercedes-Benz",
+    "bodyType": "Convertible",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mercedes/amg_e53_cabriolet_4matic_plus.jpg",
+    "description": "Mercedes-Benz AMG E53 Cabriolet 4MATIC+ — 2999 cc turbocharged petrol engine with 429 bhp and AWD. A high-performance luxury convertible. On-road price Rs. 1.55 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Ferrari Purosangue": {
+    "name": "Ferrari Purosangue",
+    "brand": "Ferrari",
+    "bodyType": "SUV",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Ferrari/purosangue_v12.jpg",
+    "description": "Ferrari Purosangue V12 — 6496 cc naturally aspirated V12 producing 715 bhp. Ferrari’s first four-door SUV with extreme performance. On-road price Rs. 11.74 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Ferrari GTB 3.0": {
+    "name": "Ferrari GTB 3.0",
+    "brand": "Ferrari",
+    "bodyType": "Coupe",
+    "seatingCapacity": 2,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Ferrari/296_gtb.jpg",
+    "description": "Ferrari 296 GTB — 2992 cc twin-turbo V6 producing 645 bhp paired with DCT gearbox. A high-performance hybrid-ready supercar with Ferrari’s signature dynamics. On-road price Rs. 6.04 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Ferrari F8 Tributo": {
+    "name": "Ferrari F8 Tributo",
+    "brand": "Ferrari",
+    "bodyType": "Coupe",
+    "seatingCapacity": 2,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Ferrari/f8_tributo_berlinetta.jpg",
+    "description": "Ferrari F8 Tributo Berlinetta — 3902 cc twin-turbo V8 delivering 711 bhp with a 7.7 kmpl efficiency figure. One of Ferrari’s most celebrated mid-engine supercars. On-road price Rs. 4.77 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Ferrari Coupe": {
+    "name": "Ferrari Coupe",
+    "brand": "Ferrari",
+    "bodyType": "Coupe",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Ferrari/roma_coupe.jpg",
+    "description": "Ferrari Roma Coupe — 3855 cc twin-turbo V8 producing 612 bhp with a refined GT character. On-road price Rs. 4.46 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Ferrari Portofino": {
+    "name": "Ferrari Portofino",
+    "brand": "Ferrari",
+    "bodyType": "Convertible",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Ferrari/portofino_m.jpg",
+    "description": "Ferrari Portofino M — 3855 cc twin-turbo V8 producing 591 bhp with a retractable hard-top convertible design. On-road price Rs. 4.16 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Ferrari GTS": {
+    "name": "Ferrari GTS",
+    "brand": "Ferrari",
+    "bodyType": "Convertible",
+    "seatingCapacity": 2,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Ferrari/296_gts.jpg",
+    "description": "Ferrari 296 GTS — 2992 cc twin-turbo V6 producing 663 bhp with a retractable hard-top GTS design. On-road price Rs. 6.98 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Volvo XC90": {
+    "name": "Volvo XC90",
+    "brand": "Volvo",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volvo/xc90_front.webp",
+    "description": "Volvo XC90 B5 Ultra — 1969 cc mild-hybrid petrol engine with 8-speed automatic transmission, AWD, offering luxury SUV comfort and typical real-world mileage of ~12.4 kmpl (ARAI figure).",
+    "year": 2025
+  },
+  "Volvo EX30": {
+    "name": "Volvo EX30",
+    "brand": "Volvo",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volvo/ex30_front.webp",
+    "description": "Volvo EX30 RWD Ultra — fully electric compact SUV with 69 kWh battery, RWD, automatic transmission, delivering ~272 hp and a claimed range up to 480 km. A good fit for those seeking a premium-feel EV with compact dimensions.",
+    "year": 2025
+  },
+  "Volvo XC60": {
+    "name": "Volvo XC60",
+    "brand": "Volvo",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volvo/xc60_front.webp",
+    "description": "Volvo XC60 B5 Ultra — 1969 cc mild-hybrid petrol engine (250 hp / 360 Nm) with 8-speed automatic, AWD, luxury SUV comfort and premium features.",
+    "year": 2025
+  },
+  "Volvo EX40": {
+    "name": "Volvo EX40",
+    "brand": "Volvo",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volvo/ex40_front.webp",
+    "description": "Volvo EX40 Plus — fully electric compact-SUV with 69 kWh battery, RWD, automatic transmission, offering 238 hp / 420 Nm, with claimed driving range up to 475 km (WLTP).",
+    "year": 2025
+  },
+  "Volvo EC40": {
+    "name": "Volvo EC40",
+    "brand": "Volvo",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Volvo/ec40_front.webp",
+    "description": "Volvo EC40 E80 — fully electric AWD crossover with twin motors (408 bhp / 660 Nm), 78 kWh battery, automatic transmission, and a claimed range up to 530 km (WLTP). Great mix of performance, range and EV convenience.",
+    "year": 2025
+  },
+  "Jeep Compass": {
+    "name": "Jeep Compass",
+    "brand": "Jeep",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Jeep/compass_sport.webp",
+    "description": "Jeep Compass Sport 2.0 Diesel with the 1956 cc engine delivering 172 bhp and manual transmission.",
+    "year": 2024
+  },
+  "Jeep Meridian": {
+    "name": "Jeep Meridian",
+    "brand": "Jeep",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Jeep/meridian_longitude_mt.webp",
+    "description": "Meridian Longitude 4x2 MT uses a 1956 cc diesel engine delivering 168 bhp with a manual gearbox.",
+    "year": 2024
+  },
+  "Jeep Wrangler": {
+    "name": "Jeep Wrangler",
+    "brand": "Jeep",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Jeep/wrangler_unlimited_front.webp",
+    "description": "Jeep Wrangler Unlimited 2.0 Petrol — 1995 cc petrol engine, 268 bhp, Automatic (Torque Converter), ideal for both city commute and off-road adventures.",
+    "year": 2025
+  },
+  "Jeep Grand Cherokee": {
+    "name": "Jeep Grand Cherokee",
+    "brand": "Jeep",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Jeep/grand_cherokee_limited_front.webp",
+    "description": "Jeep Grand Cherokee Limited (O) 4x4 AT — 1995 cc petrol engine, 268 bhp, Automatic (Torque Converter), luxury SUV with full 4x4 capability.",
+    "year": 2025
+  },
+  "Audi Q3": {
+    "name": "Audi Q3",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/q3_premium_front.webp",
+    "description": "Audi Q3 40 TFSI Premium — 1984 cc petrol engine, 188 bhp, quick-shifting DCT and a balanced city-highway drive.",
+    "year": 2025
+  },
+  "Audi A6": {
+    "name": "Audi A6",
+    "brand": "Audi",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/a6_premium_plus_front.webp",
+    "description": "Audi A6 Premium Plus 45 TFSI — 1984 cc petrol, 261 bhp, smooth-shifting DCT and a refined, comfortable sedan experience.",
+    "year": "2025"
+  },
+  "Audi A4": {
+    "name": "Audi A4",
+    "brand": "Audi",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/a4_premium_front.webp",
+    "description": "Audi A4 Premium 40 TFSI — 201 bhp from a 1984 cc engine, quick DCT gearbox and a smooth, easy-to-live-with luxury sedan.",
+    "year": 2025
+  },
+  "Audi Q7": {
+    "name": "Audi Q7",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/q7_premium_plus_front.webp",
+    "description": "Audi Q7 Premium Plus — 2995 cc turbo-petrol V6 with 335 bhp, smooth torque-converter automatic and a spacious 7-seater layout.",
+    "year": 2025
+  },
+  "Audi S5 Sportback": {
+    "name": "Audi S5 Sportback",
+    "brand": "Audi",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/s5_sportback_front.webp",
+    "description": "Audi S5 Sportback with a 349 bhp turbo V6, Quattro AWD, sharp handling and a fastback silhouette.",
+    "year": 2025
+  },
+  "Audi Q5": {
+    "name": "Audi Q5",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/q5_premium_plus_front.webp",
+    "description": "Audi Q5 Premium Plus with a 261 bhp 2.0 TFSI engine, DCT gearbox and a refined, comfortable cabin.",
+    "year": 2025
+  },
+  "Audi A8 L": {
+    "name": "Audi A8 L",
+    "brand": "Audi",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/a8l_celebration_front.webp",
+    "description": "Audi A8 L Celebration Edition pairs a 344 bhp mild-hybrid V6 engine with a long-wheelbase luxury cabin.",
+    "year": 2025
+  },
+  "Audi Q8": {
+    "name": " Audi Q8 ",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/q8_front.webp",
+    "description": "Audi Q8 55 TFSI quattro combines a 335 bhp 3.0-litre petrol engine with a spacious, tech-rich cabin and a 5-star safety rating.",
+    "year": 2025
+  },
+  "Audi Q3 Sportback": {
+    "name": " Audi Q3 Sportback ",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/q3_sportback_signature_front.webp",
+    "description": "Audi Q3 Sportback Signature Edition blends coupe-like styling with a 193 bhp turbo petrol motor and a 5-star safety rating.",
+    "year": 2025
+  },
+  "Audi RS Q8 Performance": {
+    "name": "Audi RS Q8 Performance",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/rsq8_performance_front.webp",
+    "description": "The Audi RS Q8 Performance packs a 648 bhp twin-turbo V8, quattro AWD and blistering performance. It holds the Nürburgring record for the fastest production SUV.",
+    "year": 2025
+  },
+  "Audi RS5": {
+    "name": "Audi RS5",
+    "brand": "Audi",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/rs5_sportback_front.webp",
+    "description": "Audi RS5 Sportback — 444 bhp 2.9-litre twin-turbo V6, Automatic (TC), sporty handling, premium sedan with 5-star safety rating.",
+    "year": 2025
+  },
+  "Audi E-tron GT": {
+    "name": "Audi E-tron GT",
+    "brand": "Audi",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/etron_gt_s_front.webp",
+    "description": "Audi e-tron GT S — full-electric luxury sedan with 388 km driving range, high-tech cabin, and 5-star safety rating.",
+    "year": 2025
+  },
+  "Audi E-tron Sportback": {
+    "name": " Audi E-tron Sportback ",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/etron_sportback_55_front.webp",
+    "description": "Audi e-tron Sportback 55 — all-electric SUV with 484 km driving range, 5-star safety rating, and a premium tech-loaded cabin.",
+    "year": 2025
+  },
+  "Audi E tron": {
+    "name": "Audi E tron",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/etron_50_front.webp",
+    "description": "Audi e-tron 50 — full-electric SUV with 379 km driving range, 5-star NCAP rating, 8 airbags, and a premium cabin.",
+    "year": 2025
+  },
+  "Audi e-tron": {
+    "name": "Audi e-tron",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/etron_55_tech_front.webp",
+    "description": "Audi e-tron 55 Technology — top-spec electric SUV with full tech suite, 484 km range, 8 airbags, and premium interior.",
+    "year": 2025
+  },
+  "Audi Q8 e-tron": {
+    "name": "Audi Q8 e-tron",
+    "brand": "Audi",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/q8_etron_50_front.webp",
+    "description": "Audi Q8 e-tron 50 — full-electric SUV with 491 km driving range, 5-star NCAP rating, 8 airbags, and a luxurious cabin.",
+    "year": 2025
+  },
+  "Audi Q8 Sportback e-tron": {
+    "name": " Audi Q8 Sportback e-tron ",
+    "brand": "Audi",
+    "bodyType": "Coupe & Convertible",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Audi/q8_sportback_etron_50_front.webp",
+    "description": "Audi Q8 Sportback e-tron 50 — all-electric 5-seater coupe SUV with 5-star NCAP rating, 8 airbags, and premium cabin.",
+    "year": 2025
+  },
+  "BMW X7": {
+    "name": "BMW X7",
+    "brand": "BMW",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/x7_signature_front.webp",
+    "description": "BMW X7 Signature Edition with a 2998 cc mild-hybrid petrol engine, strong performance and a plush 7-seat cabin.",
+    "year": 2025
+  },
+  "BMW X3": {
+    "name": "BMW X3",
+    "brand": "BMW",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/x3_xdrive20_msport_front.webp",
+    "description": "BMW X3 xDrive20 M Sport blends confident performance and everyday comfort with a petrol engine and sporty M styling.",
+    "year": 2025
+  },
+  "BMW 2 Series Gran Coupe": {
+    "name": "BMW 2 Series Gran Coupe",
+    "brand": "BMW",
+    "bodyType": "Coupe",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/2series_218i_msport_front.webp",
+    "description": "BMW 2 Series Gran Coupe 218i M Sport brings a compact, sharp-driving petrol experience with sporty styling and everyday practicality.",
+    "year": 2025
+  },
+  "BMW M5": {
+    "name": "BMW M5",
+    "brand": "BMW",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/m5_competition_front.webp",
+    "description": "BMW M5 Competition blends supercar-level performance with hybrid assistance, delivering 717 bhp in a luxury sedan body.",
+    "year": 2025
+  },
+  "BMW 3 Series LWB": {
+    "name": "BMW 3 Series LWB",
+    "brand": "BMW",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/3series_330li_msport_front.webp",
+    "description": "BMW 3 Series LWB 330Li M Sport offers a long-wheelbase cabin with sporty exterior detailing and a refined petrol engine.",
+    "year": 2025
+  },
+  "BMW 3 Series": {
+    "name": "BMW 3 Series",
+    "brand": "BMW",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/3series_50jahre_front.webp",
+    "description": "BMW 3 Series 50 Jahre Edition brings exclusive anniversary touches on top of the proven 330Li package.",
+    "year": 2025
+  },
+  "BMW M4": {
+    "name": "BMW M4",
+    "brand": "BMW",
+    "bodyType": "Coupe",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/m4_competition_front.webp",
+    "description": "BMW M4 Competition brings a brutal 523 bhp straight-six, rear-biased dynamics and the typical M attitude in a sharp coupe body.",
+    "year": 2025
+  },
+  "BMW M340i": {
+    "name": "BMW M340i",
+    "brand": "BMW",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/m340i_50jahre_front.webp",
+    "description": "The M340i 50 Jahre Edition celebrates BMW M heritage with exclusive touches and the familiar punch of a 369 bhp straight-six.",
+    "year": 2025
+  },
+  "BMW X1": {
+    "name": "BMW X1",
+    "brand": "BMW",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/x1_18i_msport_front.webp",
+    "description": "The BMW X1 sDrive18i M Sport packs a lively petrol engine, sharp styling and the practicality of a compact luxury SUV.",
+    "year": 2025
+  },
+  "BMW Z4": {
+    "name": "BMW Z4",
+    "brand": "BMW",
+    "bodyType": "Convertible",
+    "seatingCapacity": 2,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/z4_m40i_front.webp",
+    "description": "The BMW Z4 M40i blends classic roadster charm with a strong 335 bhp straight-six and sharp handling.",
+    "year": 2025
+  },
+  "BMW X5": {
+    "name": "BMW X5",
+    "brand": "BMW",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/x5_40i_xline_front.webp",
+    "description": "The BMW X5 xDrive40i xLine combines luxury SUV comfort with a powerful 375 bhp petrol engine and xLine styling.",
+    "year": 2025
+  },
+  "BMW 7 Series": {
+    "name": "BMW 7 Series",
+    "brand": "BMW",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/7series_740i_msport_front.webp",
+    "description": "The BMW 740i M Sport combines luxury, performance, and M Sport styling with a 375 bhp petrol engine for refined driving.",
+    "year": 2025
+  },
+  "BMW M2": {
+    "name": "BMW M2",
+    "brand": "BMW",
+    "bodyType": "Coupe",
+    "seatingCapacity": 2,
+    "image": "BMW/m2_at_front.webp",
+    "description": "The BMW M2 3.0 Petrol AT is a high-performance coupe with 473 bhp, delivering a thrilling automatic driving experience.",
+    "year": 2025
+  },
+  "BMW 5 Series": {
+    "name": "BMW 5 Series",
+    "brand": "BMW",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/5series_530li_titanium_front.webp",
+    "description": "The BMW 530Li M Sport in Titanium Bronze combines 255 bhp petrol performance with luxury and M Sport styling.",
+    "year": 2025
+  },
+  "BMW M8": {
+    "name": "BMW M8",
+    "brand": "BMW",
+    "bodyType": "Coupe",
+    "seatingCapacity": 2,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/m8_coupe_front.webp",
+    "description": "The BMW M8 Coupe delivers 617 bhp of pure performance, combining luxury, advanced tech, and a high-powered petrol engine in a striking coupe.",
+    "year": 2025
+  },
+  "BMW iX1 LWB": {
+    "name": "BMW iX1 LWB",
+    "brand": "BMW",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/ix1lwb_front.webp",
+    "description": "The BMW iX1 LWB eDrive20L M Sport offers an all-electric driving experience with 531 km range, M Sport styling, and modern tech in a long-wheelbase SUV.",
+    "year": 2025
+  },
+  "BMW XM": {
+    "name": "BMW XM",
+    "brand": "BMW",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/xm_pluginhybrid_front.webp",
+    "description": "The BMW XM Plug-in Hybrid combines 644 bhp performance with electric efficiency, luxury, and advanced tech in a high-performance SUV.",
+    "year": 2025
+  },
+  "BMW i7": {
+    "name": "BMW i7",
+    "brand": "BMW",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/i7_edrive50_front.webp",
+    "description": "The BMW i7 eDrive50 M Sport offers 603 km electric range, M Sport styling, and luxurious technology in a flagship electric sedan.",
+    "year": 2025
+  },
+  "BMW iX1": {
+    "name": " BMW iX1",
+    "brand": "BMW",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/ix1_xdrive30_front.webp",
+    "description": "The BMW iX1 xDrive30 M Sport offers a fully electric SUV experience with 417 km range, xDrive all-wheel drive, and M Sport styling.",
+    "year": 2025
+  },
+  "BMW i4": {
+    "name": "BMW i4",
+    "brand": "BMW",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/i4_edrive35_front.webp",
+    "description": "The BMW i4 eDrive35 M Sport offers an all-electric sedan experience with 483 km range, M Sport styling, and advanced technology.",
+    "year": 2025
+  },
+  "BMW X4 M40i": {
+    "name": "BMW X4 M40i",
+    "brand": "BMW",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/x4_m40i_front.webp",
+    "description": "The BMW X4 M40i xDrive combines sporty design, 355 bhp performance, and all-wheel drive technology for a dynamic SUV experience.",
+    "year": 2025
+  },
+  "BMW iX": {
+    "name": "BMW iX",
+    "brand": "BMW",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/ix_xdrive40_front.webp",
+    "description": "The BMW iX xDrive 40 offers a premium electric SUV experience with a 76.6 kWh battery, automatic transmission, and advanced tech features.",
+    "year": 2025
+  },
+  "BMW i5": {
+    "name": "BMW i5",
+    "brand": "BMW",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/BMW/i5_m60_front.webp",
+    "description": "The BMW i5 M60 xDrive is a high-performance electric sedan delivering 516 km range, 601 bhp, and M Sport styling with advanced technology.",
+    "year": 2025
+  },
+  "Toyota Camry Elegant": {
+    "name": "Toyota Camry Elegant",
+    "brand": "Toyota",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/camry_elegant_hybrid.jpg",
+    "description": "Toyota Camry Elegant Hybrid — petrol-electric hybrid sedan producing 184 bhp and 221 Nm, delivering an efficiency of 25.49 kmpl. On-road price Rs. 57.82 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Toyota Camry Elegant Platinum White Pearl": {
+    "name": "Toyota Camry Elegant Platinum White Pearl",
+    "brand": "Toyota",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/camry_elegant_platinum_white_pearl.jpg",
+    "description": "Toyota Camry Elegant Hybrid Platinum White Pearl — premium hybrid sedan with 184 bhp, 221 Nm torque and 25.49 kmpl efficiency. On-road price Rs. 57.98 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Toyota Camry Sprint Edition": {
+    "name": "Toyota Camry Sprint Edition",
+    "brand": "Toyota",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/camry_sprint_dual_tone.jpg",
+    "description": "Toyota Camry Sprint Edition Hybrid Dual Tone — sporty hybrid sedan delivering 184 bhp and 221 Nm with an efficiency of 25.49 kmpl. On-road price Rs. 57.82 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Toyota Camry Sprint Edition Platinum White Pearl": {
+    "name": "Toyota Camry Sprint Edition Platinum White Pearl",
+    "brand": "Toyota",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/camry_sprint_platinum_white_pearl.jpg",
+    "description": "Toyota Camry Sprint Edition Hybrid Platinum White Pearl — premium sprint trim with 184 bhp, 221 Nm and 25.49 kmpl efficiency. On-road price Rs. 57.98 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Toyota Innova Hycross Hi": {
+    "name": "Toyota Innova Hycross Hi",
+    "brand": "Toyota",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_hi_hybrid.jpg",
+    "description": "Toyota Innova Hycross Hi Hybrid — petrol-electric hybrid MPV delivering 19.28 kmpl efficiency with smooth automatic transmission. On-road price Rs. 1.58 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Toyota Innova Hycross VIP Executive Lounge": {
+    "name": "Toyota Innova Hycross VIP Executive Lounge",
+    "brand": "Toyota",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Toyota/innova_hycross_vip_executive_lounge.jpg",
+    "description": "Toyota Innova Hycross VIP Executive Lounge Hybrid — top-end luxury hybrid MPV with premium lounge-style seating and 19.28 kmpl efficiency. On-road price Rs. 1.69 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Range Rover HSE 3.0 Diesel": {
+    "name": "Range Rover HSE 3.0 Diesel",
+    "brand": "Land Rover",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/LandRover/range_rover_hse_3_0_diesel.jpg",
+    "description": "Range Rover HSE 3.0 Diesel — 2997 cc diesel engine producing 346 bhp with luxury SUV comfort. On-road price Rs. 2.90 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Range Rover Autobiography 3.0 Petrol": {
+    "name": "Range Rover Autobiography 3.0 Petrol",
+    "brand": "Land Rover",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/LandRover/range_rover_autobiography_3_0_petrol.jpg",
+    "description": "Range Rover Autobiography 3.0 Petrol — premium petrol luxury SUV with 394 bhp output. On-road price Rs. 3.22 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Range Rover SV 3.0 Diesel LWB": {
+    "name": "Range Rover SV 3.0 Diesel LWB",
+    "brand": "Land Rover",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/LandRover/range_rover_sv_3_0_diesel_lwb.jpg",
+    "description": "Range Rover SV 3.0 Diesel LWB — ultra-luxury long-wheelbase SUV with mild-hybrid diesel power. On-road price Rs. 4.81 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Range Rover SV 4.4 Petrol LWB": {
+    "name": "Range Rover SV 4.4 Petrol LWB",
+    "brand": "Land Rover",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/LandRover/range_rover_sv_4_4_petrol_lwb.jpg",
+    "description": "Range Rover SV 4.4 Petrol LWB — 4.4L mild-hybrid petrol engine producing 606 bhp in an ultra-luxury LWB SUV. On-road price Rs. 5.33 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Range Rover SV Ranthambore Edition": {
+    "name": "Range Rover SV Ranthambore Edition",
+    "brand": "Land Rover",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/LandRover/range_rover_sv_ranthambore.jpg",
+    "description": "Range Rover SV Ranthambore Edition — India-exclusive luxury edition with bespoke SV finishes. On-road price Rs. 5.83 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Range Rover SV 4.4 Petrol LWB Masara Edition": {
+    "name": "Range Rover SV 4.4 Petrol LWB Masara Edition",
+    "brand": "Land Rover",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/LandRover/range_rover_sv_masara_edition.jpg",
+    "description": "Range Rover SV 4.4 Petrol LWB Masara Edition — bespoke India-specific luxury edition with 606 bhp mild-hybrid V8. On-road price Rs. 5.84 Crore (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ciaz": {
+    "name": " Maruti Suzuki Ciaz",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ciaz_sigma_1_5.jpg",
+    "description": "Maruti Suzuki Ciaz Sigma 1.5 — 1462 cc petrol engine producing 103 bhp with 20.65 kmpl mileage. On-road price Rs. 10.67 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ignis": {
+    "name": "Maruti Suzuki Ignis",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ignis_sigma_1_2_mt.jpg",
+    "description": "Maruti Suzuki Ignis Sigma 1.2 MT — petrol manual hatchback with 82 bhp and 20.89 kmpl mileage. On-road price Rs. 6.29 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Jimny": {
+    "name": "Maruti Suzuki Jimny",
+    "brand": "Maruti Suzuki",
+    "bodyType": "SUV",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/jimny_zeta_pro_mt.jpg",
+    "description": "Maruti Suzuki Jimny Zeta Pro MT — petrol manual off-road SUV delivering 103 bhp with 16.94 kmpl efficiency. On-road price Rs. 14.46 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Eeco": {
+    "name": "Maruti Suzuki Eeco",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Van",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/eeco_5_str_std_o.jpg",
+    "description": "Maruti Suzuki Eeco 5 STR STD (O) — practical 5-seater petrol van with 81 bhp and 19.71 kmpl mileage. On-road price Rs. 6.17 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Celerio LXi": {
+    "name": "Maruti Suzuki Celerio LXi",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/celerio_lxi.jpg",
+    "description": "Maruti Suzuki Celerio LXi — entry-level petrol manual hatchback delivering 25.24 kmpl mileage. On-road price Rs. 5.52 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Celerio VXi": {
+    "name": "Maruti Suzuki Celerio VXi",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/celerio_vxi.jpg",
+    "description": "Maruti Suzuki Celerio VXi — petrol manual hatchback with added features and high fuel efficiency. On-road price Rs. 6.05 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Celerio VXi AGS": {
+    "name": "Maruti Suzuki Celerio VXi AGS",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/celerio_vxi_ags.jpg",
+    "description": "Maruti Suzuki Celerio VXi AGS — petrol automatic hatchback with excellent 26.68 kmpl mileage. On-road price Rs. 6.57 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Celerio ZXi": {
+    "name": "Maruti Suzuki Celerio ZXi",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/celerio_zxi.jpg",
+    "description": "Maruti Suzuki Celerio ZXi — premium manual hatchback with comfort features and fuel efficiency. On-road price Rs. 6.68 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Celerio VXi CNG": {
+    "name": "Maruti Suzuki Celerio VXi CNG",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/celerio_vxi_cng.jpg",
+    "description": "Maruti Suzuki Celerio VXi CNG — economical CNG hatchback with low running costs. On-road price Rs. 6.81 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Celerio ZXi AGS": {
+    "name": "Maruti Suzuki Celerio ZXi AGS",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/celerio_zxi_ags.jpg",
+    "description": "Maruti Suzuki Celerio ZXi AGS — automatic petrol hatchback offering comfort and efficiency. On-road price Rs. 7.20 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Celerio ZXi Plus": {
+    "name": "Maruti Suzuki Celerio ZXi Plus",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/celerio_zxi_plus.jpg",
+    "description": "Maruti Suzuki Celerio ZXi Plus — fully-loaded manual hatchback with premium features. On-road price Rs. 7.34 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Celerio ZXi Plus AGS": {
+    "name": "Maruti Suzuki Celerio ZXi Plus AGS",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/celerio_zxi_plus_ags.jpg",
+    "description": "Maruti Suzuki Celerio ZXi Plus AGS — top-spec automatic hatchback combining comfort and efficiency. On-road price Rs. 7.85 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki S-Presso Std (O)": {
+    "name": "Maruti Suzuki S-Presso Std (O)",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_std_o.jpg",
+    "description": "Maruti Suzuki S-Presso Std (O) — entry-level petrol manual hatchback with 24.12 kmpl efficiency. On-road price Rs. 4.15 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki S-Presso LXi (O)": {
+    "name": "Maruti Suzuki S-Presso LXi (O)",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_lxi_o.jpg",
+    "description": "Maruti Suzuki S-Presso LXi (O) — petrol manual hatchback with added comfort features. On-road price Rs. 4.49 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki S-Presso VXi (O)": {
+    "name": "Maruti Suzuki S-Presso VXi (O)",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o.jpg",
+    "description": "Maruti Suzuki S-Presso VXi (O) — feature-rich petrol hatchback delivering 24.76 kmpl mileage. On-road price Rs. 5.06 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki S-Presso LXi (O) CNG": {
+    "name": "Maruti Suzuki S-Presso LXi (O) CNG",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_lxi_o_cng.jpg",
+    "description": "Maruti Suzuki S-Presso LXi (O) CNG — economical CNG hatchback with low running costs. On-road price Rs. 5.28 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki S-Presso VXi (O) AGS": {
+    "name": "Maruti Suzuki S-Presso VXi (O) AGS",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_ags.jpg",
+    "description": "Maruti Suzuki S-Presso VXi (O) AGS — automatic petrol hatchback with best-in-class mileage of 25.3 kmpl. On-road price Rs. 5.58 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki S-Presso VXi Plus (O)": {
+    "name": "Maruti Suzuki S-Presso VXi Plus (O)",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_plus_o.jpg",
+    "description": "Maruti Suzuki S-Presso VXi Plus (O) — top-end manual hatchback with additional features. On-road price Rs. 5.64 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki S-Presso VXi (O) CNG": {
+    "name": "Maruti Suzuki S-Presso VXi (O) CNG",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_o_cng.jpg",
+    "description": "Maruti Suzuki S-Presso VXi (O) CNG — CNG-powered hatchback ideal for low-cost daily commuting. On-road price Rs. 5.84 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki S-Presso VXi Plus (O) AGS": {
+    "name": "Maruti Suzuki S-Presso VXi Plus (O) AGS",
+    "brand": "Maruti Suzuki",
+    "bodyType": "Hatchback",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/spresso_vxi_plus_o_ags.jpg",
+    "description": "Maruti Suzuki S-Presso VXi Plus (O) AGS — top-spec automatic hatchback combining features with excellent fuel efficiency. On-road price Rs. 6.15 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ertiga LXi": {
+    "name": "Maruti Suzuki Ertiga LXi",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ertiga_lxi.jpg",
+    "description": "Maruti Suzuki Ertiga LXi — 7-seater petrol MPV with 20.51 kmpl efficiency. On-road price Rs. 10.30 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ertiga VXi": {
+    "name": "Maruti Suzuki Ertiga VXi",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ertiga_vxi.jpg",
+    "description": "Maruti Suzuki Ertiga VXi — petrol manual MPV with added comfort features. On-road price Rs. 11.51 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ertiga VXi CNG": {
+    "name": "Maruti Suzuki Ertiga VXi CNG",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ertiga_vxi_cng.jpg",
+    "description": "Maruti Suzuki Ertiga VXi CNG — economical 7-seater MPV with factory-fitted CNG. On-road price Rs. 12.44 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ertiga ZXi": {
+    "name": "Maruti Suzuki Ertiga ZXi",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ertiga_zxi.jpg",
+    "description": "Maruti Suzuki Ertiga ZXi — premium petrol manual MPV with enhanced features. On-road price Rs. 12.96 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ertiga VXi AT": {
+    "name": "Maruti Suzuki Ertiga VXi AT",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ertiga_vxi_at.jpg",
+    "description": "Maruti Suzuki Ertiga VXi AT — petrol automatic MPV with torque converter gearbox. On-road price Rs. 13.30 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ertiga ZXi CNG": {
+    "name": "Maruti Suzuki Ertiga ZXi CNG",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ertiga_zxi_cng.jpg",
+    "description": "Maruti Suzuki Ertiga ZXi CNG — premium CNG MPV offering space and low running costs. On-road price Rs. 13.66 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ertiga ZXi Plus": {
+    "name": "Maruti Suzuki Ertiga ZXi Plus",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ertiga_zxi_plus.jpg",
+    "description": "Maruti Suzuki Ertiga ZXi Plus — top-end manual MPV with premium features. On-road price Rs. 13.75 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ertiga ZXi AT": {
+    "name": "Maruti Suzuki Ertiga ZXi AT",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ertiga_zxi_at.jpg",
+    "description": "Maruti Suzuki Ertiga ZXi AT — premium automatic MPV with smooth torque converter gearbox. On-road price Rs. 14.54 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Maruti Suzuki Ertiga ZXi Plus AT": {
+    "name": "Maruti Suzuki Ertiga ZXi Plus AT",
+    "brand": "Maruti Suzuki",
+    "bodyType": "MPV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Maruti/ertiga_zxi_plus_at.jpg",
+    "description": "Maruti Suzuki Ertiga ZXi Plus AT — fully-loaded automatic MPV ideal for families. On-road price Rs. 15.33 Lakh (Mumbai).",
+    "year": 2025
+  },
+  "Tata Sierra Smart Plus": {
+    "name": "Tata Sierra Smart Plus",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/sierra_smart_plus_revotron_mt.jpg",
+    "description": "Tata Sierra Smart Plus Revotron MT — petrol manual SUV producing 105 bhp. On-road price Rs. 13.66 Lakh.",
+    "year": 2025
+  },
+  "Tata Sierra Pure": {
+    "name": "Tata Sierra Pure",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/sierra_pure_revotron_mt.jpg",
+    "description": "Tata Sierra Pure Revotron MT — clean-design petrol SUV with 105 bhp. On-road price Rs. 15.41 Lakh.",
+    "year": 2025
+  },
+  "Tata Sierra Pure Plus": {
+    "name": "Tata Sierra Pure Plus",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/sierra_pure_plus_revotron_mt.jpg",
+    "description": "Tata Sierra Pure Plus Revotron MT — petrol manual SUV with added premium features. On-road price Rs. 17.17 Lakh.",
+    "year": 2025
+  },
+  "Tata Sierra Adventure": {
+    "name": "Tata Sierra Adventure",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/sierra_adventure_revotron_mt.jpg",
+    "description": "Tata Sierra Adventure Revotron MT — adventure-themed petrol SUV with rugged styling. On-road price Rs. 18.14 Lakh.",
+    "year": 2025
+  },
+  "Tata Sierra Adventure Plus": {
+    "name": "Tata Sierra Adventure Plus",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/sierra_adventure_plus_revotron_mt.jpg",
+    "description": "Tata Sierra Adventure Plus Revotron MT — enhanced adventure trim with added features. On-road price Rs. 18.96 Lakh.",
+    "year": 2025
+  },
+  "Tata Sierra Accomplished": {
+    "name": "Tata Sierra Accomplished",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/sierra_accomplished_revotron_mt.jpg",
+    "description": "Tata Sierra Accomplished Revotron MT — petrol SUV with premium Accomplished trim. On-road price Rs. 21.30 Lakh.",
+    "year": 2025
+  },
+  "Tata Sierra Accomplished Plus": {
+    "name": "Tata Sierra Accomplished Plus",
+    "brand": "Tata",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Tata/sierra_accomplished_plus_kryojet_mt.jpg",
+    "description": "Tata Sierra Accomplished Plus Kryojet MT — top-tier diesel manual SUV. On-road price Rs. 24.61 Lakh.",
+    "year": 2025
+  },
+  "M2": {
+    "name": "M2",
+    "brand": "Mahindra",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/m2_diesel_mt_7str_dual_tone.jpg",
+    "description": "M2 Diesel Turbo Manual 7-seater Dual Tone — delivers 121 bhp and 300 Nm torque with rugged styling. On-road price Rs. 16.95 Lakh.",
+    "year": 2025
+  },
+  "M4 Plus": {
+    "name": "M4 Plus",
+    "brand": "Mahindra",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/m4_plus_diesel_mt_7str_dual_tone.jpg",
+    "description": "M4 Plus Diesel Turbo Manual 7-seater Dual Tone — upgraded variant delivering 121 bhp and 300 Nm torque. On-road price Rs. 18.44 Lakh.",
+    "year": 2025
+  },
+  "M6 Plus": {
+    "name": "M6 Plus",
+    "brand": "Mahindra",
+    "bodyType": "SUV",
+    "seatingCapacity": 7,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/Mahindra/m6_plus_diesel_mt_7str_dual_tone.jpg",
+    "description": "M6 Plus Diesel Turbo Manual 7-seater Dual Tone — higher trim delivering 121 bhp and 300 Nm torque. On-road price Rs. 19.66 Lakh.",
+    "year": 2025
+  },
+  "Rolls-Royce Phantom": {
+    "name": "Rolls-Royce Phantom",
+    "brand": "Rolls-Royce",
+    "bodyType": "Sedan",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/RollsRoyce/phantom_sedan_front.webp",
+    "description": "The Rolls-Royce Phantom Sedan is the pinnacle of luxury motoring, powered by a 6749 cc petrol engine delivering unmatched comfort, craftsmanship, and prestige.",
+    "year": 2025
+  },
+  "Rolls-Royce Cullinan": {
+    "name": "Rolls-Royce Cullinan",
+    "brand": "Rolls-Royce",
+    "bodyType": "SUV",
+    "seatingCapacity": 5,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/RollsRoyce/cullinan_front.webp",
+    "description": "The Rolls-Royce Cullinan SUV blends unmatched luxury with all-terrain capability, powered by a 6749 cc petrol engine delivering supreme comfort and commanding presence.",
+    "year": 2025
+  },
+  "Rolls-Royce Spectre": {
+    "name": "Rolls-Royce Spectre",
+    "brand": "Rolls-Royce",
+    "bodyType": "Coupe",
+    "seatingCapacity": 4,
+    "image": "https://pub-6524190eee2749a3b78a95857c06b1cf.r2.dev/RollsRoyce/spectre_black_badge_front.webp",
+    "description": "The Rolls-Royce Spectre Black Badge is the brand’s first all-electric super coupe, featuring a 102 kWh battery, 530 km range, and bold Black Badge luxury styling.",
+    "year": 2025
+  }
+}

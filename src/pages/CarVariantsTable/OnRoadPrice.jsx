@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef, useCallback } from "react"
 import { useParams, useLocation, useNavigate, Link } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import rtoData from "../../data/RTO.json";
-import cars from "../../data/cars.json";
+import { getAllCars } from "../../utils/carDataUtils";
 import GetBrouchers from "./GetBrouchers";
 import OffersModal from "./OffersModal";
 import EMICalculatorModal from "./EMICalculatorModal";
@@ -137,6 +137,7 @@ const OnRoadPrice = ({ onOffersClick, onEditRegistration, onCitySelect }) => {
   // Fetch cars variants which matches cars.json
   useEffect(() => {
     if (!carId) return;
+    const cars = getAllCars();
     const foundCar = cars.find((c) => c.id === carId);
     if (!foundCar) return;
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import carsData from '../data/cars.json';
+import { getAllCars } from '../utils/carDataUtils';
 import { createCarSlug } from '../utils/carUtils';
 
 const CarCard = ({ car }) => {
@@ -9,6 +9,7 @@ const CarCard = ({ car }) => {
   };
 
   // Comparing the names to lowercase for comparison
+  const carsData = getAllCars();
   const relatedCars = carsData.filter(
     (c) => c.name.toLowerCase() === car.name.toLowerCase()
   );
