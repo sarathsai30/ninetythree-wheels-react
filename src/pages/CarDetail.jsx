@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import carsData from '../data/cars.json';
+import galleriesData from '../data/galleries.json';
 import CarVariantsTable from './CarVariantsTable/CarVariantsTable';
 import Aside from './Aside';
 import OnRoadPrice from './CarVariantsTable/OnRoadPrice';
@@ -43,6 +44,7 @@ const CarDetail = () => {
   }
 
   const displayCar = selectedCar || car;
+  const gallery = galleriesData[displayCar.name] || [];
 
   const formatPrice = (price) => {
     return new Intl.NumberFormat('en-IN', {
@@ -70,7 +72,7 @@ const CarDetail = () => {
             <div className="card-body p-0">
               <div id="carImageCarousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                  {displayCar.gallery.map((image, index) => (
+                  {gallery.map((image, index) => (
                     <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                       <img 
                         src={image} 
@@ -91,7 +93,7 @@ const CarDetail = () => {
               
               {/* Thumbnail images */}
               <div className="d-flex gap-2 p-3 overflow-auto">
-                {displayCar.gallery.map((image, index) => (
+                {gallery.map((image, index) => (
                   <img
                     key={index}
                     src={image}
