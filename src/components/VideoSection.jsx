@@ -6,7 +6,6 @@ const VideoSection = () => {
   const [videos, setVideos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [featuredVideoIndex, setFeaturedVideoIndex] = useState(0);
-  const [isPlayerActive, setIsPlayerActive] = useState(false);
   const sectionRef = useRef(null);
   const [isInView, setIsInView] = useState(false);
   const didFetchRef = useRef(false);
@@ -249,7 +248,6 @@ const VideoSection = () => {
     const videoId = videoUrl.split('v=')[1]?.split('&')[0];
     return `https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0`;
   };
-  const getYoutubeId = (videoUrl) => videoUrl.split('v=')[1]?.split('&')[0];
 
   const featuredVideo = videos[featuredVideoIndex];
   const otherVideos = videos.filter((_, index) => index !== featuredVideoIndex);
@@ -277,40 +275,16 @@ const VideoSection = () => {
             <div className="col-lg-8 mb-4">
               <div className="card border-0 shadow-lg featured-video">
                 <div className="position-relative overflow-hidden rounded">
-                  {isPlayerActive ? (
-                    <iframe
-                      src={getEmbedUrl(featuredVideo.videoUrl)}
-                      title={featuredVideo.title}
-                      className="w-100"
-                      style={{ height: '400px' }}
-                      frameBorder="0"
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  ) : (
-                    <button
-                      type="button"
-                      aria-label="Play video"
-                      onClick={() => setIsPlayerActive(true)}
-                      className="w-100 p-0 border-0 bg-transparent position-relative"
-                      style={{ height: '400px', cursor: 'pointer' }}
-                    >
-                      <img
-                        src={featuredVideo.thumbnail || `https://i.ytimg.com/vi/${getYoutubeId(featuredVideo.videoUrl)}/hqdefault.jpg`}
-                        alt={featuredVideo.title}
-                        className="w-100 h-100"
-                        style={{ objectFit: 'cover' }}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <div className="position-absolute top-50 start-50 translate-middle">
-                        <div className="bg-dark bg-opacity-75 rounded-circle p-3">
-                          <Play className="text-white" size={28} fill="white" />
-                        </div>
-                      </div>
-                    </button>
-                  )}
+                  <iframe
+                    src={getEmbedUrl(featuredVideo.videoUrl)}
+                    title={featuredVideo.title}
+                    className="w-100"
+                    style={{ height: '400px' }}
+                    frameBorder="0"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                   <div className="position-absolute bottom-0 end-0 bg-dark bg-opacity-75 text-white px-3 py-2 m-3 rounded">
                     <span className="fw-bold">{featuredVideo.duration}</span>
                   </div>
