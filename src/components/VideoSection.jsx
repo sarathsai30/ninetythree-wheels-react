@@ -227,6 +227,7 @@ const VideoSection = () => {
                     className="w-100"
                     style={{ height: '400px' }}
                     frameBorder="0"
+                    loading="lazy"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
@@ -306,6 +307,7 @@ const VideoSection = () => {
                             alt={video.title}
                             className="img-fluid video-thumbnail-small"
                             style={{ height: '80px', objectFit: 'cover', width: '100%' }}
+                            loading="lazy"
                             onError={(e) => {
                               e.target.src = 'https://via.placeholder.com/160x90/f8f9fa/6c757d?text=Video';
                             }}
