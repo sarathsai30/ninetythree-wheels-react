@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Play, Eye, Clock, ThumbsUp, MessageCircle, Share2 } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
@@ -6,14 +6,60 @@ const VideoSection = () => {
   const [videos, setVideos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [featuredVideoIndex, setFeaturedVideoIndex] = useState(0);
+  const [hasLoaded, setHasLoaded] = useState(false);
+  const sectionRef = useRef(null);
 
   // YouTube API Configuration - Replace with your actual values
    const YOUTUBE_API_KEY = 'AIzaSyAQ34xD5mF6-WxcvRMHVAG-_hsmETAjDBQ'; // Replace with your API key
   const YOUTUBE_CHANNEL_ID = 'UCr9--Ai4SYN00hQ_Sj0wn2w'; // Replace with your channel ID
 
+  // IntersectionObserver to detect when section is visible
   useEffect(() => {
-    fetchYouTubeVideos();
-  }, []);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasLoaded) {
+            setHasLoaded(true);
+            fetchYouTubeVideos();
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '100px' }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [hasLoaded]);
+
+  // Fallback: trigger on scroll/resize in case IntersectionObserver doesn't fire
+  useEffect(() => {
+    const checkVisibility = () => {
+      if (hasLoaded || !sectionRef.current) return;
+      const rect = sectionRef.current.getBoundingClientRect();
+      const inView = rect.top < window.innerHeight - 50 && rect.bottom > 0;
+      if (inView) {
+        setHasLoaded(true);
+        fetchYouTubeVideos();
+      }
+    };
+
+    // Initial check (in case already in viewport)
+    checkVisibility();
+    window.addEventListener('scroll', checkVisibility, { passive: true });
+    window.addEventListener('resize', checkVisibility);
+    return () => {
+      window.removeEventListener('scroll', checkVisibility);
+      window.removeEventListener('resize', checkVisibility);
+    };
+  }, [hasLoaded]);
+
 
   const fetchYouTubeVideos = async () => {
     try {
@@ -175,20 +221,7 @@ const VideoSection = () => {
     return `${minutes || '0'}:${seconds.padStart(2, '0')}`;
   };
 
-  if (isLoading) {
-    return (
-      <section className="py-5">
-        <div className="container">
-          <div className="text-center">
-            <div className="spinner-border text-primary" role="status">
-              <span className="visually-hidden">Loading...</span>
-            </div>
-            <p className="mt-3">Loading videos...</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
+  // Note: Do not early-return a loader here; we must render the section so observers can attach
 
   const getEmbedUrl = (videoUrl) => {
     const videoId = videoUrl.split('v=')[1]?.split('&')[0];
@@ -203,7 +236,7 @@ const VideoSection = () => {
   };
 
   return (
-    <section id="videos-section" className="py-5 bg-light">
+    <section id="videos-section" className="py-5 bg-light" ref={sectionRef}>
       <div className="container">
         {/* Header Section */}
         <div className="row mb-4">
@@ -214,6 +247,15 @@ const VideoSection = () => {
             </p>
           </div>
         </div>
+
+        {isLoading && (
+          <div className="text-center py-5">
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <p className="mt-3">Loading videos...</p>
+          </div>
+        )}
 
         {videos.length > 0 && (
           <div className="row">
