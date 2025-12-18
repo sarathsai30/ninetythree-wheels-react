@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Play, Eye, Clock, ThumbsUp, MessageCircle, Share2 } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
@@ -6,17 +6,68 @@ const VideoSection = () => {
   const [videos, setVideos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [featuredVideoIndex, setFeaturedVideoIndex] = useState(0);
+  const [isPlayerActive, setIsPlayerActive] = useState(false);
+  const sectionRef = useRef(null);
+  const [isInView, setIsInView] = useState(false);
+  const didFetchRef = useRef(false);
 
   // YouTube API Configuration - Replace with your actual values
    const YOUTUBE_API_KEY = 'AIzaSyAQ34xD5mF6-WxcvRMHVAG-_hsmETAjDBQ'; // Replace with your API key
   const YOUTUBE_CHANNEL_ID = 'UCr9--Ai4SYN00hQ_Sj0wn2w'; // Replace with your channel ID
 
   useEffect(() => {
-    fetchYouTubeVideos();
+    // Observe when the section enters the viewport (defer work until visible)
+    const el = sectionRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsInView(true);
+          }
+        });
+      },
+      { root: null, rootMargin: '200px 0px', threshold: 0.1 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (!isInView || videos.length > 0 || didFetchRef.current) return;
+    didFetchRef.current = true;
+    fetchYouTubeVideos();
+  }, [isInView, videos.length]);
+
+  // Fallback: in rare cases where IntersectionObserver doesn't fire, fetch after a short delay
+  useEffect(() => {
+    const t = setTimeout(() => {
+      if (videos.length === 0 && !didFetchRef.current) {
+        didFetchRef.current = true;
+        fetchYouTubeVideos();
+      }
+    }, 4000);
+    return () => clearTimeout(t);
+  }, [videos.length]);
 
   const fetchYouTubeVideos = async () => {
     try {
+      const CACHE_KEY = 'yt_videos_cache_v1';
+      const CACHE_TTL = 10 * 60 * 1000; // 10 minutes
+
+      // Use cached videos if fresh
+      const cached = sessionStorage.getItem(CACHE_KEY);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (parsed?.timestamp && Date.now() - parsed.timestamp < CACHE_TTL && Array.isArray(parsed.videos)) {
+          setVideos(parsed.videos);
+          setIsLoading(false);
+          return;
+        }
+      }
+
       if (YOUTUBE_API_KEY === 'YOUR_YOUTUBE_API_KEY_HERE' || YOUTUBE_CHANNEL_ID === 'YOUR_CHANNEL_ID_HERE') {
         // Show fallback data when API keys are not set
         setVideos(getFallbackVideos());
@@ -61,6 +112,10 @@ const VideoSection = () => {
       });
       
       setVideos(videosWithStats);
+      // Cache results
+      try {
+        sessionStorage.setItem(CACHE_KEY, JSON.stringify({ videos: videosWithStats, timestamp: Date.now() }));
+      } catch {}
     } catch (error) {
       console.error('Error fetching YouTube videos:', error);
       // setVideos(getFallbackVideos());
@@ -194,6 +249,7 @@ const VideoSection = () => {
     const videoId = videoUrl.split('v=')[1]?.split('&')[0];
     return `https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0`;
   };
+  const getYoutubeId = (videoUrl) => videoUrl.split('v=')[1]?.split('&')[0];
 
   const featuredVideo = videos[featuredVideoIndex];
   const otherVideos = videos.filter((_, index) => index !== featuredVideoIndex);
@@ -203,7 +259,7 @@ const VideoSection = () => {
   };
 
   return (
-    <section id="videos-section" className="py-5 bg-light">
+    <section id="videos-section" className="py-5 bg-light" ref={sectionRef}>
       <div className="container">
         {/* Header Section */}
         <div className="row mb-4">
@@ -221,15 +277,40 @@ const VideoSection = () => {
             <div className="col-lg-8 mb-4">
               <div className="card border-0 shadow-lg featured-video">
                 <div className="position-relative overflow-hidden rounded">
-                  <iframe
-                    src={getEmbedUrl(featuredVideo.videoUrl)}
-                    title={featuredVideo.title}
-                    className="w-100"
-                    style={{ height: '400px' }}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  {isPlayerActive ? (
+                    <iframe
+                      src={getEmbedUrl(featuredVideo.videoUrl)}
+                      title={featuredVideo.title}
+                      className="w-100"
+                      style={{ height: '400px' }}
+                      frameBorder="0"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  ) : (
+                    <button
+                      type="button"
+                      aria-label="Play video"
+                      onClick={() => setIsPlayerActive(true)}
+                      className="w-100 p-0 border-0 bg-transparent position-relative"
+                      style={{ height: '400px', cursor: 'pointer' }}
+                    >
+                      <img
+                        src={featuredVideo.thumbnail || `https://i.ytimg.com/vi/${getYoutubeId(featuredVideo.videoUrl)}/hqdefault.jpg`}
+                        alt={featuredVideo.title}
+                        className="w-100 h-100"
+                        style={{ objectFit: 'cover' }}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div className="position-absolute top-50 start-50 translate-middle">
+                        <div className="bg-dark bg-opacity-75 rounded-circle p-3">
+                          <Play className="text-white" size={28} fill="white" />
+                        </div>
+                      </div>
+                    </button>
+                  )}
                   <div className="position-absolute bottom-0 end-0 bg-dark bg-opacity-75 text-white px-3 py-2 m-3 rounded">
                     <span className="fw-bold">{featuredVideo.duration}</span>
                   </div>
@@ -306,6 +387,8 @@ const VideoSection = () => {
                             alt={video.title}
                             className="img-fluid video-thumbnail-small"
                             style={{ height: '80px', objectFit: 'cover', width: '100%' }}
+                            loading="lazy"
+                            decoding="async"
                             onError={(e) => {
                               e.target.src = 'https://via.placeholder.com/160x90/f8f9fa/6c757d?text=Video';
                             }}
