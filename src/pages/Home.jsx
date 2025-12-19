@@ -1,11 +1,11 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getAllCars } from '../utils/carDataUtils';
 import HeroSection from '../components/HeroSection';
 import FeaturedCars from '../components/FeaturedCars';
 import PopularBrands from '../components/PopularBrands';
-import VideoSection from '../components/VideoSection';
+const VideoSection = React.lazy(() => import('../components/VideoSection'));
 import BlogSection from '../components/BlogSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import ChatBot from '../components/ChatBot';
@@ -74,7 +74,9 @@ const Home = () => {
                 title={isSearching ? "Search Results" : "Featured Cars"}
             />
             <PopularBrands brands={brands} onBrandClick={handleBrandClick} />
-            <VideoSection />
+            <Suspense fallback={<div style={{ padding: '40px', textAlign: 'center' }}>Loading videos...</div>}>
+                <VideoSection />
+            </Suspense>
             {/*<BlogSection />*/}
             <WhyChooseUs />
             <ChatBot onCarSearch={handleCarSearch} />
